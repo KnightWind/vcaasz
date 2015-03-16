@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+body{ font-family:"宋体"; font-family:"Arial, Helvetica, sans-serif"; margin:0; padding:0; font-size:12px;}
+div,form,img,ul,ol,li,dl,dt,dd,input,h1,h2,h3,h4,h5,h6,span,p,table{margin:0; padding:0; border:0; }
+ul,li{ list-style:none; }
+a{ text-decoration:none; color:#333}
+
+.First_Steps_title_invite {
+	width:780px;
+	height:62px;
+	position:relative
+}
+#t_box {
+	margin-top:10px;
+	position:absolute;
+	clear:both;
+	margin-left:25px;
+	_left:-25px;
+}
+#t_box a {
+	color:#666;
+	outline:none;
+}
+.but99 {
+	position:absolute;
+	bottom:20px;
+	left:28px;
+	text-align:center
+}
+.tit_a_invite {
+	font-size:14px;
+	font-weight:bold;
+	color:#F26D00;
+	padding-top:20px;
+	margin-left:32px;
+}
+.tit_b_invite {
+	margin-left:32px;
+	color:#999999;
+	margin-top:6px;
+}
+.toa_quick_invite {
+	height:1px;
+	margin-left:25px;
+}
+
+/*群组成员*/
+/*弹出层背景公共样式=========================================================================*/
+
+table.overlay-panel tr.no-header td.overlay-hdL {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) no-repeat scroll bottom left transparent;
+	overflow:hidden;
+}
+table.overlay-panel tr.no-header td.overlay-hdC {
+	height:12px;
+	background:url(/static/images/add_top_center.png) left top repeat-x transparent scroll;
+	overflow:hidden;
+}
+table.overlay-panel tr.no-header td.overlay-hdR {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_right.png) right top no-repeat transparent scroll;
+	overflow:hidden;
+}
+table.overlay-panel td.overlay-bdL {
+	width:12px;
+	height:auto;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+}
+table.overlay-panel td.overlay-bdR {
+	width:12px;
+	height:auto;
+	background:url(/static/images/add_center_right.png) right top repeat-y;
+}
+table.overlay-panel td.overlay-content {
+	position:relative;
+	background:#FFF;
+}
+table.overlay-panel td.overlay-ftL {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+}
+table.overlay-panel td.overlay-ftC {
+	width:auto;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+}
+table.overlay-panel td.overlay-ftR {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) right top no-repeat;
+}
+
+/*page*/
+.tr_bottom {
+	background:url("/static/images/table_bottom_bg.jpg") repeat-x scroll 0 0 transparent;
+}
+.tr_bottom {
+	border:#DCE7EF 1px solid;
+	border-top:none
+}
+.tr_bottom p {
+	float:left;
+	margin-left:20px;
+	line-height:35px;
+	color:#666666;
+}
+.type_right {
+	float:right;
+	margin-right:20px;
+	margin-top:5px;
+}
+.type_right li {
+	float:left;
+	line-height:22px;
+}
+.type_right a {
+	color:#666;
+}
+.t01 {
+	width:auto;
+	height:22px;
+	border:#A8A8A8 1px solid;
+	text-align:center;
+	margin-right:10px;
+	padding-left:5px;
+	padding-right:5px;
+}
+.t02 {
+	width:auto;
+	height:22px;
+	border:#A8A8A8 1px solid;
+	text-align:center;
+	color:#666666;
+	margin-right:5px;
+	padding-left:5px;
+	padding-right:5px;
+}
+.t03 {
+	margin-right:5px;
+}
+.t04 {
+	margin-right:5px;
+}
+.type_text {
+	width:30px;
+	height:22px;
+	border:#A8A8A8 1px solid;
+}
+.t01:hover, .t02:hover, .t03:hover, .t04:hover {
+	color:#000;
+	border-color:#ED6F00
+}
+.t01:visited, .t02:visited, .t03:visited, .t04:visited {
+	color:#000;
+	border-color:#ED6F00
+}
+
+/**/
+.First_Steps_invite {
+	width:780px;
+	height:510px;
+	position:relative;
+}
+/**/
+.tr_center {
+	background:url("/static/images/table_head_bg.jpg") repeat-x scroll 0 0 transparent;
+	border-right:none;
+}
+.tr_main {
+	border-bottom:#D2D8DB 1px solid;
+	color:#666666;
+}
+
+/**/
+.First_Steps_bottom_b {
+	margin-top:20px;
+	padding-bottom:20px;
+	height:27px;
+	width:500px;
+}
+/**/
+.type_right {
+	float:right;
+	margin-right:5px;
+	margin-top:5px;
+}
+.type_right li {
+	float:left;
+	line-height:22px;
+}
+.type_right a {
+	color:#666;
+}
+/**/
+.First_Steps_title_invite a {
+	display:block;
+	height:24px;
+	width:24px;
+	background:url(/static/images/xxx.png) no-repeat;
+	float:right;
+	margin-top:6px;
+	margin-right:8px;
+}
+.First_Steps_title_invite a:hover {
+	background:url(/static/images/xxx_change.png) no-repeat;
+}
+/**/
+.button_common {
+	width:auto;
+	height:28px;
+	padding-left:1px;
+	background: #FFF url(/static/images/gg_btn_left_link.png) left top no-repeat;
+	float:left;
+	padding-right:-10px;
+	display:block;
+}
+.button_common a {
+	width:auto;
+	height:28px;
+	padding-right:15px;
+	background: #FFF url(/static/images/gg_btn_right_link.png) right top no-repeat;
+	line-height:28px;
+	display:block;
+	float:left;
+}
+.button_common a img {
+	padding-left:10px;
+}
+.button_common:active {
+	background: #FFF url(/static/images/gg_btn_left_hover.png) left top no-repeat;
+}
+.button_common a:active {
+	background: #FFF url(/static/images/gg_btn_right_hover.png) right top no-repeat;
+}

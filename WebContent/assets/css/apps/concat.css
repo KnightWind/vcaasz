@@ -1,0 +1,174 @@
+html, body {
+	background: transparent;
+}
+body {
+	padding: 20px;
+}
+.common-table .check {
+	width: 40px;
+	text-align: center;
+	padding: 10px 0px;
+}
+.common-table .actions {
+	width: 140px;
+}
+.common-table .actions .modify {
+	margin: 0 20px 0 10px;
+}
+.pagebar {
+	margin-top: 10px;
+}
+.icon {
+	width: 20px;
+	height: 20px;
+	background: transparent url(/assets/images/sprite/icons.png) -118px -260px no-repeat;
+}
+.icon-add {
+	background-position: -118px -260px;
+}
+.icon-bat {
+	background-position: -190px -189px;
+}
+.icon-exp {
+	background-position: -190px -223px;
+}
+.icon-del {
+	background-position: -190px -151px;
+}
+.icon-modify {
+	background-position: -190px -262px;
+}
+.icon-remove {
+	background-position: -190px -118px;
+}
+
+/*=======================================*/
+/*	Alan Liu                             */
+/*	email:mingliu@bizconf.cn	         */
+/*	2013-07-23                           */
+/*=======================================*/
+.common-table {
+	table-layout: fixed;
+}
+.common-table td, .common-table th{
+	overflow: hidden;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.icon-add {
+	background: transparent url(/assets/images/sprite/icons-png8.png) -118px -260px no-repeat;
+}
+.icon-bat {
+	background: transparent url(/assets/images/sprite/icons-png8.png) -190px -189px no-repeat;
+}
+.icon-exp {
+	background: transparent url(/assets/images/sprite/icons-png8.png) -190px -223px no-repeat;
+}
+.icon-del {
+	background: transparent url(/assets/images/sprite/icons-png8.png) -190px -151px no-repeat;
+}
+.icon-modify {
+	background: transparent url(/assets/images/sprite/icons-png8.png) -190px -262px no-repeat;
+}
+.icon-remove {
+	background: transparent url(/assets/images/sprite/icons-png8.png) -190px -118px no-repeat;
+}
+.tab a {
+	color: #333333;
+	cursor: pointer;
+    display: block;
+    font-family: "Microsoft Yahei","微软雅黑","宋体"
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    outline: medium none;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+}
+
+.tabs .active a {
+	color: #FFFFFF;
+}
+.tabview .tabs .tab.groups{
+	border-right-width: 1px;
+}
+.form-content{
+	padding: 10px 0 0 40px
+}
+.adduser-dialog .notes {
+    color: #EF8201;
+    margin-bottom: 15px;
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
+.adduser-dialog .anchor-cancel {
+    margin-left: 50px;
+}
+
+.adduser-dialog .form-item {
+    width: 560px;
+/*     overflow: hidden; */
+}
+.contact-list-table .actions {
+	width:150px;
+}
+.group-list-table .actions{
+	width:260px;
+}
+.group-list-table .actions .view {
+    margin: 0px 20px 0px 0px;
+}
+.contact-list-table .actions .modify{
+	margin: 0px 20px 0px 0px
+}
+.import-dialog .anchor-cancel {
+    margin-left: 50px;
+}
+.watermark {
+	color: #999 !important;
+}
+.contact-dialog .notes {
+	width: 550px;
+	overflow: hidden;
+}
+
+.nodata {
+	background: #FFFFFF url(/assets/images/bg/silence.jpg) center 30px no-repeat;
+	color: #CCCCCC;
+	padding-top: 115px;
+	height: 45px;
+	text-align: center;
+}
+.pagebar .jumpto input {
+	line-height: 23px;
+}
+.summary .search .input-text {
+	width: 205px;
+}
+
+.adduser-dialog .form-item .widget {
+    margin-left: 80px;
+    position: relative;
+}
+
+.adduser-dialog .form-item .title {
+	float: left;
+	width: 92px;
+	padding-right: 5px;
+	text-align: right;
+}
+.member-view {
+	display: inline-block;
+	width:120px;
+}
+.member-modify {
+	margin-right:5px; 
+}
+.contact-form .form-tip {
+	width: 250px;
+}
+.summary .actions li.mr0 {
+	margin-right: 0px;
+}

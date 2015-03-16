@@ -1,0 +1,27 @@
+{
+  "sEcho": 1,
+  "iTotalRecords": "57",
+  "iTotalDisplayRecords": "57",
+  "result": [
+		{
+			"id": 1,
+			"name":"上海会畅",
+			"identity":"bizconf",
+			"type":"正式",
+			"maxnumber":"1000000",
+			"time":"2012-12-12",
+			"username": "admin",
+			"status": false
+		},
+		{
+			"id": 2,
+			"name":"上海会畅",
+			"identity":"bizconf",
+			"type":"试用",
+			"maxnumber":"1000000",
+			"time":"2012-12-12",
+			"username": "admin",
+			"status": false
+		}
+  ]
+}

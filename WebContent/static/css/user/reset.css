@@ -1,0 +1,42 @@
+@charset "utf-8";
+* {
+	padding:0;
+	margin:0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+/*隐藏横向滚动，垂直滚动根据内容自适应（去除IE默认垂直滚动条）*/
+html {
+	overflow-x: auto;
+	overflow-y: auto;
+}
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, lengend, button, select, input, textarea, th, td {
+	margin: 0;
+	padding: 0;
+	border:0;
+}
+/* 设置默认字体 */
+body, button, input, select, textarea {
+	font: 12px/1, Arial, sans-serif, Helvetica, Tahoma;
+	margin:0;
+	padding:0;
+	border:0;/*font: 12px/1 "宋体", Arial, sans-serif, Helvetica, Tahoma;*/
+}
+/* 重置文本格式元素  */
+a {
+	text-decoration: none;
+	outline:none;
+	color:#333;
+}
+ul, li, img, input, a {
+	padding:0;
+	margin:0;
+	border:0;
+	list-style:none;
+	text-decoration:none;
+	outline: medium none;
+}
+input {
+	outline: medium none;
+}

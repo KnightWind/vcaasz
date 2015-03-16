@@ -1,0 +1,873 @@
+/*=======================================*/
+/*	Alan Liu                             */
+/*	email:mingliu@bizconf.cn	         */
+/*	2013-07-23                           */
+/*=======================================*/
+body {
+   min-width: 1002px;
+   _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?"1002px":"");
+   overflow-x: auto;
+/*    overflow-y: auto; */
+}
+
+*::-moz-selection {
+    background: none repeat scroll 0 0 #2988C2;
+    color: #FFFFFF;
+}
+.ui-widget-overlay {
+	background: #000000;
+	opacity: 0.5;
+	filter:Alpha(Opacity=50);
+}
+/*========================切换主题======================*/
+.jquery-ui-themeswitcher-trigger {
+	text-align: left;
+}
+#skin-switcher {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+/*顶部Banner*/
+.header{
+    height:80px;
+    _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?"1002px":"");
+}
+
+.banner {
+	background:#071D2B;
+	height:80px;
+	background: #071D2B url(/assets/images/bg/header.png) 0 0 no-repeat;
+}
+.brand-wrapper {
+/* 	position: relative; */
+/* 	height: 80px; */
+/* 	background: #071D2B url(/assets/images/bg/header.png) 0 0 no-repeat; */
+	float: left;
+}
+.logo-wrapper {
+	width:160px;
+	height:80px;
+	float:left;
+	text-align:left;
+}
+.logo-img {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 120px;
+}
+.logo-title-wrapper{
+	height:80px;
+/* 	float:left; */
+	text-align:left;
+	position: absolute;
+	left: 160px;
+	z-index: 11	
+}
+.action-wrapper{
+/*     position: absolute; */
+/*     right: 0; */
+/*     top: 0;	 */
+	float: right;
+}
+.action-wrapper img {
+	position: relative;
+	top: 10px;
+	right: 0px;
+}
+#siteName {
+	color: #FFFFFF;
+	font-family: "Microsoft Yahei","微软雅黑","宋体";
+	font-size: 24px;
+	height: 30px;
+}
+#siteEnName {
+	color: #FFFFFF;
+	font-family: "Microsoft Yahei","微软雅黑","宋体";
+	font-size: 14px;
+	height: 16px;
+}
+#siteName, #siteEnName{
+	overflow:hidden;text-overflow:ellipsis;white-space: nowrap;
+}
+/*头部Navigate*/
+.nav{
+	position: relative;
+    height:8px;
+    line-height: 8px;
+    background: url("/assets/images/icons/nav.png") repeat-x scroll 0 0 transparent;
+    _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?"1002px":"");
+}
+.profile {
+    margin-right: 20px;
+    margin-top: 10px;
+	color: #FFFFFF;
+}
+.profile_name {
+	color: #FFFFFF;
+	font-family: "Microsoft Yahei","微软雅黑","宋体";
+	font-size: 12px;
+}
+.profile_action {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 12px;
+}
+.icon {
+	display: inline-block;
+    vertical-align: middle;	
+}
+.icon_login {
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll 0 0 transparent;
+	background-position: -8px -35px;
+	width: 18px;
+	height: 18px;
+
+}
+
+.shortcut {
+	margin-left: 245px;
+}
+*html .shortcut {
+	position: relative;
+	top: 10px;
+}
+.shortcut li {
+	float: left;
+	margin-left: 25px;
+	margin-right: 25px; 
+}
+.shortcut li a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.shortcut li a:hover{
+	text-decoration: underline;
+}
+.icon_now {
+	background: url("/assets/images/icons/navigator.png") no-repeat scroll 0 0 transparent;
+	background-position: 0px 0px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;		
+}
+.icon_schedule {
+	background: url("/assets/images/icons/navigator.png") no-repeat scroll 0 0 transparent;
+	background-position: -30px 0px;
+	width: 30px;
+	height: 30px;			
+	line-height: 30px;
+}
+.icon_joinin {
+	background: url("/assets/images/icons/navigator.png") no-repeat scroll 0 0 transparent;
+	background-position: -60px 0px;	
+	width: 30px;
+	height: 30px;
+	line-height: 30px;	
+}
+.region {
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: right;
+}
+.region .timezone {
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+.region .timezone .icon-zone {
+	display: inline-block;
+    vertical-align: middle;
+    background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll 0 0 transparent;
+	background-position: -28px -30px;    
+    height: 30px;
+    width: 30px;  
+    margin: 8px 0px;  
+}
+
+.region .language {
+	margin-left: 35px;
+}
+/*左侧Menu*/
+.left-td {
+/*     background: #DBE9F4; */
+	background: url("/assets/images/bg/lside.png") repeat scroll 0 0 #4E5862;
+}
+.sidebar{
+		margin-top: 10px;
+		margin-bottom:10px;
+        width: 200px;
+    border-bottom: 1px solid #606972;
+    border-top: 1px solid #383B40;        
+/*         background: #DBE9F4; */
+}
+.nav-menu a {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    outline: medium none;
+    overflow: hidden;
+    width: 200px;
+    position: relative;
+    color: #FFFFFF;
+    font-family: "Microsoft Yahei","微软雅黑","宋体";
+    font-size: 14px;
+    outline: none;
+    border-bottom: 1px solid #383B40;
+    border-top: 1px solid #606972;
+    background: url("/assets/images/icons/blank.gif");
+}
+.nav-menu a:hover {
+	color: #D9FEB0;
+}
+.nav-menu a.nav-ul-off{
+/*     background: url("/assets/images/bg/side.png") no-repeat scroll 172px 15px transparent;	 */
+	background: url("/assets/images/icons/collapse.gif") no-repeat scroll 172px 15px transparent;
+}
+.nav-menu a.nav-ul-on {
+/*     background: url("/assets/images/bg/down.png") no-repeat scroll 171px 17px transparent;	 */
+	background: url("/assets/images/icons/expand.gif") no-repeat scroll 171px 17px transparent;
+}
+
+/*公开的*/
+.icon-conf-pub-img {
+    width:18px;height:18px;display: inline-block;background: url("/assets/images/icons/menu_icons.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:3px;left:18px;
+    background-position: 0px -280px;
+}
+.active .icon-conf-pub-img {
+	background-position: -18px -280px;
+}
+.hover .icon-conf-pub-img{
+	background-position: -36px -280px;
+}
+.icon-conf-pub-span {display: inline-block;position: relative;left: 28px;}
+
+/*我的会议(我主持的 我参加的)*/
+.icon-conf-me-img {
+    width:18px;height:18px;display: inline-block;background: url("/assets/images/icons/menu_icons.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:3px;left:18px;
+    background-position: 0px 0px;
+}
+.hover .icon-conf-me-img {
+	background-position: -36px 0px;
+}
+.icon-conf-me-span {display: inline-block;position: relative;left: 28px;}
+
+/*我主持的*/
+.icon-conf-host-span {
+	display: inline-block;
+	position: relative;
+	left: 48px;
+	padding-left: 15px;
+	background: url("/assets/images/icons/submenu.gif") no-repeat scroll 0 16px transparent;
+}
+.active .icon-conf-host-span, .hover .icon-conf-host-span {
+	background: url("/assets/images/icons/submenu-hover.gif") no-repeat scroll 0 16px transparent;
+}
+
+/*我参加的*/
+.icon-conf-actor-img {
+    width:5px;height:7px;display: inline-block;background: url("/assets/images/icons/arrow.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:-1px;left:40px;
+    background-position: 0px 0px;
+}
+.icon-conf-actor-span {display: inline-block;position: relative;left: 48px;padding-left: 15px;background: url("/assets/images/icons/submenu.gif") no-repeat scroll 0 16px transparent;}
+.active .icon-conf-actor-span, .hover .icon-conf-actor-span {
+	background: url("/assets/images/icons/submenu-hover.gif") no-repeat scroll 0 16px transparent;
+}
+/*系统配置*/
+.icon-settings-img {
+    width:18px;height:18px;display: inline-block;background: url("/assets/images/icons/menu_icons.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:3px;left:18px;
+    background-position: 0 -390px;
+}
+.hover .icon-settings-img{
+	background-position: -36px -390px;
+}
+.active .icon-settings-img {
+	background-position: -18px -390px;
+}
+.icon-settings-span {display: inline-block;position: relative;left: 28px;}
+/*企业信息管理*/
+.icon-company-img {
+    width:18px;height:18px;display: inline-block;background: url("/assets/images/icons/menu_icons.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:3px;left:18px;
+    background-position: 0 -370px;
+}
+.hover .icon-company-img{
+	background-position: -36px -370px;
+}
+.active .icon-company-img {
+	background-position: -18px -370px;
+}
+.icon-company-span {display: inline-block;position: relative;left: 28px;}
+/*通讯录*/
+.icon-contact-img {
+    width:18px;height:18px;display: inline-block;background: url("/assets/images/icons/menu_icons.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:3px;left:18px;
+    background-position: 0 -60px;
+}
+.hover .icon-contact-img{
+	background-position: -36px -60px;
+}
+.active .icon-contact-img {
+	background-position: -18px -60px;
+}
+.icon-contact-span {display: inline-block;position: relative;left: 28px;}
+
+/*公告*/
+.icon-notice-img {
+    width:18px;height:18px;display: inline-block;background: url("/assets/images/icons/menu_icons.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:3px;left:18px;
+    background-position: 0 -80px;    
+}
+.hover .icon-notice-img{
+	background-position: -36px -80px;    
+}
+.active .icon-notice-img {
+	background-position: -18px -80px;    
+}
+.icon-notice-span {display: inline-block;position: relative;left: 28px;}
+
+/*账单*/
+.icon-blling-img {
+    width:18px;height:18px;display: inline-block;background: url("/assets/images/icons/menu_icons.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:3px;left:18px;
+    background-position: 0 -100px;
+}
+.hover .icon-blling-img{
+	background-position: -36px -100px; 
+}
+.active .icon-blling-img {
+	background-position: -18px -100px; 
+}
+.icon-blling-span {display: inline-block;position: relative;left: 28px;}
+
+/*会议报告*/
+.icon-report-img {
+    width:18px;height:18px;display: inline-block;background: url("/assets/images/icons/menu_icons.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:3px;left:18px;
+    background-position: 0 -240px;
+}
+.hover .icon-report-img{
+	background-position: -36px -240px;
+}
+.icon-report-span {display: inline-block;position: relative;left: 28px;}
+
+.icon-report-host-img {
+    width:5px;height:7px;display: inline-block;background: url("/assets/images/icons/arrow.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:-1px;left:40px;
+    background-position: 0px 0px;
+}
+.hover .icon-report-host-img{
+	background-position: -10px 0px;
+}
+.active .icon-report-host-img {
+	background-position: -5px 0px;
+}
+.icon-report-host-span {display: inline-block;position: relative;left: 48px;}
+
+.icon-report-actor-img {
+    width:5px;height:7px;display: inline-block;background: url("/assets/images/icons/arrow.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:-1px;left:40px;
+    background-position: 0px 0px;
+}
+.hover .icon-report-actor-img{
+	background-position: -10px 0px;
+}
+.active .icon-report-actor-img {
+	background-position: -5px 0px;
+}
+.icon-report-actor-span {display: inline-block;position: relative;left: 48px;}
+
+/*会议缺省设置*/
+.icon-default-config-img {
+    width:18px;height:18px;display: inline-block;background: url("/assets/images/icons/menu_icons.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:3px;left:18px;
+    background-position: 0 -140px;    
+}
+.hover .icon-default-config-img{
+	background-position: -36px -140px;    
+}
+.active .icon-default-config-img {
+	background-position: -18px -140px;    
+}
+.icon-default-config-span {display: inline-block;position: relative;left: 28px;}
+
+/*偏好设置*/
+.icon-favor-img {
+    width:18px;height:18px;display: inline-block;background: url("/assets/images/icons/menu_icons.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:3px;left:18px;
+    background-position: 0 -160px;    
+}
+.hover .icon-favor-img{
+	background-position: -36px -160px;   
+}
+.active .icon-favor-img {
+	background-position: -18px -160px;   
+}
+.icon-favor-span {display: inline-block;position: relative;left: 28px;}
+/*个人设置*/
+.icon-person-img {
+    width:18px;height:18px;display: inline-block;background: url("/assets/images/icons/menu_icons.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:3px;left:18px;
+    background-position: 0 -180px;    
+}
+.hover .icon-person-img{
+	background-position: -36px -180px;
+}
+.active .icon-person-img {
+	background-position: -18px -180px;
+}
+.icon-person-span {display: inline-block;position: relative;left: 28px;}
+
+.icon-person-base-img {
+    width:5px;height:7px;display: inline-block;background: url("/assets/images/icons/arrow.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:-1px;left:40px;
+    background-position: 0px 0px; 
+}
+.hover .icon-person-base-img{
+	background-position: -10px 0px;
+}
+.active .icon-person-base-img {
+	background-position: -5px 0px;
+}
+.icon-person-base-span {display: inline-block;position: relative;left: 48px;}
+.icon-person-pass-img {
+    width:5px;height:7px;display: inline-block;background: url("/assets/images/icons/arrow.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:-1px;left:40px;
+    background-position: 0px 0px;  
+}
+.hover .icon-person-pass-img{
+	background-position: -10px 0px;
+}
+.active .icon-person-pass-img {
+	background-position: -5px 0px;
+}
+.icon-person-pass-span {display: inline-block;position: relative;left: 48px;}
+/*支持*/
+.icon-support-img {
+    width:18px;height:18px;display: inline-block;background: url("/assets/images/icons/menu_icons.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:3px;left:18px;
+    background-position: 0 -200px; 
+}
+.hover .icon-support-img{
+	background-position: -36px -200px; 
+}
+.icon-support-span {display: inline-block;position: relative;left: 28px;}
+
+.icon-help-img {
+    width:18px;height:18px;display: inline-block;background: url("/assets/images/icons/menu_icons.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:3px;left:40px; 
+    background-position: 0 -300px; 
+}
+.hover .icon-help-img {
+	background-position: -36px -300px; 
+}
+.active .icon-help-img {
+	background-position: -18px -300px; 
+}
+.icon-help-span {display: inline-block;position: relative;left: 48px;}
+
+
+.icon-download-img {
+    width:18px;height:18px;display: inline-block;background: url("/assets/images/icons/menu_icons.png") no-repeat scroll 0 0 transparent;
+    position:relative;top:3px;left:40px; 
+    background-position: 0 -316px; 
+}
+.hover .icon-download-img{
+	background-position: -36px -316px; 
+}
+.active .icon-download-img {
+	background-position: -18px -316px; 
+}
+.icon-download-span {display: inline-block;position: relative;left: 48px;}
+
+
+.active .ico-public, .active .ico-conf-host, .active .ico-conf-actor, .active .ico-contact,.active .ico-company, .active .ico-notice,  
+.active .ico-billing, .active .ico-report-host, .active .ico-report-actor, .active .icon-default, .active .ico-favor, 
+.active .ico-person, .active .ico-person-base, .active .ico-person-pass, .active .ico-help, .active .ico-download {
+    background: url("/assets/images/icons/menu-active.png") no-repeat scroll 0 0 transparent;
+	color: #D8FDAD;
+}
+/*右侧Content*/
+.right-td {
+    _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<825?"825px":"");
+    background: #EEEEEE;
+}
+.main-table {
+    /*background: url("/assets/images/icons/warpper_bg.gif") repeat-y scroll 0 0 #ECF2F4;*/
+    _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?"1002px":"");
+}
+/*=======================底部======================*/
+.footer{
+	height:45px;
+	background-color: #404348;
+	color: #999999;
+	font-size: 12px;
+	text-align: center;
+	_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?"1002px":"");
+}
+.footer .wrapper {
+	line-height: 1.5;
+    padding-top: 5px; 
+}
+
+/*========================对话框======================*/
+.ui-dialog-titlebar {
+    display: none;
+}
+.ui-dialog-smile {
+    padding: 0px;
+    border: 0px;
+    background: transparent;
+    border-radius: 0px;
+}
+.ui-dialog-smile .ui-dialog-titlebar {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #C3C3C3;
+}
+
+.ui-dialog-smile .ui-dialog-content {
+    padding: 0px;
+}
+.ui-dialog-smile .ui-dialog-titlebar-close {
+    padding: 0px;
+}
+.biz-dialog {}
+.biz-inner { background:#FFF; }
+.biz-titleBar { 
+	position: relative; 
+/* 	width: 100%; */
+	background: #F9F9F9;
+	background: linear-gradient(top,#F9F9F9,#EBEBEB);
+	background: -moz-linear-gradient(top,#F9F9F9,#EBEBEB);
+	background: -webkit-linear-gradient(top,#F9F9F9,#EBEBEB);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#F9F9F9,endColorstr=#EBEBEB);
+    margin-top: 3px;
+    padding: 0 15px;
+	border-bottom: 1px solid #CCCCCC;
+	height: 36px;
+	line-height: 36px;   	
+}
+.ui-dialog-notitle .biz-titleBar {
+	display: none;
+}
+.biz-title {
+    cursor: default;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333333;
+/*     height: 33px; */
+/*     line-height: 33px; */
+    padding: 0 16px 0 0;
+	font-family: "Microsoft Yahei","微软雅黑","宋体";
+	font-size: 15px;
+ 
+}
+.icon-loading {
+	background: url("/assets/images/animate/loading.gif") no-repeat scroll center center transparent;
+    display: block;
+    font-size: 14px;
+    height: 32px;
+    margin: 0 auto;
+    width: 32px;
+    position: relative;
+    top: 70px;
+}
+.text-loading {
+	display: block;
+    font-size: 14px;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+    text-align: center;
+}
+.biz-icon {
+	display: inline-block;
+    vertical-align: middle;
+}
+.icon-join {
+ 	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -154px -188px transparent;
+    height: 18px;
+    width: 18px;
+    margin: 7px 5px 7px 0px;
+}
+.icon-import-more {
+ 	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -190px -189px transparent;
+    height: 18px;
+    width: 18px;
+    margin: 7px 5px 7px 0px;
+}
+.icon-notice {
+ 	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -117px -154px transparent;
+    height: 18px;
+    width: 18px;
+    margin: 7px 5px 7px 0px;
+}
+.icon-add {
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -118px -260px transparent;
+    height: 18px;
+    width: 18px;
+    margin: 7px 5px 7px 0px;
+}
+.icon-user-info {
+	background: url("/assets/images/icons/icons-png8.png") no-repeat scroll -258px -262px transparent;
+    height: 18px;
+    width: 18px;
+    margin: 7px 5px 7px 0px;
+}
+.icon-conf-detail {
+	background: url("/assets/images/icons/icons-png8.png") no-repeat scroll -224px -262px transparent;
+    height: 18px;
+    width: 18px;
+    margin: 7px 5px 7px 0px;	
+}
+.icon-arrange {
+	background: url("/assets/images/icons/icons-png8.png") no-repeat scroll -224px -224px transparent;
+    height: 18px;
+    width: 18px;
+    margin: 7px 5px 7px 0px;
+}
+.icon-manager {
+	background: url("/assets/images/icons/icons-png8.png") no-repeat scroll -260px -225px transparent;
+    height: 18px;
+    width: 18px;
+    margin: 7px 5px 7px 0px;	
+}
+.icon-group {
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -118px -225px transparent;
+    height: 18px;
+    width: 18px;
+    margin: 7px 5px 7px 0px;
+}
+.icon-imp {
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -190px -190px transparent;
+    height: 18px;
+    width: 18px;
+    margin: 7px 5px 7px 0px;	
+}
+.icon-invent-list {
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -154px -261px transparent;
+    height: 18px;
+    width: 18px;
+    margin: 7px 5px 7px 0px;
+}
+.icon-order {
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -190px -82px transparent;
+    height: 18px;
+    width: 18px;
+    margin: 7px 5px 7px 0px;
+}
+.icon-contact {
+ 	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -117px -188px transparent;
+    height: 18px;
+    width: 18px;
+    margin: 7px 5px 7px 0px;
+}
+.icon-numjoin {
+ 	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -117px -188px transparent;
+    height: 18px;
+    width: 18px;
+    margin: 7px 5px 7px 0px;
+}
+.icon-info {
+    background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -152px -152px transparent;
+    height: 18px;
+    margin: 7px 5px 7px 0;
+    width: 18px;
+}
+.biz-close {
+    display: block;
+    outline: none;
+    position: absolute;
+    text-decoration: none;
+    background: url("/assets/images/buttons/close.png") no-repeat scroll center center transparent;
+    height: 13px;
+    right: 10px;
+    text-indent: -9999em;
+    top: 10px;
+    width: 13px;
+}
+.biz-close:hover{
+    background-image: url(/assets/images/buttons/close-hover.png);
+}
+.biz-nw, .biz-ne, .biz-sw, .biz-se, .biz-n, .biz-s {
+/*     background-image: url("/assets/images/icons/aero_s.png"); */
+/*     background-repeat: no-repeat; */
+	background-color: #9AB3C9;
+}
+.biz-w, .biz-e{
+/*     background-image: url("/assets/images/icons/aero_s2.png"); */
+/*     background-repeat: repeat-y; */
+	background-color: #9AB3C9;
+}
+.biz-nw {
+/*     background-position: 0 0; */
+/*     height: 34px; */
+/*     width: 14px; */
+	width: 3px;
+	height: 3px;
+}
+.biz-n {
+/*     background-position: 0 -48px; */
+/*     background-repeat: repeat-x; */
+}
+.biz-ne {
+/*     background-position: -14px 0; */
+/*     height: 34px; */
+/*     width: 14px; */
+	width: 3px;
+	height: 3px;
+}
+.biz-w {
+/*     background-position: left top; */
+}
+.biz-c {
+
+}
+.biz-e {
+/*     background-position: right bottom; */
+}
+.biz-sw {
+/*     background-position: 0 -34px; */
+/*     height: 14px; */
+/*     width: 14px; */
+	width: 3px;
+	height: 3px;
+}
+.biz-s {
+/*     BACKGROUND-POSITION: 0 -82PX; */
+/*     BACKGROUND-REPEAT: REPEAT-X; */
+}
+.biz-se {
+/*     background-position: -14px -34px; */
+/*     height: 14px; */
+/*     width: 14px; */
+	width: 3px;
+	height: 3px;
+}
+/*对话框*/
+
+.ui-dialog-alert {
+	border-radius: 0px;
+	padding: 0px;
+	border: 3px solid #9AB3C9;
+}
+.ui-dialog-alert .ui-dialog-content {
+	padding: 0px;
+	overflow: hidden;
+}
+.dialog-header {
+	border-bottom: 1px solid #CCCCCC;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 15px;
+	background: #F9F9F9;
+	background: linear-gradient(top,#F9F9F9,#EBEBEB);
+	background: -moz-linear-gradient(top,#F9F9F9,#EBEBEB);
+	background: -webkit-linear-gradient(top,#F9F9F9,#EBEBEB);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#F9F9F9,endColorstr=#EBEBEB);	
+}
+.dialog-header .title {
+	font-family: "Microsoft Yahei","微软雅黑","宋体";
+	color: #333333;
+	font-size: 15px;
+	font-weight: normal;
+	max-width: 400px;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	_width: 350px;
+}
+.ui-dialog-alert .close {
+    display: block;
+    outline: none;
+    position: absolute;
+    text-decoration: none;
+    background: url("/assets/images/buttons/close.png") no-repeat scroll center center transparent;
+    height: 13px;
+    right: 10px;
+    text-indent: -9999em;
+    top: 10px;
+    width: 13px;
+}
+
+.ui-dialog-alert .close:hover {
+	background-image: url(/assets/images/buttons/close-hover.png);
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+.ui-dialog-alert .icon {
+    background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -152px -223px transparent;
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    top:300px;
+}
+.ui-dialog-alert .anchor-cancel {
+	font-family: "Microsoft Yahei","微软雅黑","宋体";
+    margin-left: 50px;
+    vertical-align: middle;
+    color: #1481C6;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 12px;
+}
+.ui-dialog-alert .anchor-cancel:hover{
+	text-decoration: underline;
+}
+.dialog-message {
+	padding: 20px 30px;
+}
+.dialog-message p{
+	padding: 20px 20px 20px 52px;
+	width: 318px;
+}
+.dialog-message-content img{
+    margin-right: 18px;
+    vertical-align: middle;
+}
+.dialog-message-content {
+	text-align: center;
+	font-family: "Microsoft Yahei","微软雅黑","宋体";
+	font-size: 12px;	
+}
+.success p {
+	background: url("/assets/images/icons/24_tick.png") no-repeat scroll 15px 16px transparent;	
+}
+.error p {
+	background: url("/assets/images/icons/24_x_false.png") no-repeat scroll 15px 16px transparent;	
+}
+.warning p {
+	background: url("/assets/images/bg/prompt.png") no-repeat scroll 15px 16px transparent;	
+}
+.confirm p {
+	background: url("/assets/images/icons/24_information.png") no-repeat scroll 15px 16px transparent;	
+}
+.prompt p {
+	background: url("/assets/images/bg/prompt.png") no-repeat scroll 15px 16px transparent;	
+}
+.dialog-footer{
+    background: none repeat scroll 0 0 #F7F7F7;
+    border-top: 1px solid #CCCCCC;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+.dialog-footer input{
+	font-family: "Microsoft Yahei","微软雅黑","宋体";
+	font-size: 12px;
+}

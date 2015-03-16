@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 页面头部样式 */
+body{ font-family:"宋体"; font-family:"Arial, Helvetica, sans-serif"; margin:0; padding:0; font-size:12px;}
+div,form,img,ul,ol,li,dl,dt,dd,input,h1,h2,h3,h4,h5,h6,span,p,table{margin:0; padding:0; border:0; }
+ul,li{ list-style:none; }
+a{ text-decoration:none; color:#333}
+
+/*页面头部样式*/
+#head{ width:100%; height:80px; background:url(/static/images/header_bg.jpg) repeat-x; min-width:1002px; overflow:hidden; border-bottom:#3A90D0 5px solid}
+.header_left{ width:500px; height:80px; float:left;}
+	.header_left .logo{ float:left;margin:15px 0px 0px 45px;}
+	.name{ font-family:微软雅黑; font-size:24px; line-height:80px; color:#FFF; margin-left:5px;padding-left: 20px;}
+.header_right{ width:399px; height:80px; background:url(/static/images/head_right_bg.jpg) no-repeat; float:right; position:relative;}
+	.header_right01{ position:absolute; height:20px;  top:10px; z-index:65; right:25px;}
+	.header_right02{ position:absolute; width:auto; height:20px; right:25px; top:52px; min-width:10px; z-index:95 }
+
+	.head_right li{ line-height:24px; height:24px;float:left;}
+	.head_right li a{ color:#FFF;}
+	.head_right li a:hover{ text-decoration:underline;}
+	.head_right li .help,.head_right li .go_out{  margin-left:6px; padding-right:3px; padding-top:4px;}
+	.head_right li .geli{ padding-left:10px;}
+	.aname img{  display:block; float:left; margin-right:5px;}
+	.aname span{  display:block;float:left; color:#FFF; font-family:"Arial, Helvetica, sans-serif";  }
+
+/*主题内容-忘记密码*/
+.main{ }
+	.main h3{ width:100%; height:34px; background:url(/static/images/wj_bg.jpg) repeat-x; text-align:left; line-height:34px; text-indent:40px;}
+	.main p{ padding-left:120px; padding-top:30px; color:#666666;}
+	.main ul{ padding-left:120px; padding-top:5px;}
+	.main ul li{ padding-top:15px; clear:both; line-height:22px;}
+	.main ul li span{ width:65px; display:block; text-align:right; float:left;}
+	.yanzhengma{ float:left; margin-left:10px;}
+	
+	
+.text01{ width:262px; height:22px; background:url(/static/images/taxt01_bg.jpg) no-repeat;float:left; text-indent:5px; line-height:22px;}
+.text02{ width:60px; height:22px; background:url(/static/images/login_yanzbg.jpg) no-repeat;float:left; text-indent:5px;line-height:22px;}
+.text01:hover{ background:url(/static/images/taxt01_bg_change.jpg) no-repeat;}
+.text02:hover{ background:url(/static/images/login_yanzbg_change.jpg) no-repeat;}
+.huantu{ margin-left:15px; color:#666666;}
+.yanzhengma{ float:left; margin-left:10px;}
+
+.button01,.Btn02{ width:72px; height:24px; background: url(/static/images/button01.jpg) no-repeat; margin-left:185px; margin-top:20px; cursor:pointer; line-height:24px;}
+.button02,.Btn{ width:72px; height:24px; background: url(/static/images/button01.jpg) no-repeat; margin-left:111px; cursor:pointer; line-height:24px;}
+.Btn_Hover{ background:url(/static/images/button_change.jpg) no-repeat;width:72px; height:24px;margin-left:111px; cursor:pointer; line-height:24px;}
+.Btn_Hover02{ background:url(/static/images/button_change.jpg) no-repeat;width:72px; height:24px;margin-left:185px; margin-top:20px; cursor:pointer; line-height:24px;}
+.button01:hover{background:url(/static/images/button_change.jpg) no-repeat;width:72px; height:24px;margin-left:185px; margin-top:20px; cursor:pointer; line-height:24px;}
+.button02:hover{background:url(/static/images/button_change.jpg) no-repeat;width:72px; height:24px;margin-left:111px; margin-top:20px; cursor:pointer; line-height:24px;}
+/*主题内容-连接超时*/
+
+	.main_lose h3{ width:100%; height:34px; background:url(/static/images/wj_bg.jpg) repeat-x; text-align:left; line-height:34px; text-indent:40px;}
+	.main_lose p{ padding-left:120px;}
+	
+	
+	
+.main_lose_h02{ line-height:20px; margin-left:40px; padding-top:20px;}	
+.main_lose_h01{ font-size:14px;padding-top:30px;}
+.main_lose_button01,.main_lose_Btn02{ width:72px; height:24px; background: url(/static/images/button01.jpg) no-repeat; margin-left:135px; margin-top:20px; cursor:pointer; line-height:24px;}
+.main_lose_button02,.main_lose_Btn{ width:72px; height:24px; background: url(/static/images/button01.jpg) no-repeat; margin-left:111px; cursor:pointer; line-height:24px;}
+.main_lose_Btn_Hover{ background:url(/static/images/button_change.jpg) no-repeat;width:72px; height:24px;margin-left:111px; cursor:pointer; line-height:24px;}
+.main_lose_Btn_Hover02{ background:url(/static/images/button_change.jpg) no-repeat;width:72px; height:24px;margin-left:135px; margin-top:20px; cursor:pointer; line-height:24px;}
+
+/*页脚部分*/
+#copy{ width:100%;; height:32px; background:url(/static/images/copy_bg.jpg) repeat-x;text-align:center; overflow:hidden; position:absolute; bottom:0px; left:0;min-width:1002px; }
+.copy_text{ text-align:center; line-height:32px; color:#FFF; font-family:Arial, Helvetica, sans-serif; }

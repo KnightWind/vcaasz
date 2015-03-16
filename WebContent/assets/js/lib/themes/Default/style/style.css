@@ -1,0 +1,55 @@
+.onShow
+{
+/*     background:url(../images/onShow.gif) no-repeat;  */
+/*     padding-left:25px;  */
+	margin-left:5px; 
+	font-size: 12px;
+	line-height:18px; 
+	vertical-align:middle;
+	color: #B0B0B0;
+}
+.onFocus
+{
+/*     background:#E9F0FF url(../images/onFocus.gif) no-repeat;  */
+/*     padding-left:25px;  */
+	margin-left:5px; 
+	font-size: 12px;
+	line-height:18px; 
+	vertical-align:middle;
+	color: #B0B0B0;
+}
+.onError
+{
+    background:url("/assets/images/icons/icon_warn.png") no-repeat scroll 0 0 transparent;
+    padding-left:20px;
+/* 	margin-left:5px;  */
+	font-size: 12px;
+	color: #C91600;
+	line-height:13px;
+	height: 18px; 
+	vertical-align:middle;
+}
+.onCorrect
+{
+    background:url("/assets/images/icons/icon_ok.png") no-repeat scroll 0 0 transparent;
+    padding-left:20px;
+/* 	margin-left:5px;  */
+	font-size: 12px;
+	line-height:18px;
+	height: 18px; 
+	vertical-align:middle;
+}
+.onLoad
+{
+    background:url("../images/onLoad.gif") no-repeat scroll 0 0 transparent;
+    padding-left:25px;
+/* 	margin-left:10px;  */
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+} 
+
+.inputOnShow
+{
+	color: #999999
+}

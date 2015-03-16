@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 公共样式表 */
+body{ font-family:"宋体", arial; font-family:Arial, Helvetica, sans-serif; margin:0; padding:0; font-size:12px;  }
+div,form,img,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,span,p,table,lable,input{margin:0; padding:0; border:0; }
+ul,li{ list-style:none; }
+a{ text-decoration:none; color:#333}
+
+
+.emile{ min-width:757px; margin-top:12px; margin-left:10px; margin-right:10px;}
+.emile_01{ width:100%; height:auto; overflow:auto;}
+	.emile_01_top{ height:32px; background:url(/static/images/pz_headerbg.jpg) repeat-x; border:#B5D7E6 1px solid;}
+	.emile_01_top span{ line-height:34px; padding-left:42px; font-weight:bold;}
+
+.emile_01_bottom{ padding-top:6px;  }
+.emile_01_bottom li span{ text-align:right; display:block; float:left; width:166px; line-height:22px;}
+.emile_01_bottom li{ margin-top:10px;}
+.emile_button{ margin-left:180px; width:72px; height:24px; background:url(/static/images/emile_button01.jpg) no-repeat; border:none;line-height:24px; outline:none; margin-top:5px;}
+.emile_button:hover{ background:url(/static/images/emile_button_change.jpg) no-repeat;}
+
+.text01{ margin-left:13px; width:262px; height:22px; line-height:22px; color:#666;background:url(/static/images/taxt01_bg.jpg) no-repeat; text-indent:5px;}
+.text01:hover{ background:url(/static/images/taxt01_bg_change.jpg) no-repeat;}
+.text02:hover{ background:url(/static/images/taxt01_bg_change.jpg) no-repeat;}
+.text03:hover{ background:url(/static/images/taxt01_bg_change.jpg) no-repeat;}
+.text04:hover{ background:url(/static/images/taxt01_bg_change.jpg) no-repeat;}
+.text05:hover{ background:url(/static/images/taxt01_bg_change.jpg) no-repeat;}
+.text06:hover{ background:url(/static/images/taxt01_bg_change.jpg) no-repeat;}
+.text07:hover{ background:url(/static/images/taxt01_bg_change.jpg) no-repeat;}
+.text08:hover{ background:url(/static/images/taxt01_bg_change.jpg) no-repeat;}
+.text02{ margin-left:13px;width:262px; height:22px; background:url(/static/images/taxt01_bg.jpg) no-repeat;line-height:22px;color:#666;}
+.text03{ margin-left:13px;width:262px; height:22px; background:url(/static/images/taxt01_bg.jpg) no-repeat;line-height:22px;color:#666;}
+.text04{ margin-left:13px;width:262px; height:22px; background:url(/static/images/taxt01_bg.jpg) no-repeat;line-height:22px;color:#666;}
+.text05{ margin-left:13px;width:262px; height:22px; background:url(/static/images/taxt01_bg.jpg) no-repeat;line-height:22px;color:#666;}
+.text06{ margin-left:13px;width:262px; height:22px; background:url(/static/images/taxt01_bg.jpg) no-repeat;line-height:22px;color:#666;}
+.text07{ margin-left:13px;width:262px; height:22px; background:url(/static/images/taxt01_bg.jpg) no-repeat;line-height:22px;color:#666;}
+.text08{ margin-left:13px;width:262px; height:22px; background:url(/static/images/taxt01_bg.jpg) no-repeat;line-height:22px;color:#666;}
+
+
+

@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 公共样式表 */
+body{ font-family:"宋体"; font-family:"Arial, Helvetica, sans-serif"; margin:0; padding:0; font-size:12px;}
+div,form,img,ul,ol,li,dl,dt,dd,input,h1,h2,h3,h4,h5,h6,span,p,table{margin:0; padding:0; border:0; }
+ul,li{ list-style:none; }
+a{ text-decoration:none; color:#333}
+input{_text-intent:5px;}
+
+
+
+.xinxi{ margin-left:30px; margin-top:20px;_margin-top:10px;  width:360px; }
+.xinxi h3{ font-size:12px; color:#666666; width:348px;  padding-bottom:8px; border-bottom:#A1A1A1 1px solid; margin-top:18px; padding-left:12px;}
+.xinxi ul li{ line-height:22px; clear:both; }
+.xinxi ul{ margin-top:10px; margin-left:20px;}
+.m_l{ text-align:right; width:130px; height:22px; display:block; float:left; }
+.m_r{ text-align:left}
+
+
+.queren{ width:72px; height:24px; background:url(/static/images/emile_button01.jpg) no-repeat; text-align:center; line-height:24px; margin-left:130px; margin-top:20px;}
+.queren:hover{ background:url(../images/emile_button_change.jpg) no-repeat;}

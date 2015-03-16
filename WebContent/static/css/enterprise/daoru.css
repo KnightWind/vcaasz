@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*导入用户页面样式*/
+.popup_box{ width:415px; height:auto; margin:0px auto; margin-top:10px;}
+.popup_box_top_left{ width:4px; height:30px; background:url(/static/images/Popup_header_left_bg.png) no-repeat; float:left;}
+.popup_box_top_center{ width:407px; height:30px; background:url(/static/images/Popup_header_center_bg.png) repeat-x; float:left; position:relative;}
+.popup_box_top_right{ width:4px; height:30px; background:url(/static/images/Popup_header_right_bg.png) no-repeat; float:left;}
+
+.popup_box_top_center h3{ line-height:30px; font-size:12px; padding-left:20px; color:#3F3F3F;}
+
+.popup_box_main{ width:415px; height:auto;}
+.popup_box_main_left{ width:4px; height:371px; background:url(/static/images/Popup_main_left_bg.png) repeat-y; float:left;}
+.popup_box_main_center{ width:407px; height:371px; background:#FFF; float:left;}
+.popup_box_main_right{ width:4px; height:371px; background:url(/static/images/Popup_main_right_bg.png) repeat-y; float:left;}
+
+.popup_box_bottom{ width:415px; height:4px;}
+.popup_box_bottom_left{ width:4px; height:4px; background:url(/static/images/Popup_bottom_left_bg.png) no-repeat; float:left;}
+.popup_box_bottom_center{ width:407px; height:4px; background:url(/static/images/Popup_bottom_center_bg.png) repeat-x; float:left;}
+.popup_box_bottom_right{ width:4px; height:4px; background:url(/static/images/Popup_bottom_right_bg.png) no-repeat; float:left;}
+.close_bg{ position:absolute; right:6px; float:left; top:6px;}
+.emile_01_bottom{ padding-top:10px;}
+.emile_01_bottom li span{ text-align:right; display:block; float:left; width:80px; line-height:22px;}
+.emile_01_bottom li{ margin-top:10px;}
+.emile_button{ margin-left:96px; width:72px; height:24px; background:url(/static/images/emile_button01.jpg) no-repeat; border:none; margin-top:5px;}
+.emile_button:hover{ background:url(/static/images/emile_button_change.jpg) no-repeat;}
+.emile_button02{ margin-left:115px; width:72px; height:24px; background:url(/static/images/emile_button01.jpg) no-repeat; border:none; margin-top:5px;}
+.emile_button02:hover{ background:url(/static/images/emile_button_change.jpg) no-repeat;}
+
+
+.text_a{ width:262px; height:22px; float:left; margin-left:30px;}
+.emile_01_bottom_a a{ line-height:22px; margin-left:10px;color:#1F6AA1;}
+
+.emile_01_bottom_a{ padding-top:10px;}
+.emile_01_bottom_a li span{ text-align:right; display:block; float:left; width:80px; line-height:22px;}
+.emile_01_bottom_a li{ margin-top:10px;}
+.emile_button_d{width:72px; height:24px; background:url(/static/images/emile_button01.jpg) no-repeat; border:none; position:absolute; margin-top:20px; margin-left:30px;}
+.emile_button_d:hover{ background:url(/static/images/emile_button_change.jpg) no-repeat;}
+.emile_button_f{ width:72px; height:24px; background:url(/static/images/emile_button01.jpg) no-repeat; border:none; margin-top:20px; float:right; margin-right:30px;}
+.emile_button_f:hover{ background:url(/static/images/emile_button_change.jpg) no-repeat;}
+
+.popup_box_main_a{ width:415px; height:160px;}
+.popup_box_main_a_left{ width:4px; height:160px; background:url(/static/images/Popup_main_left_bg.png) repeat-y; float:left;}
+.popup_box_main_a_center{ width:407px; height:160px; background:#FFF; float:left;}
+.popup_box_main_a_right{ width:4px; height:160px; background:url(/static/images/Popup_main_right_bg.png) repeat-y; float:left;}
+.red_star {position: relative;right: 5px;color: #FF0000}

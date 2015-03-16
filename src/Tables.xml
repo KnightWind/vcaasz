@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tables[
+<!ELEMENT tables (default, table*)>
+<!ELEMENT table (entity, name, primary-key, order-by?, field-maps?, datasource?, db-type?)>
+<!ELEMENT default (datasource?, db-type?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT primary-key (#PCDATA)>
+<!ELEMENT order-by (#PCDATA)>
+<!ELEMENT field-maps (map*)>
+<!ELEMENT map (field-name, var-name)>
+<!ELEMENT field-name (#PCDATA)>
+<!ELEMENT var-name (#PCDATA)>
+<!ENTITY copyright "www.libernate.net">
+]>
+<tables>
+	<default>
+		<datasource>libernate.datasource.bizconf.audio</datasource>
+		<db-type>mysql</db-type>
+	</default>
+	 
+	 <!-- RC的ip对照实体 -->
+	 <table>
+	 	<entity>com.bizconf.vcaasz.entity.RcIP</entity>
+	 	<name>t_rc_ip</name>
+	 	<primary-key>id</primary-key>
+		<order-by></order-by>
+	 </table>
+	 
+	 <!-- 数据中心实体 -->
+	 <table>
+	 	<entity>com.bizconf.vcaasz.entity.DataCenter</entity>
+	 	<name>t_data_center</name>
+	 	<primary-key>id</primary-key>
+		<order-by></order-by>
+	 </table>
+	 <!-- 账单实体 -->
+	 <table>
+		<entity>com.bizconf.vcaasz.entity.Billing</entity>
+		<name>t_billing</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	 
+	 <!-- 短信通知实体 -->
+	 <table>
+		<entity>com.bizconf.vcaasz.entity.SMSInfo</entity>
+		<name>t_sms_info</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	
+	 <!-- 接收zoom传递过来参数存放 -->
+	 <table>
+		<entity>com.bizconf.vcaasz.entity.ConfNotification</entity>
+		<name>t_conf_notification</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	 
+	 <!-- 会议报告详情 -->
+	 <table>
+		<entity>com.bizconf.vcaasz.entity.ConfReportInfo</entity>
+		<name>t_conf_report_info</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	 
+	<table>
+		<entity>com.bizconf.vcaasz.entity.ConfBase</entity>
+		<name>t_conf_base</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.ConfOuter</entity>
+		<name>t_conf_outer</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.ConfCycle</entity>
+		<name>t_conf_cycle</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.ConfTelConfig</entity>
+		<name>t_conf_tel_config</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.ConfUser</entity>
+		<name>t_conf_user</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.ConfLog</entity>
+		<name>t_conf_log</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	 
+	<table>
+		<entity>com.bizconf.vcaasz.entity.IpLocator</entity>
+		<name>t_ip_locator</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.SiteBase</entity>
+		<name>t_site_base</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.License</entity>
+		<name>t_license</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	
+	<table>
+		<entity>com.bizconf.vcaasz.entity.Empower</entity>
+		<name>t_empower</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	
+	<table>
+		<entity>com.bizconf.vcaasz.entity.Notice</entity>
+		<name>t_notice</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.EventLog</entity>
+		<name>t_event_log</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.EventContent</entity>
+		<name>t_event_content</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.LoginLog</entity>
+		<name>t_login_log</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.EmailTemplate</entity>
+		<name>t_email_template</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.EmailInfo</entity>
+		<name>t_email_info</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.EmailConfig</entity>
+		<name>t_email_config</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.ContactGroup</entity>
+		<name>t_contact_group</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.DefaultConfig</entity>
+		<name>t_default_config</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.Contacts</entity>
+		<name>t_contacts</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.SiteContacts</entity>
+		<name>t_site_contacts</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	
+	<table>
+		<entity>com.bizconf.vcaasz.entity.BizBilling</entity>
+		<name>t_biz_billing</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	 
+	<table>
+		<entity>com.bizconf.vcaasz.entity.UserBase</entity>
+		<name>t_user_base</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	
+	<table>
+		<entity>com.bizconf.vcaasz.entity.SystemUser</entity>
+		<name>t_system_user</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	
+	<table>
+		<entity>com.bizconf.vcaasz.entity.ValidCode</entity>
+		<name>t_valid_code</name>
+		<primary-key>code_key</primary-key>
+		<order-by></order-by>
+	</table>
+	
+	<table>
+		<entity>com.bizconf.vcaasz.entity.JoinRandom</entity>
+		<name>t_join_random</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	
+	<table>
+		<entity>com.bizconf.vcaasz.entity.SiteOrg</entity>
+		<name>t_site_org</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	<table>
+		<entity>com.bizconf.vcaasz.entity.MS</entity>
+		<name>t_ms</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	
+	<table>
+		<entity>com.bizconf.vcaasz.entity.MSGroup</entity>
+		<name>t_ms_group</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	
+	<table>
+		<entity>com.bizconf.vcaasz.entity.MsServer</entity>
+		<name>t_ms_server</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	
+	<table>
+		<entity>com.bizconf.vcaasz.entity.MSGroupMap</entity>
+		<name>t_ms_group_map</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	
+	<table>
+		<entity>com.bizconf.vcaasz.entity.MSSiteMap</entity>
+		<name>t_ms_site_map</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	
+	<table>
+		<entity>com.bizconf.vcaasz.entity.UserSiteMap</entity>
+		<name>t_user_site_map</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	
+	<table>
+		<entity>com.bizconf.vcaasz.entity.OuterUser</entity>
+		<name>t_outer_user</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	
+	<table>
+		<entity>com.bizconf.vcaasz.entity.ZoomDefaultConfig</entity>
+		<name>t_zoom_default_config</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	
+	<table>
+		<entity>com.bizconf.vcaasz.entity.ZoomConfRecord</entity>
+		<name>t_zoom_conf_record</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+	
+	<table>
+		<entity>com.bizconf.vcaasz.entity.ValidateUserTime</entity>
+		<name>t_validate_user_time</name>
+		<primary-key>id</primary-key>
+		<order-by></order-by>
+	</table>
+</tables>

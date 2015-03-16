@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+/* 页面头部样式 */
+body{ font-family:"宋体"; font-family:"Arial, Helvetica, sans-serif"; margin:0; padding:0; font-size:12px; }
+div,form,img,ul,ol,li,dl,dt,dd,input,h1,h2,h3,h4,h5,h6,span,p,table{margin:0; padding:0; border:0; }
+ul,li{ list-style:none; }
+a{ text-decoration:none; color:#333}
+
+
+
+/* 主体右部分样式 */
+#ss_text{ width:235px; height:24px; background:url(/static/images/sousuo_text.jpg) no-repeat; border:none;text-indent:5px;}
+#ss_text:hover{ background:url(/static/images/sousuo_textchange.jpg) no-repeat;}
+.ss_button{ width:37px; height:24px; background:url(/static/images/sousuo_button.jpg) no-repeat; margin-left:-6px; vertical-align:bottom;}
+.ss_button:hover{ background:url(/static/images/sousuo_button_change.jpg) no-repeat;}
+
+.main_right{ height:auto; width:100%;  min-width:757px; margin-right:10px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<757?"757px":"");overflow:auto;}
+.main_container{ height:560px; width:auto;  min-width:757px; _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<757?"757px":"");overflow:hidden;}
+/* 搜索框 */	
+.m_top{  width:auto; padding-top:16px;  color:#305872;}
+.make_new{ float:right;}
+.make_new a{ width:99px; height:25px; display:block; background:url(/static/images/jzbgchange.jpg) no-repeat; text-align:center; line-height:24px;color:#A1A1A1; color:#4B525A;}
+.make_new a:hover{ background:url(/static/images/jzbg.jpg) no-repeat; color:#2270A8;}
+#textfield01{width:236px; height:22px; font-size:12px; color:#AFAFAF; float:left; background:url(/static/images/text_bg.jpg) no-repeat; line-height:24px;}
+#textfield01:hover{ background:url(/static/images/text_bg_change.jpg) no-repeat;}
+.text_box{ width:380px; height:22px; float:left;color:#305872;}
+.text_box a{ color:#A1A1A1;}
+.gaoji{ margin-left:10px; vertical-align:bottom;}
+.gaoji:hover{ color:#33C; text-decoration:underline;}
+
+.change:hover{ background:#00F;}
+
+.zengjia{ width:99px; height:25px; background:url(/static/images/jzbgchange.jpg) no-repeat; display:block; text-align:center; line-height:25px; outline:none; margin-left: 10px;}
+.zengjia:hover{ background:url(/static/images/jzbg.jpg) no-repeat; color:#1F6AA1;}
+
+/* 表格 */
+
+.main_right{ width:98.6%; padding-left:10px;}
+#table_box{font-family:"Arial, Helvetica, sans-serif"; color:#73798E; margin-top:10px; }	
+.STYLE10 { font-size: 12px; background:url(/static/images/table_head_bg.jpg) repeat-x; text-align:center;}
+.STYLE10 img{ vertical-align:bottom;  _vertical-align:top;vertical-align:middle !important ; *margin-top:-2px; margin-left:5px; }
+.STYLE21 a{ color:#73798E;}
+
+.STYLE21 a:hover{ color:#2270A8; text-decoration:underline;}
+.table_bottom{ background:url(/static/images/table_bottom_bg.jpg) repeat-x; color:#5D6E78 ;}
+.table_bottom a{color:#5D6E78 }
+.table003 td{ border-right:#B5D7E6 1px solid; color:#305872;}
+.paixu01 span {
+	color:#305872;
+}
+.STYLE_none{ border-right:none;}
+.table005 td{border-bottom:#BED4E1 1px solid;}
+.table001 td{ border-bottom:#DCE7EF 1px solid;}
+.trMouseOver{ background-color:#EFEFEF; }
+.tr-hover { background-color:#E6F0F7;}
+.paixu01{ vertical-align:bottom;}
+.paixu02{ vertical-align:bottom;}
+.paixu03{ vertical-align:bottom;}
+
+
+
+.yema a{ outline:none;}
+.yema a:hover{color:#226EA7;}
+.table002{ border-right:#D6D6D6 1px solid; border-left:#D6D6D6 1px solid;}
+.page_shouye a{ width:36px; height:20px; border:#A8BFCE 1px solid; text-align:center; line-height:20px; outline:none; margin-right:5px; margin-left:5px; display:block;}
+.page_shouye a:hover{ border:#8EB9D8 1px solid;}
+.page_shouye01 a{ width:30px; height:20px; border:#A8BFCE 1px solid; text-align:center; line-height:20px; text-align:center; margin-right:15px;margin-left:5px;outline:none; display:block;}
+.page_shouye01 a:hover{ border:#8EB9D8 1px solid;}
+.page_next a{ width:46px; height:20px;border:#A8BFCE 1px solid; text-align:center; line-height:20px; margin-left:5px; margin-right:5px; display:block;}
+.page_next a:hover{ border:#8EB9D8 1px solid;}
+.page_shuzi{ text-align:center; line-height:20px; display:block;margin-right:5px;}
+.page_shuzi a{ display:block; width:16px; height:20px;border:#A8BFCE 1px solid; text-align:center; line-height:20px; float:left; margin-left:5px; font-family:Arial, Helvetica, sans-serif; display:block; }
+.page_shuzi a:link{border:#A8BFCE 1px solid; text-align:center; line-height:20px;}
+.page_shuzi a:hover{ color:#226EA7;border:#8EB9D8 1px solid;}
+
+
+
+	
+
+	
+	
+	
+	
+
+
+
+	
+	
+	
+	
+	
+
+
+
+	
+	

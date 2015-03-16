@@ -1,0 +1,371 @@
+/*=======================================*/
+/*	Alan Liu                             */
+/*	email:mingliu@bizconf.cn	         */
+/*	2013-07-23                           */
+/*=======================================*/
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+	width: 44%;
+}
+.form-item {
+	clear: both;
+}
+.form-item .input-text {
+	margin-right: 10px;
+}
+.form-item .form-required {
+    background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -14px -194px transparent;
+    height: 7px;
+    position: absolute;
+    width: 7px;	
+    top: 9px;
+}
+.form-item .form-tip {
+	background: none repeat scroll 0 0 #FFFFFF;
+    position: absolute;
+    top: 5px;
+    margin-left: 15px;
+}
+.input-text-show, .input-text-correct{
+	border: 1px solid #DADADA;
+	border-radius: 3px;
+	padding: 5px;
+	height: 16px;
+	box-shadow: 0 1px #f7f7f7 inset;
+}
+.input-text-focus{
+	border: 1px solid #8caac8;
+	border-radius: 3px;
+	padding: 5px;
+	height: 16px;
+	box-shadow: 0 0 5px #d6e2ed;
+}
+.input-text-error {
+	border: 1px solid #DADADA;
+	border-radius: 3px;
+	padding: 5px;
+	height: 16px;
+	box-shadow: 0 1px #f7f7f7 inset;	
+	border-color: #C56360;
+	background-color: #FAE2E2;
+	color: #C51500;
+}
+.personal-form .widget input[type=text]{
+	width: 250px;
+	margin-right: 20px;
+}
+.personal-form .widget input[type=password]{
+	width: 250px;
+	margin-right: 20px;
+}
+.join-secure-form .onCorrect{
+	display: none;
+}
+.form-tip {
+	position: absolute;
+	top: 5px;
+	background: #FFFFFF
+}
+
+.onCorrect {
+	margin-left: 0px;
+}
+.pass-forgot-form .email-widget input[type=text] {
+	height: 16px;
+    line-height: 16px;
+    padding: 11px 5px;
+    width: 330px;
+}
+
+.pass-forgot-form .captcha-widget input[type=text] {
+    height: 16px;
+    line-height: 16px;
+    padding: 11px 5px;
+    width: 135px;
+}
+
+.passwordResetForm .email-widget input[type=password] {
+	height: 16px;
+    line-height: 16px;
+    padding: 11px 5px;
+    width: 330px;
+}
+
+.passwordResetForm .captcha-widget input[type=text] {
+    height: 16px;
+    line-height: 16px;
+    padding: 11px 5px;
+    width: 135px;
+}
+.forget-box .form-item .error {
+	width: 100%;
+	display: block;
+}
+.forget-box .onError {
+	color: #C91600;
+	background: url("/assets/images/icons/icon_warn.png") no-repeat left center transparent;
+	line-height: normal;
+}
+.join-secure-form .error {
+	width: 390px;
+	color: #C51500;
+}
+.join-secure-form input[type=text] {
+	width:250px;
+}
+.join-secure-form input[type=password] {
+	width:250px;
+}
+
+#scheduleForm1 .input-text-show,#scheduleForm1 .input-text-focus,#scheduleForm1 .input-text-error,#scheduleForm1 .input-text-correct {
+	width: 360px;
+	margin-right: 20px;
+}
+.bydate .input-text-show,.bydate .input-text-focus,.bydate .input-text-error,.bydate .input-text-correct {
+	width: 35px;
+	height: 14px;
+}
+.endRepeat-tip {
+	position: relative;
+}
+.endRepeat-foreEver-tip {
+	position: relative;
+}
+.endRepeat-foreEver-tip .form-tip {
+	width: 300px;
+	left: 215px;
+	top: 8px;
+}
+.endRepeat-tip .form-tip {
+	margin-left: 10px;
+	width: 300px;
+}
+.endRepeat-tip .input-text-show,.endRepeat-tip .input-text-focus,.endRepeat-tip .input-text-error,.endRepeat-tip .input-text-correct {
+	width: 35px;
+	height: 14px;
+}
+.weekday-tip {
+	position: relative;
+}
+.cycleDayFlag-tip {
+	position: relative;
+	width: 400px;
+}
+.weekday-tip .onCorrect {
+	display: none;
+}
+.cycleDayFlag-tip .onCorrect {
+	display: none;
+}
+.eachmonth-tip {
+	position: relative;
+}
+.eachmonth-tip .form-tip {
+	width: 350px;
+	margin-left: 10px;
+}
+.eachmonth-tip .onCorrect{
+	display: none;
+}
+.meeting-dialog .ontime li{
+	height: 22px;
+	line-height: 22px;
+}
+.endRepeat-tip .form-tip {
+	top: 8px;
+}
+
+.duration-widget .form-tip {
+	margin-left: 15px;
+}
+.aheadtime-widget .form-tip {
+	margin-left: 10px;
+}
+.starttime-widget .form-tip{
+	margin-left: 20px;	
+}
+.endtime-widget .form-tip{
+	margin-left: 20px;	
+}
+.login-dialog .login-form .error .form-tip{
+	width: 385px;
+}
+.login-dialog .login-form .error .form-tip{
+	width: 385px;
+}
+#dangerAlert .onCorrect {
+	display: none;
+}
+.login-form #loginName {
+	background-image: url("/assets/images/sprite/vertical-icons.png");
+	background-repeat: no-repeat;
+	background-position: 12px 12px;
+    font-size: 14px;
+    padding: 10px 5px 10px 35px;
+    width: 358px;
+    height: 18px;
+}
+.login-form #loginPass {
+	background-image: url("/assets/images/sprite/vertical-icons.png");
+	background-repeat: no-repeat;
+	background-position: 12px -28px;
+    font-size: 14px;
+    padding: 10px 5px 10px 35px;
+    width: 358px;
+    height: 18px;
+}.aheadtime-widget .form-tip {
+	margin-left: 15px;
+}
+
+.form-content {
+	padding: 20px 30px;
+}
+.form-buttons {
+	background: none repeat scroll 0 0 #F7F7F7;
+    border-top: 1px solid #CCCCCC;
+    padding: 8px 10px;
+    position: relative;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+.manager-body {
+	height: 477px;
+	overflow: hidden;
+	background: #FFFFFF; 
+}
+.manager-body .form-content {
+	padding: 15px;
+}
+.saveAdminUserForm .form-body {
+	height: 430px;
+	overflow: hidden;
+}
+.manager-body .input-area {
+	width: 340px;
+	height: 65px;
+}
+.manager-body .input-text {
+	width: 180px;
+}
+.manager-body .form-item .required {
+	left: 200px;
+}
+.manager-body .form-tip {
+/* 	margin-left: 20px; */
+}
+.manager-body .anchor-cancel {
+	margin-left: 50px;
+}
+
+.saveUserForm .form-body {
+	height: 430px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: relative;
+}
+.noticeForm .form-body {
+	height: 430px;
+	overflow: hidden;
+}
+.noticeForm .input-text {
+	width: 370px;
+}
+.noticeForm .input-area {
+	width: 380px;
+	height: 260px;
+}
+.manager-body .form-item .notice-title-required {
+	left: 390px;	
+}
+.manager-body .form-item .notice-content-required {
+	left: 390px;	
+    background: url("/assets/images/sprite/icons.png") no-repeat scroll -14px -194px rgba(0, 0, 0, 0);
+    height: 7px;
+    position: absolute;
+    width: 7px;
+    bottom: 8px;
+}
+.noticeForm .remark-widget .count{
+	position: absolute;
+	color: #B0B0B0;
+}
+.form-remark-tip{
+    background: none repeat scroll 0 0 #FFFFFF;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 25px;
+}
+
+
+.hasDatepicker {
+    background: url("/assets/images/bg/year.png") no-repeat scroll 98px center #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 3px 3px 3px 3px;
+    font-family: "Microsoft Yahei","微软雅黑","宋体";
+    font-size: 12px;
+    padding: 5px 30px 5px 5px;
+    width: 85px;
+}.user-detail-dialog {
+	background: #FFF;
+}
+.user-detail-dialog .form-body {
+	padding: 15px 20px;
+	height: 360px;
+	overflow: hidden;
+}
+.user-detail-dialog .title {
+	width: 110px;
+}
+.user-detail-dialog .form-item {
+	height: 33px;
+	line-height: 33px;
+	margin-bottom: 0px;
+	border-bottom: 1px dashed #E0E0E0;
+}
+.user-detail-dialog .form-item .widget {
+	width: 250px;
+	white-space:nowrap; 
+    overflow: hidden;
+    text-overflow:ellipsis;
+    margin-left: 130px;
+}
+
+.sys-login-box{
+	position: relative;
+}
+.sys-login-box .error{
+	position: absolute;
+	left: 170px;
+	top: 190px;
+	width: 350px;
+}
+.sys-login-box .error .form-tip {
+	background: #26354C;
+	width: 350px;
+}
+.sys-login-box .onError {
+	background: url("/assets/images/icons/icon_warn_s.png") no-repeat scroll 0 0 transparent;	
+}
+.form-item .area-widget .form-required {
+	top: 50px;
+}
+.form-item .area-widget .form-tip {
+	top: 45px;
+}
+
+/*公告*/
+.notice-content .form-item .title {
+	width: 123px;
+}
+.notice-content .form-item .widget {
+	margin-left: 135px;
+}
+.notice-area-widget .form-required {
+	top: 260px;
+}
+.notice-area-widget .form-tip {
+	top: 250px;
+}
+.notice-content .form-item .input-text {
+	width: 360px;
+}

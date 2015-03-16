@@ -1,0 +1,3845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!-- 公用资源 Begin -->
+
+	<resource>
+		<key>website.site.name</key>
+		<value>数据会议企业管理平台</value>
+	</resource>
+	<resource>
+		<key>website.common.msg.list.nodata</key>
+		<value>抱歉，没有找到符合条件的记录</value>
+	</resource>
+
+
+
+
+	<!-- 分页 Begin -->
+	<resource>
+		<key>website.pagination.first</key>
+		<value>首页</value>
+	</resource>
+	<resource>
+		<key>website.pagination.previous</key>
+		<value>上一页</value>
+	</resource>
+	<resource>
+		<key>website.pagination.next</key>
+		<value>下一页</value>
+	</resource>
+	<resource>
+		<key>website.pagination.end</key>
+		<value>尾页</value>
+	</resource>
+	<resource>
+		<key>website.pagination.jump</key>
+		<value>跳到</value>
+	</resource>
+	<resource>
+		<key>website.pagination.jumpbtn</key>
+		<value>跳转</value>
+	</resource>
+	<resource>
+		<key>website.pagination.word.total</key>
+		<value>共</value>
+	</resource>
+	<resource>
+		<key>website.pagination.word.be</key>
+		<value>有</value>
+	</resource>
+	<resource>
+		<key>website.pagination.word.page</key>
+		<value>页</value>
+	</resource>
+	<resource>
+		<key>website.pagination.word.record</key>
+		<value>记录</value>
+	</resource>
+	<resource>
+		<key>website.pagination.word.item</key>
+		<value>条</value>
+	</resource>
+	<!-- 分页 End -->
+
+	<!-- 公用资源 End -->
+
+	<!-- 系统管理员菜单 -->
+	<resource>
+		<key>system.menu.config</key>
+		<value>系统配置</value>
+	</resource>
+	<resource>
+		<key>system.menu.config.user</key>
+		<value>用户管理</value>
+	</resource>
+	<resource>
+		<key>system.menu.config.sysUser</key>
+		<value>系统管理员管理</value>
+	</resource>
+	<resource>
+		<key>system.menu.config.host</key>
+		<value>邮件服务器设置</value>
+	</resource>
+	<resource>
+		<key>system.menu.config.template</key>
+		<value>邮件模板设置</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.site.manage</key>
+		<value>站点管理</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.site.list</key>
+		<value>站点信息</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.site.infoManage</key>
+		<value>企业信息管理</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.notice.manage</key>
+		<value>公告管理</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.notice.list</key>
+		<value>公告信息</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.info.list</key>
+		<value>信息查询</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.info.meeting</key>
+		<value>会议信息</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.info.log.sysManager</key>
+		<value>系统管理员日志</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.info.log.userManager</key>
+		<value>企业管理员日志</value>
+	</resource>
+	<resource>
+		<key>system.menu.info.log.userOperator</key>
+		<value>用户操作日志</value>
+	</resource>
+	<resource>
+		<key>system.menu.info.log.billSearch</key>
+		<value>账单查询</value>
+	</resource>
+	<resource>
+		<key>system.menu.info.user.manage</key>
+		<value>个人信息管理</value>
+	</resource>
+	<!-- 企业管理员菜单 -->
+	<resource>
+		<key>company.menu.admin.user</key>
+		<value>企业管理员</value>
+	</resource>	
+	<resource>
+		<key>company.menu.admin.manage</key>
+		<value>企业管理员管理</value>
+	</resource>
+	<resource>
+		<key>company.menu.user.manage</key>
+		<value>企业用户管理</value>
+	</resource>
+	<resource>
+		<key>company.menu.meeting.permissions</key>
+		<value>会议功能设置</value>
+	</resource>	
+
+	<!-- 系统用户登录 -->
+	<resource>
+		<key>system.login.name</key>
+		<value>登录名</value>
+	</resource>
+	<resource>
+		<key>system.login.password</key>
+		<value>密码</value>
+	</resource>
+	<resource>
+		<key>system.login.error.1</key>
+		<value>用户名或密码错误</value>
+	</resource>
+	<resource>
+		<key>system.login.error.2</key>
+		<value>用户名或密码错误</value>
+	</resource>
+	<resource>
+		<key>system.login.error.3</key>
+		<value>您的账号已被冻结，请与您的企业管理员联系。</value>
+	</resource>
+	<resource>
+		<key>system.login.error.4</key>
+		<value>验证码输入错误</value>
+	</resource>
+	<resource>
+		<key>system.login.error.99</key>
+		<value>登录失败</value>
+	</resource>
+
+	<!-- 系统管理员管理 -->
+	<!-- 系统管理员列表 -->
+	<resource>
+		<key>system.sysUser.list.system.user.title</key>
+		<value>新建系统管理员</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.list.loginName</key>
+		<value>登录名</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.list.loginPass</key>
+		<value>密码</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.list.userName</key>
+		<value>用户名</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.list.enName</key>
+		<value>英文名</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.list.email</key>
+		<value>邮箱</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.list.telephone</key>
+		<value>电话</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.list.remark</key>
+		<value>备注</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.list.operate</key>
+		<value>操作</value>
+	</resource>
+	<!-- 系统管理员操作 -->
+	<resource>
+		<key>system.sysUser.list.addUser</key>
+		<value>添加管理员</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.list.changeUser</key>
+		<value>修改管理员</value>
+	</resource>
+	
+	<resource>
+		<key>system.admin.adduser</key>
+		<value>添加用户</value>
+	</resource>
+	<!-- 系统管理员操作提示 -->
+	<resource>
+		<key>system.sysUser.list.delete</key>
+		<value>确认是否删除系统管理员?</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.delete.1</key>
+		<value>删除系统管理员成功</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.delete.2</key>
+		<value>删除系统管理员失败</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.loginName.input</key>
+		<value>请输入登录名</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.trueName.input</key>
+		<value>请输入用户名</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.loginPass.input</key>
+		<value>请输入密码</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.enName.input</key>
+		<value>请输入英文名</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.email.input</key>
+		<value>请输入邮件</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.telphone.input</key>
+		<value>请输入电话</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.remark.maxlength</key>
+		<value>不能超过256个字符</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.loginName.rangelength</key>
+		<value>长度为4~16个字符</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.trueName.rangelength</key>
+		<value>长度为1~32个字符</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.loginPass.rangelength</key>
+		<value>长度为6~16个字符</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.enname.rangelength</key>
+		<value>长度为1~32个字符</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.email.rangelength</key>
+		<value>长度为6~32个字符</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.mobile.rangelength</key>
+		<value>长度为4~32个字符</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.email.custom</key>
+		<value>请输入正确的邮件格式</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.mobile.custom</key>
+		<value>请输入正确的电话格式</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.checkLoginName.custom</key>
+		<value>只允许数字、字母</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.checkUserName.custom</key>
+		<value>只允许数字、字母、&apos;&amp;&apos;、&apos;&#45;&apos;、&apos;&#95;&apos;</value>
+	</resource>
+	<resource>
+		<key>system.sysUser.checkEnName.custom</key>
+		<value>只允许数字、字母、&apos;&amp;&apos;、&apos;&#45;&apos;、&apos;&#95;&apos;</value>
+	</resource>
+	<!-- 站点管理 -->
+	<!-- 站点状态 -->
+	<resource>
+		<key>site.type.0</key>
+		<value>全部</value>
+	</resource>
+	<resource>
+		<key>site.type.1</key>
+		<value>正式</value>
+	</resource>
+	<resource>
+		<key>site.type.2</key>
+		<value>试用</value>
+	</resource>
+<<<<<<< HEAD
+=======
+	
+		<!-- 站点状态 -->
+	<resource>
+		<key>site.type.0</key>
+		<value>全部</value>
+	</resource>
+	<resource>
+		<key>site.type.1</key>
+		<value>正式</value>
+	</resource>
+	<resource>
+		<key>site.type.2</key>
+		<value>试用</value>
+	</resource>
+		<resource>
+		<key>site.status.0</key>
+		<value>全部</value>
+	</resource>
+	<resource>
+		<key>site.status.1</key>
+		<value>正常</value>
+	</resource>
+	<resource>
+		<key>site.status.2</key>
+		<value>锁定</value>
+	</resource>
+		<resource>
+		<key>site.hire.0</key>
+		<value>全部</value>
+	</resource>
+	<resource>
+		<key>site.hire.1</key>
+		<value>包月</value>
+	</resource>
+	<resource>
+		<key>site.hire.2</key>
+		<value>计时</value>
+	</resource>
+	
+	<!-- 修改站点管理员个人信息 end-->
+		<!-- 站点列表 -->
+		<resource>
+			<key>system.site.list.CompanyInfo</key>
+			<value>Company Info</value>
+		</resource>
+		<resource>
+			<key>system.site.list.AuthorizationInfo</key>
+			<value>Authorization Info</value>
+		</resource>
+		<resource>
+			<key>system.site.list.AdminInfo</key>
+			<value>Administrator Info</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Complete</key>
+			<value>Complete</value>
+		</resource>
+		<resource>
+			<key>system.site.list.CompanyName</key>
+			<value>Site Name</value>
+		</resource>
+		<resource>
+			<key>system.site.list.EnglishName</key>
+			<value>English Name</value>
+		</resource>
+		<resource>
+			<key>system.site.list.CompanyLogo</key>
+			<value>Company Logo</value>
+		</resource>
+		<resource>
+			<key>system.site.list.SiteSign</key>
+			<value>Site Sign</value>
+		</resource>
+		<resource>
+			<key>system.site.list.SiteFlag</key>
+			<value>Site Type</value>
+		</resource>
+				<resource>
+					<key>system.site.list.SiteFlag.official</key>
+					<value>Official</value>
+				</resource>
+				<resource>
+					<key>system.site.list.SiteFlag.trial</key>
+					<value>Trial</value>
+				</resource>
+		<resource>
+			<key>system.site.list.License</key>
+			<value>License</value>
+		</resource>
+		<resource>
+			<key>system.site.list.hireMode</key>
+			<value>Hire Mode</value>
+		</resource>
+				<resource>
+					<key>system.site.list.hireMode.month</key>
+					<value>Month</value>
+				</resource>
+				<resource>
+					<key>system.site.list.hireMode.minutes</key>
+					<value>Minutes</value>
+				</resource>
+		<resource>
+			<key>system.site.list.chargeMode</key>
+			<value>chargeMode</value>
+		</resource>	
+		<resource>
+			<key>system.site.list.chargeMode.Name Host</key>
+			<value>Name Host</value>
+		</resource>
+		<resource>
+			<key>system.site.list.chargeMode.Active User</key>
+			<value>Active User</value>
+		</resource>
+		<resource>
+			<key>system.site.list.chargeMode.Seats</key>
+			<value>Seats</value>
+		</resource>	
+		<resource>
+			<key>system.site.list.chargeMode.time</key>
+			<value>time</value>
+		</resource>
+		<resource>
+			<key>system.site.list.effedate</key>
+			<value>EffeDate</value>
+		</resource>
+		<resource>
+			<key>system.site.list.ExpireDate</key>
+			<value>Expire Date</value>
+		</resource>
+		<resource>
+			<key>system.site.list.UserName</key>
+			<value>User Name</value>
+		</resource>
+		<resource>
+			<key>system.site.list.EnName</key>
+			<value>English Name</value>
+		</resource>			
+		<resource>
+			<key>system.site.list.LoginName</key>
+			<value>LoginName</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Password</key>
+			<value>Password</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Email</key>
+			<value>Email</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Phone</key>
+			<value>Phone</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Remark</key>
+			<value>Remark</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Status</key>
+			<value>Site Status</value>
+		</resource>
+				<resource>
+					<key>system.site.list.Status.normal</key>
+					<value>Normal</value>
+				</resource>
+				<resource>
+					<key>system.site.list.Status.lock</key>
+					<value>Lock</value>
+				</resource>
+				<resource>
+					<key>system.site.list.Status.unlock</key>
+					<value>Unlock</value>
+				</resource>
+
+		
+		<!-- 站点操作 -->
+		<resource>
+			<key>system.site.list.create</key>
+			<value>New Site</value>
+		</resource>
+		<resource>
+			<key>system.site.list.update</key>
+			<value>Change Site</value>
+		</resource>
+		<resource>
+			<key>system.site.delete</key>
+			<value>Confirm to delete?</value>
+		</resource>
+		<resource>
+			<key>system.site.delete.1</key>
+			<value>Delete site succeed!</value>
+		</resource>
+		<resource>
+			<key>system.site.delete.2</key>
+			<value>Delete site failed!</value>
+		</resource>		
+		<resource>
+			<key>system.site.unlock</key>
+			<value>Unlock site?</value>
+		</resource>
+		<resource>
+			<key>system.site.unlock.1</key>
+			<value>Unlock site succeed!</value>
+		</resource>
+		<resource>
+			<key>system.site.unlock.2</key>
+			<value>Unlock site failed!</value>
+		</resource>
+		<resource>
+			<key>system.site.lock</key>
+			<value>Lock site?</value>
+		</resource>
+		<resource>
+			<key>system.site.lock.1</key>
+			<value>lock site succeed!</value>
+		</resource>
+		<resource>
+			<key>system.site.lock.2</key>
+			<value>lock site failed!</value>
+		</resource>
+		<resource>
+			<key>system.site.save</key>
+			<value>Saving Data...</value>
+		</resource>
+		<resource>
+			<key>system.site.change</key>
+			<value>Changing Data...</value>
+		</resource>
+		<resource>
+			<key>system.site.create.success</key>
+			<value>Registered successfully!</value>
+		</resource>
+		<resource>
+			<key>system.site.update.success</key>
+			<value>Updated successfully!</value>
+		</resource>
+		<resource>
+			<key>system.site.update.sendemail</key>
+			<value>Through the mail to inform administrators！</value>
+		</resource>	
+		<resource>
+			<key>system.site.update.error.-1</key>
+			<value>License not enough！</value>
+		</resource>				
+	<!-- 站点操作提示 -->
+		<resource>
+			<key>system.site.search.info</key>
+			<value>Search By Name Or Sign</value>
+		</resource>
+		<resource>
+			<key>system.site.list.CompanyName.input</key>
+			<value>Please input Company Name</value>
+		</resource>
+		<resource>
+			<key>system.site.list.EnglishName.input</key>
+			<value>Please input English Name</value>
+		</resource>
+		<resource>
+			<key>system.site.list.SiteSign.input</key>
+			<value>Please input Site Sign</value>
+		</resource>
+		
+				
+		<resource>
+			<key>system.site.list.License.input</key>
+			<value>Please input License</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Effedate.input</key>
+			<value>Please input Effedate Date</value>
+		</resource>
+		<resource>
+			<key>system.site.list.ExpireDate.input</key>
+			<value>Please input Expire Date</value>
+		</resource>
+		<resource>
+			<key>system.site.list.UserName.input</key>
+			<value>Please input User Name</value>
+		</resource>
+		<resource>
+			<key>system.site.list.enName.input</key>
+			<value>Please input English Name</value>
+		</resource>		
+		<resource>
+			<key>system.site.list.LoginName.input</key>
+			<value>Please input Login Name</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Password.input</key>
+			<value>Please input password</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Email.input</key>
+			<value>Please input Email</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Phone.input</key>
+			<value>Please input Phone</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Remark.input</key>
+			<value>Please input Remark</value>
+		</resource>
+>>>>>>> 06d17e7bb8e9cd1e503fe6e321170b1dca286bea
+		<resource>
+		<key>site.status.0</key>
+		<value>全部</value>
+	</resource>
+	<resource>
+		<key>site.status.1</key>
+		<value>正常</value>
+	</resource>
+	<resource>
+		<key>site.status.2</key>
+		<value>锁定</value>
+	</resource>
+	
+	
+	<!-- 站点列表 -->
+	<resource>
+		<key>system.site.list.CompanyInfo</key>
+		<value>企业站点信息</value>
+	</resource>
+	<resource>
+		<key>system.site.list.AuthorizationInfo</key>
+		<value>商务授权信息</value>
+	</resource>
+	<resource>
+		<key>system.site.list.AdminInfo</key>
+		<value>管理员信息</value>
+	</resource>
+	<resource>
+		<key>system.site.list.Complete</key>
+		<value>添加完成</value>
+	</resource>
+	<resource>
+		<key>system.site.list.CompanyName</key>
+		<value>企业名称</value>
+	</resource>
+	<resource>
+		<key>system.site.list.EnglishName</key>
+		<value>英文名称</value>
+	</resource>
+	<resource>
+		<key>system.site.list.CompanyLogo</key>
+		<value>企业LOGO</value>
+	</resource>
+	<resource>
+		<key>system.site.list.SiteSign</key>
+		<value>企业标识</value>
+	</resource>
+	<resource>
+		<key>system.site.list.SiteFlag</key>
+		<value>站点类型</value>
+	</resource>
+	<resource>
+		<key>system.site.list.SiteFlag.official</key>
+		<value>正式</value>
+	</resource>
+	<resource>
+		<key>system.site.list.SiteFlag.trial</key>
+		<value>试用</value>
+	</resource>
+	<resource>
+		<key>system.site.list.License</key>
+		<value>最大方数</value>
+	</resource>
+	<resource>
+		<key>system.site.list.hireMode</key>
+		<value>租用模式</value>
+	</resource>
+	<resource>
+		<key>system.site.list.hireMode.month</key>
+		<value>包月</value>
+	</resource>
+	<resource>
+		<key>system.site.list.hireMode.minutes</key>
+		<value>计时</value>
+	</resource>
+	<resource>
+		<key>system.site.list.chargeMode</key>
+		<value>计费类型</value>
+	</resource>
+	<resource>
+		<key>system.site.list.chargeMode.Name Host</key>
+		<value>Name Host</value>
+	</resource>
+	<resource>
+		<key>system.site.list.chargeMode.Active User</key>
+		<value>Active User</value>
+	</resource>
+	<resource>
+		<key>system.site.list.chargeMode.Seats</key>
+		<value>Seats</value>
+	</resource>
+	<resource>
+		<key>system.site.list.chargeMode.time</key>
+		<value>time</value>
+	</resource>
+	<resource>
+		<key>system.site.list.effedate</key>
+		<value>生效时间</value>
+	</resource>
+	<resource>
+		<key>system.site.list.ExpireDate</key>
+		<value>到期时间</value>
+	</resource>
+	<resource>
+		<key>system.site.list.UserName</key>
+		<value>用户名</value>
+	</resource>
+	<resource>
+		<key>system.site.list.EnName</key>
+		<value>英文名</value>
+	</resource>
+	<resource>
+		<key>system.site.list.LoginName</key>
+		<value>登录名</value>
+	</resource>
+	<resource>
+		<key>system.site.list.Password</key>
+		<value>密码</value>
+	</resource>
+	<resource>
+		<key>system.site.list.Email</key>
+		<value>邮箱</value>
+	</resource>
+	<resource>
+		<key>system.site.list.Phone</key>
+		<value>电话</value>
+	</resource>
+	<resource>
+		<key>system.site.list.Remark</key>
+		<value>备注</value>
+	</resource>
+	<resource>
+		<key>system.site.list.Status</key>
+		<value>状态</value>
+	</resource>
+	<resource>
+		<key>system.site.list.Status.normal</key>
+		<value>正常</value>
+	</resource>
+	<resource>
+		<key>system.site.list.Status.lock</key>
+		<value>锁定</value>
+	</resource>
+	<resource>
+		<key>system.site.list.Status.unlock</key>
+		<value>解锁</value>
+	</resource>
+	
+	<resource>
+		<key>system.site.empower.item.1</key>
+		<value>电话功能</value>
+	</resource>
+	<resource>
+		<key>system.site.empower.item.2</key>
+		<value>自动外呼</value>
+	</resource>
+	<resource>
+		<key>system.site.empower.item.3</key>
+		<value>媒体共享</value>
+	</resource>
+	<resource>
+		<key>system.site.empower.item.4</key>
+		<value>录制</value>
+	</resource>
+	<resource>
+		<key>system.site.empower.item.5</key>
+		<value>文档共享</value>
+	</resource>
+	<resource>
+		<key>system.site.empower.item.6</key>
+		<value>屏幕共享</value>
+	</resource>
+	<resource>
+		<key>system.site.empower.item.7</key>
+		<value>白板</value>
+	</resource>
+	<resource>
+		<key>system.site.empower.item.8</key>
+		<value>笔记</value>
+	</resource>
+	<resource>
+		<key>system.site.empower.item.9</key>
+		<value>视频</value>
+	</resource>
+	<resource>
+		<key>system.site.empower.item.10</key>
+		<value>音频</value>
+	</resource>
+	<resource>
+		<key>system.site.empower.item.11</key>
+		<value>公告</value>
+	</resource>
+	<resource>
+		<key>system.site.empower.item.12</key>
+		<value>文件传输</value>
+	</resource>
+	<resource>
+		<key>system.site.empower.item.13</key>
+		<value>调查问卷</value>
+	</resource>
+	
+
+	<!-- 站点操作 -->
+	<resource>
+		<key>system.site.list.create</key>
+		<value>创建站点</value>
+	</resource>
+	<resource>
+		<key>system.site.list.update</key>
+		<value>修改站点</value>
+	</resource>
+	<resource>
+		<key>system.site.delete</key>
+		<value>确定要删除站点吗？</value>
+	</resource>
+	<resource>
+		<key>system.site.delete.1</key>
+		<value>删除站点成功</value>
+	</resource>
+	<resource>
+		<key>system.site.delete.2</key>
+		<value>删除站点失败</value>
+	</resource>
+	<resource>
+		<key>system.site.unlock</key>
+		<value>确定要解锁站点吗？</value>
+	</resource>
+	<resource>
+		<key>system.site.unlock.1</key>
+		<value>解锁站点成功</value>
+	</resource>
+	<resource>
+		<key>system.site.unlock.2</key>
+		<value>解锁站点失败</value>
+	</resource>
+	<resource>
+		<key>system.site.lock</key>
+		<value>确定要锁定站点吗？</value>
+	</resource>
+	<resource>
+		<key>system.site.lock.1</key>
+		<value>锁定站点成功</value>
+	</resource>
+	<resource>
+		<key>system.site.lock.2</key>
+		<value>锁定站点失败</value>
+	</resource>
+	<resource>
+		<key>system.site.save</key>
+		<value>保存数据...</value>
+	</resource>
+	<resource>
+		<key>system.site.change</key>
+		<value>修改数据...</value>
+	</resource>
+	<resource>
+		<key>system.site.create.success</key>
+		<value>恭喜您，注册成功！</value>
+	</resource>
+	<resource>
+		<key>system.site.update.success</key>
+		<value>恭喜您，修改成功！</value>
+	</resource>	
+	<resource>
+		<key>system.site.update.sendemail</key>
+		<value>通过邮件通知管理员！</value>
+	</resource>		
+	<resource>
+		<key>system.site.update.error.-1</key>
+		<value>系统所剩 License 数不足！</value>
+	</resource>		
+	<!-- 修改站点管理员个人信息 begin-->
+	<resource>
+		<key>system.admin.profile.orgpass</key>
+		<value>原始密码</value>
+	</resource>
+	
+	<resource>
+		<key>system.admin.index.createadmin</key>
+		<value>创建管理员</value>
+	</resource>
+	<resource>
+		<key>system.admin.index.createuser</key>
+		<value>创建用户</value>
+	</resource>
+	<resource>
+		<key>system.admin.index.updateuser</key>
+		<value>修改用户</value>
+	</resource>
+	<resource>
+		<key>system.admin.index.updateadmin</key>
+		<value>修改管理员</value>
+	</resource>
+	
+	<resource>
+		<key>admin.user.loginname</key>
+		<value>登录名</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.showinfo1</key>
+		<value>不修改保持为空</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.msg1</key>
+		<value>登录名必填</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.msg8</key>
+		<value>用户名必填</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.msg2</key>
+		<value>英文名必填</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.msg3</key>
+		<value>原始密码必填</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.msg4</key>
+		<value>密码必填</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.msg5</key>
+		<value>确认密码必填</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.msg6</key>
+		<value>邮件必填</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.msg7</key>
+		<value>请输入电话号码</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.alertinfo1</key>
+		<value>长度为4~16个字符</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.alertinfo2</key>
+		<value>长度为6~16个字符</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.alertinfo3</key>
+		<value>长度为6~32个字符</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.alertinfo4</key>
+		<value>4~32个字符</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.alertinfo5</key>
+		<value>登录号已存在</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.alertinfo6</key>
+		<value>只允许数字、字母</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.alertinfo7</key>
+		<value>请输入正确的邮件格式</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.alertinfo8</key>
+		<value>两次输入密码必须一致</value>
+	</resource>
+	<!-- 修改站点管理员个人信息 end-->
+	
+	<!-- 站点操作提示 -->
+	<resource>
+		<key>system.site.search.info</key>
+		<value>请输入企业名称，企业标识进行查询...</value>
+	</resource>
+	<resource>
+		<key>system.site.list.CompanyName.input</key>
+		<value>请输入企业名称</value>
+	</resource>
+	<resource>
+		<key>system.site.list.EnglishName.input</key>
+		<value>请输入英文名称</value>
+	</resource>
+	<resource>
+		<key>system.site.list.SiteSign.input</key>
+		<value>请输入企业标识</value>
+	</resource>
+	<resource>
+		<key>system.site.list.License.input</key>
+		<value>请输入最大参会方数</value>
+	</resource>
+	<resource>
+		<key>system.site.list.Effedate.input</key>
+		<value>请输入生效时间</value>
+	</resource>
+	<resource>
+		<key>system.site.list.ExpireDate.input</key>
+		<value>请输入到期时间</value>
+	</resource>
+	<resource>
+		<key>system.site.list.UserName.input</key>
+		<value>请输入用户名</value>
+	</resource>
+	<resource>
+		<key>system.site.list.enName.input</key>
+		<value>请输入英文名</value>
+	</resource>
+	<resource>
+		<key>system.site.list.LoginName.input</key>
+		<value>请输入登录名</value>
+	</resource>
+	<resource>
+		<key>system.site.list.Password.input</key>
+		<value>请输入密码</value>
+	</resource>
+	<resource>
+		<key>system.site.list.Email.input</key>
+		<value>请输入邮箱</value>
+	</resource>
+	<resource>
+		<key>system.site.list.Phone.input</key>
+		<value>请输入电话</value>
+	</resource>
+	<resource>
+		<key>system.site.list.Remark.input</key>
+		<value>请输入备注</value>
+	</resource>
+	<resource>
+		<key>system.site.list.Integer.input</key>
+		<value>请输入整数</value>
+	</resource>
+	<resource>
+		<key>system.site.list.CorrectDate.input</key>
+		<value>请输入正确的日期格式</value>
+	</resource>
+	<resource>
+		<key>system.site.list.CorrectEmail.input</key>
+		<value>请输入正确的邮箱地址</value>
+	</resource>
+	<resource>
+		<key>system.site.list.siteSign.remote</key>
+		<value>站点标识已经存在!</value>
+	</resource>
+	<resource>
+		<key>system.site.list.loginName.remote</key>
+		<value>登录名已经存在!</value>
+	</resource>
+	<resource>
+		<key>system.site.list.userEmail.remote</key>
+		<value>邮箱已经存在!</value>
+	</resource>
+	<resource>
+		<key>system.site.list.loginNmaePasswd.remote</key>
+		<value>密码不可与登录名相同!</value>
+	</resource>
+	<resource>
+		<key>system.site.list.remark.maxlength</key>
+		<value>不能超过256个字符</value>
+	</resource>
+	<resource>
+		<key>system.site.list.siteName.rangelength</key>
+		<value>长度为4~32个字符</value>
+	</resource>
+	<resource>
+		<key>system.site.list.enName.rangelength</key>
+		<value>长度为4~64个字符</value>
+	</resource>
+	<resource>
+		<key>system.site.list.siteSign.rangelength</key>
+		<value>长度为1~32个字符</value>
+	</resource>
+	<resource>
+		<key>system.site.list.clientName.rangelength</key>
+		<value>长度为1~32个字符</value>
+	</resource>
+	<resource>
+		<key>system.site.list.loginName.rangelength</key>
+		<value>长度为4~16个字符</value>
+	</resource>
+	<resource>
+		<key>system.site.list.loginPass.rangelength</key>
+		<value>长度为6~16个字符</value>
+	</resource>
+	<resource>
+		<key>system.site.list.userEmail.rangelength</key>
+		<value>长度为6~32个字符</value>
+	</resource>
+	<resource>
+		<key>system.site.list.mobile.rangelength</key>
+		<value>长度为4~32个字符</value>
+	</resource>
+	<resource>
+		<key>system.site.list.checkSiteName.custom</key>
+		<value>只允许中文、数字、字母、&apos;&amp;&apos;、&apos;&#45;&apos;、&apos;&#95;&apos;</value>
+	</resource>
+	<resource>
+		<key>system.site.list.checkEnName.custom</key>
+		<value>只允许数字、字母、&apos;&amp;&apos;、&apos;&#45;&apos;、&apos;&#95;&apos;、&apos;空格&apos;</value>
+	</resource>
+	<resource>
+		<key>system.site.list.checkSiteSign.custom</key>
+		<value>只允许数字、字母、&apos;&#45;&apos;</value>
+	</resource>
+	<resource>
+		<key>system.site.list.checkUserName.custom</key>
+		<value>只允许数字、字母、&apos;&amp;&apos;、&apos;&#45;&apos;、&apos;&#95;&apos;</value>
+	</resource>
+	<resource>
+		<key>system.site.list.checkLoginName.custom</key>
+		<value>只允许数字、字母</value>
+	</resource>
+	<resource>
+		<key>system.site.list.checkMobile.custom</key>
+		<value>请输入正确的电话格式</value>
+	</resource>
+	<resource>
+		<key>system.site.list.mobile.custom</key>
+		<value>请输入正确的电话格式</value>
+	</resource>
+	<resource>
+		<key>system.site.list.endDate.custom</key>
+		<value>结束日期必须大于开始日期!</value>
+	</resource>
+	
+	
+	<resource>
+		<key>system.site.meaasge.create.succeed</key>
+		<value>创建站点成功</value>
+	</resource>
+	<resource>
+		<key>system.site.meaasge.create.failed</key>
+		<value>创建站点失败!</value>
+	</resource>
+	<resource>
+		<key>system.site.meaasge.update.succeed</key>
+		<value>修改站点成功</value>
+	</resource>
+	<resource>
+		<key>system.site.meaasge.update.failed</key>
+		<value>修改站点失败!</value>
+	</resource>
+	<resource>
+		<key>system.site.meaasge.lookup</key>
+		<value>查看站点信息</value>
+	</resource>
+	
+	<!-- 公告管理 -->
+	<!-- 公告列表 -->
+	<resource>
+		<key>system.notice.list.Title</key>
+		<value>公告主题</value>
+	</resource>
+	<resource>
+		<key>system.notice.list.creator</key>
+		<value>发布者</value>
+	</resource>
+	<resource>
+		<key>system.notice.list.Contents</key>
+		<value>公告内容</value>
+	</resource>
+	<resource>
+		<key>system.notice.list.StartTime</key>
+		<value>发布时间</value>
+	</resource>
+	<resource>
+		<key>system.notice.list.StopTime</key>
+		<value>到期时间</value>
+	</resource>
+	<resource>
+		<key>system.notice.list.Create</key>
+		<value>添加公告</value>
+	</resource>
+	<resource>
+		<key>system.notice.list.Create.1</key>
+		<value>添加公告成功</value>
+	</resource>
+	<resource>
+		<key>system.notice.list.Create.2</key>
+		<value>添加公告失败</value>
+	</resource>
+	<resource>
+		<key>system.notice.list.Update</key>
+		<value>修改公告</value>
+	</resource>
+	<resource>
+		<key>system.notice.list.Update.1</key>
+		<value>修改公告成功</value>
+	</resource>
+	<resource>
+		<key>system.notice.list.Update.2</key>
+		<value>修改公告失败</value>
+	</resource>
+	<!-- 公告操作 -->
+	<resource>
+		<key>system.notice.delete</key>
+		<value>确定要删除公告吗？</value>
+	</resource>
+	<resource>
+		<key>system.siteadmin.delete</key>
+		<value>确定要删除企业管理员吗？</value>
+	</resource>
+	<resource>
+		<key>system.notice.delete.1</key>
+		<value>删除公告成功</value>
+	</resource>
+	<resource>
+		<key>system.notice.delete.2</key>
+		<value>删除公告失败</value>
+	</resource>
+	<resource>
+		<key>system.notice.title.input</key>
+		<value>请输入主题</value>
+	</resource>
+	<resource>
+		<key>system.notice.contents.input</key>
+		<value>请输入公告内容</value>
+	</resource>
+	<resource>
+		<key>system.notice.stoptime.input</key>
+		<value>请选择到期时间</value>
+	</resource>
+	<resource>
+		<key>system.notice.title.rangelength</key>
+		<value>长度为2~32个字符</value>
+	</resource>
+	<resource>
+		<key>system.notice.date.dateISO</key>
+		<value>请输入正确的时间格式</value>
+	</resource>
+	<resource>
+		<key>system.notice.date.errorTime</key>
+		<value>公告到期时间需大于当前时间</value>
+	</resource>
+
+
+
+	<!-- 语言按扭 -->
+	<resource>
+		<key>website.lang.zh</key>
+		<value>中文版</value>
+	</resource>
+	<resource>
+		<key>website.lang.en</key>
+		<value>English</value>
+	</resource>
+	<resource>
+		<key>website.message.welcome</key>
+		<value>欢迎您</value>
+	</resource>
+
+	<resource>
+		<key>website.message.help</key>
+		<value>帮助</value>
+	</resource>
+
+	<resource>
+		<key>website.message.login</key>
+		<value>登录</value>
+	</resource>
+	<resource>
+		<key>website.message.logout</key>
+		<value>退出</value>
+	</resource>
+	<resource>
+		<key>website.message.back</key>
+		<value>返回</value>
+	</resource>
+	<resource>
+		<key>website.message.time</key>
+		<value>时间</value>
+	</resource>
+
+	<resource>
+		<key>website.message.succeed</key>
+		<value>正常</value>
+	</resource>
+	<resource>
+		<key>website.message.fail</key>
+		<value>异常</value>
+	</resource>
+	<!-- 按钮 -->
+	<resource>
+		<key>system.Operate</key>
+		<value>操作</value>
+	</resource>
+	<resource>
+		<key>system.all</key>
+		<value>全部</value>
+	</resource>
+	<resource>
+		<key>system.search</key>
+		<value>查询</value>
+	</resource>
+	<resource>
+		<key>system.general.search</key>
+		<value>搜索</value>
+	</resource>
+	<resource>
+		<key>system.advancedSearch</key>
+		<value>高级搜索</value>
+	</resource>
+	<resource>
+		<key>system.manager</key>
+		<value>管理</value>
+	</resource>
+	<resource>
+		<key>system.change</key>
+		<value>修改</value>
+	</resource>
+	<resource>
+		<key>system.delete</key>
+		<value>删除</value>
+	</resource>
+	<resource>
+		<key>system.back</key>
+		<value>上一步</value>
+	</resource>
+	<resource>
+		<key>system.next</key>
+		<value>下一步</value>
+	</resource>
+	<resource>
+		<key>system.preview</key>
+		<value>预览</value>
+	</resource>
+	<resource>
+		<key>system.ok</key>
+		<value>确认</value>
+	</resource>
+	<resource>
+		<key>system.cancel</key>
+		<value>取消</value>
+	</resource>
+	<resource>
+		<key>system.complete</key>
+		<value>完成</value>
+	</resource>
+	<resource>
+		<key>system.close</key>
+		<value>关闭</value>
+	</resource>
+	<resource>
+		<key>system.submit</key>
+		<value>提交</value>
+	</resource>
+	<resource>
+		<key>system.tip</key>
+		<value>提示</value>
+	</resource>
+	<resource>
+		<key>system.tip.yes</key>
+		<value>是</value>
+	</resource>
+	<resource>
+		<key>system.tip.no</key>
+		<value>否</value>
+	</resource>
+
+	<!-- Constant中常量对应提示信息 -->
+
+	<!-- 系统管理员日志 -->
+	<!-- -->
+
+	<resource>
+		<key>system.eventlog.title.status</key>
+		<value>类型</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.title.logtime</key>
+		<value>日志时间</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.title.option.module</key>
+		<value>操作</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.title.option.user</key>
+		<value>操作员</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.title.option.object</key>
+		<value>操作对象</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.title.option.ip</key>
+		<value>操作IP</value>
+	</resource>
+
+	<resource>
+		<key>system.eventlog.title.site.sign</key>
+		<value>站点标识</value>
+	</resource>
+
+	<resource>
+		<key>system.eventlog.type.0</key>
+		<value>全部</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.100</key>
+		<value>站点</value>
+	</resource>
+
+	<resource>
+		<key>system.eventlog.type.101</key>
+		<value>创建站点</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.102</key>
+		<value>修改站点</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.103</key>
+		<value>删除站点</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.104</key>
+		<value>锁定站点</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.105</key>
+		<value>解锁站点</value>
+	</resource>
+
+	<resource>
+		<key>system.eventlog.type.200</key>
+		<value>公告</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.201</key>
+		<value>新增公告</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.202</key>
+		<value>修改公告</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.203</key>
+		<value>删除公告</value>
+	</resource>
+	<!-- 201,//"新增公告"}, 202,//"修改公告"}, 203//,"删除公告"} -->
+
+	<resource>
+		<key>system.eventlog.type.300</key>
+		<value>邮件服务器配置</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.301</key>
+		<value>设置邮件服务器</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.302</key>
+		<value>修改邮件服务器</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.303</key>
+		<value>创建站点时复制新的邮件服务器</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.304</key>
+		<value>删除邮件服务器</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.305</key>
+		<value>恢复默认邮件服务器</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.306</key>
+		<value>测试HOST时发送邮件</value>
+	</resource>
+
+	<resource>
+		<key>system.eventlog.type.400</key>
+		<value>邮件模板</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.401</key>
+		<value>新增邮件模板</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.402</key>
+		<value>修改邮件模板</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.403</key>
+		<value>删除邮件模板</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.404</key>
+		<value>创建站点时复制模板</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.405</key>
+		<value>删除站点时删除模板</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.406</key>
+		<value>恢复某站点的邮件模板为默认模板</value>
+	</resource>
+
+	<resource>
+		<key>system.eventlog.type.20100</key>
+		<value>系统管理员</value>
+	</resource>
+
+	<resource>
+		<key>system.eventlog.type.20101</key>
+		<value>创建系统管理员</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.20102</key>
+		<value>修改系统管理员</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.20103</key>
+		<value>删除系统管理员</value>
+	</resource>
+
+	
+	
+	
+	
+	<!-- 站点管理员日志 -->
+	<resource>
+		<key>siteAdmin.eventlog.type.0</key>
+		<value>全部</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.500</key>
+		<value>企业用户</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.501</key>
+		<value>创建企业用户</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.502</key>
+		<value>修改企业用户</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.503</key>
+		<value>删除企业用户</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.504</key>
+		<value>激活企业用户</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.505</key>
+		<value>锁定企业用户</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.506</key>
+		<value>批量删除企业用户</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.507</key>
+		<value>批量激活企业用户</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.508</key>
+		<value>批量锁定企业用户</value>
+	</resource>
+
+	<resource>
+		<key>siteAdmin.eventlog.type.600</key>
+		<value>企业管理员</value>
+	</resource>
+
+	<resource>
+		<key>siteAdmin.eventlog.type.601</key>
+		<value>创建企业管理员</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.602</key>
+		<value>修改企业管理员</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.603</key>
+		<value>删除企业管理员</value>
+	</resource>
+
+	<resource>
+		<key>siteAdmin.eventlog.type.700</key>
+		<value>企业信息</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.702</key>
+		<value>企业信息修改</value>
+	</resource>
+
+	<resource>
+		<key>siteAdmin.eventlog.type.800</key>
+		<value>邮件服务器</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.801</key>
+		<value>邮件服务器设置</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.802</key>
+		<value>邮件服务器测试发送</value>
+	</resource>
+
+	<resource>
+		<key>siteAdmin.eventlog.type.900</key>
+		<value>会议设置</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.901</key>
+		<value>会议权限设置</value>
+	</resource>
+
+	<resource>
+		<key>siteAdmin.eventlog.type.1000</key>
+		<value>公告</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.1001</key>
+		<value>创建公告</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.1002</key>
+		<value>修改公告</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.1003</key>
+		<value>删除公告</value>
+	</resource>
+
+	<resource>
+		<key>siteAdmin.eventlog.type.1100</key>
+		<value>企业管理员个人设置</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.1101</key>
+		<value>企业管理员个人设置</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4100</key>
+		<value>会议</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4101</key>
+		<value>创建即时会议</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4102</key>
+		<value>创建预约会议</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4103</key>
+		<value>创建周期会议</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4104</key>
+		<value>修改会议信息</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4105</key>
+		<value>删除会议</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4106</key>
+		<value>重新创建即时会议</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4107</key>
+		<value>邀请参会人</value>
+	</resource>
+	
+	<resource>
+		<key>siteAdmin.eventlog.type.4200</key>
+		<value>联系人</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4201</key>
+		<value>新增联系人</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4202</key>
+		<value>修改联系人</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4203</key>
+		<value>删除联系人</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4204</key>
+		<value>批量新增联系人</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4205</key>
+		<value>新增群组</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4206</key>
+		<value>修改群组</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4207</key>
+		<value>删除群组</value>
+	</resource>
+	
+	<resource>
+		<key>siteAdmin.eventlog.type.4300</key>
+		<value>用户个人信息</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4301</key>
+		<value>用户个人信息设置</value>
+	</resource>
+	
+	<resource>
+		<key>siteAdmin.eventlog.type.20200</key>
+		<value>邮件模板</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.20201</key>
+		<value>邮件模板设置</value>
+	</resource>
+	
+	
+		
+	<resource>
+		<key>siteAdmin.eventlog.type.20301</key>
+		<value>站点管理员创建组织机构</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.20302</key>
+		<value>站点管理员修改组织机构</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.20303</key>
+		<value>站点管理员删除组织机构</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.20304</key>
+		<value>站点管理员为用户批量分配机构</value>
+	</resource>
+	
+	
+	
+	<resource>
+		<key>siteAdmin.list.create.1</key>
+		<value>创建企业管理员成功</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.list.create.2</key>
+		<value>创建企业管理员失败</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.list.delete.1</key>
+		<value>删除企业管理员成功</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.list.delete.2</key>
+		<value>删除企业管理员失败</value>
+	</resource>
+	
+	<resource>
+		<key>siteAdmin.list.update.1</key>
+		<value>修改企业管理员成功</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.list.update.2</key>
+		<value>修改企业管理员失败</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.list.update.3</key>
+		<value>企业管理员邮箱已存在！</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.list.update.4</key>
+		<value>企业管理员登录名已存在！</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.Host.update.1</key>
+		<value>邮件服务器设置成功</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.Host.update.2</key>
+		<value>邮件服务器设置失败</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.Host.test.1</key>
+		<value>邮件服务器测试发送成功</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.Host.test.2</key>
+		<value>邮件服务器测试发送失败</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.EmailModel.update.1</key>
+		<value>邮件模板设置成功</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.EmailModel.update.2</key>
+		<value>邮件模板设置失败</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.Setup.update.1</key>
+		<value>企业管理员个人设置成功</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.Setup.update.2</key>
+		<value>企业管理员个人设置失败</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.ConfAuthority.update.1</key>
+		<value>会议功能设置成功</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.ConfAuthority.update.2</key>
+		<value>会议功能设置失败</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.update.1</key>
+		<value>修改企业用户成功</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.update.2</key>
+		<value>修改企业用户失败</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.update.3</key>
+		<value>企业用户邮箱已存在！</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.update.4</key>
+		<value>企业用户登录名已存在！</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.create.1</key>
+		<value>新建企业用户成功</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.create.2</key>
+		<value>新建企业用户失败</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.delete.1</key>
+		<value>删除企业用户成功</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.delete.2</key>
+		<value>删除企业用户失败</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.active.1</key>
+		<value>激活企业用户成功</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.active.2</key>
+		<value>激活企业用户失败</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.lock.1</key>
+		<value>锁定企业用户成功</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.lock.2</key>
+		<value>锁定企业用户失败</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.delete.batch.1</key>
+		<value>批量删除企业用户成功</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.delete.batch.2</key>
+		<value>批量删除企业用户失败</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.active.batch.1</key>
+		<value>批量激活企业用户成功</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.active.batch.2</key>
+		<value>批量激活企业用户失败</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.lock.batch.1</key>
+		<value>批量锁定企业用户成功</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.lock.batch.2</key>
+		<value>批量锁定企业用户失败</value>
+	</resource>
+
+	<!-- Email配置 -->
+	<!--Email Host Config -->
+	<!-- under this line is resource email_config.jsp page add -->
+	<resource>
+		<key>system.email.config.submit</key>
+		<value>提交</value>
+	</resource>
+	<resource>
+		<key>system.email.config.send</key>
+		<value>发送</value>
+	</resource>
+
+	<resource>
+		<key>system.email.config.advance</key>
+		<value>高级</value>
+	</resource>
+
+	<resource>
+		<key>system.email.config.t1</key>
+		<value>邮件服务器信息录入</value>
+	</resource>
+
+	<resource>
+		<key>system.email.config.host.address</key>
+		<value>邮件服务器地址</value>
+	</resource>
+
+	<resource>
+		<key>system.email.config.host.sender</key>
+		<value>发件者</value>
+	</resource>
+
+	<resource>
+		<key>system.email.config.host.sendemail</key>
+		<value>发件者邮箱</value>
+	</resource>
+
+	<resource>
+		<key>system.email.config.host.warninfo1</key>
+		<value>请输入发件者邮箱</value>
+	</resource>
+	<resource>
+		<key>system.email.config.host.warninfo2</key>
+		<value>请输入邮件服务器地址</value>
+	</resource>
+	<resource>
+		<key>system.email.config.host.warninfo3</key>
+		<value>请输入发件者</value>
+	</resource>
+	<resource>
+		<key>system.email.config.host.warninfo6</key>
+		<value>请输入正确的邮箱地址</value>
+	</resource>
+
+	<resource>
+		<key>system.email.config.confirmaccount</key>
+		<value>认证账户</value>
+	</resource>
+	<resource>
+		<key>system.email.config.host.warninfo4</key>
+		<value>请输入认证账户</value>
+	</resource>
+
+	<resource>
+		<key>system.email.config.host.confirmpass</key>
+		<value>认证密码</value>
+	</resource>
+	<resource>
+		<key>system.email.config.host.warninfo5</key>
+		<value>请输入认证密码</value>
+	</resource>
+
+	<resource>
+		<key>system.email.config.host.warninfo7</key>
+		<value>请输入邮件正文</value>
+	</resource>
+	<resource>
+		<key>system.email.config.host.warninfo8</key>
+		<value>请输入邮件地址</value>
+	</resource>
+
+	<resource>
+		<key>system.email.config.host.content</key>
+		<value>邮件正文</value>
+	</resource>
+
+	<resource>
+		<key>system.email.config.confirm.address</key>
+		<value>邮件地址</value>
+	</resource>
+
+	<resource>
+		<key>system.email.type.invite</key>
+		<value>会议邀请通知</value>
+	</resource>
+
+	<resource>
+		<key>system.email.type.update</key>
+		<value>会议修改通知</value>
+	</resource>
+
+	<resource>
+		<key>system.email.type.cancel</key>
+		<value>会议取消通知</value>
+	</resource>
+
+	<resource>
+		<key>system.email.type.remind</key>
+		<value>会议提醒通知</value>
+	</resource>
+
+	<resource>
+		<key>system.email.config.savetemp</key>
+		<value>保存模板</value>
+	</resource>
+
+	<resource>
+		<key>system.email.config.recovertemp</key>
+		<value>恢复模板</value>
+	</resource>
+	<!--会议列表 -->
+	<resource>
+		<key>system.list.meeting.title</key>
+		<value>会议主题</value>
+	</resource>
+	<resource>
+		<key>system.list.meeting.type</key>
+		<value>会议功能</value>
+	</resource>
+	<resource>
+		<key>system.list.meeting.status</key>
+		<value>会议状态</value>
+	</resource>
+	<resource>
+		<key>system.list.meeting.start.time</key>
+		<value>会议开始时间</value>
+	</resource>
+	<resource>
+		<key>system.list.meeting.stop.time</key>
+		<value>会议结束时间</value>
+	</resource>
+	<resource>
+		<key>system.list.meeting.license</key>
+		<value>参会方数</value>
+	</resource>
+	<resource>
+		<key>system.list.meeting.host</key>
+		<value>主持人</value>
+	</resource>
+	<resource>
+		<key>system.list.meeting.meetingNo</key>
+		<value>会议号</value>
+	</resource>
+	<!--2013-02-17 -->
+	<resource>
+		<key>system.email.temp.syserror</key>
+		<value>系统错误！</value>
+	</resource>
+	<resource>
+		<key>system.email.temp.errorinfo1</key>
+		<value>打开邮件模板文件失败！</value>
+	</resource>
+	<resource>
+		<key>system.email.temp.errorinfo2</key>
+		<value>请输入模板内容！</value>
+	</resource>
+	<resource>
+		<key>system.email.temp.alertinfo1</key>
+		<value>模板保存成功！</value>
+	</resource>
+	<!--2013-02-18 -->
+	<resource>
+		<key>system.email.config.lengthinfo32</key>
+		<value>长度为1~32个字符</value>
+	</resource>
+	<resource>
+		<key>system.email.config.lengthinfo64</key>
+		<value>长度小于64字符</value>
+	</resource>
+	<!-- up this line is resource email_config.jsp page add -->
+
+	<resource>
+		<key>system.email.msgcode.1</key>
+		<value>修改成功</value>
+	</resource>
+
+	<resource>
+		<key>system.email.msgcode.2</key>
+		<value>修改失败</value>
+	</resource>
+
+	<resource>
+		<key>system.email.msgcode.3</key>
+		<value>邮件发送成功，请注意查收！</value>
+	</resource>
+
+	<resource>
+		<key>system.email.msgcode.4</key>
+		<value>发送失败！</value>
+	</resource>
+
+
+	<!-- 会议相关资源 -->
+	<!-- 会议状态 -->
+
+	<resource>
+		<key>conf.status.-1</key>
+		<value>全部</value>
+	</resource>
+	<resource>
+		<key>conf.status.0</key>
+		<value>预约成功</value>
+	</resource>
+	<resource>
+		<key>conf.status.2</key>
+		<value>正在召开</value>
+	</resource>
+	<resource>
+		<key>conf.status.3</key>
+		<value>已结束</value>
+	</resource>
+<!-- 	<resource> -->
+<!-- 		<key>conf.status.4</key> -->
+<!-- 		<value>已过期</value> -->
+<!-- 	</resource> -->
+	<resource>
+		<key>conf.status.9</key>
+		<value>已取消</value>
+	</resource>
+<!-- 	<resource> -->
+<!-- 		<key>conf.status.11</key> -->
+<!-- 		<value>锁定</value> -->
+<!-- 	</resource> -->
+
+	<!-- 会议高级搜索 -->
+	<resource>
+		<key>conf.type.0</key>
+		<value>全部</value>
+	</resource>
+	<resource>
+		<key>conf.type.1</key>
+		<value>电话功能</value>
+	</resource>
+	<resource>
+		<key>conf.type.2</key>
+		<value>视频功能</value>
+	</resource>
+	<resource>
+		<key>conf.type.3</key>
+		<value>视频功能 + 电话功能</value>
+	</resource>
+	
+	<!-- 会议列表展示 -->
+	<resource>
+		<key>conf.type.list.0</key>
+		<value>- -</value>
+	</resource>
+	<resource>
+		<key>conf.type.list.1</key>
+		<value>电话功能</value>
+	</resource>
+	<resource>
+		<key>conf.type.list.2</key>
+		<value>视频功能</value>
+	</resource>
+	<resource>
+		<key>conf.type.list.3</key>
+		<value>视频功能 + 电话功能</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.weekly.1</key>
+		<value>周日</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.weekly.2</key>
+		<value>周一</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.weekly.3</key>
+		<value>周二</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.weekly.4</key>
+		<value>周三</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.weekly.5</key>
+		<value>周四</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.weekly.6</key>
+		<value>周五</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.weekly.7</key>
+		<value>周六</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.type.1</key>
+		<value>日会议</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.type.2</key>
+		<value>周会议</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.type.3</key>
+		<value>月会议</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.type.4</key>
+		<value>年会议</value>
+	</resource>
+	<resource>
+		<key>conf.confType.0</key>
+		<value></value>
+	</resource>
+	<resource>
+		<key>conf.confType.1</key>
+		<value>电话功能</value>
+	</resource>
+	<resource>
+		<key>conf.confType.2</key>
+		<value>视频功能</value>
+	</resource>
+	<resource>
+		<key>conf.confType.3</key>
+		<value>视频功能 、电话功能</value>
+	</resource>
+	
+	
+	
+	
+	<!-- 会议错误信息 -->
+	<resource>
+		<key>conf.create.error.-1</key>
+		<value>参会方数大于站点当前所剩参会方数</value>
+	</resource>
+	
+	<!-- 个人信息资源 -->
+	<resource>
+		<key>system.user.title</key>
+		<value>个人信息修改</value>
+	</resource>
+	<resource>
+		<key>system.user.username</key>
+		<value>用户名</value>
+	</resource>
+	<resource>
+		<key>system.user.enname</key>
+		<value>英文名</value>
+	</resource>
+	<resource>
+		<key>system.user.password</key>
+		<value>密码</value>
+	</resource>
+	<resource>
+		<key>system.user.confirmPass</key>
+		<value>确认密码</value>
+	</resource>
+	<resource>
+		<key>system.user.email</key>
+		<value>邮件</value>
+	</resource>
+	<resource>
+		<key>system.user.telephone</key>
+		<value>电话</value>
+	</resource>
+	<resource>
+		<key>system.user.password.keepempty</key>
+		<value>不修改保持为空</value>
+	</resource>
+	<resource>
+		<key>system.user.trueName.input</key>
+		<value>请输入用户名</value>
+	</resource>
+	<resource>
+		<key>system.user.enName.input</key>
+		<value>请输入英文名</value>
+	</resource>
+	<resource>
+		<key>system.user.loginPass.input</key>
+		<value>请输入密码</value>
+	</resource>
+	<resource>
+		<key>system.user.confirmPass.input</key>
+		<value>请输入确认密码</value>
+	</resource>
+	<resource>
+		<key>system.user.oldPass.input</key>
+		<value>请输入原始密码</value>
+	</resource>	
+	<resource>
+		<key>system.user.email.input</key>
+		<value>请输入邮件</value>
+	</resource>
+	<resource>
+		<key>system.user.mobile.input</key>
+		<value>请输入电话</value>
+	</resource>
+	<resource>
+		<key>system.user.trueName.rangelength</key>
+		<value>长度为1~32个字符</value>
+	</resource>
+	<resource>
+		<key>system.user.enname.rangelength</key>
+		<value>长度为1~32个字符</value>
+	</resource>
+	<resource>
+		<key>system.user.password.rangelength</key>
+		<value>长度为6~16个字符</value>
+	</resource>
+	<resource>
+		<key>system.user.email.rangelength</key>
+		<value>长度为6~32个字符</value>
+	</resource>
+	<resource>
+		<key>system.user.telephone.rangelength</key>
+		<value>长度为4~32个字符</value>
+	</resource>
+	<resource>
+		<key>system.user.trueName.custom</key>
+		<value>只允许数字、字母、&apos;&amp;&apos;、&apos;&#45;&apos;、&apos;&#95;&apos;</value>
+	</resource>
+	<resource>
+		<key>system.user.enName.custom</key>
+		<value>只允许数字、字母、&apos;&amp;&apos;、&apos;&#45;&apos;、&apos;&#95;&apos;</value>
+	</resource>
+	<resource>
+		<key>system.user.email.custom</key>
+		<value>请输入正确的邮件格式</value>
+	</resource>
+	<resource>
+		<key>system.user.confirmpass.custom</key>
+		<value>两次输入密码必须一致</value>
+	</resource>
+	
+	
+	<resource>
+		<key>site.admin.conf.config.phone.title</key>
+		<value>会议功能全局设置</value>
+	</resource>
+	<resource>
+		<key>site.admin.conf.config.createphoneconf</key>
+		<value>电话</value>
+	</resource>
+	<resource>
+		<key>site.admin.conf.config.autocall</key>
+		<value>外呼与会者</value>
+	</resource>
+	<resource>
+		<key>site.admin.conf.config.shareMedia</key>
+		<value>媒体共享</value>
+	</resource>
+	<resource>
+		<key>site.admin.conf.config.record</key>
+		<value>录制</value>
+	</resource>
+	<resource>
+		<key>site.admin.conf.config.voip</key>
+		<value>集成VOIP</value>
+	</resource>
+	
+	<resource>
+		<key>site.admin.conf.config.option.enable</key>
+		<value>开启</value>
+	</resource>
+	<resource>
+		<key>site.admin.conf.config.option.disable</key>
+		<value>禁用</value>
+	</resource>
+	
+	<resource>
+		<key>site.admin.edituser.userrole</key>
+		<value>用户角色</value>
+	</resource>
+	<resource>
+		<key>site.admin.edituser.role1</key>
+		<value>主持人</value>
+	</resource>
+	<resource>
+		<key>site.admin.edituser.role2</key>
+		<value>参会者</value>
+	</resource>
+	<!-- 企业用户管理begin -->
+		<resource>
+			<key>site.admin.userlist.add</key>
+			<value>增加</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.active</key>
+			<value>激活</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.telconf</key>
+			<value>电话会议</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.userstatu</key>
+			<value>用户状态</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.batchimport</key>
+			<value>批量导入</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.batchexport</key>
+			<value>批量导出</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.info1</key>
+			<value>请选择删除项！</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.info2</key>
+			<value>确认删除企业用户？</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.info3</key>
+			<value>请选择锁定项！</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.info4</key>
+			<value>确认锁定企业用户？</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.info5</key>
+			<value>请选择激活项！</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.info6</key>
+			<value>确定激活企业用户？</value>
+		</resource>
+		
+		<resource>
+			<key>site.admin.title.importuser</key>
+			<value>导入用户</value>
+		</resource>
+		<resource>
+			<key>site.admin.import.downloadtemp</key>
+			<value>下载模板</value>
+		</resource>
+		<resource>
+			<key>system.email.test.content</key>
+			<value>邮件服务器系统测试，无需回复</value>
+		</resource>
+	<!-- 企业用户管理end -->
+	
+	<!-- 批量导入企业用户Start -->
+		<resource>
+			<key>site.user.import.cbinfo1</key>
+			<value>导入用户完成，共</value>
+		</resource>
+		<resource>
+			<key>site.user.import.cbinfo2</key>
+			<value>条信息，导入</value>
+		</resource>
+		<resource>
+			<key>site.user.import.cbinfo3</key>
+			<value>条。</value>
+		</resource>
+		<resource>
+			<key>site.user.import.cbinfo4</key>
+			<value>重复的账号有：</value>
+		</resource>
+		<resource>
+			<key>site.user.import.cbinfo5</key>
+			<value>未导入的有：</value>
+		</resource>
+		<resource>
+			<key>site.user.import.cbinfo6</key>
+			<value>导入失败！</value>
+		</resource>
+		
+		<resource>
+			<key>site.user.import.warninfo1</key>
+			<value>请选择文件！</value>
+		</resource>
+		<resource>
+			<key>site.user.import.warninfo2</key>
+			<value>文件格式类型不支持！</value>
+		</resource>
+	<!-- 批量导入企业用户end -->
+	
+	
+	
+	
+	<!-- 加入会议资源  Start -->
+		<resource>
+			<key>website.conf.join.type.0</key>
+			<value>进入会议方式错误，请按正常方式进入会议！</value>
+		</resource>
+		<resource>
+			<key>website.conf.join.type.1</key>
+			<value>会议ID号、安全会议码不能同时为空！</value>
+		</resource>
+		<resource>
+			<key>website.conf.join.type.2</key>
+			<value>会议ID号不正确，找不到相应的会议！</value>
+		</resource>
+		<resource>
+			<key>website.conf.join.type.3</key>
+			<value>安全会议码不正确，找不到相应的会议！</value>
+		</resource>
+		<resource>
+			<key>website.conf.join.type.4</key>
+			<value>该会议状态不正确，请查检会议是否已结束、或者已删除或者被锁定！</value>
+		</resource>
+		<resource>
+			<key>website.conf.join.type.5</key>
+			<value>会议密码不正确！</value>
+		</resource>
+		
+		<resource>
+			<key>website.conf.join.type.6</key>
+			<value>通过Email进入会议时参数不正确</value>
+		</resource>
+		
+		<resource>
+			<key>website.conf.join.type.7</key>
+			<value>会议未到开始时间</value>
+		</resource>
+		<resource>
+			<key>website.conf.join.type.8</key>
+			<value>进入会议失败，请重试</value>
+		</resource>
+		<resource>
+			<key>website.conf.join.type.9</key>
+			<value>站点不存在 或 不正确</value>
+		</resource>
+		<resource>
+			<key>website.conf.join.type.10</key>
+			<value>启动永久会议失败</value>
+		</resource>
+		
+		
+		<resource>
+			<key>website.conf.joinouter.erroecode.1</key>
+			<value>站点ID号为空或者是站点ID号不存在 </value>
+		</resource>
+		<resource>
+			<key>website.conf.joinouter.erroecode.2</key>
+			<value>连接地址过期 </value>
+		</resource>
+		<resource>
+			<key>website.conf.joinouter.erroecode.3</key>
+			<value>MtgKey为空,不能进入会议 </value>
+		</resource>
+		<resource>
+			<key>website.conf.joinouter.erroecode.4</key>
+			<value>密码验证不通过,不能进入会议 </value>
+		</resource>
+	<!-- 加入会议资源  End -->
+	
+	
+	<!--站点时区对应关系 -->	
+<resource>
+	<key>website.timezone.city.1</key>
+	<value>马歇尔群岛 </value>
+</resource>
+<resource>
+	<key>website.timezone.city.2</key>
+	<value>萨摩亚</value>
+</resource>
+<resource>
+	<key>website.timezone.city.3</key>
+	<value>火奴鲁鲁</value>
+</resource>
+<resource>
+	<key>website.timezone.city.4</key>
+	<value>安克雷奇</value>
+</resource>
+<resource>
+	<key>website.timezone.city.5</key>
+	<value>亚利桑那</value>
+</resource>
+<resource>
+	<key>website.timezone.city.6</key>
+	<value>旧金山</value>
+</resource>
+<resource>
+	<key>website.timezone.city.7</key>
+	<value>丹佛</value>
+</resource>
+<resource>
+	<key>website.timezone.city.8</key>
+	<value>墨西哥</value>
+</resource>
+<resource>
+	<key>website.timezone.city.9</key>
+	<value>萨斯喀彻温</value>
+</resource>
+<resource>
+	<key>website.timezone.city.10</key>
+	<value>波哥大</value>
+</resource>
+<resource>
+	<key>website.timezone.city.11</key>
+	<value>芝加哥</value>
+</resource>
+<resource>
+	<key>website.timezone.city.12</key>
+	<value>印地安那</value>
+</resource>
+<resource>
+	<key>website.timezone.city.13</key>
+	<value>拉巴斯</value>
+</resource>
+<resource>
+	<key>website.timezone.city.14</key>
+	<value>纽约</value>
+</resource>
+<resource>
+	<key>website.timezone.city.15</key>
+	<value>巴西利亚</value>
+</resource>
+<resource>
+	<key>website.timezone.city.16</key>
+	<value>布宜诺斯艾利斯</value>
+</resource>
+<resource>
+	<key>website.timezone.city.17</key>
+	<value>哈利法克斯</value>
+</resource>
+<resource>
+	<key>website.timezone.city.18</key>
+	<value>纽芬兰</value>
+</resource>
+<resource>
+	<key>website.timezone.city.19</key>
+	<value>中大西洋</value>
+</resource>
+<resource>
+	<key>website.timezone.city.20</key>
+	<value>亚述尔群岛</value>
+</resource>
+<resource>
+	<key>website.timezone.city.21</key>
+	<value>雷克雅维克</value>
+</resource>
+<resource>
+	<key>website.timezone.city.22</key>
+	<value>伦敦</value>
+</resource>
+<resource>
+	<key>website.timezone.city.23</key>
+	<value>阿姆斯特丹</value>
+</resource>
+<resource>
+	<key>website.timezone.city.24</key>
+	<value>柏林</value>
+</resource>
+<resource>
+	<key>website.timezone.city.25</key>
+	<value>巴黎</value>
+</resource>
+<resource>
+	<key>website.timezone.city.26</key>
+	<value>雅典</value>
+</resource>
+<resource>
+	<key>website.timezone.city.27</key>
+	<value>开罗</value>
+</resource>
+<resource>
+	<key>website.timezone.city.28</key>
+	<value>赫尔辛基</value>
+</resource>
+<resource>
+	<key>website.timezone.city.29</key>
+	<value>比勒陀利亚</value>
+</resource>
+<resource>
+	<key>website.timezone.city.30</key>
+	<value>特拉维夫</value>
+</resource>
+<resource>
+	<key>website.timezone.city.31</key>
+	<value>莫斯科</value>
+</resource>
+<resource>
+	<key>website.timezone.city.32</key>
+	<value>内罗毕</value>
+</resource>
+<resource>
+	<key>website.timezone.city.33</key>
+	<value>利雅得</value>
+</resource>
+<resource>
+	<key>website.timezone.city.34</key>
+	<value>德黑兰</value>
+</resource>
+<resource>
+	<key>website.timezone.city.35</key>
+	<value>阿布扎比</value>
+</resource>
+<resource>
+	<key>website.timezone.city.36</key>
+	<value>巴库</value>
+</resource>
+<resource>
+	<key>website.timezone.city.37</key>
+	<value>喀布尔</value>
+</resource>
+<resource>
+	<key>website.timezone.city.38</key>
+	<value>叶卡捷琳堡</value>
+</resource>
+<resource>
+	<key>website.timezone.city.39</key>
+	<value>伊斯兰堡</value>
+</resource>
+<resource>
+	<key>website.timezone.city.40</key>
+	<value>孟买</value>
+</resource>
+<resource>
+	<key>website.timezone.city.41</key>
+	<value>科伦坡</value>
+</resource>
+<resource>
+	<key>website.timezone.city.42</key>
+	<value>阿拉木图</value>
+</resource>
+<resource>
+	<key>website.timezone.city.43</key>
+	<value>曼谷</value>
+</resource>
+<resource>
+	<key>website.timezone.city.44</key>
+	<value>北京</value>
+</resource>
+<resource>
+	<key>website.timezone.city.45</key>
+	<value>珀斯</value>
+</resource>
+<resource>
+	<key>website.timezone.city.46</key>
+	<value>新加坡</value>
+</resource>
+<resource>
+	<key>website.timezone.city.47</key>
+	<value>台北</value>
+</resource>
+<resource>
+	<key>website.timezone.city.48</key>
+	<value>首尔</value>
+</resource>
+<resource>
+	<key>website.timezone.city.49</key>
+	<value>东京</value>
+</resource>
+<resource>
+	<key>website.timezone.city.50</key>
+	<value>雅库茨克</value>
+</resource>
+<resource>
+	<key>website.timezone.city.51</key>
+	<value>达尔文</value>
+</resource>
+<resource>
+	<key>website.timezone.city.52</key>
+	<value>布里斯班</value>
+</resource>
+<resource>
+	<key>website.timezone.city.53</key>
+	<value>关岛</value>
+</resource>
+<resource>
+	<key>website.timezone.city.54</key>
+	<value>符拉迪沃斯托克</value>
+</resource>
+<resource>
+	<key>website.timezone.city.55</key>
+	<value>阿得莱德</value>
+</resource>
+<resource>
+	<key>website.timezone.city.56</key>
+	<value>霍巴特</value>
+</resource>
+<resource>
+	<key>website.timezone.city.57</key>
+	<value>所罗门群岛</value>
+</resource>
+<resource>
+	<key>website.timezone.city.58</key>
+	<value>悉尼</value>
+</resource>
+<resource>
+	<key>website.timezone.city.59</key>
+	<value>斐济</value>
+</resource>
+<resource>
+	<key>website.timezone.city.60</key>
+	<value>惠灵顿</value>
+</resource>
+
+
+<!-- 带有描述的时区 -->
+<resource>
+	<key>website.timezone.city.zone.1</key>
+	<value>马歇尔群岛（国际日期变更线时间，GMT-12:00） </value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.2</key>
+	<value>萨摩亚（萨摩亚时间，GMT-11:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.3</key>
+	<value>火奴鲁鲁（夏威夷时间，GMT-10:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.4</key>
+	<value>安克雷奇（阿拉斯加夏令时，GMT-08:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.5</key>
+	<value>亚利桑那（山地时间，GMT-07:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.6</key>
+	<value>旧金山（太平洋夏令时，GMT-07:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.7</key>
+	<value>丹佛（山地夏令时，GMT-06:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.8</key>
+	<value>墨西哥（墨西哥标准时间，GMT-06:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.9</key>
+	<value>萨斯喀彻温（中部时间，GMT-06:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.10</key>
+	<value>波哥大（南美太平洋时间，GMT-05:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.11</key>
+	<value>芝加哥（中部夏令时，GMT-05:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.12</key>
+	<value>印地安那（东部时间，GMT-05:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.13</key>
+	<value>拉巴斯（南美西部时间，GMT-04:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.14</key>
+	<value>纽约（东部夏令时，GMT-04:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.15</key>
+	<value>巴西利亚（南美东部标准时间，GMT-03:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.16</key>
+	<value>布宜诺斯艾利斯（南美东部时间，GMT-03:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.17</key>
+	<value>哈利法克斯（大西洋夏令时，GMT-03:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.18</key>
+	<value>纽芬兰（纽芬兰夏令时，GMT-02:30）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.19</key>
+	<value>中大西洋（中大西洋标准时间，GMT-02:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.20</key>
+	<value>亚述尔群岛（亚速尔群岛时间，GMT-01:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.21</key>
+	<value>雷克雅维克（格林威治时间，GMT+00:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.22</key>
+	<value>伦敦（伦敦时间，GMT+00:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.23</key>
+	<value>阿姆斯特丹（欧洲时间，GMT+01:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.24</key>
+	<value>柏林（欧洲时间，GMT+01:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.25</key>
+	<value>巴黎（欧洲时间，GMT+01:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.26</key>
+	<value>雅典（希腊时间，GMT+02:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.27</key>
+	<value>开罗（埃及标准时间，GMT+02:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.28</key>
+	<value>赫尔辛基（北欧时间，GMT+02:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.29</key>
+	<value>比勒陀利亚（南非时间，GMT+02:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.30</key>
+	<value>特拉维夫（以色列标准时间，GMT+02:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.31</key>
+	<value>莫斯科（俄罗斯标准时间，GMT+03:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.32</key>
+	<value>内罗毕（内罗毕时间，GMT+03:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.33</key>
+	<value>利雅得（沙特阿拉伯时间，GMT+03:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.34</key>
+	<value>德黑兰（伊朗时间，GMT+03:30）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.35</key>
+	<value>阿布扎比（阿拉伯时间，GMT+04:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.36</key>
+	<value>巴库（巴库标准时间，GMT+04:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.37</key>
+	<value>喀布尔（阿富汗时间，GMT+04:30）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.38</key>
+	<value>叶卡捷琳堡（西亚时间，GMT+05:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.39</key>
+	<value>伊斯兰堡（西亚时间，GMT+05:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.40</key>
+	<value>孟买（印度时间，GMT+05:30）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.41</key>
+	<value>科伦坡（哥伦比亚时间，GMT+05:30）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.42</key>
+	<value>阿拉木图（中亚时间，GMT+06:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.43</key>
+	<value>曼谷（曼谷时间，GMT+07:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.44</key>
+	<value>北京（中国时间，GMT+08:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.45</key>
+	<value>珀斯（澳大利亚西部时间，GMT+08:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.46</key>
+	<value>新加坡（新加坡时间，GMT+08:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.47</key>
+	<value>台北（台北时间，GMT+08:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.48</key>
+	<value>首尔（韩国时间，GMT+09:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.49</key>
+	<value>东京（日本时间，GMT+09:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.50</key>
+	<value>雅库茨克（雅库茨克时间，GMT+09:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.51</key>
+	<value>达尔文（澳大利亚中部时间，GMT+09:30）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.52</key>
+	<value>布里斯班（澳大利亚东部时间，GMT+10:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.53</key>
+	<value>关岛（西太平洋时间，GMT+10:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.54</key>
+	<value>符拉迪沃斯托克（符拉迪沃斯托克标准时间，GMT+10:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.55</key>
+	<value>阿得莱德（澳大利亚中部夏令时，GMT+10:30）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.56</key>
+	<value>霍巴特（塔斯马尼亚夏令时，GMT+11:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.57</key>
+	<value>所罗门群岛（中太平洋时间，GMT+11:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.58</key>
+	<value>悉尼（澳大利亚东部夏令时，GMT+11:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.59</key>
+	<value>斐济（斐济时间，GMT+12:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.zone.60</key>
+	<value>惠灵顿（新西兰标准时间，GMT+12:00）</value>
+</resource>
+
+<!-- 
+
+<resource>
+	<key>website.timezone.city.1</key>
+	<value>马歇尔群岛（国际日期变更线时间，GMT-12:00） </value>
+</resource>
+<resource>
+	<key>website.timezone.city.2</key>
+	<value>萨摩亚（萨摩亚时间，GMT-11:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.3</key>
+	<value>火奴鲁鲁（夏威夷时间，GMT-10:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.4</key>
+	<value>安克雷奇（阿拉斯加夏令时，GMT-08:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.5</key>
+	<value>亚利桑那（山地时间，GMT-07:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.6</key>
+	<value>旧金山（太平洋夏令时，GMT-07:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.7</key>
+	<value>丹佛（山地夏令时，GMT-06:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.8</key>
+	<value>墨西哥（墨西哥标准时间，GMT-06:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.9</key>
+	<value>萨斯喀彻温（中部时间，GMT-06:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.10</key>
+	<value>波哥大（南美太平洋时间，GMT-05:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.11</key>
+	<value>芝加哥（中部夏令时，GMT-05:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.12</key>
+	<value>印地安那（东部时间，GMT-05:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.13</key>
+	<value>拉巴斯（南美西部时间，GMT-04:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.14</key>
+	<value>纽约（东部夏令时，GMT-04:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.15</key>
+	<value>巴西利亚（南美东部标准时间，GMT-03:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.16</key>
+	<value>布宜诺斯艾利斯（南美东部时间，GMT-03:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.17</key>
+	<value>哈利法克斯（大西洋夏令时，GMT-03:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.18</key>
+	<value>纽芬兰（纽芬兰夏令时，GMT-02:30）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.19</key>
+	<value>中大西洋（中大西洋标准时间，GMT-02:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.20</key>
+	<value>亚述尔群岛（亚速尔群岛时间，GMT-01:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.21</key>
+	<value>雷克雅维克（格林威治时间，GMT+00:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.22</key>
+	<value>伦敦（伦敦时间，GMT+00:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.23</key>
+	<value>阿姆斯特丹（欧洲时间，GMT+01:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.24</key>
+	<value>柏林（欧洲时间，GMT+01:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.25</key>
+	<value>巴黎（欧洲时间，GMT+01:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.26</key>
+	<value>雅典（希腊时间，GMT+02:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.27</key>
+	<value>开罗（埃及标准时间，GMT+02:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.28</key>
+	<value>赫尔辛基（北欧时间，GMT+02:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.29</key>
+	<value>比勒陀利亚（南非时间，GMT+02:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.30</key>
+	<value>特拉维夫（以色列标准时间，GMT+02:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.31</key>
+	<value>莫斯科（俄罗斯标准时间，GMT+03:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.32</key>
+	<value>内罗毕（内罗毕时间，GMT+03:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.33</key>
+	<value>利雅得（沙特阿拉伯时间，GMT+03:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.34</key>
+	<value>德黑兰（伊朗时间，GMT+03:30）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.35</key>
+	<value>阿布扎比（阿拉伯时间，GMT+04:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.36</key>
+	<value>巴库（巴库标准时间，GMT+04:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.37</key>
+	<value>喀布尔（阿富汗时间，GMT+04:30）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.38</key>
+	<value>叶卡捷琳堡（西亚时间，GMT+05:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.39</key>
+	<value>伊斯兰堡（西亚时间，GMT+05:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.40</key>
+	<value>孟买（印度时间，GMT+05:30）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.41</key>
+	<value>科伦坡（哥伦比亚时间，GMT+05:30）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.42</key>
+	<value>阿拉木图（中亚时间，GMT+06:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.43</key>
+	<value>曼谷（曼谷时间，GMT+07:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.44</key>
+	<value>北京（中国时间，GMT+08:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.45</key>
+	<value>珀斯（澳大利亚西部时间，GMT+08:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.46</key>
+	<value>新加坡（新加坡时间，GMT+08:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.47</key>
+	<value>台北（台北时间，GMT+08:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.48</key>
+	<value>首尔（韩国时间，GMT+09:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.49</key>
+	<value>东京（日本时间，GMT+09:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.50</key>
+	<value>雅库茨克（雅库茨克时间，GMT+09:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.51</key>
+	<value>达尔文（澳大利亚中部时间，GMT+09:30）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.52</key>
+	<value>布里斯班（澳大利亚东部时间，GMT+10:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.53</key>
+	<value>关岛（西太平洋时间，GMT+10:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.54</key>
+	<value>符拉迪沃斯托克（符拉迪沃斯托克标准时间，GMT+10:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.55</key>
+	<value>阿得莱德（澳大利亚中部夏令时，GMT+10:30）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.56</key>
+	<value>霍巴特（塔斯马尼亚夏令时，GMT+11:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.57</key>
+	<value>所罗门群岛（中太平洋时间，GMT+11:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.58</key>
+	<value>悉尼（澳大利亚东部夏令时，GMT+11:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.59</key>
+	<value>斐济（斐济时间，GMT+12:00）</value>
+</resource>
+<resource>
+	<key>website.timezone.city.60</key>
+	<value>惠灵顿（新西兰标准时间，GMT+12:00）</value>
+</resource>
+ -->
+	<!--站点时区对应关系 -->
+	
+	<!--表单验证提示资源 -->
+	<resource>
+		<key>valid.input.loginName</key>
+		<value>请输入登录名</value>
+	</resource>
+	<resource>
+		<key>valid.input.userName</key>
+		<value>请输入用户名</value>
+	</resource>
+	<resource>
+		<key>valid.input.oldPass</key>
+		<value>请输入原始密码</value>
+	</resource>	
+	<resource>
+		<key>valid.input.loginPass</key>
+		<value>请输入密码</value>
+	</resource>
+	<resource>
+		<key>valid.input.passConfirm</key>
+		<value>请输入确认密码</value>
+	</resource>
+	<resource>
+		<key>valid.input.passAuthCode</key>
+		<value>请输入验证码</value>
+	</resource>		
+	<resource>
+		<key>valid.input.enName</key>
+		<value>请输入英文名</value>
+	</resource>
+	<resource>
+		<key>valid.input.email</key>
+		<value>请输入邮箱</value>
+	</resource>
+	<resource>
+		<key>valid.input.phone</key>
+		<value>请输入电话</value>
+	</resource>
+	<resource>
+		<key>valid.input.mobile</key>
+		<value>请输入手机</value>
+	</resource>
+	<resource>
+		<key>valid.input.group</key>
+		<value>请输入组名</value>
+	</resource>
+	<resource>
+		<key>valid.input.confTitle</key>
+		<value>请输入会议主题</value>
+	</resource>
+	<resource>
+		<key>valid.input.orgName</key>
+		<value>请输入机构名称</value>
+	</resource>	
+	<resource>
+		<key>valid.input.aheadTimes</key>
+		<value>提前时间在0~60分钟之内</value>
+	</resource>			
+		<!--表单验证通用的长度开始 -->
+	<resource>
+		<key>valid.rangelength4</key>
+		<value>长度为4个字符</value>
+	</resource>		
+	<resource>
+		<key>valid.rangelength132</key>
+		<value>长度为1~32个字符</value>
+	</resource>
+	<resource>
+		<key>valid.rangelength256</key>
+		<value>不能超过256个字符</value>
+	</resource>	
+	<resource>
+		<key>valid.rangelength416</key>
+		<value>长度为4~16个字符</value>
+	</resource>
+	<resource>
+		<key>valid.rangelength432</key>
+		<value>长度为4~32个字符</value>
+	</resource>
+	<resource>
+		<key>valid.rangelength616</key>
+		<value>长度为6~16个字符</value>
+	</resource>
+	<resource>
+		<key>valid.rangelength664</key>
+		<value>长度为6~64个字符</value>
+	</resource>	
+		<!--表单验证通用的长度结束 -->
+	<resource>
+		<key>valid.password.confirm</key>
+		<value>确认密码和新密码必须一致</value>
+	</resource>		
+	<resource>
+		<key>valid.checkEmail</key>
+		<value>请输入正确的邮件格式</value>
+	</resource>
+	<resource>
+		<key>valid.checkLoginName</key>
+		<value>数字、字母</value>
+	</resource>
+	<resource>
+		<key>valid.checkUserName</key>
+		<value>中文、数字、字母、&apos;&amp;&apos;、&apos;&#45;&apos;、&apos;&#95;&apos;、&apos;空格&apos;</value>
+	</resource>
+	<resource>
+		<key>valid.checkEnName</key>
+		<value>数字、字母、&apos;&amp;&apos;、&apos;&#45;&apos;、&apos;&#95;&apos;、&apos;空格&apos;</value>
+	</resource>
+	<resource>
+		<key>valid.checkPhone</key>
+		<value>请输入正确的电话格式</value>
+	</resource>		
+		<resource>
+		<key>valid.checkMobile</key>
+		<value>请输入正确的手机格式</value>
+	</resource>	
+	
+	<!-- 企业用户资源 -->
+	
+	<resource>
+		<key>user.menu.conf.immediate</key>
+		<value>即时会议</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.reservation</key>
+		<value>预约会议</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.public</key>
+		<value>公开会议</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.myconf</key>
+		<value>我的会议</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.myhost</key>
+		<value>我主持的</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.myact</key>
+		<value>我参加的</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.default.setup</key>
+		<value>会议缺省设置</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.favor.setup</key>
+		<value>偏好设置</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.person.setup</key>
+		<value>个人设置</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.join.confid</key>
+		<value>会议号加入</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.support</key>
+		<value>支持</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.down.center</key>
+		<value>下载中心</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.mode.regular</key>
+		<value>定期模式</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.duplicate</key>
+		<value>重复范围</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.starttime</key>
+		<value>开始时间</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.duration</key>
+		<value>持续时间</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.invite.number</key>
+		<value>邀请人数</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.participant.confid</key>
+		<value>与会者安全会议号</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.host.confid</key>
+		<value>主持人安全会议号</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.conftype</key>
+		<value>会议类型</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.aheadtime</key>
+		<value>提前入会</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.func</key>
+		<value>会议功能</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.host.url</key>
+		<value>主持人入会地址</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.act.url</key>
+		<value>参会人入会地址</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.desc</key>
+		<value>会议描述</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.join</key>
+		<value>加入会议</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.join.desc</key>
+		<value>我们将开始便捷式会议，所有参数都可以会议设置中配置。</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.begin</key>
+		<value>开始会议</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.safe.number</key>
+		<value>安全会议号</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.start</key>
+		<value>立刻开始</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.who.conf</key>
+		<value>的会议</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.update</key>
+		<value>修改会议</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.schedule</key>
+		<value>安排会议</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.time.info</key>
+		<value>时间信息</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.parameter.info</key>
+		<value>参数信息</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.step.first</key>
+		<value>第一步：会议基本信息</value>
+	</resource>	
+
+	<resource>
+		<key>user.menu.conf.step.first.info</key>
+		<value>我们将带领您通过一些简单的步骤来安排您的会议。</value>
+	</resource>	
+
+	<resource>
+		<key>user.menu.conf.step.second</key>
+		<value>第二步：会议时间信息</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.step.second.info</key>
+		<value>设置您开会的日期与时间。</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.step.third</key>
+		<value>第三步：会议参数信息</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.step.third.info</key>
+		<value>设置您会议的功能参数。</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.password.setup</key>
+		<value>设置会议密码</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.password</key>
+		<value>会议密码</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.password.confirm</key>
+		<value>确认会议密码</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.repetition.period</key>
+		<value>重复周期</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.repetition.day</key>
+		<value>按天</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.repetition.week</key>
+		<value>按周</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.repetition.month</key>
+		<value>按月</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.input.day</key>
+		<value>填写天数</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.choose.week</key>
+		<value>选择星期</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.choose.day</key>
+		<value>选择日期</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.every</key>
+		<value>每</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.every.month</key>
+		<value>每月</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.day</key>
+		<value>天</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.number</key>
+		<value>个</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.timezone</key>
+		<value>会议时区</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.time.hour</key>
+		<value>点</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.time.minute</key>
+		<value>分</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.hour</key>
+		<value>小时</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.minute</key>
+		<value>分钟</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.autocall</key>
+		<value>启动外呼</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.open</key>
+		<value>开启</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.close</key>
+		<value>关闭</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.mode</key>
+		<value>会议模式</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.mode.host</key>
+		<value>主持人模式</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.mode.free</key>
+		<value>自由模式</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.default.mic</key>
+		<value>默认开启麦克风</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.advanced.parameter</key>
+		<value>高级参数</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.audio.max</key>
+		<value>最大音频路数</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.video.max</key>
+		<value>最大视频路数</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.media.way</key>
+		<value>路</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.video.quality</key>
+		<value>视频画质设置</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.video.quality.fluency</key>
+		<value>优先保证视频流畅</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.video.quality.clear</key>
+		<value>优先保证画质清晰</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.video.quality.web</key>
+		<value>优先保证网络带宽</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.ahead.time</key>
+		<value>会议提前时间</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.participants.permissions</key>
+		<value>参会人权限</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.change.page</key>
+		<value>换页</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.annotate</key>
+		<value>批注</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.phone.func</key>
+		<value>电话功能</value>
+	</resource>
+	<resource>
+		<key>user.menu.conf.video.func</key>
+		<value>视频功能</value>
+	</resource>
+	
+	
+	<resource>
+		<key>user.menu.conf.share.media</key>
+		<value>媒体共享</value>
+	</resource>
+	<resource>
+		<key>user.menu.conf.share.record</key>
+		<value>录制</value>
+	</resource>
+	<resource>
+		<key>user.menu.conf.share.doc</key>
+		<value>文档共享</value>
+	</resource>
+	<resource>
+		<key>user.menu.conf.share.screen</key>
+		<value>屏幕共享</value>
+	</resource>
+	<resource>
+		<key>user.menu.conf.share.whiteboard</key>
+		<value>白板</value>
+	</resource>
+	<resource>
+		<key>user.menu.conf.share.filetrans</key>
+		<value>文件传输</value>
+	</resource>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<resource>
+		<key>user.menu.conf.chat.anyone</key>
+		<value>与所有人聊天</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.chat.host</key>
+		<value>与主持人聊天</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.chat.participants</key>
+		<value>与参会人聊天</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.reseration.success</key>
+		<value>预约会议成功！</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.calendar.remind</key>
+		<value>我的日历提醒</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.calendar.remind.button</key>
+		<value>您可以通过点击下面的按钮, 将此会议添加到邮件日历中。</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.invite.participants</key>
+		<value>邀请与会者</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.invite.participants.info</key>
+		<value>您可以立即通知用户参与此会议或可以稍后在会议列表中点击“邮件图标”来通知用户</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.invite</key>
+		<value>邀请</value>
+	</resource>	
+	<resource>
+		<key>user.menu.conf.confirm</key>
+		<value>确定</value>
+	</resource>	
+	
+	
+	
+	
+	
+				
+</resources>

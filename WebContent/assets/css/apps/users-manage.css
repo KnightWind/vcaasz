@@ -1,0 +1,121 @@
+html, body {
+	background: #EEEEEE;
+}
+body {
+	padding: 20px;
+}
+.box .body {
+	margin-top: 3px;
+	padding: 0;
+	border: none;
+	background: transparent;
+}
+.common-table .check {
+	width: 40px;
+	text-align: center;
+	padding: 10px 0px;
+}
+.common-table .actions {
+	width: 130px;
+}
+.common-table .struts {
+	width: 85px;
+}
+.common-table .status {
+	width: 90px;
+}
+.common-table td.status {
+	padding-left: 25px
+}
+.common-table td.lock {
+	background-image: url(/assets/images/bg/lock.png);
+	background-position: 8px center;
+	background-repeat: no-repeat;
+}
+.common-table .mobile {
+	width: 120px;
+}
+.common-table .email {
+	width: 160px;
+}
+.common-table .role {
+	width: 85px;
+}
+.common-table .name {
+	width: 120px;
+}
+.common-table .modify,
+.common-table .remove {
+	margin-right: 5px;
+}
+.pagebar {
+	margin-top: 10px;
+}
+.icon {
+	width: 20px;
+	height: 20px;
+	background: transparent url(/assets/images/sprite/icons.png) -118px -260px no-repeat;
+}
+.icon-add {
+	background-position: -118px -260px;
+}
+.icon-act {
+	background-position: -227px -118px;
+}
+.icon-loc {
+	background-position: -227px -153px;
+}
+.icon-del {
+	background-position: -190px -119px;
+}
+.icon-imp {
+	background-position: -190px -190px;
+}
+.icon-exp {
+	background-position: -191px -225px;
+}
+.nodata {
+	background: #FFFFFF url(/assets/images/bg/silence.jpg) center 30px no-repeat;
+	color: #CCCCCC;
+	padding-top: 115px;
+	height: 45px;
+	text-align: center;
+}
+
+/*=======================================*/
+/*	Alan Liu                             */
+/*	email:mingliu@bizconf.cn	         */
+/*	2013-07-23                           */
+/*=======================================*/
+.icon {
+	background-image: url("/assets/images/sprite/icons-png8.png");
+}
+.common-table {
+	table-layout: fixed;
+}
+.common-table th, .common-table td{
+	overflow: hidden;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.watermark {
+	color: #999 !important;
+}
+.pagebar .jumpto input {
+	line-height: 23px;
+}
+.user-list-view .common-table .email {
+	width: 120px;
+}
+.user-list-view .common-table .mobile {
+	width: 100px;
+}
+.user-list-view .common-table .status {
+	width: 80px;
+}
+.user-list-view .common-table .actions {
+	width: 150px;
+}
+.summary .search .input-text {
+	width: 190px;
+}

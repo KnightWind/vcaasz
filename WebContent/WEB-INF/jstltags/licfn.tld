@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+  version="2.0">
+    
+  <description>JSTL 1.1 functions library</description>
+  <display-name>JSTL functions</display-name>
+  <tlib-version>1.1</tlib-version>
+  <short-name>myfn</short-name>
+  <uri>http://www.confcloud.com/jsp/jstl/functions</uri>
+
+
+  <function>
+    <description>
+       get Location time by beijing time
+    </description>
+    <name>fmtDateByBJ</name>
+    <function-class>com.bizconf.vcaasz.component.MyfnTag</function-class>
+    <function-signature>java.util.Date fmtDateByBJ(java.lang.String,java.util.Date,java.lang.Integer)</function-signature>
+    <example>
+      &lt;c:if test="${myfn:fmtDateByBJ('yyyy-MM-dd HH:mm:ss',beijingDate,2888000)}">
+    </example>
+  </function>
+
+  <function>
+    <description>
+       score duration
+    </description>
+    <name>scoredur</name>
+    <function-class>com.bizconf.vcaasz.component.MyfnTag</function-class>
+    <function-signature>int getDurationForConf(java.util.Date,java.util.Date)</function-signature>
+    <example>
+      &lt;c:if test="${myfn:scoredur(joindate,leavedata)}">
+    </example>
+  </function>
+
+  <function>
+    <description>
+       this function is test license item deleteable
+    </description>
+    <name>delable</name>
+    <function-class>com.bizconf.vcaasz.component.MyfnTag</function-class>
+    <function-signature>boolean licenseDeleteable(java.util.Date)</function-signature>
+    <example>
+      &lt;c:if test="${myfn:delable(date)}">
+    </example>
+  </function>
+  
+  <function>
+    <description>
+       this function is test if site expired in a week.
+    </description>
+    <name>expiredInWe</name>
+    <function-class>com.bizconf.vcaasz.component.MyfnTag</function-class>
+    <function-signature>boolean siteExpiredInWeek(java.util.Date)</function-signature>
+    <example>
+      &lt;c:if test="${myfn:expiredInWe(date)}">
+    </example>
+  </function>
+  
+  <function>
+    <description>
+       this function is test if site expired.
+    </description>
+    <name>siteExpired</name>
+    <function-class>com.bizconf.vcaasz.component.MyfnTag</function-class>
+    <function-signature>boolean siteExpired(java.util.Date)</function-signature>
+    <example>
+      &lt;c:if test="${myfn:siteExpired(date)}">
+    </example>
+  </function>
+  
+  <function>
+    <description>
+       this function fomart date by timezone.
+    </description>
+    <name>fmtDate</name>
+    <function-class>com.bizconf.vcaasz.component.MyfnTag</function-class>
+    <function-signature>java.lang.string fmtDate(java.lang.String,java.util.Date,java.lang.Integer)</function-signature>
+    <example>
+      ${myfn:fmtDate()}
+    </example>
+  </function>
+  
+  <function>
+    <description>
+       this function get current lang
+    </description> 
+    <name>getCurrentLang</name>
+    <function-class>com.bizconf.vcaasz.component.MyfnTag</function-class>
+    <function-signature>java.lang.string getCurrentLang()</function-signature>
+    <example>
+      ${myfn:getCurrentLang()}
+    </example>
+  </function>
+  
+  <function>
+    <description>
+       this function is show bill start date
+    </description>
+    <name>showBillStartDate</name>
+    <function-class>com.bizconf.vcaasz.component.MyfnTag</function-class>
+    <function-signature>java.lang.string getMonthStartDateByBillDate(java.util.Date,java.lang.Integer)</function-signature>
+    <example>
+      ${myfn:showBillStartDate(bill.date,0)}
+    </example>
+  </function>
+  
+  <function>
+    <description>
+       this function fomart date by timezone.
+    </description>
+    <name>showBillEndDate</name>
+    <function-class>com.bizconf.vcaasz.component.MyfnTag</function-class>
+    <function-signature>java.lang.string getMonthEndDateByBillDate(java.util.Date,java.lang.Integer)</function-signature>
+    <example>
+      ${myfn:showBillEndDate(bill.date,0)}
+    </example>
+  </function>
+  
+  <function>
+    <description>
+       this function get end date by start date and duration. 
+    </description>
+    <name>getEndDate</name>
+    <function-class>com.bizconf.vcaasz.component.MyfnTag</function-class>
+    <function-signature>java.util.Date getEndDateView(java.util.Date,java.lang.Integer)</function-signature>
+    <example>
+      ${myfn:getEndDate(bill.date,0)}
+    </example>
+  </function>
+  
+  <function>
+    <description>
+       this function get site sign by id. 
+    </description>
+    <name>getSiteSign</name>
+    <function-class>com.bizconf.vcaasz.component.MyfnTag</function-class>
+    <function-signature>java.lang.String getSiteSignById(java.lang.Integer)</function-signature>
+    <example>
+      ${myfn:getSiteSign(id)}
+    </example>
+  </function>
+  
+  <function>
+    <description>
+       this function get site sign by id. 
+    </description>
+    <name>getSiteName</name>
+    <function-class>com.bizconf.vcaasz.component.MyfnTag</function-class>
+    <function-signature>java.lang.String getSiteNameById(java.lang.Integer)</function-signature>
+    <example>
+      ${myfn:getSiteName(id)}
+    </example>
+  </function>
+  
+  <function>
+    <description>
+       this function get user name by id. 
+    </description>
+    <name>getUserName</name>
+    <function-class>com.bizconf.vcaasz.component.MyfnTag</function-class>
+    <function-signature>java.lang.String getUserNameById(java.lang.Integer)</function-signature>
+    <example>
+      ${myfn:getUserName(id)}
+    </example>
+  </function>
+  
+  
+  <function>
+    <description>
+       this function is test if site billing available.
+    </description>
+    <name>billingAvailable</name>
+    <function-class>com.bizconf.vcaasz.component.MyfnTag</function-class>
+    <function-signature>boolean billingAvailable(java.lang.String)</function-signature>
+    <example>
+      &lt;c:if test="${myfn:billingAvailable(sitesign)}">
+    </example>
+  </function>
+  
+</taglib>

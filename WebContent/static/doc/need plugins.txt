@@ -1,0 +1,6 @@
+1.项目的布局				jquery layout ui plugin  	http://layout.jquery-dev.net/	
+2.左侧折叠菜单, 下拉框， 对话框		jquery UI accordion plugin    	http://jqueryui.com
+3.表格					jquery datatable plugin		http://www.datatables.net/
+4.表单/表单数据验证        		jquery validation	http://bassistance.de/jquery-plugins/jquery-plugin-validation/
+5.提示信息					jquery tips http://onehackoranother.com/projects/jquery/tipsy/
+6.国际化

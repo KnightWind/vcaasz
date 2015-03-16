@@ -1,0 +1,319 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style></style>
+<div style="border-bottom:0px;border-left:0px;padding-bottom:0px;margin:0px auto;padding-left:0px;width:700px;padding-right:0px;background:#fff;border-top:0px;border-right:0px;padding-top:0px;">
+	<table style="background:#fff;margin-top: 30px;" class="ke-zeroborder" border="0" cellspacing="0" cellpadding="0" width="700">
+		<tbody>
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td style="width: 80px;height: 26px;background:#86b82f;text-align: center;" valign="middle">
+								<a style="text-decoration: none;color: #fff;font-size: 12px;" href="http://${siteaddress}/${acceptUrl}">接受</a>
+							</td>
+							<td style="width: 40px;">
+								&nbsp;
+							</td>
+							<td style="width: 80px;height: 26px;background:#00448d;text-align: center;" valign="middle">
+								<a style="text-decoration: none;color: #fff;font-size: 12px;" href="http://${siteaddress}/${refuseURI}">谢绝</a>
+							</td>
+						</tr>
+					</table>
+					<hr color="#cccccc" width="100%" size="1" style="margin-top: 10px;">
+					<h2 style="border-bottom:0px;border-left:0px;padding-bottom:0px;margin:20px 40px 16px;padding-left:0px;padding-right:0px;color:#eb6c00;font-size:12px;border-top:0px;border-right:0px;padding-top:0px;">
+						尊敬的${user.userName}，您好！
+					</h2>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p style="border-bottom:0px;border-left:0px;padding-bottom:0px;line-height:22px;margin:0px 40px;padding-left:0px;padding-right:0px;color:#666666;font-size:12px;border-top:0px;border-right:0px;padding-top:0px;">
+						您被邀请出席<span style="border-bottom:0px;border-left:0px;padding-bottom:0px;margin:0px;padding-left:0px;padding-right:0px;color:#eb6c00;border-top:0px;font-weight:bold;border-right:0px;padding-top:0px;" href="#">${conf.compereName}</span>的会议 。请<a style="border-bottom:0px;border-left:0px;padding-bottom:0px;margin:0px;padding-left:0px;padding-right:0px;border-top:0px;border-right:0px;padding-top:0px;" href="http://${siteaddress}/?joinUrl=${joinUrl}">点击加入</a>，可以进入您的会议！
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p style="border-bottom:0px;border-left:0px;padding-bottom:0px;line-height:22px;margin:0px 40px;padding-left:0px;padding-right:0px;color:#666666;font-size:12px;border-top:0px;border-right:0px;padding-top:0px;">
+						以下是您的会议详细信息：
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p style="border-bottom:0px;border-left:0px;padding-bottom:0px;line-height:18px;margin:0px 40px;padding-left:0px;padding-right:0px;color:#666666;font-size:12px;border-top:0px;border-right:0px;padding-top:0px;">
+						&nbsp;
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<table class="ke-zeroborder" border="0" cellspacing="0" cellpadding="0">
+		<tbody>
+			<tr>
+				<td>
+					<table style="background:#fff;margin-left: 65px;margin-top: 0px;" class="ke-zeroborder" border="0" cellspacing="0" cellpadding="0" width="510">
+						<tbody>
+							<tr>
+								<td valign="middle" style="font-size: 12px;height: 20px;">
+									<span style="border-bottom:0px;border-left:0px;padding-bottom:0px;margin:18px 0px 0px 0px;padding-left:0px;padding-right:0px;color:#333;font-size:12px;font-weight:bold;border-top:0px;border-right:0px;padding-top:0px;">
+										会议主题：
+									</span>
+									${conf.confName}
+								</td>
+							</tr>
+							<tr>
+								<td valign="middle" style="font-size: 12px;height: 20px;">
+									<span style="border-bottom:0px;border-left:0px;padding-bottom:0px;margin:18px 0px 0px 0px;padding-left:0px;padding-right:0px;color:#333;font-size:12px;font-weight:bold;border-top:0px;border-right:0px;padding-top:0px;">
+										安全会议号：
+									</span>
+									${securityCode}
+								</td>
+							</tr>
+							<tr ${ispublicconf}>
+								<td valign="middle" style="font-size: 12px;height: 20px;">
+									<span style="border-bottom:0px;border-left:0px;padding-bottom:0px;margin:18px 0px 0px 0px;padding-left:0px;padding-right:0px;color:#333;font-size:12px;font-weight:bold;border-top:0px;border-right:0px;padding-top:0px;">
+										会议密码：
+									</span>
+									${conf.publicConfPass!'无'}
+								</td>
+							</tr>
+							<tr>
+								<td valign="middle" style="font-size: 12px;height: 20px;">
+									<span style="border-bottom:0px;border-left:0px;padding-bottom:0px;margin:18px 0px 0px 0px;padding-left:0px;padding-right:0px;color:#333;font-size:12px;font-weight:bold;border-top:0px;border-right:0px;padding-top:0px;">
+										会议主持人：
+									</span>
+									${conf.compereName}
+								</td>
+							</tr>
+							<tr>
+								<td valign="middle" style="font-size: 12px;height: 20px;">
+									<span style="border-bottom:0px;border-left:0px;padding-bottom:0px;margin:18px 0px 0px 0px;padding-left:0px;padding-right:0px;color:#333;font-size:12px;font-weight:bold;border-top:0px;border-right:0px;padding-top:0px;">
+										会议开始时间：
+									</span>
+									${conf.startTime?string("yyyy-MM-dd HH:mm")}(${timezone})
+								</td>
+							</tr>
+							<tr>
+								<td valign="middle" style="font-size: 12px;height: 20px;">
+									<span style="border-bottom:0px;border-left:0px;padding-bottom:0px;margin:18px 0px 0px 0px;padding-left:0px;padding-right:0px;color:#333;font-size:12px;font-weight:bold;border-top:0px;border-right:0px;padding-top:0px;">
+										会议结束时间：
+									</span>
+									${conf.endTime?string("yyyy-MM-dd HH:mm")}(${timezone})
+								</td>
+							</tr>
+							<tr ${istelconf}>
+								<td>
+									<h2 style="margin:0;padding:0;border:0;color:#333;font-size:12px;margin-left:0px;margin-top:18px;margin-bottom:18px;">
+										此会议提供电话功能，您的安全会议号码为${securityCode}，您可以拨打如下电话号码，加入会议：
+									</h2>
+								</td>
+							</tr>
+							<tr ${istelconf}>
+								<td>
+									<table ${istelconf} cellspacing=0 >
+										<tr bgcolor="#004d9e">
+											<td align="center" valign="middle" style="width:120px;height:26px;color:#FFFFFF;font-size:12px;border-right:1px solid #C1C1C1;border-left:1px solid #C1C1C1;border-top:1px solid #C1C1C1;">国家</td>
+											<td align="center" valign="middle" style="width:150px;height:26px;color:#FFFFFF;font-size:12px;border-right:1px solid #C1C1C1;border-top:1px solid #C1C1C1;">号码类型</td>
+											<td align="center" valign="middle" style="width:150px;height:26px;color:#FFFFFF;font-size:12px;border-right:1px solid #C1C1C1;border-top:1px solid #C1C1C1;">号码</td>
+										</tr>
+										<tr>
+											<td align="center" valign="middle" style="font-size:12px;height:26px;border-right:1px solid #C1C1C1;border-bottom:1px solid #C1C1C1;border-left:1px solid #C1C1C1;">全球</td>
+											<td align="center" valign="middle" style="font-size:12px;height:26px;border-right:1px solid #C1C1C1;border-bottom:1px solid #C1C1C1;">直拨号</td>
+											<td align="center" valign="middle" style="font-size:12px;height:26px;border-bottom:1px solid #C1C1C1;border-right:1px solid #C1C1C1;">${accessNumber1!'8610 5821 4900'}</td>
+										</tr>
+										<tr>
+											<td align="center" valign="middle" style="font-size:12px;height:26px;border-right:1px solid #C1C1C1;border-bottom:1px solid #C1C1C1;border-left:1px solid #C1C1C1;">中国</td>
+											<td align="center" valign="middle" style="font-size:12px;height:26px;border-right:1px solid #C1C1C1;border-bottom:1px solid #C1C1C1;">国内免费</td>
+											<td align="center" valign="middle" style="font-size:12px;height:26px;border-bottom:1px solid #C1C1C1;border-right:1px solid #C1C1C1;">${accessNumber2!'800 870 1088'}</td>
+										</tr>
+										<tr>
+											<td align="center" valign="middle" style="font-size:12px;height:26px;border-right:1px solid #C1C1C1;border-left:1px solid #C1C1C1;border-bottom:1px solid #C1C1C1;">中国</td>
+											<td align="center" valign="middle" style="font-size:12px;height:26px;border-right:1px solid #C1C1C1;border-bottom:1px solid #C1C1C1;">本地付费</td>
+											<td align="center" valign="middle" style="font-size:12px;height:26px;border-bottom:1px solid #C1C1C1;border-right:1px solid #C1C1C1;">${accessNumber3!'400 874 1088'}</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p style="border-bottom:0px;border-left:0px;padding-bottom:0px;line-height:22px;margin:20px 0px 20px 40px;padding-left:0px;padding-right:0px;color:#666666;font-size:12px;border-top:0px;border-right:0px;padding-top:18px;">
+						您有任何问题，可以参考<a style="border-bottom:0px;border-left:0px;padding-bottom:0px;margin:0px;padding-left:0px;padding-right:0px;color:#eb6c00;border-top:0px;border-right:0px;padding-top:0px;" href="http://meeting.confcloud.cn/help">用户手册</a>或联系客服:400 082 6161。
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<!-- 英文 -->
+	<hr color="#cccccc" width="100%" size="1" style="margin-top: 20px;margin-bottom: 30px;">
+	<table style="background:#fff;" class="ke-zeroborder" border="0" cellspacing="0" cellpadding="0" width="700">
+		<tbody>
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td style="width: 80px;height: 26px;background:#86b82f;text-align: center;" valign="middle">
+								<a style="text-decoration: none;color: #fff;font-size: 12px;font-family: arial;" href="http://${siteaddress}/${acceptUrl}">Accept</a>
+							</td>
+							<td style="width: 40px;">
+								&nbsp;
+							</td>
+							<td style="width: 80px;height: 26px;background:#00448d;text-align: center;" valign="middle">
+								<a style="text-decoration: none;color: #fff;font-size: 12px;font-family: arial;" href="http://${siteaddress}/${refuseURI}">Refuse</a>
+							</td>
+						</tr>
+					</table>
+					<h2 style="font-family: arial;border-bottom:0px;border-left:0px;padding-bottom:0px;margin:20px 40px 16px;padding-left:0px;padding-right:0px;color:#eb6c00;font-size:12px;border-top:0px;border-right:0px;padding-top:0px;">
+						Dear ${user.userName},
+					</h2>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p style="font-family: arial;border-bottom:0px;border-left:0px;padding-bottom:0px;line-height:22px;margin:0px 40px;padding-left:0px;padding-right:0px;color:#666666;font-size:12px;border-top:0px;border-right:0px;padding-top:0px;">
+						You are invited to attend <span style="font-family: arial;border-bottom:0px;border-left:0px;padding-bottom:0px;margin:0px;padding-left:0px;padding-right:0px;color:#eb6c00;border-top:0px;font-weight:bold;border-right:0px;padding-top:0px;" href="#">${conf.compereName}</span>'s meeting. Please click <a style="border-bottom:0px;border-left:0px;padding-bottom:0px;margin:0px;padding-left:0px;padding-right:0px;border-top:0px;border-right:0px;padding-top:0px;" href="http://${siteaddress}/?joinUrl=${joinUrl}">"join in"</a> to join your meeting.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p style="font-family: arial;border-bottom:0px;border-left:0px;padding-bottom:0px;line-height:22px;margin:0px 40px;padding-left:0px;padding-right:0px;color:#666666;font-size:12px;border-top:0px;border-right:0px;padding-top:0px;">
+						Below is the meeting detail info：
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p style="border-bottom:0px;border-left:0px;padding-bottom:0px;line-height:18px;margin:0px 40px;padding-left:0px;padding-right:0px;color:#666666;font-size:12px;border-top:0px;border-right:0px;padding-top:0px;">
+						&nbsp;
+					</p>
+				</td>
+			</tr>			
+		</tbody>
+	</table>
+	<table class="ke-zeroborder" border="0" cellspacing="0" cellpadding="0">
+		<tbody>
+			<tr>
+				<td>
+					<table style="background:#fff;margin-left: 65px;margin-top: 0px;" class="ke-zeroborder" border="0" cellspacing="0" cellpadding="0" width="510">
+						<tbody>
+							<tr>
+								<td valign="middle" style="font-size: 12px;height: 20px;font-family: arial;">
+									<span style="font-family: arial;border-bottom:0px;border-left:0px;padding-bottom:0px;margin:18px 0px 0px 0px;padding-left:0px;padding-right:0px;color:#333;font-size:12px;font-weight:bold;border-top:0px;border-right:0px;padding-top:0px;">
+										Meeting Topic：
+									</span>
+									${conf.confName}
+								</td>
+							</tr>
+							<tr>
+								<td valign="middle" style="font-size: 12px;height: 20px;font-family: arial;">
+									<span style="font-family: arial;border-bottom:0px;border-left:0px;padding-bottom:0px;margin:18px 0px 0px 0px;padding-left:0px;padding-right:0px;color:#333;font-size:12px;font-weight:bold;border-top:0px;border-right:0px;padding-top:0px;">
+										 Security Code：
+									</span>
+									${securityCode}
+								</td>
+							</tr>
+							<tr ${ispublicconf}>
+								<td valign="middle" style="font-size: 12px;height: 20px;font-family: arial;">
+									<span style="font-family: arial;border-bottom:0px;border-left:0px;padding-bottom:0px;margin:18px 0px 0px 0px;padding-left:0px;padding-right:0px;color:#333;font-size:12px;font-weight:bold;border-top:0px;border-right:0px;padding-top:0px;">
+										Meeting Password：
+									</span>
+									${conf.publicConfPass!'无'}
+								</td>
+							</tr>
+							<tr>
+								<td valign="middle" style="font-size: 12px;height: 20px;font-family: arial;">
+									<span style="font-family: arial;border-bottom:0px;border-left:0px;padding-bottom:0px;margin:18px 0px 0px 0px;padding-left:0px;padding-right:0px;color:#333;font-size:12px;font-weight:bold;border-top:0px;border-right:0px;padding-top:0px;">
+										Meeting Moderator：
+									</span>
+									${conf.compereName}
+								</td>
+							</tr>
+							<tr>
+								<td valign="middle" style="font-size: 12px;height: 20px;font-family: arial;">
+									<span style="font-family: arial;border-bottom:0px;border-left:0px;padding-bottom:0px;margin:18px 0px 0px 0px;padding-left:0px;padding-right:0px;color:#333;font-size:12px;font-weight:bold;border-top:0px;border-right:0px;padding-top:0px;">
+										Meeting Start Time：
+									</span>
+									${conf.startTime?string("yyyy-MM-dd HH:mm")}(${timezone})
+								</td>
+							</tr>
+							<tr>
+								<td valign="middle" style="font-size: 12px;height: 20px;font-family: arial;">
+									<span style="font-family: arial;border-bottom:0px;border-left:0px;padding-bottom:0px;margin:18px 0px 0px 0px;padding-left:0px;padding-right:0px;color:#333;font-size:12px;font-weight:bold;border-top:0px;border-right:0px;padding-top:0px;">
+										Meeting End Time：
+									</span>
+									${conf.endTime?string("yyyy-MM-dd HH:mm")}(${timezone})
+								</td>
+							</tr>
+							<tr ${istelconf}>
+								<td>
+									<h2 style="font-family: arial;margin:0;padding:0;border:0;color:#333;font-size:12px;margin-left:0px;margin-top:18px;margin-bottom:18px;">
+										This meeting support telphone function，Your Security Code is ${securityCode}， please dial below access number to join the meeting：
+									</h2>
+								</td>
+							</tr>
+							<tr ${istelconf}>
+								<td>
+									<table ${istelconf} cellspacing=0>
+										<tr bgcolor="#004d9e">
+											<td align="center" valign="middle" style="width:120px;color:#FFFFFF;height:26px;font-size:12px;border-right:1px solid #C1C1C1;border-left:1px solid #C1C1C1;border-top:1px solid #C1C1C1;font-family: arial;">Country</td>
+											<td align="center" valign="middle" style="width:150px;color:#FFFFFF;height:26px;font-size:12px;border-right:1px solid #C1C1C1;border-top:1px solid #C1C1C1;font-family: arial;">Number Type</td>
+											<td align="center" valign="middle" style="width:150px;color:#FFFFFF;height:26px;font-size:12px;border-right:1px solid #C1C1C1;border-top:1px solid #C1C1C1;font-family: arial;">Number</td>
+										</tr>
+										<tr>
+											<td align="center" valign="middle" style="height:26px;font-size:12px;border-right:1px solid #C1C1C1;border-bottom:1px solid #C1C1C1;border-left:1px solid #C1C1C1;font-family: arial;">International</td>
+											<td align="center" valign="middle" style="height:26px;font-size:12px;border-right:1px solid #C1C1C1;border-bottom:1px solid #C1C1C1;font-family: arial;">Direct dial in number</td>
+											<td align="center" valign="middle" style="height:26px;font-size:12px;border-bottom:1px solid #C1C1C1;border-right:1px solid #C1C1C1;font-family: arial;">${accessNumber1!'8610 5821 4900'}</td>
+										</tr>
+										<tr>
+											<td align="center" valign="middle" style="height:26px;font-size:12px;border-right:1px solid #C1C1C1;border-bottom:1px solid #C1C1C1;border-left:1px solid #C1C1C1;font-family: arial;">China</td>
+											<td align="center" valign="middle" style="height:26px;font-size:12px;border-right:1px solid #C1C1C1;border-bottom:1px solid #C1C1C1;font-family: arial;">Toll Free</td>
+											<td align="center" valign="middle" style="height:26px;font-size:12px;border-bottom:1px solid #C1C1C1;border-right:1px solid #C1C1C1;font-family: arial;">${accessNumber2!'800 870 1088'}</td>
+										</tr>
+										<tr>
+											<td align="center" valign="middle" style="height:26px;font-size:12px;border-right:1px solid #C1C1C1;border-left:1px solid #C1C1C1;border-bottom:1px solid #C1C1C1;font-family: arial;">China</td>
+											<td align="center" valign="middle" style="height:26px;font-size:12px;border-right:1px solid #C1C1C1;border-bottom:1px solid #C1C1C1;font-family: arial;">Toll</td>
+											<td align="center" valign="middle" style="height:26px;font-size:12px;border-bottom:1px solid #C1C1C1;border-right:1px solid #C1C1C1;font-family: arial;">${accessNumber3!'400 874 1088'}</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<p style="font-family: arial;border-bottom:0px;border-left:0px;padding-bottom:0px;line-height:22px;margin:20px 0px 20px 40px;padding-left:0px;padding-right:0px;color:#666666;font-size:12px;border-top:0px;border-right:0px;padding-top:0px;">
+						Any questions, please refer to<a style="border-bottom:0px;border-left:0px;padding-bottom:0px;margin:0px;padding-left:0px;padding-right:0px;color:#eb6c00;border-top:0px;border-right:0px;padding-top:0px;" href="http://meeting.confcloud.cn/help">User Guide</a>or contact Customer Service:400 082 6161。
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p style="border-bottom:0px;border-left:0px;padding-bottom:0px;line-height:20px;margin:0px 40px;padding-left:0px;padding-right:0px;color:#666666;font-size:12px;border-top:0px;border-right:0px;padding-top:0px;">
+						&nbsp;
+					</p>
+				</td>
+			</tr>			
+		</tbody>
+	</table>
+	<table style="background:#ccc;margin-top: 20px;" class="ke-zeroborder" border="0" cellspacing="0" cellpadding="0" width="700">
+		<tbody>
+			<tr height="40" align="middle" bgcolor="#004d9e">
+				<td>
+					<p style="font-family: arial;border-bottom:0px;border-left:0px;padding-bottom:0px;line-height:20px;margin:0px;padding-left:0px;padding-right:0px;font-family:Arial, Helvetica, sans-serif;color:#fff;font-size:12px;border-top:0px;border-right:0px;padding-top:0px;">
+						Copyright &copy; 2003-2013 BizConf Telecom Co., Ltd. All right Reserved. 沪ICP备 11034277号-5
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

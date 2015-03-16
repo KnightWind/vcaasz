@@ -1,0 +1,2 @@
+zh-cn,lang_zh.xml
+en-us,lang_en.xml

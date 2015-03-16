@@ -1,0 +1,1113 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="/jsp/common/taglibs.jsp"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>${siteBase.siteName} - ${LANG['website.common.index.title.base.1'] }</title>
+<!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+<!--[if lt IE 9]><script src="/assets/js/lib/html5.js"></script><![endif]-->
+<!--[if lt IE 7]><script src="/assets/js/lib/belatedpng.js"></script><![endif]-->
+<link type="image/x-icon" rel="shortcut icon" href="/assets/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/assets/css/module/jquery-ui-1.9.2.custom.css"/>
+<link type="text/css" rel="stylesheet" href="/assets/css/base.css" />
+<link type="text/css" rel="stylesheet" href="/assets/css/apps/dialog.css" />
+<link type="text/css" rel="stylesheet" href="/assets/css/apps/biz.validate.css" />
+<cc:confList var="WEEK_DAYS"/>
+<cc:confList var="CONF_VIDEO_TYPE_FLUENCY"/>
+<cc:confList var="CONF_VIDEO_TYPE_DISTINCT"/>
+<cc:confList var="CONF_VIDEO_TYPE_WEBBAND"/>
+<cc:confList var="CONF_VIDEO_TYPE_BEST"/>
+<cc:confList var="CONF_VIDEO_TYPE_FLUENCY_CODE"/>
+<cc:confList var="CONF_VIDEO_TYPE_DISTINCT_CODE"/>
+<cc:confList var="CONF_VIDEO_TYPE_WEBBAND_CODE"/>
+<cc:confList var="CONF_VIDEO_TYPE_BEST_CODE"/>
+<fmt:formatDate var="beijingDate" value="${defaultDate}" type="date" pattern="yyyy-MM-dd HH:mm:ss"/>
+</head>
+<body>
+	<div class="meeting-dialog">
+		<!-- 预约会议第一步 -->
+		<div class="step1-panel valid-group">
+			<div class="step1-header">
+				<h3 class="title">
+				<i class="icon icon-meeting">&nbsp;</i><span class="confOperate">${LANG['website.user.create.reser.page.divtitle'] }</span><span class="step">
+				<ul class="numbers">
+					<li class="active">1</li><li>2</li><li>3</li><li>4</li>
+				</ul>
+				<ul class="desc">
+					<li>${LANG['website.user.create.reser.page.step.confinfo']}</li>
+					<li>${LANG['website.user.create.reser.page.step.dateinfo']}</li>
+					<li>${LANG['website.user.create.reser.page.step.paraminfo']}</li>
+					<li>${LANG['website.user.create.reser.page.step.finish']}</li>
+				</ul></span>
+				</h3>
+				<a href="javascript:closeDialog();" title="${LANG['website.user.create.reser.page.divclose']}" class="close"></a>
+			</div>
+			<form id="scheduleForm1" method="post">
+			<div class="step-content">
+				<h4 class="title">${LANG['website.user.create.reser.page.step.one.title']}</h4>
+				<div class="form-panel">
+						<div class="form-item">
+							<label class="title">${LANG['website.user.create.reser.page.confname']}${LANG['website.common.symbol.colon']}</label>
+							<div class="widget">
+								<input id="confName" name="confName" type="text" class="input-text" placeholder="${LANG['website.user.create.reser.page.confname']}" /> 
+								<span class="required"></span> 
+<!-- 								<span class="tips">1-32个任意字符</span> -->
+								<span class="form-tip"><span id="confNameTip"></span></span>
+							</div>
+						</div>
+						<div class="form-item">
+							<label class="title">${LANG['website.user.create.reser.page.hostpassword']}${LANG['website.common.symbol.colon']}</label>
+							<div class="widget">
+								<input id="hostKey" name="hostKey" type="text" class="input-text" placeholder="主持人密码" />
+								<span class="required"></span> 
+<!-- 									<span class="tips">6-12个数字 -->
+									<span class="form-tip"><span id="hostKeyTip"></span></span>
+								</span>
+							</div>
+						</div>
+						<div class="form-item voice-widget">
+							<label class="title">语音模式${LANG['website.common.symbol.colon']}</label>
+							<div class="widget">
+								<input type="radio" name="voice" id="voiceNet" /> 
+								<label for="voiceNet">网络语音</label> 
+								<input type="radio" name="voice" id="netAndPhone" checked="checked"/> 
+								<label for="netAndPhone">网络语音+电话语音</label>
+							</div>
+						</div>
+						<div class="form-item public-widget">
+							<label class="title">公开会议${LANG['website.common.symbol.colon']}</label>
+							<div class="widget">
+								<input class="allowPublic" type="radio" name="allowPublic" id="publicYes" value="1"/> 
+								<label for="publicYes">是</label> 
+								<input class="allowPublic" type="radio" name="allowPublic" id="publicNot" value="2" checked="checked"/> 
+								<label for="publicNot">否</label>
+							</div>
+						</div>
+						<div class="form-item publicPassSet-widget">
+							<label class="title">设置会议密码${LANG['website.common.symbol.colon']}</label>
+							<div class="widget">
+								<input class="publicPass" type="radio" name="publicPass" id="publicYesPass" value="1"/> 
+								<label for="publicYesPass">是</label> 
+								<input class="publicPass" type="radio" name="publicPass" id="publicNotPass" value="2" checked="checked"/> 
+								<label for="publicNotPass">否</label>
+							</div>
+						</div>
+						<div class="form-item publicPass-widget confPassTR">
+							<label class="title">会议密码${LANG['website.common.symbol.colon']}</label>
+							<div class="widget">
+								<input id="confPass" name="confPass" type="password" class="input-text" placeholder="会议密码" />
+								<span class="required"></span> 
+<!--								<span class="tips">6-12个数字</span>-->
+								<span class="form-tip"><span id="confPassTip"></span></span>
+							</div>
+						</div>
+						<div class="form-item publicPass-widget confirmPassTR">
+							<label class="title">确认会议密码${LANG['website.common.symbol.colon']}</label>
+							<div class="widget">
+								<input id="confirmPass" name="confirmPass" type="password" class="input-text" placeholder="确认会议密码" />
+								<span class="required"></span> 
+<!--								<span class="tips">6-12个数字</span>-->
+								<span class="form-tip"><span id="confirmPassTip"></span></span>
+							</div>
+						</div>
+						<div class="form-item assign-widget confInviterTR">
+							<label class="title">指定参会人${LANG['website.common.symbol.colon']}</label>
+							<div class="widget">
+								<input type="radio" name="confInviterRadio" id="assignAll"  value="0" /> 
+								<label for="assignAll">所有注册用户</label> 
+								<input type="radio" name="confInviterRadio" id="assignSome" class="assign-some" checked="checked"  value="1" /> 
+								<label for="assignSome">仅邀请用户</label>
+								<span class="gray">(只有被邀请的注册用户可见)</span>
+							</div>
+						</div>
+						<div class="form-item describe-widget">
+							<label class="title">会议描述${LANG['website.common.symbol.colon']}</label>
+							<div class="widget">
+								<textarea id="confDesc" class="input-area" placeholder="会议描述">${conf.confDesc}</textarea>
+								<span class="count"><span id="nowCountSpan">0</span>/256</span>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="form-buttons">
+				<input id="submit1" page-index="1" type="submit" class="button input-gray next-button" value="下一步">
+				<a class="button anchor-cancel">取消</a>
+			</div>
+			</form>
+		</div>
+		
+		<!-- 预约会议第二步 -->
+		<div class="step2-panel valid-group" style="display: none;">
+			<div class="step1-header">
+				<h3 class="title">
+				<i class="icon icon-meeting"></i><span class="confOperate">预约会议</span><span class="step">
+				<ul class="numbers">
+					<li class="active">1</li><li class="active">2</li><li>3</li><li>4</li>
+				</ul>
+				<ul class="desc">
+					<li>会议信息</li>
+					<li>时间信息</li>
+					<li>参数信息</li>
+					<li>完成</li>
+				</ul></span>
+				</h3>
+				<a href="javascript:closeDialog();" title="关闭" class="close"></a>
+			</div>
+			<form id="scheduleForm2" method="post">
+			<div class="step-content">
+				<h4 class="title">${LANG['website.user.create.reser.page.step.two.title']}
+					<span class="time" title="${beijingDate}">
+						<c:if test="${conf == null}">
+		                	<c:set var="timeZone" value="website.timezone.city.${currentUser.timeZoneId}"/>
+		                	${LANG[timeZone]}时间&nbsp;
+		                </c:if> 
+		                <c:if test="${conf != null}">
+		                	<c:set var="timeZoneDesc" value="website.timezone.city.${conf.timeZoneId}"/>
+		                	${LANG[timeZoneDesc]}时间&nbsp;
+		                </c:if>
+						${beijingDate}
+					</span>
+				</h4>
+				<div class="form-panel">
+						<div class="form-item public-widget">
+							<label class="title">重复周期${LANG['website.common.symbol.colon']}</label>
+							<div class="widget">
+								<input class="repeat-cycle" type="radio" name="repeat" id="repeatYes" value="1"/>
+								<label for="repeatYes">是</label>
+								<input class="repeat-cycle" type="radio" name="repeat" id="repeatNot" checked="checked" value="2"/>
+								<label for="repeatNot">否</label>
+							</div>
+						</div>
+						<div class="form-item time-widget starttime-widget">
+							<label class="title">开始时间${LANG['website.common.symbol.colon']}</label>
+							<div class="widget">
+								<div>
+									<input id="startTime" type="text" name="year" class="year input-text startDateDiv" readonly="readonly"/>
+									<select id="startTimeH" class="hours">
+										<c:forEach var="h" begin="00" end="23" step="1">
+											<option value="${h}" >${h} 点</option>
+										</c:forEach>
+									</select>
+									<select id="startTimeM" class="minute">
+										<c:forEach var="m" begin="00" end="55" step="5">
+											<option value="${m}">${m} 分</option>
+										</c:forEach>
+									</select>
+									<span class="required"></span>
+									<span class="form-tip"><span id="startTimeTip"></span></span>
+								</div>
+<!-- 								<div class="clearfix"></div> -->
+								<div class="type-group duration-group" id="bytype">
+									<input class="bytype" type="radio" name="bytype" id="overTime" value="1"/>
+									<label for="overTime">按结束时间</label>
+									<input class="bytype last-time" type="radio" name="bytype" id="lastTime" value="2" checked="checked"/>
+									<label for="lastTime">按持续时间</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-item time-widget endtime-widget">
+							<label class="title">结束时间${LANG['website.common.symbol.colon']}</label>
+							<div class="widget">
+								<input type="hidden" id="permanentConf_id" value="${conf.permanentConf}"/>
+								<input id="endTime" type="text" name="year" class="year input-text" value="" readonly="readonly"/>
+								<select id="endTimeH" class="hours">
+									<c:forEach var="h" begin="00" end="23" step="1">
+										<option value="${h}" >${h} 点</option>
+									</c:forEach>
+								</select>
+								<select id="endTimeM" class="minute">
+									<c:forEach var="m" begin="00" end="55" step="5">
+										<option value="${m}">${m} 分</option>
+									</c:forEach>
+								</select>
+								<span class="required"></span>
+								<span class="form-tip"><span id="endTimeTip"></span></span>
+							</div>
+						</div>
+						<div class="form-item duration-widget">
+							<label class="title">持续时间${LANG['website.common.symbol.colon']}</label>
+							<div class="widget">
+								<select id="durationH" class="hours">
+									<c:forEach var="h" begin="00" end="23" step="1">
+										<option value="${h}" <c:if test="${h==1}">selected="selected"</c:if>>${h}
+											<c:if test="${h==1 || h==0}">
+											小时
+											</c:if>
+											<c:if test="${h!=1 && h!=0}">
+											小时
+											</c:if> 
+										</option>
+									</c:forEach>
+								</select>
+								<select id="durationM" class="minute">
+									<c:forEach var="m" begin="00" end="55" step="5">
+										<option value="${m}">${m} 
+											<c:if test="${m==0}">
+											分钟
+											</c:if>
+											<c:if test="${m!=0}">
+											分钟
+											</c:if>
+										</option>
+									</c:forEach>
+								</select>
+								<span class="required"></span>
+								<span class="form-tip"><span id="durationTip"></span></span>
+							</div>
+						</div>
+						<div class="repeat-widget cycleTypeTR" style="display: none;">
+							<div class="form-item">
+								<p class="legend">定期模式</p>
+								<div class="groups tabview clearfix">
+									<ul class="ontime tabs">
+										<li class="tab" data-tab="day"><label><input class="cycleType" type="radio" name="ontime" value="1"/><span>按天</span></label></li>
+										<li class="tab active" data-tab="week"><label><input class="cycleType" type="radio" name="ontime" value="2" checked="checked" /><span>按周</span></label></li>
+										<li class="tab" data-tab="month"><label><input class="cycleType" type="radio" name="ontime" value="3"/><span>按月</span></label></li>
+									</ul>
+									<div class="timemode views">
+										<div class="view" data-view="day">
+											<p>填写天数${LANG['website.common.symbol.colon']}</p>
+<!--											<div class="bydate error-item">-->
+											<div class="bydate">
+												每 <input id="cycleDayFlag" type="text" class="input-text days" name="day" value="1"/> 天
+<!-- 												<span class="error"><i class="icon"></i>请输入正确的时间间隔</span> -->
+												<div class="cycleDayFlag-tip">
+													<span class="form-tip"><span id="cycleDayFlagTip"></span></span>
+												</div>
+											</div>
+										</div>
+										<div class="view active" data-view="week">
+											<p>选择星期${LANG['website.common.symbol.colon']}</p>
+											<div class="dayofweek">
+												<label><input type="checkbox" name="weekday" value="1"/><span>周日</span></label>
+												<label><input type="checkbox" name="weekday" value="2" /><span>周一</span></label>
+												<label><input type="checkbox" name="weekday" value="3" /><span>周二</span></label>
+												<label><input type="checkbox" name="weekday" value="4" /><span>周三</span></label>
+												<label><input type="checkbox" name="weekday" value="5" /><span>周四</span></label>
+												<label><input type="checkbox" name="weekday" value="6" /><span>周五</span></label>
+												<label><input type="checkbox" name="weekday" value="7" /><span>周六</span></label>
+											</div>
+											<div class="weekday-tip">
+												<span class="form-tip"><span id="weekdayTip"></span></span>
+											</div>
+										</div>
+										<div class="view" data-view="month">
+											<p>选择日期${LANG['website.common.symbol.colon']}</p>
+											<div class="bydate eachmonth-tip">
+												<input type="radio" name="month-type" value="1"/>
+												每月第 <input id="eachMonthDay" type="text" class="input-text days" name="day" value="1"/> 天
+<!-- 												<span class="error"><i class="icon"></i>请输入正确的时间间隔</span> -->
+												<span class="form-tip"><span id="eachMonthDayTip"></span></span>
+											</div>
+											<div class="byweek">
+												<input type="radio" name="month-type" value="2" checked="checked"/>
+												每月第
+												<select id="weekFlag">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												个
+												<select id="weekDay">
+													<c:forEach var="eachDay" items="${WEEK_DAYS}">
+														<c:set var="week_day_lang" value="conf.cycle.weekly.${eachDay}"/>
+														<option value="${eachDay}">${LANG[week_day_lang]}</option>
+													</c:forEach>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-item repeat-item">
+								<p class="legend">重复范围</p>
+								<div class="groups clearfix">
+									<ul class="ontime">
+										<li>
+											<input class="repeat-scope" id="endLess" type="radio" name="repeatScope" value="1"/>
+											<label for="endLess"><span>无结束日期</span></label>
+										</li>
+										<li class="endRepeat-tip">
+											<input class="repeat-scope" id="endRepeat" type="radio" name="repeatScope" value="2"/>
+											<label for="endRepeat"><span class="equal-width">重复</span></label><input type="text" id="repeatCount" class="input-text times" value="30"/>
+											<label for="endRepeat" style="margin-left: 60px;">次后结束</label>
+											<span class="form-tip"><span id="repeatCountTip"></span></span>
+										</li>
+										<li class="endRepeat-foreEver-tip">
+											<input class="repeat-scope" id="endOneDate" type="radio" name="repeatScope" value="3" checked="checked"/>
+											<label for="endOneDate" style=""><span class="equal-width">结束日期</span></label>
+											<span class="end-time-forever">
+												<input id="endTimeForEver" type="text" class="input-text date" value="" readonly="readonly"/>
+											</span>
+											<span class="form-tip"><span id="endTimeForEverTip"></span></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					
+				</div>
+			</div>
+			<div class="form-buttons">
+				<input page-index="0" type="button" class="button input-gray prev-button" value="上一步">
+				<input id="submit2" page-index="2" type="submit" class="button input-gray next-button" value="下一步">
+				<a class="button anchor-cancel">取消</a>
+			</div>
+			</form>	
+		</div>
+		
+		<!-- 预约会议第三步 -->
+		<div class="step3-panel valid-group" style="display: none;">
+			<div class="step1-header">
+				<h3 class="title">
+				<i class="icon icon-meeting"></i><span class="confOperate">预约会议</span><span class="step">
+				<ul class="numbers">
+					<li class="active">1</li><li class="active">2</li><li class="active">3</li><li>4</li>
+				</ul>
+				<ul class="desc">
+					<li>会议信息</li>
+					<li>时间信息</li>
+					<li>参数信息</li>
+					<li>完成</li>
+				</ul></span>
+				</h3>
+				<a href="javascript:closeDialog();" title="关闭" class="close"></a>
+			</div>
+			<form  id="scheduleForm3" method="post" >
+			<div class="step-content">
+				<h4 class="title">${LANG['website.user.create.reser.page.step.three.title']}</h4>
+				<div class="form-panel">
+						<div class="form-item">
+							<label class="title">会议类型${LANG['website.common.symbol.colon']}</label>
+							<div class="widget">
+								<span id="videoFunc">
+									<input type="checkbox" name="meetType" id="meetTypeVideo" value="2" checked="checked"/>
+									<label for="meetTypeVideo">视频</label>
+								</span>
+							</div>
+						</div>
+						<div id="allowCallTr" class="form-item" style="display: none;">
+							<label class="title">启动外呼${LANG['website.common.symbol.colon']}</label>
+							<div class="widget">
+								<input type="radio" name="allowCall" id="compereMode" value="1" checked="checked" />
+								<label for="compereMode">开启</label>
+								<input type="radio" name="allowCall" id="freeMode" value="0" />
+								<label for="freeMode">关闭</label>
+							</div>
+						</div>
+						<div class="form-item public-widget">
+							<label class="title">会议模式${LANG['website.common.symbol.colon']}</label>
+							<div class="widget">
+								<input type="radio" name="meetMode" id="compereMode" value="1" checked="checked" />
+								<label for="compereMode">主持人模式</label>
+								<input type="radio" name="meetMode" id="freeMode" value="0" />
+								<label for="freeMode">自由模式</label>
+							</div>
+						</div>
+						<div class="form-item public-widget">
+							<label class="title">开启麦克风${LANG['website.common.symbol.colon']}</label>
+							<div class="widget">
+								<input type="radio" name="mikeMode" id="enableMike" value="1"/>
+								<label for="compereMode">是</label>
+								<input type="radio" name="mikeMode" id="disableMike" value="0" checked="checked"/>
+								<label for="freeMode">否</label>
+							</div>
+						</div>
+						<div class="regular">
+							<p class="legend" style="margin-bottom: 10px;"><a class="config">高级参数</a></p>
+							<div class="config-details">
+							<div class="form-item max-audio-widget">
+								<label class="title">最大音频路数${LANG['website.common.symbol.colon']}</label>
+								<div class="widget">
+									<select id="maxAudio" class="short-select">
+										<c:forEach var="h" begin="0" end="${audioNumber }" step="1">
+											<option value="${h}">${h} 路</option>
+										</c:forEach>
+									</select>
+								</div>
+							</div>
+							<div class="form-item max-video-widget">
+								<label class="title">最大视频路数${LANG['website.common.symbol.colon']}</label>
+								<div class="widget">
+									<select id="maxVideo" class="short-select">
+										<c:forEach var="h" begin="0" end="${videoNumber }" step="1">
+							        		<c:if test="${h<7 || h==16}">
+							        			<option value="${h}">${h} 路</option>
+							        		</c:if>
+										</c:forEach>
+									</select>
+								</div>
+							</div>
+							<div class="form-item public-widget">
+								<label class="title">视频画质设置${LANG['website.common.symbol.colon']}</label>
+								<div class="widget">
+									<input id="lowMode" name="videoQuality" type="radio" value="${CONF_VIDEO_TYPE_WEBBAND }" <c:if test="${userEmpower.dpiNumber==CONF_VIDEO_TYPE_WEBBAND_CODE }"> checked="checked" </c:if> /><label for="lowMode">低</label>
+						            <c:if test="${userEmpower.dpiNumber>=CONF_VIDEO_TYPE_FLUENCY_CODE }">
+						          	<input id="middleMode"  name="videoQuality" type="radio" value="${CONF_VIDEO_TYPE_FLUENCY }" checked="checked"/><label for="middleMode">中</label>
+						          	</c:if>
+						          	<c:if test="${userEmpower.dpiNumber>=CONF_VIDEO_TYPE_DISTINCT_CODE }">
+						          	<input id="highMode"  name="videoQuality" type="radio" value="${CONF_VIDEO_TYPE_DISTINCT }" /><label for="highMode">高</label>
+						          	</c:if>
+						          	<c:if test="${userEmpower.dpiNumber>=CONF_VIDEO_TYPE_BEST_CODE }">
+						          	<input id="topMode"  name="videoQuality" type="radio" value="${CONF_VIDEO_TYPE_BEST }" /><label for="topMode">最高</label>
+						          	</c:if>
+								</div>
+							</div>
+							<div class="form-item aheadtime-widget">
+								<label class="title">提前入会时间${LANG['website.common.symbol.colon']}</label>
+								<div class="widget">
+									<input id="aheadTime" type="text" class="input-text short-text" />
+									分钟
+									<span class="form-tip"><span id="aheadTimeTip"></span></span>
+								</div>
+							</div>
+							<div class="form-item public-widget">
+								<label class="title">参会人权限${LANG['website.common.symbol.colon']}</label>
+								<div class="widget">
+									<input class="extraPermission" type="checkbox" name="changePage" id="turnPage" value="1"/>
+									<label for="turnPage">换页</label>
+									<input class="extraPermission" type="checkbox" name="annotate" id="comment" value="1"/>
+									<label for="comment">批注</label>
+									<input class="extraPermission" type="checkbox" name="chatAnyOne" id="toAll" value="1"/>
+									<label for="toAll">与所有人聊天</label>
+									<input class="extraPermission" type="checkbox" name="chatCompere" id="toCompere" value="1"/>
+									<label for="toCompere">与主持人聊天</label>
+									<input class="extraPermission" type="checkbox" name="chatParticipants" id="toParty" value="1"/>
+									<label for="toParty">与参会人聊天</label>
+								</div>
+							</div>
+							<div class="form-item public-widget">
+								<label class="title">会议功能${LANG['website.common.symbol.colon']}</label>
+								<div class="widget">
+									<input class="clientOption" type="checkbox" name="shareDocs" id="shareDoc" value="1"/>
+									<label for="shareDoc">文档共享</label>
+									<input class="clientOption" type="checkbox" name="shareScreen" id="shareWin" value="1"/>
+									<label for="shareWin">屏幕共享</label>
+									<span id="share-media-widget">
+										<input class="clientOption" type="checkbox" name="shareMedia" id="shareMedia" value="1"/>
+										<label for="shareMedia">媒体共享</label>
+									</span>
+									<input class="clientOption" type="checkbox" name="whiteBoard" id="whiteBoard" value="1"/>
+									<label for="whiteBoard">白板</label>
+									<input class="clientOption" type="checkbox" name="fileTrans" id="transmitFile" value="1"/>
+									<label for="transmitFile">文件传输</label>
+									<span id="record-widget">
+										<input class="clientOption" type="checkbox" name="record" id="record" value="1"/>
+										<label for="record">录制</label>
+									</span>
+								</div>
+							</div>							
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="form-buttons">
+				<input page-index="1" type="button" class="button input-gray prev-button" value="上一步">
+				<input page-index="3" type="submit" class="button input-gray next-button" value="完成">
+				<a class="button anchor-cancel">取消</a>
+			</div>	
+			</form>
+		</div>
+		
+		<!-- 预约会议第四步 -->
+		<div class="step4-panel valid-group" style="display: none;">
+			<div class="step1-header">
+				<h3 class="title">
+				<i class="icon icon-meeting"></i><span class="confOperate">预约会议</span><span class="step">
+				<ul class="numbers">
+					<li class="active">1</li><li class="active">2</li><li class="active">3</li><li class="active">4</li>
+				</ul>
+				<ul class="desc">
+					<li>会议信息</li>
+					<li>时间信息</li>
+					<li>参数信息</li>
+					<li>完成</li>
+				</ul></span>
+				</h3>
+				<a href="javascript:closeDialog();" title="关闭" class="close"></a>
+			</div>
+			<div class="step-content">
+				<div class="success-panel">
+					<div class="face-success">${LANG['website.user.create.reser.page.step.four.title']}</div>
+					<ul class="details">
+						<li>会议主题${LANG['website.common.symbol.colon']}<span id="confTitle"></span></li>
+						<li>开始时间${LANG['website.common.symbol.colon']}<span id="confStartTime"></span></li>
+						<li id="durationConsole">持续时间${LANG['website.common.symbol.colon']}<span id="confDuration"></span></li>
+						<li id="endTimeConsole" style="display: none;">结束时间${LANG['website.common.symbol.colon']}<span id="confEndTimeConsole"></span></li>
+						<li id="confPatternTR">定期模式${LANG['website.common.symbol.colon']}<span id="confPattern"></span></li>
+						<li id="confRepeatTR">重复范围${LANG['website.common.symbol.colon']}<span id="confRepeatScope"></span></li>
+						<li id="confVoiceTR">语音模式${LANG['website.common.symbol.colon']}<span id="confVoicePattern"></span></li>
+						<li id="confTypeTR">会议类型${LANG['website.common.symbol.colon']}<span id="confType"></span></li>
+					</ul>
+				</div>
+				<div class="remark clearfix">
+					<input type="hidden" id="confIdForEmail" value=""/>
+					<div class="notes">
+						<h4>日历提醒<span class="gray">将此会议添加到邮件日历中</span></h4>
+						<p><a class="input-gray" onclick="sendNoticeEmail();">添加至Outlook日历提醒</a></p>
+						<p><a class="input-gray" onclick="sendNoticeEmail();">添加至Gmail日历提醒</a></p>
+					</div>
+					<div class="invites">
+						<button class="input-button" onclick="goInviteUsers();">邀请与会者</button>
+						<p>邀请后将以邮件的形式通知受邀人参与此次会议，<br />您也可以在会议列表中点击<i class="icon"></i>图标来邀请与会者。</p>
+					</div>
+				</div>				
+			</div>
+			<div class="form-buttons">
+				<input type="button" class="button input-gray button-ok" value="确定">
+			</div>	
+		</div>
+		<!-- 预约会议失败-->
+		<div class="step5-panel valid-group" style="display: none;">
+			<div class="step1-header">
+				<h3 class="title">
+				<i class="icon icon-meeting"></i><span class="confOperate">预约会议</span><span class="step">
+				<ul class="numbers">
+					<li class="active">1</li><li class="active">2</li><li class="active">3</li><li>4</li>
+				</ul>
+				<ul class="desc">
+					<li>会议信息</li>
+					<li>时间信息</li>
+					<li>参数信息</li>
+					<li>失败</li>
+				</ul></span>
+				</h3>
+				<a href="javascript:closeDialog();" title="关闭" class="close"></a>
+			</div>
+			<div class="step-content">
+				<div class="schedule-failure">
+					<div>抱歉，预约会议失败</div>
+				</div>
+			</div>
+			<div class="form-buttons">
+				<input id="schedultFailButton" type="button" class="button input-gray" value="确定">
+			</div>
+		</div>				
+	</div>
+	<script type="text/javascript" src="/assets/js/lib/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="/assets/js/lib/jquery-ui-1.9.2.custom.js"></script>
+	<script type="text/javascript" src="/assets/js/lib/jquery-ui-i18n.min.js"></script>
+	<script type="text/javascript" src="/assets/js/lib/formValidator-4.1.3.js"></script>
+	<script type="text/javascript" src="/assets/js/lib/formValidatorRegex.js"></script>
+	<script type="text/javascript" src="/assets/js/lib/json2.js"></script>
+	<script type="text/javascript" src="/assets/js/apps/biz.date.js"></script>
+	<script type="text/javascript" src="/assets/js/apps/biz.ajax.js"></script>
+	<fmt:formatDate var="serverDate" value="${defaultDate}" type="date" pattern="yyyy/MM/dd HH:mm:ss"/>
+	<script type="text/javascript">
+	var isOutCallFlag = "${isOutCallFlag}";
+	var serverDate = new Date("${serverDate}");
+	var confID = "${conf.id}";
+	var confHwid = "${conf.confHwid}";
+	var timeZone = "${conf.timeZone}";
+	var cycleID = "${conf.cycleId}";
+	var updateConfFlag = "false";
+	
+	//预约会议时，初始化会议时间信息
+	jQuery(function($) {
+		if (serverDate) {
+			var tempDate = new Date();
+			tempDate.setTime(serverDate.getTime()+10*60*1000);
+			var tempYear = tempDate.getFullYear();
+			var tempMonth = tempDate.getMonth()+1;
+			tempMonth = tempMonth<10?"0"+tempMonth:tempMonth;
+			var tempDay = tempDate.getDate();
+			tempDay = tempDay<10?"0"+tempDay:tempDay;
+			var tempHours = tempDate.getHours();
+			var tempMins = tempDate.getMinutes();
+			if(tempMins>55){
+				tempDate.setTime(tempDate.getTime()+60*60*1000);
+				tempYear = tempDate.getFullYear();
+				tempMonth = tempDate.getMonth()+1;
+				tempMonth = tempMonth<10?"0"+tempMonth:tempMonth;
+				tempDay = tempDate.getDate();
+				tempDay = tempDay<10?"0"+tempDay:tempDay;
+				tempHours = tempDate.getHours();
+				tempMins = 0;
+			}
+			var tempTimeStart = tempYear+"-"+tempMonth+"-"+tempDay;
+			tempMonth = parseInt(tempMonth, 10)+1;
+			tempMonth = tempMonth<10?"0"+tempMonth:tempMonth;
+			var tempTimeEnd = tempYear+"-"+ tempMonth +"-"+tempDay;
+			//设置分钟
+			$("#startTimeM option").each(function() {
+ 				var cValue = $(this).val();
+ 				if(tempMins<=cValue) {
+ 					$(this).attr("selected", true);
+ 					return false;
+ 				}
+			});
+			$("#endTimeM option").each(function() {
+ 				var cValue = $(this).val();
+ 				if(tempMins<=cValue) {
+ 					$(this).attr("selected", true);
+ 					return false;
+ 				}
+			});
+			//设置小时
+			$("#startTimeH option").each(function() {
+ 				var cValue = $(this).val();
+ 				if(cValue==tempHours) {
+ 					$(this).attr("selected", true);
+ 					return false;
+ 				}
+			});
+			$("#endTimeH option").each(function() {
+ 				var cValue = $(this).val();
+ 				if(cValue==tempHours) {
+ 					$(this).attr("selected", true);
+ 					return false;
+ 				}
+			});
+			$("#startTime").val(tempTimeStart);
+			$("#endTime").val(tempTimeEnd);
+			$("#endTimeForEver").val(tempTimeEnd);
+			//选择星期几
+			var weekday = serverDate.getDay()+1;
+			$("#weekDay").attr("value",weekday);
+			$("input[name=weekday]").each(function(n){
+				if($(this).val()==weekday){
+					$(this).attr("checked",'checked');
+				} else {
+					$(this).removeAttr("checked");
+				}
+			});
+		}
+		
+		var phoneFunc = "${defaultConfig.confType}";    //会议缺省设置中电话功能开启状态${LANG['website.common.symbol.colon']}1开启；2关闭
+		var allowCall = "${defaultConfig.allowCall}";    //会议缺省设置中外呼开启状态${LANG['website.common.symbol.colon']}1开启；2关闭
+		var isPhoneFlag = "${isPhoneFlag}";
+		if(!isPhoneFlag) {
+			$("#netAndPhone").hide();
+			$("label[for=netAndPhone]").hide();
+			$("input[name=voice]:eq(1)").removeAttr("checked");
+			$("input[name=voice]:eq(0)").attr("checked",'checked');
+		} else {
+			if(phoneFunc == 1){
+				$("input[name=voice]:eq(1)").attr("checked",'checked');
+				if(isOutCallFlag){
+					$("#allowCallTr").attr("style","");
+				}
+				if(isOutCallFlag && allowCall == 1){
+					$("input:radio[name=allowCall]:eq(0)").attr("checked",'checked');
+				}
+			}
+		}
+		
+		//设置视频画质
+		var videoType = "${defaultConfig.videoType}";
+		if(videoType=="${CONF_VIDEO_TYPE_WEBBAND}"){
+			$("input:radio[name=videoQuality]:eq(0)").attr("checked",'checked');
+		} else if(videoType=="${CONF_VIDEO_TYPE_FLUENCY}"){
+			$("input:radio[name=videoQuality]:eq(1)").attr("checked",'checked');
+		} else if(videoType=="${CONF_VIDEO_TYPE_DISTINCT}"){
+			$("input:radio[name=videoQuality]:eq(2)").attr("checked",'checked');
+		} else if(videoType=="${CONF_VIDEO_TYPE_BEST}"){
+			$("input:radio[name=videoQuality]:eq(3)").attr("checked",'checked');
+		}
+		
+		//设置音频功能
+		var isAudioFlag = "${isAudioFlag}"; 
+		if(!isAudioFlag){
+			$("#phoneFunc").hide();
+			$("#max-audio-widget").hide();
+		}
+		//设置视频功能
+		var isVideoFlag = "${isVideoFlag}"; 
+		if(!isVideoFlag){
+			$("#videoFunc").hide();
+			$("#max-video-widget").hide();
+			$("input[name=meetType]:eq(0)").removeAttr("checked");
+		}
+		//设置会议模式
+		var confModel = "${confModel}";
+		if(confModel==1){
+			$("input:radio[name=meetMode]:eq(0)").attr("checked",'checked');
+		} else {
+			$("input:radio[name=meetMode]:eq(1)").attr("checked",'checked');
+		}
+		//设置麦克风
+		var micStatus = "${micStatus}";
+		if(micStatus==1){
+			$("input:radio[name=mikeMode]:eq(0)").attr("checked",'checked');
+		} else {
+			$("input:radio[name=mikeMode]:eq(1)").attr("checked",'checked');
+		}
+		//设置最大音视频路数
+		var videoNumber = parseInt("${videoNumber}", 10);
+		var audioNumber = parseInt("${audioNumber}", 10);
+		var defaultMaxVideo = parseInt("${defaultConfig.maxVideo}", 10);
+		var defaultMaxAudio = parseInt("${defaultConfig.maxAudio}", 10);
+		if(defaultMaxVideo>videoNumber){
+			defaultMaxVideo = videoNumber;
+		}
+		if(defaultMaxAudio>audioNumber){
+			defaultMaxAudio = audioNumber;
+		}
+		$("#maxVideo").attr("value",defaultMaxVideo);
+		$("#maxAudio").attr("value",defaultMaxAudio);
+		//设置提前时间
+		$("#aheadTime").attr("value","${defaultConfig.aheadTimes}");
+		//设置参会人权限
+		if("${changePage}"==1){
+			$("input:checkbox[name=changePage]:eq(0)").attr("checked",'checked');
+		}
+		if("${annotate}"==1){
+			$("input:checkbox[name=annotate]:eq(0)").attr("checked",'checked');
+		}
+		if("${chatAnyOne}"==1){
+			$("input:checkbox[name=chatAnyOne]:eq(0)").attr("checked",'checked');
+		}
+		if("${chatCompere}"==1){
+			$("input:checkbox[name=chatCompere]:eq(0)").attr("checked",'checked');
+		}
+		if("${chatParticipants}"==1){
+			$("input:checkbox[name=chatParticipants]:eq(0)").attr("checked",'checked');
+		}
+		//设置会议功能
+		if("${shareDocs}"==1){
+			$("input:checkbox[name=shareDocs]:eq(0)").attr("checked",'checked');
+		}
+		if("${shareScreen}"==1){
+			$("input:checkbox[name=shareScreen]:eq(0)").attr("checked",'checked');
+		}
+		if("${shareMedia}"==1){
+			$("input:checkbox[name=shareMedia]:eq(0)").attr("checked",'checked');
+		}
+		var isShareMediaFlag = "${isShareMediaFlag}";
+		if(!isShareMediaFlag) {
+			$("#share-media-widget").hide();
+			$("input:checkbox[name=shareMedia]:eq(0)").attr("disabled",'disabled');
+			$("input:checkbox[name=shareMedia]:eq(0)").removeAttr("checked");
+		}
+		
+		if("${whiteBoard}"==1){
+			$("input:checkbox[name=whiteBoard]:eq(0)").attr("checked",'checked');
+		}
+		if("${fileTrans}"==1){
+			$("input:checkbox[name=fileTrans]:eq(0)").attr("checked",'checked');
+		}
+		if("${record}"==1){
+			$("input:checkbox[name=record]:eq(0)").attr("checked",'checked');
+		}
+		var isRecordFlag = "${isRecordFlag}";
+		if(!isRecordFlag) {
+			$("#record-widget").hide();
+			$("input:checkbox[name=record]:eq(0)").attr("disabled",'disabled');
+			$("input:checkbox[name=record]:eq(0)").removeAttr("checked");
+		}
+	});
+	
+	function sendNoticeEmail() {
+		var id = $("#confIdForEmail").val();
+		if(id){
+			var data = {};
+			data.confId = id;
+			app.sendNoticeEmail(data, function(result) {
+				if(result){
+					if(result.status && result.status==1){
+						parent.parent.successDialog(result.message);
+					} else {
+						parent.parent.errorDialog(result.message);
+					}
+				}
+			},{message:"正在添加日历...", ui:top.window});		
+		} else {
+			top.errorDialog("添加日历提醒异常，没有获取到会议号！");
+		}
+	}
+	
+	function goInviteUsers(){
+		var id = $("#confIdForEmail").val();
+		top.editInventContact(id);
+	}
+	</script>
+	<!-- 修改会议 -->
+	<c:if test="${conf != null}">
+	<fmt:formatDate var="confStartTime" value="${conf.startTime}" type="date" pattern="yyyy/MM/dd HH:mm:ss"/>
+	<fmt:formatDate var="confEndTime" value="${conf.endTime}" type="date" pattern="yyyy/MM/dd HH:mm:ss"/>
+	<fmt:formatDate var="confStartDate" value="${conf.startTime}" type="date" pattern="yyyy-MM-dd"/>
+	<fmt:formatDate var="confEndDate" value="${conf.endTime}" type="date" pattern="yyyy-MM-dd"/>
+	<fmt:formatDate var="confCycleEndDate" value="${confCycle.endDate}" type="date" pattern="yyyy-MM-dd"/>
+	
+		<script type="text/javascript">
+			var updateConfFlag = "true";
+			$(".confOperate").text("修改会议");
+			/*
+			 * cycleConfType:
+			 * 值1${LANG['website.common.symbol.colon']}修改循环会议中的所有会议 ;
+			 * 值2${LANG['website.common.symbol.colon']}重新创建会议
+			 */
+			var cycleConfType = "${cycleConfType}";
+			jQuery(function($) {
+				$("#confName").val("${conf.confName}");
+				var isPublic = "${conf.publicFlag}";
+				if(isPublic=="1"){
+					$("input:radio[name=allowPublic]:eq(0)").attr("checked",'checked');
+					$(".publicPassSet-widget").show();
+					var publicPass = "${conf.publicConfPass}";
+					if(publicPass){
+						$("input:radio[name=publicPass]:eq(0)").attr("checked",'checked');
+						$("#confPass").val(publicPass);
+						$("#confirmPass").val(publicPass);
+						$(".publicPass-widget").show();
+					}
+					$(".confInviterTR").hide();
+				} else if(isPublic=="3"){
+					$("input:radio[name=confInviterRadio]:eq(0)").attr("checked",'checked');
+				}
+				var hostKey = "${conf.hostKey}";
+				if(hostKey){
+					$("#hostKey").val(hostKey);
+				}
+				var confDesc = "${conf.confDesc}";
+				if (confDesc) {
+					$("#nowCountSpan").text(confDesc.length);
+				}
+				var startTime = new Date("${confStartTime}");
+				if(startTime && cycleConfType != "2"){
+					$("#startTime").val("${confStartDate}");
+					var hour = startTime.getHours();
+					$("#startTimeH").attr("value",hour);
+					var mis = startTime.getMinutes(); 
+					$("#startTimeM").attr("value",mis);
+				}
+				var endTime = "${confEndTime}";
+				if(endTime){
+					endTime = new Date(endTime);
+					$("#endTime").val("${confEndDate}");
+					var ehour = endTime.getHours();
+					$("#endTimeH").attr("value",ehour);
+					var emis = endTime.getMinutes(); 
+					$("#endTimeM").attr("value",emis);
+				}
+				$(".repeat-cycle").attr("disabled",'disabled');
+				$("#bytype").hide();   //修改会议时，不可以修改“按结束时间” “按持续时间”
+				if(cycleConfType == "1"){        //修改周期会议中所有会议的cycleConfType字段值为1
+					$(".startDateDiv").hide();	 //修改周期会议中所有会议，则不可修改开始时间的日期字段，只可修改小时与分钟!
+					var required = $(".starttime-widget").find(".required");
+					required.addClass("required-startTime");   //将红星挨着输入框后边
+					$("input[name=repeat]:eq(0)").attr("checked",'checked');
+					$(".cycleTypeTR").show();
+					var cycleType = "${cycleType}";   //"${cycleType}";
+					
+					var infiniteFlag = "${confCycle.infiniteFlag}";    //是否无限期循环
+					var repeatCount = "${confCycle.repeatCount}";      //重复次数
+					if(repeatCount && repeatCount > 0){
+						$("input[name=repeatScope]:eq(1)").attr("checked",'checked');     //重复x次后结束
+						$("#repeatCount").val(repeatCount);
+					}
+					if(infiniteFlag && infiniteFlag == 1){     //无结束日期
+						$("input[name=repeatScope]:eq(0)").attr("checked",'checked');
+					}else if(infiniteFlag && infiniteFlag == 0 && repeatCount == 0){	//按结束日期
+						$("input[name=repeatScope]:eq(2)").attr("checked",'checked');
+						$("#endTimeForEver").val("${confCycleEndDate}");
+					}
+					$("input[name=repeatScope]").attr("disabled",'disabled'); 
+					$("#repeatCount").attr("disabled",'disabled');
+					$("#endTimeForEver").attr("disabled",'disabled');
+					if(cycleType=="1"){
+						$("input[name=ontime]:eq(0)").attr("checked",'checked');     //按日
+						$(".cycleType").attr("disabled",'disabled');
+						var cycleDayValue = "${cycleDayValue}";
+						$("#cycleDayFlag").val(cycleDayValue);      //"${cycleDayValue}"
+						$("#cycleDayFlag").attr("disabled",'disabled');
+						$("div[data-view=week]").removeClass("active");
+						$("div[data-view=day]").addClass("active");
+					} else if (cycleType=="2") {
+						$("input[name=ontime]:eq(1)").attr("checked",'checked');    //按周
+						$(".cycleType").attr("disabled",'disabled');
+						var cycleWeekValue = "${cycleWeekValue}";
+						cycleWeekValue = cycleWeekValue.split(",");
+						$("input[name=weekday]").removeAttr("checked");
+						for ( var i = 0; i < cycleWeekValue.length; i++) {
+							var indexWeek = cycleWeekValue[i]-1;
+							$("input[name=weekday]:eq("+indexWeek+")").attr("checked",'checked');	
+						}
+						$("input[name=weekday]").attr("disabled",'disabled');
+					} else if (cycleType=="3"){
+						$("input[name=ontime]:eq(2)").attr("checked",'checked');   //按月
+						$(".cycleType").attr("disabled",'disabled');
+						var monthCycleOption = "${monthCycleOption}";
+						if(monthCycleOption=="1"){
+							$("input[name=month-type]:eq(0)").attr("checked",'checked');
+							$("#eachMonthDay").val("${eachMonthDay}");    //每月第x天 
+						} else if(monthCycleOption=="2"){
+							$("input[name=month-type]:eq(1)").attr("checked",'checked');
+							$("#weekFlag").attr("value","${weekFlag}");   //每月第x个
+							$("#weekDay").attr("value","${weekDay}");     //周几
+						}
+						$("input[name=month-type]").attr("disabled",'disabled');
+						$("#eachMonthDay").attr("disabled",'disabled');
+						$("#weekFlag").attr("disabled",'disabled');
+						$("#weekDay").attr("disabled",'disabled');
+						$("div[data-view=week]").removeClass("active");
+						$("div[data-view=month]").addClass("active");
+					}
+				}else if(cycleConfType == "2"){
+					$(".confOperate").text("重新创建会议");
+				}
+				var durationValue = "${conf.duration}";
+				if(durationValue){
+					var duration = parseInt("${conf.duration}", 10);
+					var duraHour = duration/60>>0;
+					var duraMis = duration%60;
+					$("#durationH").attr("value",duraHour);
+					$("#durationM").attr("value",duraMis);
+					if(duraMis%5!=0){
+						$("#durationM").attr("value","10");
+					}
+
+					if(durationValue>1440){
+						$(".endtime-widget").show();
+						$(".duration-widget").hide();	
+					} else {
+						$(".endtime-widget").hide();
+						$(".duration-widget").show();
+					}
+				}
+				var confType = "${conf.confType}";
+				if(confType) {
+					if(confType == 0){
+						$("input[name=confType]:eq(0)").removeAttr("checked");
+						$("#videoTR").hide();
+					}
+					if(confType==2 || confType==3){
+						$("#videoTR").attr("style","");
+						$("input[name=confType]:eq(0)").attr("checked",'checked');
+					}
+					
+					if(confType==1 || confType==3){
+						var isPhoneFlag = "${isPhoneFlag}";
+						if(!isPhoneFlag) {
+							$("#netAndPhone").hide();
+							$("label[for=netAndPhone]").hide();
+							$("input[name=voice]:eq(1)").removeAttr("checked");
+							$("input[name=voice]:eq(0)").attr("checked",'checked');
+						} else {
+							$("input[name=voice]:eq(1)").attr("checked",'checked');
+						}
+					}
+				}
+				var isVideoFlag = "${isVideoFlag}"; 
+				if(!isVideoFlag){
+					$("#videoFunc").hide();
+					$("#videoFuncM").hide();
+					$("#videoTR").hide();
+					$("input[name=confType]:eq(0)").removeAttr("checked");
+				}
+				
+				if(!isOutCallFlag){
+					$("#allowCallTr").attr("style","display:none");
+				} else {
+					if(confType==1 || confType==3){
+						$("#allowCallTr").attr("style","");
+					}
+				} 
+				$("#maxUser").val("${conf.maxUser}");
+				//${LANG['bizconf.jsp.create_Reservation_Conf.res55']}
+				//设置会议模式
+				var confModel = "${confModel}";
+				if(confModel==1){
+					$("input:radio[name=meetMode]:eq(0)").attr("checked",'checked');
+				} else {
+					$("input:radio[name=meetMode]:eq(1)").attr("checked",'checked');
+				}
+				
+				
+				//设置麦克风
+				var micStatus = "${micStatus}";
+				if(micStatus==1){
+					$("input:radio[name=mikeMode]:eq(0)").attr("checked",'checked');
+				} else {
+					$("input:radio[name=mikeMode]:eq(1)").attr("checked",'checked');
+				}
+				var allowCall = "${conf.allowCall}";
+				if(allowCall==1){
+					$("input:radio[name=allowCall]:eq(0)").attr("checked",'checked');
+				} else {
+					$("input:radio[name=allowCall]:eq(1)").attr("checked",'checked');
+				}
+				//config
+				
+				var videoNumber = parseInt("${videoNumber}", 10);
+				var audioNumber = parseInt("${audioNumber}", 10);
+				var confMaxVideo = parseInt("${conf.maxVideo}", 10);
+				var confMaxAudio = parseInt("${conf.maxAudio}", 10);
+				if(confMaxVideo>videoNumber){
+					confMaxVideo = videoNumber;
+				}
+				if(confMaxAudio>audioNumber){
+					confMaxAudio = audioNumber;
+				}
+				$("#maxAudio").attr("value",confMaxAudio);
+				$("#maxVideo").attr("value",confMaxVideo);
+				var videoType = "${conf.videoType}";
+				if(videoType=="${CONF_VIDEO_TYPE_WEBBAND}"){
+					$("input:radio[name=videoQuality]:eq(0)").attr("checked",'checked');
+				} else if(videoType=="${CONF_VIDEO_TYPE_FLUENCY}"){
+					$("input:radio[name=videoQuality]:eq(1)").attr("checked",'checked');
+				} else if(videoType=="${CONF_VIDEO_TYPE_DISTINCT}"){
+					$("input:radio[name=videoQuality]:eq(2)").attr("checked",'checked');
+				} else if(videoType=="${CONF_VIDEO_TYPE_BEST}"){
+					$("input:radio[name=videoQuality]:eq(3)").attr("checked",'checked');
+				}
+				$("#aheadTime").val("${conf.aheadTime}");
+				//permission
+				if("${changePage}"==1){
+					$("input:checkbox[name=changePage]:eq(0)").attr("checked",'checked');
+				}
+				if("${annotate}"==1){
+					$("input:checkbox[name=annotate]:eq(0)").attr("checked",'checked');
+				}
+				if("${chatAnyOne}"==1){
+					$("input:checkbox[name=chatAnyOne]:eq(0)").attr("checked",'checked');
+				}
+				if("${chatCompere}"==1){
+					$("input:checkbox[name=chatCompere]:eq(0)").attr("checked",'checked');
+				}
+				if("${chatParticipants}"==1){
+					$("input:checkbox[name=chatParticipants]:eq(0)").attr("checked",'checked');
+				}
+				
+				//${LANG['bizconf.jsp.conf_default_setup.res9']}
+				if("${shareDocs}"==1){
+					$("input:checkbox[name=shareDocs]:eq(0)").attr("checked",'checked');
+				}
+				if("${shareScreen}"==1){
+					$("input:checkbox[name=shareScreen]:eq(0)").attr("checked",'checked');
+				}
+				if("${shareMedia}"==1){
+					$("input:checkbox[name=shareMedia]:eq(0)").attr("checked",'checked');
+				}
+				var isShareMediaFlag = "${isShareMediaFlag}";
+				if(!isShareMediaFlag) {
+					$("#shareMedia").hide();
+					$("#shareMediaM").hide();
+					$("input:checkbox[name=shareMedia]:eq(0)").attr("disabled",'disabled');
+					$("input:checkbox[name=shareMedia]:eq(0)").removeAttr("checked");
+				}
+				if("${whiteBoard}"==1){
+					$("input:checkbox[name=whiteBoard]:eq(0)").attr("checked",'checked');
+				}
+				if("${fileTrans}"==1){
+					$("input:checkbox[name=fileTrans]:eq(0)").attr("checked",'checked');
+				}
+				if("${record}"==1){
+					$("input:checkbox[name=record]:eq(0)").attr("checked",'checked');
+				}
+				var isRecordFlag = "${isRecordFlag}";
+				if(!isRecordFlag) {
+					$("#record").hide();
+					$("#recordM").hide();
+					$("input:checkbox[name=record]:eq(0)").attr("disabled",'disabled');
+					$("input:checkbox[name=record]:eq(0)").removeAttr("checked");
+				}	
+			});
+		</script>
+	</c:if>
+	<script type="text/javascript" src="/assets/js/apps/biz.meeting.schedule.js"></script>
+</body>
+</html>

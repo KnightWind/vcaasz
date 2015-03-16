@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="econ" default="econBuild" basedir=".">
+	<property name="app.name" value="econ" />
+	<property name="srcdir" value="${basedir}/src" />
+	<property name="webdir" value="${basedir}/WebContent" />
+	<property name="classdir" value="${webdir}/WEB-INF/classes" />
+	<property name="jardir" value="${webdir}/WEB-INF/lib" />
+	<property name="compile.deprecation" value="false" />
+	<property name="compile.optimize" value="true" />
+
+	<path id="build.path">
+		<fileset id="build.lib" dir="${jardir}">
+			<include name="**/*.jar" />
+		</fileset>
+		
+		<fileset id="build.lib" dir="/usr/local/apache-tomcat-6.0.36/lib">
+			<include name="jsp-api.jar" />
+			<include name="servlet-api.jar" />
+		</fileset>
+	</path>
+
+	<target name="clean">
+		<delete dir="${classdir}" />
+		<echo>Clean Succeed!</echo>
+	</target>
+
+	<!-- Prepare a empty build directory -->
+	<target name="prepare" depends="clean">
+		<mkdir dir="${classdir}" />
+		<echo>mkdir Succeed!</echo>
+	</target>
+
+	<target name="econBuild" depends="prepare">
+		<javac encoding="utf-8" srcdir="${srcdir}" destdir="${classdir}" deprecation="${compile.deprecation}" optimize="${compile.optimize}" verbose="no" failonerror="false">
+			<classpath refid="build.path" />
+		</javac>
+		<echo>Compile XML and Properties Succeed ! </echo>
+		<copy todir="${classdir}" includeemptydirs="true" flatten="false">
+			<fileset dir="${srcdir}">
+				<include name="**/*.xml" />
+				<include name="**/*.properties" />
+				<include name="**/*.txt" />
+				<include name="**/*.wsdd" />
+			</fileset>
+		</copy>
+	</target>
+
+</project>

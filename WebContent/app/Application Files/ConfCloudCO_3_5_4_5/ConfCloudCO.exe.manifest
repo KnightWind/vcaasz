@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="ConfCloudCO.exe" version="3.5.4.5" publicKeyToken="445ccefd78ec11ad" language="en-US" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="bizconf.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ConfCloudCO" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ConfCloudCO.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请
+          用下面的某一项替换 requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         如果要利用文件和注册表虚拟化实现向后
+         兼容，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ConfCloudCO.exe" size="10240">
+      <assemblyIdentity name="ConfCloudCO" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>5Z6fQjJ3sTp7m92QGCyWI83q5tg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="bizconf.ico" size="5430">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>qN69QqgEOOAHgWyQpNoJV1npwFE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ConfCloud_launcher.exe" size="140288">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>t9iZeHm7uzJnuAqfUvHJmOsTPSQ=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=&quot;BizConf Telecom Co., Ltd.&quot;, OU=Operation, O=&quot;BizConf Telecom Co., Ltd.&quot;, L=shanghai, S=shanghai, C=CN" issuerKeyHash="963b53f0793397af7d83ef2e2bcccab7861e7266" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>K2aF6sYRXOrWL4x8wWrrmXJtnEk=</DigestValue></Reference></SignedInfo><SignatureValue>GTECGKEzUza2Th4Oy4iPVhr0K3yPXsvp6zqaqmTmvPM6Mg8wafg8Jaop8uZIJ6qxUD9YH5bCQH5oY7pQM4Bpi1+o+TviDwHnDwSWd1JEdwtUgArRfXu0FXjNBicCp97Jb8HRW5Jq6H4pmEh5KBcdRYs3aiZF6rYOPHJ/3bHX24IA/aThqwGa07qwKmhajs8tRKgaiADFOYP4clnoHmD0G4flY1KBRBZw3AT9QbqFDEDgfFwxXwEFGgm5YhGAaos0DNnPJL+yHV4QfPJYQaYn1jqVbncliP2R/5EJUuefJMcC3XWvgNOPEMW6UiPOdIbfhmxoi4OWm3fZQac09cVHoQ==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>6TrLVh2TpVN/wvT9MAEj3riSKai86+Htdt/N3CgQhsuPDdySNNSGUd843Ew28U06nGfN/A6Mqt6nLXbr034XuAxwm7xnqFBBdn0BOp3BFpk12Io0sDJGuTglLKpPp9MqAXmkXXZF3slUmO38ItUlHI66A4dsl3P1wKrg0Ym58t61JNKVV/PRtmuk7EoBT113fgXJrP9fSJTNtW/r6SgzZ2/iYDiYNL4bCOgYXKvPdGFTMOOkAKzhaxwQYBL8ZcqDLhdt8XduMj80kWEO+Lsf1zQn9qBY4XWBX/AVDvYrwGdcbQjo2ia0AA0Ck7ah5Tq39+lIEdiiquay9l2gMQGJ/Q==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="499c6d7299eb6ac17c8c2fd6ea5c11c6ea85662b" Description="" Url=""><as:assemblyIdentity name="ConfCloudCO.exe" version="3.5.4.5" publicKeyToken="445ccefd78ec11ad" language="en-US" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN="BizConf Telecom Co., Ltd.", OU=Operation, O="BizConf Telecom Co., Ltd.", L=shanghai, S=shanghai, C=CN</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>tKsUfPwTRqsbNwuuL1b8FvPW/AI=</DigestValue></Reference></SignedInfo><SignatureValue>T8RiWpHgmP9PKyTb38lK3lqcJbsTu1amW0Lth7S3uArl0ZL+F1sySE00zEXmGyQhkhsjdOnlQWFil0wy4a8b4Z2QMdz81Tozdns54PH0fSlybwgJkSKbap2CfoX68s2kTe5lnDLKUdBYggh9893mqP5HPyTYhfL/30aASpklqgdNv8Ut4uGOwzojhDznOQ4rPiZGTE3/UZxezHXCwgRY1+SBnQI/94tdYcDMIhBE1LHu4qF6OuDusnnnw5MUh17EJCsuzSRJUXCsqoxzT4Gfy3LB7Uy82QQK7+zFomeIzD6WaLkx4cjvDxBooi5D957E1+ysqMGkDbtmyw8ItC8eiA==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>6TrLVh2TpVN/wvT9MAEj3riSKai86+Htdt/N3CgQhsuPDdySNNSGUd843Ew28U06nGfN/A6Mqt6nLXbr034XuAxwm7xnqFBBdn0BOp3BFpk12Io0sDJGuTglLKpPp9MqAXmkXXZF3slUmO38ItUlHI66A4dsl3P1wKrg0Ym58t61JNKVV/PRtmuk7EoBT113fgXJrP9fSJTNtW/r6SgzZ2/iYDiYNL4bCOgYXKvPdGFTMOOkAKzhaxwQYBL8ZcqDLhdt8XduMj80kWEO+Lsf1zQn9qBY4XWBX/AVDvYrwGdcbQjo2ia0AA0Ck7ah5Tq39+lIEdiiquay9l2gMQGJ/Q==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIFKDCCBBCgAwIBAgIQfbRePX1azpdqT4HLLtRwNjANBgkqhkiG9w0BAQsFADB/MQswCQYDVQQGEwJVUzEdMBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24xHzAdBgNVBAsTFlN5bWFudGVjIFRydXN0IE5ldHdvcmsxMDAuBgNVBAMTJ1N5bWFudGVjIENsYXNzIDMgU0hBMjU2IENvZGUgU2lnbmluZyBDQTAeFw0xNTAxMTUwMDAwMDBaFw0xNjAxMTUyMzU5NTlaMIGPMQswCQYDVQQGEwJDTjERMA8GA1UECBMIc2hhbmdoYWkxETAPBgNVBAcTCHNoYW5naGFpMSIwIAYDVQQKFBlCaXpDb25mIFRlbGVjb20gQ28uLCBMdGQuMRIwEAYDVQQLFAlPcGVyYXRpb24xIjAgBgNVBAMUGUJpekNvbmYgVGVsZWNvbSBDby4sIEx0ZC4wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDpOstWHZOlU3/C9P0wASPeuJIpqLzr4e12383cKBCGy48N3JI01IZR3zjcTDbxTTqcZ838Doyq3qctduvTfhe4DHCbvGeoUEF2fQE6ncEWmTXYijSwMka5OCUsqk+n0yoBeaRddkXeyVSY7fwi1SUcjroDh2yXc/XAquDRibny3rUk0pVX89G2a6TsSgFPXXd+Bcms/19IlM21b+vpKDNnb+JgOJg0vhsI6Bhcq890YVMw46QArOFrHBBgEvxlyoMuF23xd24yPzSRYQ74ux/XNCf2oFjhdYFf8BUO9ivAZ1xtCOjaJrQADQKTtqHlOrf36UgR2KKq5rL2XaAxAYn9AgMBAAGjggGNMIIBiTAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIHgDArBgNVHR8EJDAiMCCgHqAchhpodHRwOi8vc3Yuc3ltY2IuY29tL3N2LmNybDBmBgNVHSAEXzBdMFsGC2CGSAGG+EUBBxcDMEwwIwYIKwYBBQUHAgEWF2h0dHBzOi8vZC5zeW1jYi5jb20vY3BzMCUGCCsGAQUFBwICMBkMF2h0dHBzOi8vZC5zeW1jYi5jb20vcnBhMBMGA1UdJQQMMAoGCCsGAQUFBwMDMFcGCCsGAQUFBwEBBEswSTAfBggrBgEFBQcwAYYTaHR0cDovL3N2LnN5bWNkLmNvbTAmBggrBgEFBQcwAoYaaHR0cDovL3N2LnN5bWNiLmNvbS9zdi5jcnQwHwYDVR0jBBgwFoAUljtT8Hkzl699g+8uK8zKt4YecmYwHQYDVR0OBBYEFKEV+cTjlcgdwA3bqsNdnR3BSJ2BMBEGCWCGSAGG+EIBAQQEAwIEEDAWBgorBgEEAYI3AgEbBAgwBgEBAAEB/zANBgkqhkiG9w0BAQsFAAOCAQEATdNhwqUf5Xqzgb4KhgolAhsqkZlBtd4CHCwoqNOiNQyitbJUyfx4CUfEQSQT1IpTzMD/6op0EW/5bdLr9otQnRp7bpi0ZkB8eW8G9EzThb8vkTgfs4GIQUtryFGLuzIisd6GuVJb3pSfuAYKXsgBvgzhigH24xand+LOHwc5v5g8Wajcg+xpwYwGfZ21RHCB2m5pgB/JYSqOeyUQ0WAbvcGgXBa/JqHa75Mdck5HawTSVbxp+gxhDT/BVApSmmMqej9cPslsC7LWJHouX9sdvkoC4xplFgNscmfn7tsEOUtwIC77q8W6SV5suURsmneWnJOleHrCobA7FAH2V3YqTg==</X509Certificate><X509Certificate>MIIFWTCCBEGgAwIBAgIQPXjX+XZJYLJhffTwHsqGKjANBgkqhkiG9w0BAQsFADCByjELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQLExZWZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTowOAYDVQQLEzEoYykgMjAwNiBWZXJpU2lnbiwgSW5jLiAtIEZvciBhdXRob3JpemVkIHVzZSBvbmx5MUUwQwYDVQQDEzxWZXJpU2lnbiBDbGFzcyAzIFB1YmxpYyBQcmltYXJ5IENlcnRpZmljYXRpb24gQXV0aG9yaXR5IC0gRzUwHhcNMTMxMjEwMDAwMDAwWhcNMjMxMjA5MjM1OTU5WjB/MQswCQYDVQQGEwJVUzEdMBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24xHzAdBgNVBAsTFlN5bWFudGVjIFRydXN0IE5ldHdvcmsxMDAuBgNVBAMTJ1N5bWFudGVjIENsYXNzIDMgU0hBMjU2IENvZGUgU2lnbmluZyBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJeDHgAWryyx0gjE12iTUWAecfbiR7TbWE0jYmq0v1obUfejDRh3aLvYNqsvIVDanvPnXydOC8KXyAlwk6naXA1OpA2RoLTsFM6RclQuzqPbROlSGz9BPMpK5KrA6DmrU8wh0MzPf5vmwsxYaoIV7j02zxzFlwckjvF7vjEtPW7ctZlCn0thlV8ccO4XfduL5WGJeMdoG68ReBqYrsRVR1PZszLWoQ5GQMWXkorRU6eZW4U1V9Pqk2JhIArHMHckEU1ig7a6e2iCMe5lyt/51Y2yNdyMK29qclxghJzyDJRewFZSAEjM0/ilfd4v1xPkOKiE1Ua4E4bCG53qWjjdm9sCAwEAAaOCAYMwggF/MC8GCCsGAQUFBwEBBCMwITAfBggrBgEFBQcwAYYTaHR0cDovL3MyLnN5bWNiLmNvbTASBgNVHRMBAf8ECDAGAQH/AgEAMGwGA1UdIARlMGMwYQYLYIZIAYb4RQEHFwMwUjAmBggrBgEFBQcCARYaaHR0cDovL3d3dy5zeW1hdXRoLmNvbS9jcHMwKAYIKwYBBQUHAgIwHBoaaHR0cDovL3d3dy5zeW1hdXRoLmNvbS9ycGEwMAYDVR0fBCkwJzAloCOgIYYfaHR0cDovL3MxLnN5bWNiLmNvbS9wY2EzLWc1LmNybDAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwMwDgYDVR0PAQH/BAQDAgEGMCkGA1UdEQQiMCCkHjAcMRowGAYDVQQDExFTeW1hbnRlY1BLSS0xLTU2NzAdBgNVHQ4EFgQUljtT8Hkzl699g+8uK8zKt4YecmYwHwYDVR0jBBgwFoAUf9Nlp8Ld7LvwMAnzQzn6Aq8zMTMwDQYJKoZIhvcNAQELBQADggEBABOFGh5pqTf3oL2kr34dYVP+nYxeDKZ1HngXI9397BoDVTn7cZXHZVqnjjDSRFph23Bv2iEFwi5zuknx0ZP+XcnNXgPgiZ4/dB7X9ziLqdbPuzUvM1ioklbRyE07guZ5hBb8KLCxR/Mdoj7uh9mmf6RWpT+thC4p3ny8qKqjPQQB6rqTog5QIikXTIfkOhFf1qQliZsFay+0yQFMJ3sLrBkFIqBgFT/ayftNTI/7cmd3/SeUx7o1DohJ/o39KK9KEr0Ns5cF3kQMFfo2KwPcwVAB8aERXRTl4r0nS1S+K4ReD6bDdAUK75fDiSKxH3fzvc1D1PFMqT+1i4SvZPLQFCE=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

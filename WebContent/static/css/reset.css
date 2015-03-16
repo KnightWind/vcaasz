@@ -1,0 +1,53 @@
+@charset "utf-8";
+* {
+	padding:0;
+	margin:0;
+	font-family:"宋体","Arial, Helvetica, sans-serif";
+	font-size:12px;
+}
+
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, lengend, button, select, input, textarea, th, td {
+	margin: 0;
+	padding: 0;
+	border:0;
+}
+/* 设置默认字体 */
+body, button, input, select, textarea {
+	font: 12px/1, Arial, sans-serif, Helvetica, Tahoma;
+	margin:0;
+	padding:0;
+	border:0;/*font: 12px/1 "宋体", Arial, sans-serif, Helvetica, Tahoma;*/
+}
+/* 重置文本格式元素  */
+a {
+	text-decoration: none;
+	outline:none;
+	color:#333;
+}
+ul, li, img, input, a {
+	padding:0;
+	margin:0;
+	border:0;
+	list-style:none;
+	text-decoration:none;
+	outline: medium none;
+}
+input {
+	outline: medium none;
+}
+*html input {
+	border: expression((this.type=="text" || this.type=="password")?"1px #ABADB3 solid":"");
+	padding: 3px 4px 3px 4px;
+}
+*html textarea {
+	border: 1px solid #ABADB3;
+	padding: 3px 4px 3px 4px;
+}
+*html table {
+	border-collapse: collapse;
+}
+
+*+html table {
+	border-collapse: collapse;
+}

@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+.tab_title {
+	clear: left;
+	background: url("/static/images/STYLE11_bg.jpg") repeat-x scroll 0 0
+		transparent;
+	height: 32px;
+	/* 	border: 1px solid #D2D8DB; */
+	margin-top: 10px;
+	border-left: 1px solid #D2D8DB;
+	border-right: 1px solid #D2D8DB;
+	overflow: hidden;
+}
+
+.tab_content {
+	display: none;
+}
+
+.extras-container {
+	display: block;
+}
+
+.extras-action {
+	display: none;
+	height: 50px;
+	border-bottom: 1px solid #D2D8DB;
+	border-left: 1px solid #D2D8DB;
+	border-right: 1px solid #D2D8DB;
+	color: #666666;
+}
+
+.extras-tr {
+	clear: both;
+	border-left: 1px solid #D2D8DB;
+/* 	border-bottom: 1px solid #D2D8DB; */
+	border-right: 1px solid #D2D8DB;
+	height: 50px;
+	position: relative;
+}
+.extras-empty{
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	height: 50px;
+	width: 46px;
+	position: relative;	
+}
+.extras-desc {
+	border-left: 1px solid #D2D8DB;
+	border-bottom: 1px solid #D2D8DB;
+	border-right: 1px solid #D2D8DB;
+	color: #666666;	
+	padding: 5px 15px;
+}
+.extras-default {
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	cursor: pointer;
+	height: 50px;
+	width: 46px;
+	position: relative;
+}
+
+.extras-default:hover {
+	border-left: 1px solid #D3D6D6;
+	border-right: 1px solid #D3D6D6;
+}
+
+.extras-default img {
+	margin: 15px 14px;
+	outline: none;
+}
+
+.extras-hover {
+	border-left: 1px solid #D3D6D6;
+	border-right: 1px solid #D3D6D6;
+}
+
+.extras-actived {
+	border-bottom: 1px solid #FFFFFF;
+	border-left: 1px solid #D3D6D6;
+	border-right: 1px solid #D3D6D6;
+	z-index: 1002;
+}
+
+*html .extras-actived {
+	border-bottom: none;
+} 
+.action_part {
+	width: 550px;
+	/* 	float: right; */
+	height: 50px;
+	background: #FFFFFF;
+	position: absolute;
+	right: 0px;
+}
+
+.has_more_container {
+	height: 32px;
+	line-height: 32px;
+	color: #666666;
+	text-align: center;
+	border-bottom: 1px solid #D3D6D6;
+	border-left: 1px solid #D3D6D6;
+	border-right: 1px solid #D3D6D6;
+}
+
+.panel_icon_on {
+	background: url("/static/images/drop-down.png") no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/drop-down.png', sizingMethod='scale');	
+	display: block;
+	height: 16px;
+	width: 16px;
+	cursor: pointer;
+	float: left;
+	margin: 8px;
+}
+
+.panel_icon_off {
+	background: url("/static/images/drop-up.png") no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/drop-up.png', sizingMethod='scale');
+	display: block;
+	height: 16px;
+	width: 16px;
+	cursor: pointer;
+	float: left;
+	margin: 8px;
+}
+
+.open-state .fader {
+	z-index: 1 !important;
+}
+
+.extras-tr .fader {
+	background: url("/static/images/bg-fader.png") repeat scroll 0 0
+		transparent;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/bg-fader.png',
+		sizingMethod='scale' );
+	display: none;
+	height: 50px;
+	line-height: 50px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1001;
+}
+
+.bgview {
+	height: 78px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 155px;
+	background-image: url("/static/images/u223_normal.png");
+	background-repeat: no-repeat;
+}
+
+.mycontarin {
+	height: 78px;
+	left: 533px;
+	overflow: hidden;
+	position: absolute;
+	top: 323px;
+	width: 155px;
+	z-index: 1011;
+}
+
+.mycontarin1 {
+	height: 178px;
+	left: 533px;
+	overflow: hidden;
+	position: absolute;
+	top: 323px;
+	width: 155px;
+}
+
+.mySpan {
+	font-family: 宋体;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #FFFFFF;
+}

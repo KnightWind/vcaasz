@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/gonggao.css"/>
+<title>无标题文档</title>
+</head>
+
+<body>
+<div class="gonggao_main">
+	<div class="gg_t"></div>
+    <div class="gg_c">
+	<div class="gg_header">
+    <h3 id="title_notice">ECON系统升级的公告</h3>
+    </div>
+    <div class="gg_header_b"></div>
+	<div id="content_notice"  class="gg_main">    	
+    	<p class="gg_main_head">尊敬的用户：</p>
+        <p class="gg_main_center">
+        &nbsp;&nbsp;&nbsp;&nbsp;为了给您提供更加优质的便捷服务，我公司ECON数据会议系统定于2013年2月10日22:00至2月<br />11日8:00进行系统升级。在此期间门户网站将不能访问，暂停部分服务。由此给您带来的不便请谅<br />解。</p>
+    	<p class="ganxie">感谢您对我们的支持！</p>
+        <span class="gongsi">上海会畅通讯股份有限公司</span>
+        <strong id="publish_date" class="gg_time">2013年2月5日</strong>
+     </div>
+    <div class="gg_bottom">
+<!--         <input type="checkbox" name="CheckboxGroup1" class="CheckboxGroup1_01" /><span class="tixing">不在弹出此类提醒！</span> -->
+        <input onclick="closeDialog()" name="gg_button" class="gg_button" type="button" value="关闭"/>
+  </div>
+  </div>
+	<div class="gg_b"></div>
+</div>
+<script type="text/javascript">
+$(function() {
+	var year =new Date().getFullYear();
+	var month = new Date().getMonth()+1;
+	var day = new Date().getDate();
+	var publishDate = year+ "年" +month+"月"+day+"日";
+	$("#publish_date").text(publishDate);
+})
+function closeDialog(){
+	var frame = parent.$("#previewNoticeDiv");
+	frame.trigger("closeDialog");
+}
+</script>
+</body>
+</html>

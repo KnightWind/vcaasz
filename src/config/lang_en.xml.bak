@@ -1,0 +1,2154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+	<!-- 公用资源 Begin -->
+	<resource>
+		<key>website.site.name</key>
+		<value> Company Conference Manage</value>
+	</resource>
+	<resource>
+		<key>website.common.msg.list.nodata</key>
+		<value>No Data</value>
+	</resource>
+		
+	<!-- 分页 Begin-->
+	<!-- 分页 -->
+	<resource>
+		<key>website.pagination.first</key>
+		<value>First</value>
+	</resource>
+	<resource>
+		<key>website.pagination.previous</key>
+		<value>Previous</value>
+	</resource>
+	<resource>
+		<key>website.pagination.next</key>
+		<value>Next</value>
+	</resource>
+	<resource>
+		<key>website.pagination.end</key>
+		<value>End</value>
+	</resource>
+	<resource>
+		<key>website.pagination.jump</key>
+		<value>to</value>
+	</resource>
+	<resource>
+		<key>website.pagination.jumpbtn</key>
+		<value>Jump</value>
+	</resource>
+	<resource>
+		<key>website.pagination.word.total</key>
+		<value>Total</value>
+	</resource>
+	<resource>
+		<key>website.pagination.word.be</key>
+		<value>Be</value>
+	</resource>
+	<resource>
+		<key>website.pagination.word.page</key>
+		<value>Page</value>
+	</resource>
+	<resource>
+		<key>website.pagination.word.record</key>
+		<value>Record</value>
+	</resource>
+	<resource>
+		<key>website.pagination.word.item</key>
+		<value>Item</value>
+	</resource>
+
+	<!-- 分页 End -->
+	
+	<!-- 公用资源 End -->
+
+	<!-- System Menu -->
+	<resource>
+		<key>system.menu.config</key>
+		<value>System Settings</value>
+	</resource>
+	<resource>
+		<key>system.menu.config.user</key>
+		<value>User Manage</value>
+	</resource>
+	<resource>
+		<key>system.menu.config.sysUser</key>
+		<value>SysUser Manage</value>
+	</resource>
+	<resource>
+		<key>system.menu.config.host</key>
+		<value>Mail Server Settings</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.site.manage</key>
+		<value>Site Manage</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.site.list</key>
+		<value>Site Information</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.site.infoManage</key>
+		<value>Business Manage</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.notice.manage</key>
+		<value>Notice Manage</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.notice.list</key>
+		<value>Notice information</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.info.list</key>
+		<value>Search Information</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.info.meeting</key>
+		<value>Meeting information</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.info.log.sysManager</key>
+		<value>SysManager log</value>
+	</resource>
+
+	<resource>
+		<key>system.menu.info.log.userManager</key>
+		<value>UserManager log</value>
+	</resource>
+	<resource>
+		<key>system.menu.info.log.userOperator</key>
+		<value>UserOperator log</value>
+	</resource>
+	<resource>
+		<key>system.menu.info.log.billSearch</key>
+		<value>Bill Search</value>
+	</resource>
+	<resource>
+		<key>system.menu.info.user.manage</key>
+		<value>UserManager</value>
+	</resource>	
+	<!-- System Login -->
+	<resource>
+		<key>system.admin.index.createadmin</key>
+		<value>create admin</value>
+	</resource>
+	<resource>
+		<key>system.admin.index.updateadmin</key>
+		<value>update admin</value>
+	</resource>
+	<resource>
+		<key>system.login.name</key>
+		<value>Login Name</value>
+	</resource>
+	<resource>
+		<key>system.login.password</key>
+		<value>Login Password</value>
+	</resource>
+	<resource>
+		<key>system.login.error.1</key>
+		<value>User not exist</value>
+	</resource>
+	<resource>
+		<key>system.login.error.2</key>
+		<value>Invalid Password</value>
+	</resource>
+	<resource>
+		<key>system.login.error.3</key>
+		<value>Account is locked</value>
+	</resource>
+	<resource>
+		<key>system.login.error.4</key>
+		<value>Invalid Auth Code</value>
+	</resource>
+	<resource>
+		<key>system.login.error.99</key>
+		<value>Login failed with unknown reason</value>
+	</resource>
+	<resource>
+		<key>system.admin.adduser</key>
+		<value>add user</value>
+	</resource>
+	<!-- 企业管理员菜单 -->
+	<resource>
+		<key>company.menu.admin.user</key>
+		<value>Company Manager</value>
+	</resource>		
+	<resource>
+		<key>company.menu.admin.manage</key>
+		<value>Company Admin Manager</value>
+	</resource>
+	<resource>
+		<key>company.menu.user.manage</key>
+		<value>Company User Manager</value>
+	</resource>
+	<resource>
+		<key>company.menu.meeting.permissions</key>
+		<value>Meeting Permissions</value>
+	</resource>	
+	<!-- 系统管理员管理 -->
+		<!-- 系统管理员列表 -->
+		<resource>
+			<key>system.sysUser.list.loginName</key>
+			<value>Login Name</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.list.loginPass</key>
+			<value>Password</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.list.userName</key>
+			<value>User Name</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.list.enName</key>
+			<value>English Name</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.list.email</key>
+			<value>Email</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.list.telephone</key>
+			<value>Telephone</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.list.remark</key>
+			<value>Remark</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.list.operate</key>
+			<value>Operate</value>
+		</resource>
+		<!-- 系统管理员操作 -->
+		<resource>
+			<key>system.sysUser.list.addUser</key>
+			<value>New System User</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.list.changeUser</key>
+			<value>Change System User</value>
+		</resource>
+		<!-- 系统管理员操作提示 -->
+		<resource>
+			<key>system.sysUser.list.delete</key>
+			<value>Confirm to delete?</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.delete.1</key>
+			<value>Delete succeed!</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.delete.2</key>
+			<value>Delete failed!</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.loginName.input</key>
+			<value>Please input Login Name</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.trueName.input</key>
+			<value>Please input User Name</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.loginPass.input</key>
+			<value>Please input Password</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.enName.input</key>
+			<value>Please input English Name</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.email.input</key>
+			<value>Please input Email</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.telphone.input</key>
+			<value>Please input Telphone</value>
+		</resource>		
+		<resource>
+			<key>system.sysUser.remark.maxlength</key>
+			<value>No more than 256 characters</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.loginName.rangelength</key>
+			<value>Length is 4 ~ 16 characters</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.trueName.rangelength</key>
+			<value>Length is 1 ~ 32 characters</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.loginPass.rangelength</key>
+			<value>Length is 6 ~ 16 characters</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.enname.rangelength</key>
+			<value>Length is 1 ~ 32 characters</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.email.rangelength</key>
+			<value>Length is 6 ~ 32 characters</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.mobile.rangelength</key>
+			<value>Length is 4 ~ 32 characters</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.email.custom</key>
+			<value>Please input the correct email format</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.mobile.custom</key>
+			<value>Please input the correct phone format</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.checkLoginName.custom</key>
+			<value>Only allow digital、 letters</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.checkUserName.custom</key>
+			<value>Only allow digital、 letters、&apos;&amp;&apos;、&apos;&#45;&apos;、&apos;&#95;&apos;、&apos;space&apos;</value>
+		</resource>
+		<resource>
+			<key>system.sysUser.checkEnName.custom</key>
+			<value>Only allow digital、 letters、&apos;&amp;&apos;、&apos;&#45;&apos;、&apos;&#95;&apos;、&apos;space&apos;</value>
+		</resource>	
+	<!-- 站点管理 -->
+<!-- 修改站点管理员个人信息 begin-->
+	<resource>
+		<key>system.admin.profile.orgpass</key>
+		<value>The original password</value>
+	</resource>
+	<resource>
+		<key>admin.user.loginname</key>
+		<value>loginName</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.showinfo1</key>
+		<value>Remain empty if not modify</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.msg1</key>
+		<value>Must have login name</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.msg8</key>
+		<value>Must have true name</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.msg2</key>
+		<value>Must have English name</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.msg3</key>
+		<value>Must have original password</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.msg4</key>
+		<value>Must have password</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.msg5</key>
+		<value>Must have confirm password</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.msg6</key>
+		<value>Must input email</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.msg7</key>
+		<value>Please input phone number</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.alertinfo1</key>
+		<value>length in 1~32</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.alertinfo2</key>
+		<value>length in 6~16</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.alertinfo3</key>
+		<value>length in 6~32</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.alertinfo4</key>
+		<value>length in 4~32</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.alertinfo5</key>
+		<value>loginName exist already</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.alertinfo6</key>
+		<value>Only number、character、&apos;&amp;&apos;、&apos;&#45;&apos;、&apos;&#95;&apos;</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.alertinfo7</key>
+		<value>Please enter a valid email format</value>
+	</resource>
+	<resource>
+		<key>system.admin.profile.alertinfo8</key>
+		<value>password must equal to confirm password</value>
+	</resource>
+	<!-- 修改站点管理员个人信息 end-->
+		<!-- 站点列表 -->
+		<resource>
+			<key>system.site.list.CompanyInfo</key>
+			<value>Company Info</value>
+		</resource>
+		<resource>
+			<key>system.site.list.AuthorizationInfo</key>
+			<value>Authorization Info</value>
+		</resource>
+		<resource>
+			<key>system.site.list.AdminInfo</key>
+			<value>Administrator Info</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Complete</key>
+			<value>Complete</value>
+		</resource>
+		<resource>
+			<key>system.site.list.CompanyName</key>
+			<value>Site Name</value>
+		</resource>
+		<resource>
+			<key>system.site.list.EnglishName</key>
+			<value>English Name</value>
+		</resource>
+		<resource>
+			<key>system.site.list.CompanyLogo</key>
+			<value>Company Logo</value>
+		</resource>
+		<resource>
+			<key>system.site.list.SiteSign</key>
+			<value>Site Sign</value>
+		</resource>
+		<resource>
+			<key>system.site.list.SiteFlag</key>
+			<value>Site Type</value>
+		</resource>
+				<resource>
+					<key>system.site.list.SiteFlag.official</key>
+					<value>Official</value>
+				</resource>
+				<resource>
+					<key>system.site.list.SiteFlag.trial</key>
+					<value>Trial</value>
+				</resource>
+		<resource>
+			<key>system.site.list.License</key>
+			<value>License</value>
+		</resource>
+		<resource>
+			<key>system.site.list.hireMode</key>
+			<value>Hire Mode</value>
+		</resource>
+				<resource>
+					<key>system.site.list.hireMode.month</key>
+					<value>Month</value>
+				</resource>
+				<resource>
+					<key>system.site.list.hireMode.minutes</key>
+					<value>Minutes</value>
+				</resource>
+		<resource>
+			<key>system.site.list.chargeMode</key>
+			<value>chargeMode</value>
+		</resource>	
+		<resource>
+			<key>system.site.list.chargeMode.Name Host</key>
+			<value>Name Host</value>
+		</resource>
+		<resource>
+			<key>system.site.list.chargeMode.Active User</key>
+			<value>Active User</value>
+		</resource>
+		<resource>
+			<key>system.site.list.chargeMode.Seats</key>
+			<value>Seats</value>
+		</resource>	
+		<resource>
+			<key>system.site.list.chargeMode.time</key>
+			<value>time</value>
+		</resource>
+		<resource>
+			<key>system.site.list.effedate</key>
+			<value>EffeDate</value>
+		</resource>
+		<resource>
+			<key>system.site.list.ExpireDate</key>
+			<value>Expire Date</value>
+		</resource>
+		<resource>
+			<key>system.site.list.UserName</key>
+			<value>User Name</value>
+		</resource>
+		<resource>
+			<key>system.site.list.EnName</key>
+			<value>English Name</value>
+		</resource>			
+		<resource>
+			<key>system.site.list.LoginName</key>
+			<value>LoginName</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Password</key>
+			<value>Password</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Email</key>
+			<value>Email</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Phone</key>
+			<value>Phone</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Remark</key>
+			<value>Remark</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Status</key>
+			<value>Site Status</value>
+		</resource>
+				<resource>
+					<key>system.site.list.Status.normal</key>
+					<value>Normal</value>
+				</resource>
+				<resource>
+					<key>system.site.list.Status.lock</key>
+					<value>Lock</value>
+				</resource>
+				<resource>
+					<key>system.site.list.Status.unlock</key>
+					<value>Unlock</value>
+				</resource>
+
+		
+		<!-- 站点操作 -->
+		<resource>
+			<key>system.site.list.create</key>
+			<value>New Site</value>
+		</resource>
+		<resource>
+			<key>system.site.list.update</key>
+			<value>Change Site</value>
+		</resource>
+		<resource>
+			<key>system.site.delete</key>
+			<value>Confirm to delete?</value>
+		</resource>
+		<resource>
+			<key>system.site.delete.1</key>
+			<value>Delete site succeed!</value>
+		</resource>
+		<resource>
+			<key>system.site.delete.2</key>
+			<value>Delete site failed!</value>
+		</resource>		
+		<resource>
+			<key>system.site.unlock</key>
+			<value>Unlock site?</value>
+		</resource>
+		<resource>
+			<key>system.site.unlock.1</key>
+			<value>Unlock site succeed!</value>
+		</resource>
+		<resource>
+			<key>system.site.unlock.2</key>
+			<value>Unlock site failed!</value>
+		</resource>
+		<resource>
+			<key>system.site.lock</key>
+			<value>Lock site?</value>
+		</resource>
+		<resource>
+			<key>system.site.lock.1</key>
+			<value>lock site succeed!</value>
+		</resource>
+		<resource>
+			<key>system.site.lock.2</key>
+			<value>lock site failed!</value>
+		</resource>
+		<resource>
+			<key>system.site.save</key>
+			<value>Saving Data...</value>
+		</resource>
+		<resource>
+			<key>system.site.change</key>
+			<value>Changing Data...</value>
+		</resource>
+		<resource>
+			<key>system.site.create.success</key>
+			<value>Registered successfully!</value>
+		</resource>
+		<resource>
+			<key>system.site.update.success</key>
+			<value>Updated successfully!</value>
+		</resource>
+		<resource>
+			<key>system.site.update.sendemail</key>
+			<value>Through the mail to inform administrators！</value>
+		</resource>	
+		<resource>
+			<key>system.site.update.error.-1</key>
+			<value>License not enough！</value>
+		</resource>				
+	<!-- 站点操作提示 -->
+		<resource>
+			<key>system.site.search.info</key>
+			<value>Search By Name Or Sign</value>
+		</resource>
+		<resource>
+			<key>system.site.list.CompanyName.input</key>
+			<value>Please input Company Name</value>
+		</resource>
+		<resource>
+			<key>system.site.list.EnglishName.input</key>
+			<value>Please input English Name</value>
+		</resource>
+		<resource>
+			<key>system.site.list.SiteSign.input</key>
+			<value>Please input Site Sign</value>
+		</resource>
+		
+				
+		<resource>
+			<key>system.site.list.License.input</key>
+			<value>Please input License</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Effedate.input</key>
+			<value>Please input Effedate Date</value>
+		</resource>
+		<resource>
+			<key>system.site.list.ExpireDate.input</key>
+			<value>Please input Expire Date</value>
+		</resource>
+		<resource>
+			<key>system.site.list.UserName.input</key>
+			<value>Please input User Name</value>
+		</resource>
+		<resource>
+			<key>system.site.list.enName.input</key>
+			<value>Please input English Name</value>
+		</resource>		
+		<resource>
+			<key>system.site.list.LoginName.input</key>
+			<value>Please input Login Name</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Password.input</key>
+			<value>Please input password</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Email.input</key>
+			<value>Please input Email</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Phone.input</key>
+			<value>Please input Phone</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Remark.input</key>
+			<value>Please input Remark</value>
+		</resource>
+		<resource>
+			<key>system.site.list.Integer.input</key>
+			<value>Please input Integer</value>
+		</resource>
+		<resource>
+			<key>system.site.list.CorrectDate.input</key>
+			<value>Please input Correct Date</value>
+		</resource>
+		<resource>
+			<key>system.site.list.CorrectEmail.input</key>
+			<value>Please input Correct Email</value>
+		</resource>
+		<resource>
+			<key>system.site.list.siteSign.remote</key>
+			<value>Site Sign already exists!</value>
+		</resource>
+		<resource>
+			<key>system.site.list.loginName.remote</key>
+			<value>Login Name already exists!</value>
+		</resource>
+		<resource>
+			<key>system.site.list.userEmail.remote</key>
+			<value>Email already exists!</value>
+		</resource>
+		<resource>
+			<key>system.site.list.loginNmaePasswd.remote</key>
+			<value>The password must different with loginName!</value>
+		</resource>
+		<resource>
+			<key>system.site.list.remark.maxlength</key>
+			<value>No more than 256 characters</value>
+		</resource>
+		<resource>
+			<key>system.site.list.siteName.rangelength</key>
+			<value>Length is 4 ~ 32 characters</value>
+		</resource>
+		<resource>
+			<key>system.site.list.enName.rangelength</key>
+			<value>Length is 4 ~ 64 characters</value>
+		</resource>
+		<resource>
+			<key>system.site.list.siteSign.rangelength</key>
+			<value>Length is 1 ~ 32 characters</value>
+		</resource>
+		<resource>
+			<key>system.site.list.clientName.rangelength</key>
+			<value>Length is 1 ~ 32 characters</value>
+		</resource>
+		<resource>
+			<key>system.site.list.loginName.rangelength</key>
+			<value>Length is 4 ~ 16 characters</value>
+		</resource>
+		<resource>
+			<key>system.site.list.loginPass.rangelength</key>
+			<value>Length is 6 ~ 16 characters</value>
+		</resource>
+		<resource>
+			<key>system.site.list.userEmail.rangelength</key>
+			<value>Length is 6 ~ 32 characters</value>
+		</resource>
+		<resource>
+			<key>system.site.list.mobile.rangelength</key>
+			<value>Length is 4 ~ 32 characters</value>
+		</resource>
+		<resource>
+			<key>system.site.list.checkSiteName.custom</key>
+			<value>Only allow Chinese、 digital、 letters、&apos;&amp;&apos;、&apos;&#45;&apos;、&apos;&#95;&apos;</value>
+		</resource>
+		<resource>
+			<key>system.site.list.checkEnName.custom</key>
+			<value>Only allow digital、 letters、&apos;&amp;&apos;、&apos;&#45;&apos;、&apos;&#95;&apos;、&apos;space&apos;</value>
+		</resource>
+		<resource>
+			<key>system.site.list.checkSiteSign.custom</key>
+			<value>Only allow digital、 letters、&apos;&#45;&apos;</value>
+		</resource>
+		<resource>
+			<key>system.site.list.checkUserName.custom</key>
+			<value>Only allow digital、 letters、&apos;&amp;&apos;、&apos;&#45;&apos;、&apos;&#95;&apos;</value>
+		</resource>
+		<resource>
+			<key>system.site.list.checkLoginName.custom</key>
+			<value>Only allow digital、 letters</value>
+		</resource>
+		<resource>
+			<key>system.site.list.checkMobile.custom</key>
+			<value>Please input the correct phone format</value>
+		</resource>
+		<resource>
+			<key>system.site.list.mobile.custom</key>
+			<value>Please input the correct phone format</value>
+		</resource>
+		<resource>
+			<key>system.site.list.endDate.custom</key>
+			<value>End date must be greater than start date!</value>
+		</resource>				
+		<resource>
+			<key>system.site.meaasge.create.succeed</key>
+			<value>Create Succeed</value>
+		</resource>
+		<resource>
+			<key>system.site.meaasge.create.failed</key>
+			<value>Create Failed!</value>
+		</resource>
+		<resource>
+			<key>system.site.meaasge.update.succeed</key>
+			<value>Update Succeed</value>
+		</resource>
+		<resource>
+			<key>system.site.meaasge.update.failed</key>
+			<value>Update Failed!</value>
+		</resource>
+		<resource>
+			<key>system.site.meaasge.lookup</key>
+			<value>Look Up SiteInfo</value>
+		</resource>
+	<!-- 公告管理 -->
+		<!-- 公告列表 -->
+		<resource>
+			<key>system.notice.list.Title</key>
+			<value>Notice Title</value>
+		</resource>
+		<resource>
+			<key>system.notice.list.creator</key>
+			<value>Creator</value>
+		</resource>
+		<resource>
+			<key>system.notice.list.Contents</key>
+			<value>Notice Contents</value>
+		</resource>
+		<resource>
+			<key>system.notice.list.StartTime</key>
+			<value>Publish Time</value>
+		</resource>
+		<resource>
+			<key>system.notice.list.StopTime</key>
+			<value>Stop Time</value>
+		</resource>
+		<resource>
+			<key>system.notice.list.Create</key>
+			<value>New notice</value>
+		</resource>
+		<resource>
+			<key>system.notice.list.Create.1</key>
+			<value>Create Succeed!</value>
+		</resource>
+		<resource>
+			<key>system.notice.list.Create.2</key>
+			<value>Create Failed!</value>
+		</resource>
+		<resource>
+			<key>system.notice.list.Update</key>
+			<value>Update notice</value>
+		</resource>		
+		<resource>
+			<key>system.notice.list.Update.1</key>
+			<value>Update Succeed!</value>
+		</resource>
+		<resource>
+			<key>system.notice.list.Update.2</key>
+			<value>Update Failed!</value>
+		</resource>
+		<!-- 公告操作 -->
+		<resource>
+			<key>system.notice.delete</key>
+			<value>Confirm to delete?</value>
+		</resource>
+		<resource>
+			<key>system.notice.delete.1</key>
+			<value>Delete notice succeed!</value>
+		</resource>
+		<resource>
+			<key>system.notice.delete.2</key>
+			<value>Delete notice failed!</value>
+		</resource>
+		<resource>
+			<key>system.notice.title.input</key>
+			<value>Please input title</value>
+		</resource>
+		<resource>
+			<key>system.notice.contents.input</key>
+			<value>Please input Contents</value>
+		</resource>
+		<resource>
+			<key>system.notice.stoptime.input</key>
+			<value>Please select Expiration Date</value>
+		</resource>		
+		<resource>
+			<key>system.notice.title.rangelength</key>
+			<value>Length is 2 ~ 32 characters</value>
+		</resource>
+		<resource>
+			<key>system.notice.date.dateISO</key>
+			<value>Please input the correct date format</value>
+		</resource>
+		<resource>
+			<key>system.notice.date.errorTime</key>
+			<value>The stop time must after today!</value>
+		</resource>
+	
+
+	<!-- 语言按扭 -->
+	<resource>
+		<key>website.lang.zh</key>
+		<value>中文版</value>
+	</resource>
+	<resource>
+		<key>website.lang.en</key>
+		<value>English</value>
+	</resource>
+
+	<resource>
+		<key>website.message.welcome</key>
+		<value>Welcome</value>
+	</resource>
+
+	<resource>
+		<key>website.message.help</key>
+		<value>Help</value>
+	</resource>
+
+	<resource>
+		<key>website.message.logout</key>
+		<value>Logout</value>
+	</resource>
+
+	<resource>
+		<key>website.message.succeed</key>
+		<value>Succeed</value>
+	</resource>
+	<resource>
+		<key>website.message.fail</key>
+		<value>Failure</value>
+	</resource>
+
+	<!-- 按钮 -->
+	<resource>
+		<key>system.Operate</key>
+		<value>Operate</value>
+	</resource>	
+	<resource>
+		<key>system.all</key>
+		<value>Any</value>
+	</resource>
+	<resource>
+		<key>system.search</key>
+		<value>Search</value>
+	</resource>
+	<resource>
+		<key>system.general.search</key>
+		<value>Search</value>
+	</resource>			
+	<resource>
+		<key>system.advancedSearch</key>
+		<value>Advanced Search</value>
+	</resource>
+	<resource>
+		<key>system.manager</key>
+		<value>Manager</value>
+	</resource>	
+	<resource>
+		<key>system.change</key>
+		<value>Change</value>
+	</resource>
+	<resource>
+		<key>system.delete</key>
+		<value>Delete</value>
+	</resource>
+	<resource>
+		<key>system.back</key>
+		<value>Back</value>
+	</resource>
+	<resource>
+		<key>system.next</key>
+		<value>Next</value>
+	</resource>
+	<resource>
+		<key>system.preview</key>
+		<value>Preview</value>
+	</resource>	
+	<resource>
+		<key>system.ok</key>
+		<value>Ok</value>
+	</resource>	
+	<resource>
+		<key>system.cancel</key>
+		<value>Cancel</value>
+	</resource>
+	<resource>
+		<key>system.complete</key>
+		<value>Complete</value>
+	</resource>
+	<resource>
+		<key>system.close</key>
+		<value>Close</value>
+	</resource>	
+	<resource>
+		<key>system.submit</key>
+		<value>Submit</value>
+	</resource>
+	<resource>
+		<key>system.tip</key>
+		<value>Tip</value>
+	</resource>	
+	
+	<!-- Constant中常量对应提示信息 -->
+
+	<!-- 系统管理员日志 -->
+	 <resource>
+		<key>system.eventlog.title.status</key>
+		<value>Type</value>
+	</resource>
+	 <resource>
+		<key>system.eventlog.title.logtime</key>
+		<value>Create Time</value>
+	</resource>
+	 <resource>
+		<key>system.eventlog.title.option.module</key>
+		<value>Operate</value>
+	</resource>
+	 <resource>
+		<key>system.eventlog.title.option.user</key>
+		<value>Operator</value>
+	</resource>
+	 <resource>
+		<key>system.eventlog.title.option.object</key>
+		<value>Operate Object</value>
+	</resource>
+	 <resource>
+		<key>system.eventlog.title.option.ip</key>
+		<value>IP</value>
+	</resource>
+	
+	 <resource>
+		<key>system.eventlog.title.site.sign</key>
+		<value>Site Sign</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.0</key>
+		<value>ALL</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.100</key>
+		<value>Site</value>
+	</resource>
+
+	<resource>
+		<key>system.eventlog.type.101</key>
+		<value>Create Site</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.102</key>
+		<value>Modify Site</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.103</key>
+		<value>Delete Site</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.104</key>
+		<value>Lock Site</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.105</key>
+		<value>UnLock Site</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.200</key>
+		<value>Notice</value>
+	</resource> <resource>
+		<key>system.eventlog.type.201</key>
+		<value>Create Notice</value>
+	</resource>
+	 <resource>
+		<key>system.eventlog.type.202</key>
+		<value>Modify Notice</value>
+	</resource>
+	 <resource>
+		<key>system.eventlog.type.203</key>
+		<value>Delete Notice</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.300</key>
+		<value>Host Setting</value>
+	</resource>
+	
+	 <resource>
+		<key>system.eventlog.type.301</key>
+		<value>Seting Host</value>
+	</resource>
+	 <resource>
+		<key>system.eventlog.type.302</key>
+		<value>Modify Host</value>
+	</resource>
+	 <resource>
+		<key>system.eventlog.type.303</key>
+		<value>Copy Host</value>
+	</resource>
+	 <resource>
+		<key>system.eventlog.type.304</key>
+		<value>Delete Host</value>
+	</resource>
+	 <resource>
+		<key>system.eventlog.type.305</key>
+		<value>Restore Host</value>
+	</resource>
+	 <resource>
+		<key>system.eventlog.type.306</key>
+		<value>Test Host</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.400</key>
+		<value>Template</value>
+	</resource>
+		<resource>
+		<key>system.eventlog.type.401</key>
+		<value>New Email Template</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.402</key>
+		<value>Change Email Template</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.403</key>
+		<value>Delete Email Template</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.404</key>
+		<value>创建站点时复制模板</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.405</key>
+		<value>删除站点时删除模板</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.406</key>
+		<value>恢复某站点的邮件模板为默认模板</value>
+	</resource>
+
+	<resource>
+		<key>system.eventlog.type.20100</key>
+		<value>SysAdmin Manage</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.20101</key>
+		<value>Create SysAdmin</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.20102</key>
+		<value>Change SysAdmin</value>
+	</resource>
+	<resource>
+		<key>system.eventlog.type.20103</key>
+		<value>Delete SysAdmin</value>
+	</resource>
+
+	
+	
+	
+	
+	<!-- 站点管理员日志 -->
+	<resource>
+		<key>siteAdmin.eventlog.type.0</key>
+		<value>Any</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.500</key>
+		<value>Site User</value>
+	</resource>
+	
+	 <resource>
+		<key>siteAdmin.eventlog.type.501</key>
+		<value>Create User</value>
+	</resource>
+	 <resource>
+		<key>siteAdmin.eventlog.type.502</key>
+		<value>Modify User</value>
+	</resource>
+	 <resource>
+		<key>siteAdmin.eventlog.type.503</key>
+		<value>Delete User</value>
+	</resource>
+	 <resource>
+		<key>siteAdmin.eventlog.type.504</key>
+		<value>Active User</value>
+	</resource>
+	 <resource>
+		<key>siteAdmin.eventlog.type.505</key>
+		<value>Lock User</value>
+	</resource>
+	 <resource>
+		<key>siteAdmin.eventlog.type.506</key>
+		<value>Delete User Batch</value>
+	</resource>
+	 <resource>
+		<key>siteAdmin.eventlog.type.507</key>
+		<value>Active User Batch</value>
+	</resource>
+	 <resource>
+		<key>siteAdmin.eventlog.type.508</key>
+		<value>Lock User Batch</value>
+	</resource>
+	
+	 <resource>
+		<key>siteAdmin.eventlog.type.600</key>
+		<value>Manage SiteAdmin</value>
+	</resource>
+	 <resource>
+		<key>siteAdmin.eventlog.type.601</key>
+		<value>Create SiteAdmin</value>
+	</resource>
+	 <resource>
+		<key>siteAdmin.eventlog.type.602</key>
+		<value>Update SiteAdmin</value>
+	</resource>
+	 <resource>
+		<key>siteAdmin.eventlog.type.603</key>
+		<value>Delete SiteAdmin</value>
+	</resource>
+	 <resource>
+		<key>siteAdmin.eventlog.type.700</key>
+		<value>Site Info</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.702</key>
+		<value>Change Site Info</value>
+	</resource>
+	
+	 <resource>
+		<key>siteAdmin.eventlog.type.800</key>
+		<value>Host</value>
+	</resource>
+	 <resource>
+		<key>siteAdmin.eventlog.type.801</key>
+		<value>Email Server Setup</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.802</key>
+		<value>Email Server Test</value>
+	</resource>
+	
+	 <resource>
+		<key>siteAdmin.eventlog.type.900</key>
+		<value>Meeting Setup</value>
+	</resource>
+	 <resource>
+		<key>siteAdmin.eventlog.type.901</key>
+		<value>Meeting Authority Setup</value>
+	</resource>
+	
+	 <resource>
+		<key>siteAdmin.eventlog.type.1000</key>
+		<value>Notice</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.1001</key>
+		<value>New Notice</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.1002</key>
+		<value>Change Notice</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.1003</key>
+		<value>Delete Notice</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.1100</key>
+		<value>Setup SiteAdmin</value>
+	</resource>
+		<resource>
+		<key>siteAdmin.eventlog.type.1101</key>
+		<value>Setup SiteAdmin</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4100</key>
+		<value>Conference</value>
+	</resource>
+		<resource>
+		<key>siteAdmin.eventlog.type.4101</key>
+		<value>Create Immediately Conf</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4102</key>
+		<value>Create Conf</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4103</key>
+		<value>Create Cycle Conf</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4104</key>
+		<value>Update Conf</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4105</key>
+		<value>Delete Conf</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4106</key>
+		<value>Recreate Immediately Conf</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4107</key>
+		<value>Invite Participants</value>
+	</resource>
+	
+	<resource>
+		<key>siteAdmin.eventlog.type.4200</key>
+		<value>Contacts</value>
+	</resource>	
+	<resource>
+		<key>siteAdmin.eventlog.type.4201</key>
+		<value>New contact</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4202</key>
+		<value>Update contact</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4203</key>
+		<value>Delete contact</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4204</key>
+		<value>Batch Create contact</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4205</key>
+		<value>New Group</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4206</key>
+		<value>Update Group</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4207</key>
+		<value>Delete Group</value>
+	</resource>
+	
+	
+	
+	
+	
+
+	<resource>
+		<key>siteAdmin.eventlog.type.4300</key>
+		<value>User Info</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.4301</key>
+		<value>User Info Setup</value>
+	</resource>
+	
+	<resource>
+		<key>siteAdmin.eventlog.type.20200</key>
+		<value>Setup Email Model</value>
+	</resource>
+		<resource>
+		<key>siteAdmin.eventlog.type.20201</key>
+		<value>Setup Email Model</value>
+	</resource>
+	
+		
+	<resource>
+		<key>siteAdmin.eventlog.type.20301</key>
+		<value>站点管理员创建组织机构</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.20302</key>
+		<value>站点管理员修改组织机构</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.20303</key>
+		<value>站点管理员删除组织机构</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.eventlog.type.20304</key>
+		<value>站点管理员为用户批量分配机构</value>
+	</resource>	
+	
+	
+	
+	<resource>
+		<key>siteAdmin.list.create.1</key>
+		<value>Create SiteAdmin Succeed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.list.create.2</key>
+		<value>Create SiteAdmin Failed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.list.delete.1</key>
+		<value>Delete SiteAdmin Succeed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.list.delete.2</key>
+		<value>Delete SiteAdmin Failed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.list.update.1</key>
+		<value>Change SiteAdmin Succeed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.list.update.2</key>
+		<value>Change SiteAdmin Failed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.list.update.3</key>
+		<value>SiteAdmin Email exists!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.list.update.4</key>
+		<value>SiteAdmin LoginName exists!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.Host.update.1</key>
+		<value>Email Server Setup Succeed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.Host.update.2</key>
+		<value>Email Server Setup Failed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.Host.test.1</key>
+		<value>Email Server Test Succeed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.Host.test.2</key>
+		<value>Email Server Test Failed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.EmailModel.update.1</key>
+		<value>Email Model Setup Succeed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.EmailModel.update.2</key>
+		<value>Email Model Setup Failed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.Setup.update.1</key>
+		<value>SiteAdmin Setup Succeed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.Setup.update.2</key>
+		<value>SiteAdmin Setup Failed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.ConfAuthority.update.1</key>
+		<value>Conference Authority Setup Succeed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.ConfAuthority.update.2</key>
+		<value>Conference Authority Setup Failed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.update.1</key>
+		<value>Change SiteUser Succeed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.update.2</key>
+		<value>Change SiteUser Failed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.update.3</key>
+		<value>SiteUser Email exists!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.update.4</key>
+		<value>SiteUser LoginName exists!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.create.1</key>
+		<value>Create SiteUser Succeed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.create.2</key>
+		<value>Create SiteUser Failed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.delete.1</key>
+		<value>Delete SiteUser Succeed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.delete.2</key>
+		<value>Delete SiteUser Failed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.active.1</key>
+		<value>Active SiteUser Succeed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.active.2</key>
+		<value>Active SiteUser Failed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.lock.1</key>
+		<value>Lock SiteUser Succeed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.lock.2</key>
+		<value>Lock SiteUser Failed!</value>
+	</resource>	
+	<resource>
+		<key>siteAdmin.siteUser.delete.batch.1</key>
+		<value>Delete SiteUser Succeed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.delete.batch.2</key>
+		<value>Delete SiteUser Failed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.active.batch.1</key>
+		<value>Active SiteUser Succeed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.active.batch.2</key>
+		<value>Active SiteUser Failed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.lock.batch.1</key>
+		<value>Lock SiteUser Succeed!</value>
+	</resource>
+	<resource>
+		<key>siteAdmin.siteUser.lock.batch.2</key>
+		<value>Lock SiteUser Failed!</value>
+	</resource>	
+	<!-- under this line is resource email_config.jsp page add-->
+	 <resource>
+		<key>system.email.config.submit</key>
+		<value>submit</value>
+	</resource>
+	 <resource>
+		<key>system.email.config.send</key>
+		<value>send</value>
+	</resource>
+	
+	 <resource>
+		<key>system.email.config.advance</key>
+		<value>advance</value>
+	</resource>
+	
+	 <resource>
+		<key>system.email.config.t1</key>
+		<value>Email host info enter</value>
+	</resource>
+	
+	 <resource>
+		<key>system.email.config.host.address</key>
+		<value>Email Host Address</value>
+	</resource>
+	
+	 <resource>
+		<key>system.email.config.host.sender</key>
+		<value>sender</value>
+	</resource>
+	
+	 <resource>
+		<key>system.email.config.host.sendemail</key>
+		<value>Sender Email</value>
+	</resource>
+	
+	 <resource>
+		<key>system.email.config.host.warninfo1</key>
+		<value>Please input sender email</value>
+	</resource>
+	 <resource>
+		<key>system.email.config.host.warninfo2</key>
+		<value>Please input email host address</value>
+	</resource>
+	 <resource>
+		<key>system.email.config.host.warninfo3</key>
+		<value>Please input sender name</value>
+	</resource>
+	 <resource>
+		<key>system.email.config.host.warninfo6</key>
+		<value>Please input email address correctly</value>
+	</resource>
+	
+	 <resource>
+		<key>system.email.config.confirmaccount</key>
+		<value>Confirm address</value>
+	</resource>
+	 <resource>
+		<key>system.email.config.host.warninfo4</key>
+		<value>Please input confirm address</value>
+	</resource>
+	
+	 <resource>
+		<key>system.email.config.host.confirmpass</key>
+		<value>Confirm password</value>
+	</resource>
+	 <resource>
+		<key>system.email.config.host.warninfo5</key>
+		<value>Please enter confirm password</value>
+	</resource>
+	
+	 <resource>
+		<key>system.email.config.host.warninfo7</key>
+		<value>Please input email content</value>
+	</resource>
+	 <resource>
+		<key>system.email.config.host.warninfo8</key>
+		<value>Please input email address</value>
+	</resource>
+	
+	 <resource>
+		<key>system.email.config.host.content</key>
+		<value>Email Content</value>
+	</resource>
+	
+	 <resource>
+		<key>system.email.config.confirm.address</key>
+		<value>Email Address</value>
+	</resource>
+	
+	 <resource>
+		<key>system.email.type.invite</key>
+		<value>Conference Invite Notice</value>
+	</resource>
+	
+	 <resource>
+		<key>system.email.type.update</key>
+		<value>Conference Update Notice</value>
+	</resource>
+	
+	 <resource>
+		<key>system.email.type.cancel</key>
+		<value>Conference Cancel Notice</value>
+	</resource>
+	
+	 <resource>
+		<key>system.email.type.remind</key>
+		<value>Conference Remind Notice</value>
+	</resource>
+	
+	 <resource>
+		<key>system.email.config.savetemp</key>
+		<value>Save</value>
+	</resource>
+	
+	 <resource>
+		<key>system.email.config.recovertemp</key>
+		<value>Recover</value>
+	</resource>
+	
+	<resource>
+		<key>system.menu.config.template</key>
+		<value>Email Template Setting</value>
+	</resource>
+	
+	<!--2013-02-17-->
+	<resource>
+		<key>system.email.temp.syserror</key>
+		<value>system error!</value>
+	</resource>
+	<resource>
+		<key>system.email.temp.errorinfo1</key>
+		<value>open template file failed!</value>
+	</resource>
+	<resource>
+		<key>system.email.temp.errorinfo2</key>
+		<value>please input template content!</value>
+	</resource>
+	<resource>
+		<key>system.email.temp.alertinfo1</key>
+		<value>save template success! </value>
+	</resource>
+	<!--会议列表-->
+	 <resource>
+		<key>system.list.meeting.title</key>
+		<value>Meeting Topic</value>
+	</resource>
+	<resource>
+		<key>system.list.meeting.type</key>
+		<value>Meeting Type</value>
+	</resource>
+	<resource>
+		<key>system.list.meeting.status</key>
+		<value>Meeting Status</value>
+	</resource>
+	<resource>
+		<key>system.list.meeting.start.time</key>
+		<value>Start time</value>
+	</resource>
+	<resource>
+		<key>system.list.meeting.stop.time</key>
+		<value>Stop time</value>
+	</resource>
+	<resource>
+		<key>system.list.meeting.license</key>
+		<value>Meeting license</value>
+	</resource>	
+	<resource>
+		<key>system.list.meeting.host</key>
+		<value>Host</value>
+	</resource>
+	<resource>
+		<key>system.list.meeting.meetingNo</key>
+		<value>Meeting No</value>
+	</resource>
+	<!-- 2013-02-18 -->
+	<resource>
+		<key>system.email.config.lengthinfo32</key>
+		<value>characters length in 1~32</value>
+	</resource>
+	<resource>
+		<key>system.email.config.lengthinfo64</key>
+		<value>characters length must less then 64</value>
+	</resource>
+	<!-- up this line is resource email_config.jsp page add-->
+	<!-- Email配置 -->
+	<!--Email Host Config -->
+
+	<resource>
+		<key>system.email.msgcode.1</key>
+		<value>Save Succeed</value>
+	</resource>
+
+	<resource>
+		<key>system.email.msgcode.2</key>
+		<value>Save Failed </value>
+	</resource>
+
+	<resource>
+		<key>system.email.msgcode.3</key>
+		<value>Mail sent successfully, please note to check!</value>
+	</resource>
+
+	<resource>
+		<key>system.email.msgcode.4</key>
+		<value>Failure !</value>
+	</resource>
+	<!-- 个人信息资源 -->
+	<resource>
+		<key>system.user.title</key>
+		<value>User Info Update</value>
+	</resource>	
+	<resource>
+		<key>system.user.username</key>
+		<value>User Name</value>
+	</resource>		
+	<resource>
+		<key>system.user.enname</key>
+		<value>English Name</value>
+	</resource>
+	<resource>
+		<key>system.user.password</key>
+		<value>Password</value>
+	</resource>
+	<resource>
+		<key>system.user.confirmPass</key>
+		<value>Confirm Password</value>
+	</resource>
+	<resource>
+		<key>system.user.email</key>
+		<value>Email</value>
+	</resource>
+	<resource>
+		<key>system.user.telephone</key>
+		<value>Telephone</value>
+	</resource>
+	<resource>
+		<key>system.user.password.keepempty</key>
+		<value>Do not modify keep is empty</value>
+	</resource>
+	<resource>
+		<key>system.user.trueName.input</key>
+		<value>Please input User Name</value>
+	</resource>
+	<resource>
+		<key>system.user.enName.input</key>
+		<value>Please input English Name</value>
+	</resource>
+	<resource>
+		<key>system.user.loginPass.input</key>
+		<value>Please input Password</value>
+	</resource>
+	<resource>
+		<key>system.user.confirmPass.input</key>
+		<value>Please input Confirm Password</value>
+	</resource>
+	<resource>
+		<key>system.user.oldPass.input</key>
+		<value>Please input Old Password</value>
+	</resource>		
+	<resource>
+		<key>system.user.email.input</key>
+		<value>Please input Email</value>
+	</resource>	
+	<resource>
+		<key>system.user.mobile.input</key>
+		<value>Please input Telphone</value>
+	</resource>
+	<resource>
+		<key>system.user.trueName.rangelength</key>
+		<value>Length is 4 ~ 16 characters</value>
+	</resource>
+	<resource>
+		<key>system.user.enname.rangelength</key>
+		<value>Length is 1 ~ 32 characters</value>
+	</resource>
+	<resource>
+		<key>system.user.password.rangelength</key>
+		<value>Length is 6 ~ 16 characters</value>
+	</resource>
+	<resource>
+		<key>system.user.email.rangelength</key>
+		<value>Length is 6 ~ 32 characters</value>
+	</resource>
+	<resource>
+		<key>system.user.telephone.rangelength</key>
+		<value>Length is 4 ~ 32 characters</value>
+	</resource>
+	<resource>
+		<key>system.user.trueName.custom</key>
+		<value>Only allow digital、 letters、&apos;&amp;&apos;、&apos;&#45;&apos;、&apos;&#95;&apos;</value>
+	</resource>
+	<resource>
+		<key>system.user.enName.custom</key>
+		<value>Only allow digital、 letters、&apos;&amp;&apos;、&apos;&#45;&apos;、&apos;&#95;&apos;</value>
+	</resource>
+	<resource>
+		<key>system.user.email.custom</key>
+		<value>Please input the correct Email format</value>
+	</resource>
+	<resource>
+		<key>system.user.confirmpass.custom</key>
+		<value>Two input password must be consistent</value>
+	</resource>	
+	<!-- 会议相关资源 -->
+	<!-- 会议状态 -->
+	
+	<resource>
+		<key>conf.status.-1</key>
+		<value>ANY</value>
+	</resource>
+	<resource>
+		<key>conf.status.0</key>
+		<value>SUCCESS</value>
+	</resource>
+	<resource>
+		<key>conf.status.2</key>
+		<value>OPENING</value>
+	</resource>
+	<resource>
+		<key>conf.status.3</key>
+		<value>FINISHED</value>
+	</resource>
+<!-- 	<resource> -->
+<!-- 		<key>conf.status.4</key> -->
+<!-- 		<value>EXPIRED</value> -->
+<!-- 	</resource> -->
+	<resource>
+		<key>conf.status.9</key>
+		<value>CANCELED</value>
+	</resource>
+<!-- 	<resource> -->
+<!-- 		<key>conf.status.11</key> -->
+<!-- 		<value>LOCKED</value> -->
+<!-- 	</resource> -->
+	
+	<!-- 会议高级搜索 -->
+	<resource>
+		<key>conf.type.0</key>
+		<value>ANY</value>
+	</resource>
+	<resource>
+		<key>conf.type.1</key>
+		<value>Phone function</value>
+	</resource>
+	<resource>
+		<key>conf.type.2</key>
+		<value>Video function</value>
+	</resource>
+	<resource>
+		<key>conf.type.3</key>
+		<value>Video+Phone function</value>
+	</resource>
+	
+		<!-- 会议列表展示 -->
+	<resource>
+		<key>conf.type.list.0</key>
+		<value></value>
+	</resource>
+	<resource>
+		<key>conf.type.list.1</key>
+		<value>Phone function</value>
+	</resource>
+	<resource>
+		<key>conf.type.list.2</key>
+		<value>Video function</value>
+	</resource>
+	<resource>
+		<key>conf.type.list.3</key>
+		<value>Video+Phone function</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.weekly.1</key>
+		<value>Sunday</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.weekly.2</key>
+		<value>Monday</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.weekly.3</key>
+		<value>Tuesday</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.weekly.4</key>
+		<value>Wednesday</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.weekly.5</key>
+		<value>Thursday</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.weekly.6</key>
+		<value>Friday</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.weekly.7</key>
+		<value>Saturday</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.type.1</key>
+		<value>Day cycle conf</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.type.2</key>
+		<value>Week cycle conf</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.type.3</key>
+		<value>Month cycle conf</value>
+	</resource>
+	<resource>
+		<key>conf.cycle.type.4</key>
+		<value>Year cycle conf</value>
+	</resource>
+	<resource>
+		<key>conf.confType.0</key>
+		<value></value>
+	</resource>
+	<resource>
+		<key>conf.confType.1</key>
+		<value>Phone</value>
+	</resource>
+	<resource>
+		<key>conf.confType.2</key>
+		<value>Video</value>
+	</resource>
+	<resource>
+		<key>conf.confType.3</key>
+		<value>Video + Phone</value>
+	</resource>
+	<!-- 会议错误信息 -->
+	<resource>
+		<key>conf.create.error.-1</key>
+		<value>There are not enough licences</value>
+	</resource>
+	
+	
+	
+	<resource>
+		<key>site.admin.conf.config.phone.title</key>
+		<value>Default Setting</value>
+	</resource>
+	<resource>
+		<key>site.admin.conf.config.createphoneconf</key>
+		<value>Create Telephone Conference</value>
+	</resource>
+	<resource>
+		<key>site.admin.conf.config.autocall</key>
+		<value>Auto Call</value>
+	</resource>
+	<resource>
+		<key>site.admin.conf.config.voip</key>
+		<value>integration VOIP</value>
+	</resource>
+	
+	<resource>
+		<key>site.admin.conf.config.option.enable</key>
+		<value>Enable</value>
+	</resource>
+	<resource>
+		<key>site.admin.conf.config.option.disable</key>
+		<value>Disable</value>
+	</resource>
+	
+	<resource>
+		<key>site.admin.edituser.userrole</key>
+		<value>UserRole</value>
+	</resource>
+	<resource>
+		<key>site.admin.edituser.role1</key>
+		<value>Host</value>
+	</resource>
+	<resource>
+		<key>site.admin.edituser.role2</key>
+		<value>Participant</value>
+	</resource>
+	
+	<resource>
+		<key>system.admin.index.createuser</key>
+		<value>create user</value>
+	</resource>
+	<resource>
+		<key>system.admin.index.updateuser</key>
+		<value>update user</value>
+	</resource>
+	
+	<!-- 企业用户管理begin -->
+		<resource>
+			<key>site.admin.userlist.add</key>
+			<value>Add</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.active</key>
+			<value>Active</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.telconf</key>
+			<value>telephone conference</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.userstatu</key>
+			<value>User status</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.batchimport</key>
+			<value>Batch Import</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.batchexport</key>
+			<value>Batch Export</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.info1</key>
+			<value>Please select delete items</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.info2</key>
+			<value>delete site user?</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.info3</key>
+			<value>Please select lock items</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.info4</key>
+			<value>sure to lock site user?</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.info5</key>
+			<value>Please select active items!</value>
+		</resource>
+		<resource>
+			<key>site.admin.userlist.info6</key>
+			<value>active checked users?</value>
+		</resource>
+		
+		<resource>
+			<key>site.admin.title.importuser</key>
+			<value>Import user</value>
+		</resource>
+		<resource>
+			<key>site.admin.import.downloadtemp</key>
+			<value>Download template</value>
+		</resource>
+		<resource>
+			<key>system.email.test.content</key>
+			<value>Test email,don't replay!</value>
+		</resource>
+	<!-- 企业用户管理end -->
+	
+	<!-- 批量导入企业用户Start -->
+		<resource>
+			<key>site.user.import.cbinfo1</key>
+			<value>Import complete, Have</value>
+		</resource>
+		<resource>
+			<key>site.user.import.cbinfo2</key>
+			<value>user infos, Import success</value>
+		</resource>
+		<resource>
+			<key>site.user.import.cbinfo3</key>
+			<value>users.</value>
+		</resource>
+		<resource>
+			<key>site.user.import.cbinfo4</key>
+			<value>repeated loginName is:</value>
+		</resource>
+		<resource>
+			<key>site.user.import.cbinfo5</key>
+			<value>Import failed is:</value>
+		</resource>
+		<resource>
+			<key>site.user.import.cbinfo6</key>
+			<value>Import failed!</value>
+		</resource>
+		
+		<resource>
+			<key>site.user.import.warninfo1</key>
+			<value>Please select file!</value>
+		</resource>
+		<resource>
+			<key>site.user.import.warninfo2</key>
+			<value>file type not support!</value>
+		</resource>
+	<!-- 批量导入企业用户end -->
+	
+	
+	<!-- 加入会议资源  Start -->
+		<resource>
+			<key>website.conf.join.type.1</key>
+			<value>会议ID号、安全会议码不能同时为空！</value>
+		</resource>
+		<resource>
+			<key>website.conf.join.type.2</key>
+			<value>会议ID号不正确，找不到相应的会议！</value>
+		</resource>
+		<resource>
+			<key>website.conf.join.type.3</key>
+			<value>安全会议码不正确，找不到相应的会议！</value>
+		</resource>
+		<resource>
+			<key>website.conf.join.type.4</key>
+			<value>该会议状态不正确，请查检会议是否已结束、或者已删除或者被锁定！</value>
+		</resource>
+		<resource>
+			<key>website.conf.join.type.5</key>
+			<value>会议密码不正确！</value>
+		</resource>
+		<resource>
+			<key>website.conf.join.type.6</key>
+			<value>通过Email进入会议时参数不正确</value>
+		</resource>
+		<resource>
+			<key>website.conf.join.type.7</key>
+			<value>会议未到开始时间</value>
+		</resource>
+		<resource>
+			<key>website.conf.join.type.8</key>
+			<value>进入会议失败，请重试 EN</value>
+		</resource>
+		<resource>
+			<key>website.conf.join.type.9</key>
+			<value>站点不存在 或 不正确</value>
+		</resource>
+		
+		<resource>
+			<key>website.conf.joinouter.erroecode.1</key>
+			<value>站点ID号为空或者是站点ID号不存在 </value>
+		</resource>
+		<resource>
+			<key>website.conf.joinouter.erroecode.2</key>
+			<value>连接地址过期 </value>
+		</resource>
+		<resource>
+			<key>website.conf.joinouter.erroecode.3</key>
+			<value>MtgKey为空,不能进入会议 </value>
+		</resource>
+		<resource>
+			<key>website.conf.joinouter.erroecode.4</key>
+			<value>密码验证不通过,不能进入会议 </value>
+		</resource>
+		
+	<resource>
+		<key>system.siteadmin.delete</key>
+		<value>delete site admin?</value>
+	</resource>
+	<!-- 加入会议资源  End -->
+	
+	
+	<!--站点时区对应关系 -->	
+	
+		<resource>
+			<key>wewebsite.timezone.city.1</key>
+			<value>123123123</value>
+		</resource>
+		<resource>
+			<key>wewebsite.timezone.city.2</key>
+			<value>123123123</value>
+		</resource>
+	<!--站点时区对应关系 -->
+</resources>

@@ -1,0 +1,148 @@
+html, body {
+	background: transparent;
+}
+body {
+	padding: 20px;
+}
+.common-table .check {
+	width: 20px;
+	text-align: center;
+}
+.common-table .actions {
+	width: 140px;
+}
+.common-table .actions .modify {
+	margin: 0 20px 0 10px;
+}
+.pagebar {
+	margin-top: 10px;
+}
+.icon {
+	width: 20px;
+	height: 20px;
+	background: transparent url(/assets/images/sprite/icons-png8.png) -118px -260px no-repeat;
+}
+.icon-add {
+	background-position: -118px -260px;
+}
+.icon-bat {
+	background-position: -190px -189px;
+}
+.icon-exp {
+	background-position: -190px -223px;
+}
+.icon-del {
+	background-position: -190px -151px;
+}
+.icon-modify {
+	background-position: -190px -262px;
+}
+.icon-remove {
+	background-position: -190px -118px;
+}
+
+/*=======================================*/
+/*	Alan Liu                             */
+/*	email:mingliu@bizconf.cn	         */
+/*	2013-07-23                           */
+/*=======================================*/
+.common-table {
+	table-layout: fixed;
+}
+.common-table td, .common-table th{
+	overflow: hidden;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.tab a {
+	color: #333333;
+	cursor: pointer;
+    display: block;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    outline: medium none;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+}
+
+.tabs .active a {
+	color: #FFFFFF;
+}
+.tabview .tabs .tab.groups{
+	border-right-width: 1px;
+}
+.form-content{
+	padding: 10px 0 0 40px
+}
+.adduser-dialog .notes {
+    color: #EF8201;
+    margin-bottom: 15px;
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
+.adduser-dialog .anchor-cancel {
+    margin-left: 50px;
+}
+
+.adduser-dialog .form-item {
+    width: 560px;
+    overflow: hidden;
+}
+
+.import-dialog .anchor-cancel {
+    margin-left: 50px;
+}
+.watermark {
+	color: #999 !important;
+}
+.contact-dialog .notes {
+	width: 550px;
+	overflow: hidden;
+}
+
+.nodata {
+	background: #FFFFFF url(/assets/images/bg/silence.jpg) center 30px no-repeat;
+	color: #CCCCCC;
+	padding-top: 115px;
+	height: 45px;
+	text-align: center;
+}
+.pagebar .jumpto input {
+	line-height: 23px;
+}
+
+.text-ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.notice-table .title {
+	width: 200px;
+}
+.notice-table .desc {
+	width: 500px;
+}
+.notice-table .publisher {
+	width: 100px;
+}
+.notice-table .actions {
+	width: 100px;
+}
+
+/*企业管理员列表*/
+.manager-list-view .common-table .actions {
+	width: 100px;
+}
+
+.common-empty {
+	padding-top: 115px;
+	padding-bottom: 30px;
+	text-align: center;
+	color: #CCCCCC;
+	background: #FFFFFF url(/assets/images/bg/silence.jpg) center 30px no-repeat;
+	border: 1px solid #CCCCCC;
+}

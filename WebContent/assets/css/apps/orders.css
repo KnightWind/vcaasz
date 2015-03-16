@@ -1,0 +1,161 @@
+html, body {
+	background: #FFFFFF;
+}
+body {
+	padding: 20px;
+}
+.box .body {
+	padding: 0;
+}
+.filter {
+	padding: 15px;
+	background: #DEDEDE;
+	border-bottom: 1px solid #CCCCCC;
+}
+.filter .year {
+	width: 85px;
+	padding: 3px;
+}
+.filter .month {
+	width: 60px;
+	padding: 3px;
+}
+.filter .range {
+	margin-left: 20px;
+}
+.filter .range i {
+	margin: 0 5px;
+}
+.results {
+	padding: 10px 20px;
+	min-height: 420px;
+}
+.results .reporting {
+	width: 440px;
+}
+.results .reporting .header,
+.results .reporting .footer {
+	height: 30px;
+	line-height: 30px;
+}
+.results .reporting .header .user {
+	float: left;
+}
+.results .reporting .header .mode {
+	float: right;
+}
+.results .reporting td .name {
+	float: left;
+	padding-left: 10px;
+}
+.results .reporting td .money {
+	float: right;
+	color: #147FC5;
+}
+.results .reporting .footer {
+	color: #61A328;
+	text-align: right;
+	font-weight: bold;
+}
+
+.common-nodata{
+	background: #FFFFFF url(/assets/images/bg/silence.jpg) center 30px no-repeat;
+	color: #CCCCCC;
+	padding-top: 115px;
+	height: 45px;
+	text-align: center;
+}
+
+
+.common-empty {
+    background: url("/assets/images/bg/silence.jpg") no-repeat scroll center 95px transparent;
+    color: #CCCCCC;
+    padding-top: 170px;
+    text-align: center;
+}
+
+/*=======================================*/
+/*	Alan Liu                             */
+/*	email:mingliu@bizconf.cn	         */
+/*	2013-07-23                           */
+/*=======================================*/
+
+.f20 {
+	font-size:20px;
+}
+
+.f14 {
+	font-size:14px;
+}
+.mt10 {
+	margin-top: 10px;	
+}
+.ml10 {
+	margin-left: 10px;
+}
+.mr10 {
+	margin-right: 10px;
+}
+.mb10 {
+	margin-bottom: 10px;
+}
+.mt15 {
+	margin-top: 15px;	
+}
+.ml15 {
+	margin-left: 15px;
+}
+.mt20 {
+	margin-top: 20px;	
+}
+.mt30 {
+	margin-top: 30px;	
+}
+.title1 {
+    color: #0072ff;
+    font-size: 18px;
+    margin-bottom: 1em;
+}
+.title2 {
+    color: #0072ff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.strong1 {
+	color: #000;
+}
+.ul1 {
+	list-style: disc outside none;
+}
+.ul1 li{
+	list-style: disc outside none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.table1{
+	border: 1px solid #000000;
+	border-spacing: 1px;
+	border-collapse: 1px;
+}
+.table1 th{
+	background-color: #CFCFCF;
+}
+.table1 th, .table1 td{
+	padding: 5px;
+	border: 1px solid #000000;	
+}
+.note1 {
+	background-color: #FFFFCC;
+}
+.note1title {
+	font-weight: bold;
+	color: #000000;
+}
+.note1body {
+	font-style: italic;
+	font-weight: bold;
+}
+p {
+	margin-top:5px;
+	margin-bottom:5px;
+}

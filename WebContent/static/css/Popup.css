@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+input{ text-indent:3px; border:#ccc solid 1px;}
+.Public_button{ width:72px; height:24px; background: url(/static/images/button01.jpg) no-repeat; display:block; line-height:24px; text-align:center }
+.Public_button:active{ width:72px; height:24px; background: url(/static/images/button_change.jpg) no-repeat; display:block; }
+
+.host_main{ margin-top:24px;}
+.host_main tr{ height:36px;}
+
+
+.host_left{ width:90px; padding-left:10px;}
+.host_right{ text-align:left; padding-left:10px;}
+.host_right input{ width:330px; height:22px; text-indent:4px; line-height:22px; text-indent:3px;border:#ccc solid 1px;}
+.host_checkbox{ text-align:left;}
+.host_checkbox input{ vertical-align:middle; margin-right:5px; margin-left:10px; height:20px; }
+
+.summit_btn{ float:left; margin-left:115px; margin-top:20px;}
+.close_btn{ float:left; margin-left:30px; margin-top:20px;}
+.site_top{ margin-left:20px; margin-top:10px;}
+.text01{ width:100px; height:22px;border:#ccc solid 1px;}
+.text02{ width:150px; height:22px;border:#ccc solid 1px;}
+.text03{ width:150px; height:22px;border:#ccc solid 1px;}
+
+.tijiao_btn{ margin-top:0px;}
+.site_main tr{ height:30px;}
+.si_m{ overflow-y:auto; height: 240px; width:654px; border-bottom:#B6BBC1 1px solid; margin-left:auto; margin-right:auto; border-top:#B6BBC1 solid 1px;}
+
+.change_btn{ color:#2B67AA;}
+.cc_btn{ color:#2B67AA; }
+
+
+.fh_btn{ margin:20px 0px 20px 30px; padding-bottom:20px;}
+.n_title{ margin-left:30px; margin-top:20px;}
+.n_title a{ width:99px; height:25px; display:block; background:url(/static/images/jzbgchange.jpg) no-repeat; line-height:25px; text-align:center;}
+
+.n_title a:active{ background:url(/static/images/jzbg.jpg)}
+
+
+
+.h_main{ margin-top:5px; width:500px; margin-left:25px; max-height:360px; overflow:auto;color:#666; padding-right:20px;}
+.host_top{ margin-top:14px; width:500px; margin-left:25px;}
+.host01{ border:1px #CCCCCC solid; border-left:none; border-right:none;}
+.host02{ border-bottom:#CCC dashed 1px; }
+.host02 a{ margin-right:10px;color:#2B67AA;}
+
+.h_main table tr td{ overflow:hidden}
+
+.text_01{ width:90px; height:22px; margin-left:2px;  line-height:22px;text-align: center;}
+.text_02{ width:170px; height:22px; margin-left:8px; line-height:22px;text-align: center;}
+.text_03{ width:140px; height:22px; margin-left:10px; line-height:22px;text-align: center;}
+

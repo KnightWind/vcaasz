@@ -1,0 +1,465 @@
+/*=======================================*/
+/*	Alan Liu                             */
+/*	email:mingliu@bizconf.cn	         */
+/*	2013-07-23                           */
+/*=======================================*/
+body, textarea, input, select, button {
+    color: #333333;
+    font-family: "Microsoft Yahei","微软雅黑","宋体";
+    font-size: 12px;
+}
+.tabs li {
+	float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 95px; 
+    line-height: 30px;
+    height: 30px;
+}
+.tabs li a{
+    color: #333333;
+    cursor: pointer;
+    display: block;
+    font-family: "Microsoft Yahei","微软雅黑","宋体";
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    outline: medium none;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: 95px;
+	background: url("/assets/images/icons/tabview.png") repeat-x scroll 0 0 #FFFFFF;
+	background-position: 0 0px;
+}
+.tabs li.active a {
+	background-position: 0 -30px;
+	color: #FFFFFF;
+}
+.today a {
+    border-radius: 3px 0 0 3px;
+    border-color: #CCCCCC;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+}
+.week a {
+    border-color: #CCCCCC;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+}
+.month a {
+    border-color: #CCCCCC;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+}
+.total a {
+    border-radius: 0 3px 3px 0;
+    border: 1px solid #CCCCCC;	
+}
+.summary{
+	height: 42px;
+    line-height: 42px;
+}
+.attend {
+    margin-right: 10px;
+    float: left;
+}
+.attend label{
+	color: #666;
+	vertical-align: middle;
+}
+.attend input{
+	vertical-align: middle;
+	margin: 10px 0px;
+}
+.search {
+	float: right;
+}
+.tabs-content {
+    float: left;
+}
+.tabs-panel {
+	display: none;
+	vertical-align: middle;
+}
+.tabs-panel span{
+	color: #666
+}
+#tabs-today {
+	display: block;
+}
+#tabs-month .input-text, #tabs-total .input-text{
+	margin: 7px 0px;		
+}
+.icon {
+	display: inline-block;
+    vertical-align: middle;	
+}
+.icon-date {
+	background: url("/assets/images/icons/navigator.png") no-repeat scroll -45px -117px transparent;
+    height: 18px;
+    line-height:18px;
+    width: 18px;
+    margin: 10px 0px;
+}
+.icon-expand {
+	background: url("/assets/images/icons/expand.gif") no-repeat scroll center center transparent;
+    height: 8px;
+    width: 8px;
+    margin: 15px 0px;
+}
+.module-close .icon-expand{
+	background: url("/assets/images/icons/collapse.gif") no-repeat scroll center center transparent;
+}
+.runnig-title {
+	color: #539902;
+	margin-left: 10px
+}
+.comming-title {
+	color: #323232;
+	margin-left: 10px
+}
+.meeting-module {
+    border: 1px solid #CCCCCC;
+    margin-bottom: 20px;
+}
+.module-close .module-body {
+	display: none;
+}    
+.module-head {
+	background: url("/assets/images/icons/module-head.png") repeat-x scroll 0 0 #FFFFFF;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px;
+    cursor: pointer;
+    position: relative;
+}
+.module-body{
+    background: #FFFFFF;
+    padding-bottom: 1px;
+}
+.module-empty{
+    color: #6F6F6F;
+    font-size: 20px;
+    padding: 45px 0;
+    text-align: center;
+    border-top: 1px solid #CCCCCC;
+    position: relative;    
+}
+.module-item {
+/* 	height: 53px; */
+/*     line-height: 53px; */
+/*     padding: 8px 15px; */
+    border-top: 1px solid #CCCCCC;
+    vertical-align: middle;
+}
+.item-info {
+/* 	height: 53px;  */
+/* 	line-height: 53px; */
+/* 	padding: 8px 15px; */
+/* vertical-align: middle; */
+}
+.item-actions {
+    padding: 8px 15px;
+	border-top: 1px solid #CCCCCC;
+	position: relative;
+	display: none;
+}
+.item-desc {
+	color: #999999;
+	padding: 8px 15px 8px 100px;
+	border-top: 1px dashed #CCCCCC;
+	line-height: 1.5; 
+}
+.icon-nothing {
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -145px -76px transparent;
+    height: 33px;
+    width: 33px;
+}
+.module-date {
+	float: left;
+    margin: 8px 15px;
+}
+*html .module-date {
+	margin: 8px;
+}
+.module-date .title{
+    height: 53px;
+    line-height: 53px;
+}
+.calendar{
+    background: url("/assets/images/icons/calendar.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 59px;
+    margin-right: 10px;
+    position: relative;
+    width: 80px;
+}
+.calendar .date {
+	display: block;
+	color: #FFFFFF;
+	font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+}
+.calendar .time {
+	display: block;
+	font-size: 12px;
+    line-height: 32px;
+    text-align: center;
+}
+.calendar_cg{
+    background: url("/assets/images/icons/calendar_cg.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 59px;
+    margin-right: 10px;
+    position: relative;
+    width: 80px;
+}
+.calendar_cg .date {
+	display: block;
+	color: #FFFFFF;
+	font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+}
+.calendar_cg .time {
+	display: block;
+	font-size: 12px;
+    line-height: 32px;
+    text-align: center;
+}
+.calendar_cr{
+    background: url("/assets/images/icons/calendar_cr.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 59px;
+    margin-right: 10px;
+    position: relative;
+    width: 80px;
+}
+.calendar_cr .date {
+	display: block;
+	color: #FFFFFF;
+	font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+}
+.calendar_cr .time {
+	display: block;
+	font-size: 12px;
+    line-height: 32px;
+    text-align: center;
+}
+.title {
+	float: left;
+    font-size: 16px;
+    text-shadow: 0 1px 1px #D4E1F2;
+    white-space:nowrap; 
+    overflow: hidden;
+    text-overflow:ellipsis;
+    width:335px;
+	position: absolute;
+	left: 100px;
+}
+.title a {
+	color: #1581C2;
+	text-decoration: none;
+}
+.title a:hover {
+	text-decoration: underline;
+}
+.module-text {
+	float: right;
+	height: 69px;
+	line-height: 69px;
+	padding-right: 15px;
+	z-index: 100;
+	position: relative;/*fixed ie6 animation for next line icon display*/
+	background: #FFFFFF;
+}
+.module-text span {
+    float: left;
+/*     vertical-align: middle; */
+}
+.module-text i {
+    font-style: normal;
+}
+.duration {
+	width: 160px;
+	text-align: left;
+}
+.icon-duration{
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll 0 0 transparent;
+    height: 18px;
+    width: 18px;
+    background-position: -81px -82px;
+    margin: 25px 0px;/*fixed ie6 icon display vertical*/
+}
+
+.compere {
+	width: 100px;
+	text-align: left;
+}
+.compere-tipsy {
+	width: 100px;
+	margin: 25px 0px;
+	height: 18px;
+	line-height: 18px;
+	display: inline-block;
+}
+.meeting-module-run .icon-compere{
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll 0 0 transparent;
+    height: 18px;
+    width: 18px;
+    background-position: -118px -83px;
+/* 	margin: 25px 0px; */
+}
+.meeting-module-come .icon-compere{
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll 0 0 transparent;
+    height: 18px;
+    width: 18px;
+    background-position: -118px -46px;
+/* 	margin: 25px 0px; */
+}
+.meeting-module-past .icon-compere{
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll 0 0 transparent;
+    height: 18px;
+    width: 18px;
+    background-position: -118px -46px;
+/* 	margin: 25px 0px; */
+}
+.invite {
+	width: 70px;
+	text-align: center;
+}
+a.invite {
+	float: left;
+	color: #1581C2;
+	text-decoration: none;
+}
+a.invite:hover {
+	text-decoration: underline;
+}
+.icon-invite{
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -154px -263px transparent;
+	height: 18px;
+    width: 18px;
+    margin: 25px 0px;
+}
+.settings {
+	width: 74px;
+    cursor: pointer;
+    text-align: center;
+}
+a.settings {
+	float: left;
+	color: #1581C2;
+	margin-right: 15px; 
+}
+a.settings:hover {
+	text-decoration: underline;
+}
+.settings-active{
+	background: url("/assets/images/icons/setting_active.png") no-repeat scroll 0 0 transparent;
+	border-bottom: 1px solid #ffffff;
+	position: relative;
+	z-index: 122
+}
+*html .settings-active {
+	bottom: -1px;
+	height: 70px;
+}
+.icon-settings{
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll 0 0 transparent;
+    height: 18px;
+    width: 18px;
+    background-position: -118px -118px;
+    margin: 25px 0px;
+}
+.attendance {
+	width: 70px;
+	text-align: center;
+}
+.meeting-module-run .icon-attendance{
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -226px -188px transparent;
+    height: 18px;
+    width: 18px;
+    margin: 25px 0px;
+}
+.meeting-module-come .icon-attendance{
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll 0 0 transparent;
+    height: 18px;
+    width: 18px;
+    background-position: -83px -118px;
+    margin: 25px 0px;
+}
+.meeting-module-past .icon-attendance{
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll 0 0 transparent;
+    height: 18px;
+    width: 18px;
+    background-position: -83px -118px;
+    margin: 25px 0px;
+}
+.actions a{
+	margin: 20px 0px;
+}
+.module-item a.input-button, 
+.module-item a.input-blue, 
+.module-item a.input-submit, 
+.module-item a.input-green, 
+.module-item a.input-button:link, 
+.module-item a.input-submit:link, 
+.module-item a.input-green:link, 
+.module-item a.input-button:visited, 
+.module-item a.input-submit:visited, 
+.module-item a.input-green:visited {
+    min-width: 48px;
+    *width: 48px;
+}
+.hasDatepicker {
+	background: url("/assets/images/bg/year.png") no-repeat scroll 98px center #FFFFFF;
+    padding: 5px 30px 5px 5px;
+    width: 85px;
+    border: 1px solid #DADADA;
+    border-radius: 3px 3px 3px 3px;
+    font-family: "Microsoft Yahei","微软雅黑","宋体";
+    font-size: 12px;    
+}
+.ui-datepicker {
+	font-size: 14px;
+}
+.has_more_container {
+	height: 32px;
+	line-height: 32px;
+	color: #666666;
+	text-align: center;
+	border-top: 1px solid #CCCCCC;
+	background: #FFFFFF;
+}
+.has_more {
+	color: #333333;
+	text-decoration: none;
+}
+.has_more:hover {
+	text-decoration: underline;
+}
+.empty-space {
+	width: 100%;
+	height: 5px;
+}
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+	width: 44%;
+} 
+
+
+.pmisetting{
+	color: #1581C2;
+    float: left;
+    margin-right: 15px;
+    cursor: pointer;
+    text-align: center;
+    width: 74px;
+}

@@ -1,0 +1,48 @@
+/**
+ * ESpaceMeetingAsSoapConfManagementService.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Nov 19, 2006 (02:31:34 GMT+00:00) WSDL2Java emitter.
+ */
+
+package com.bizconf.vcaasz.soap.conf;
+
+public interface ESpaceMeetingAsSoapConfManagementService extends java.rmi.Remote {
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult createConfId(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestCreateConfIdRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseCreateConfIdResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult createConf(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestCreateConfRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseCreateConfResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult modifyConf(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestModifyConfRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseModifyConfResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult cancelConf(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestCancelConfRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult createCycleConf(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestCreateCycleConfRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseCreateCycleConfResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult modifyCycleConf(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestModifyCycleConfRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseModifyCycleConfResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult cancelCycleConf(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestCancelCycleConfRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult queryConfInfo(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestQueryConfInfoRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseQueryConfInfoResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult queryCycleConfInfo(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestQueryCycleConfInfoRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseQueryCycleConfInfoResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult queryConfList(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestQueryConfListRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseQueryConfListResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult queryCycleConfList(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestQueryCycleConfListRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseQueryCycleConfListResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult queryConfMemberList(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestQueryConfMemberListRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseQueryConfMemberListResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult startConf(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestStartConfRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult extendConf(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestExtendConfRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult muteConf(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestMuteConfRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult unmuteConf(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestUnmuteConfRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult lockConf(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestLockConfRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult unlockConf(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestUnlockConfRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult changeConfMode(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestChangeConfModeRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult changeConfMedia(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestChangeConfMediaRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult inviteUsers(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestInviteUsersRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseInviteUsersResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult kickUsers(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestKickUsersRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult muteUsers(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestMuteUsersRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult unmuteUsers(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestUnmuteUsersRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult subscribeConfStatus(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestSubscribeConfStatusRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult unsubscribeConfStatus(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestUnsubscribeConfStatusRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult startRecordConf(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestStartRecordConfRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult stopRecordConf(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestStopRecordConfRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult queryUsersStatus(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestQueryUsersStatusRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseQueryUsersStatusResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult notifyTerminalType(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestNotifyTerminalTypeRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseNotifyTerminalTypeResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult getDataConfInfo(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestGetDataConfInfoRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseGetDataConfInfoResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult queryConfStat1(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestQueryConfStat1Request request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseQueryConfStat1ResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult queryConfListByPtcptUri(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestQueryConfListByPtcptUriRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseQueryConfListByPtcptUriResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult queryConfInfoByPin(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestQueryConfInfoByPinRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseQueryConfInfoByPinResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult queryConfListEx(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestQueryConfListExRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseQueryConfListExResponseHolder response) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult updateConfMemberList(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestUpdateConfMemberListRequest request) throws java.rmi.RemoteException;
+    public com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapResult getConfRealtimeStat(com.bizconf.vcaasz.soap.conf.ESpaceMeetingAsSoapRequestGetConfRealtimeStatRequest request, com.bizconf.vcaasz.soap.conf.holders.ESpaceMeetingAsSoapResponseGetConfRealtimeStatResponseHolder response) throws java.rmi.RemoteException;
+}

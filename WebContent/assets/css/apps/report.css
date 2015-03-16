@@ -1,0 +1,150 @@
+html, body {
+	background: #EEEEEE;
+}
+body {
+	padding: 20px;
+}
+.box .body {
+	padding: 0;
+	border: none;
+}
+.filter {
+	padding: 10px;
+	background: #DEDEDE;
+	border: 1px solid #CCCCCC;
+	border-bottom: none;
+	height: 28px;
+	line-height: 28px;
+}
+.filter .filter-form {
+	float: left;
+}
+.filter .filter-form .input-text {
+	*vertical-align: middle;
+}
+.filter .name-case .input-text {
+	width: 250px;
+	margin-right: 35px;
+}
+.filter .time-case .input-text {
+	width: 85px;
+	padding-right: 30px;
+	background: #FFFFFF url(/assets/images/bg/year.png) 98px center no-repeat;
+}
+.filter .query-button {
+	margin-left: 5px;
+}
+.filter .print-button {
+	float: right;
+}
+.common-table .numbers {
+	width: 135px;
+}
+.common-table .starttime,
+.common-table .endtime {
+	width: 155px;
+}
+.common-table .actions {
+	width: 170px;
+}
+.common-table .actions .icon-details {
+	width: 18px;
+	height: 18px;
+	background: transparent url(/assets/images/sprite/icons.png) -154px -153px no-repeat;
+}
+/*=======================================*/
+/*	Alan Liu                             */
+/*	email:mingliu@bizconf.cn	         */
+/*	2013-07-23                           */
+/*=======================================*/
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+	width: 44%;
+}
+.common-table {
+	table-layout: fixed;
+}
+.common-table td, .common-table th{
+	overflow: hidden;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.common-table td {
+	padding-right: 11px;
+}
+
+.nodata {
+    background: url("/assets/images/bg/silence.jpg") no-repeat scroll center 30px #FFFFFF;
+    color: #CCCCCC;
+    height: 45px;
+    padding-top: 115px;
+    text-align: center;
+}
+.pagebar {
+    margin-top: 10px;
+}
+
+.common-table .actions .icon-details {
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -152px -152px transparent;
+	margin-right: 3px;
+}
+.host-conf-table .icon-details {
+	background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -152px -152px transparent;
+    height: 18px;
+    margin-right: 3px;
+    width: 18px;
+}
+.actor-conf-table .conf-title {
+	width: 80px;
+}
+.actor-conf-table .conf-time {
+	width: 120px;
+}
+.host-conf-table .conf-time {
+	width: 110px;
+}
+.host-conf-table .conf-num {
+	width: 30px;
+}
+.host-conf-table .conf-action {
+	width: 80px;
+}
+.search-table {
+	table-layout: fixed;
+	background: #DEDEDE;
+	border: 1px solid #CCCCCC;
+	border-bottom: 0 none;
+}
+.search-table td{
+    padding: 8px 6px;
+    vertical-align: middle;
+}
+.search-table .hasDatepicker {
+   background: url("/assets/images/bg/year.png") no-repeat scroll 80px center #FFFFFF;
+    padding-right: 25px;
+    width: 70px;
+}
+.search-table .report-search, .search-table .report-print{
+	width: 30px;
+}
+.conf-topic {
+	width: 60px;	
+}
+.conf-input {
+	width: 140px;	
+}
+.conf-time {
+	width: 60px;	
+}
+.time-divider {
+	width: 15px;	
+}
+.conf-input-start {
+	width: 102px;
+}
+.conf-input-end {
+	width: 102px;
+}
+.conf-search {
+	width: 80px;
+}
+ 

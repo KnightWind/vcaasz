@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery accordion form with validation</title>
+<link rel="stylesheet" type="text/css" href="/static/js/tipsy-master/src/stylesheets/tipsy.css" />
+<link rel="stylesheet" type="text/css" href="/static/js/jquery-ui-1.9.2.custom/css/smoothness/jquery-ui-1.9.2.custom.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+<SCRIPT type="text/javascript" src="/static/js/jquery-1.8.3.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="/static/js/jquery-ui-1.9.2.custom.js"></SCRIPT>
+<script type="text/javascript" src="../../jquery.validate.js"></script>
+<script type="text/javascript" src="/static/js/tipsy-master/src/javascripts/jquery.tipsy.js"></script>
+<script type="text/javascript" src="/static/js/common.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#cmaForm").simpleDialog({message:"test"});
+	$('#cmaForm :input').tipsy({ trigger: 'focus', fade: false, gravity: 'w', opacity: 1 });
+	// accordion functions
+// 	var accordion = $("#stepForm").accordion(); 
+	var current = 0;
+	
+	$.validator.addMethod("pageRequired", function(value, element) {
+		var $element = $(element)
+		function match(index) {
+			return current == index && $(element).parents("#sf" + (index + 1)).length;
+		}
+		if (match(0) || match(1) || match(2)) {
+			return !this.optional(element);
+		}
+		return "dependency-mismatch";
+	}, $.validator.messages.required)
+	
+	var v = $("#cmaForm").validate({
+		errorClass: "warning",
+		onkeyup: false,
+		onblur: false,
+		submitHandler: function(form) {
+			//form.submit();
+		},
+
+        success: function (label) {
+            $(label).each(function () {
+                $('#' + this.htmlFor).tipsy('hide').removeAttr('title');
+            });
+        },
+
+        errorPlacement: function (error, element) {
+
+        }
+	});
+	
+	// back buttons do not need to run validation
+	$("#sf2 .prevbutton").click(function(){
+		current = 0;
+		$("#cmaForm").find("li").eq(current).show().siblings().hide();
+	}); 
+	$("#sf3 .prevbutton").click(function(){
+		current = 1;
+		$("#cmaForm").find("li").eq(current).show().siblings().hide();
+	}); 
+	// these buttons all run the validation, overridden by specific targets above
+	$(".open2").click(function() {
+	  if (v.form()) {
+	    current = 2;
+	    $("#cmaForm").find("li").eq(current).show().siblings().hide();
+	  }else{
+		  $("#sf2").find("input.warning:first").focus();
+	  }
+	});
+	$(".open1").click(function() {
+	  if (v.form()) {
+	    current = 1;
+		$("#cmaForm").find("li").eq(current).show().siblings().hide();
+	  }else{
+		  $("#sf1").find("input.warning:first").focus();
+	  }
+	});
+	$(".open0").click(function() {
+	  if (v.form()) {
+	    current = 0;
+	    $("#cmaForm").find("li").eq(current).show().siblings().hide();
+	  }
+	});
+ 
+});
+
+</script>
+</head>
+<body>
+
+<div id="wrap">
+<div id="main">
+<form name="cmaForm" id="cmaForm" method="post" action="/system/site/create">
+<input type="hidden" name="recordRequestPrimaryServiceID" id="recordRequestPrimaryServiceID" value="100" />
+<input type="hidden" name="recordClientServices" id="recordClientServices" value="1,3" />
+<ul id="stepForm" class="ui-accordion-container">
+	<!-- 第一步 -->
+	<li id="sf1">
+	<a href='#' class="ui-accordion-link"> </a>
+	<div>
+	<fieldset>
+	<legend> Step 1 of 3 </legend>
+	<div class="formspacer"></div>
+	<label for="siteName" class="input required">企业名称:</label> 
+	<input type="text" name="siteName" id="siteName" class="inputclass pageRequired" title="company-name is required" maxlength="254" /><br />
+	<label for="alias-name" class="input required">英文名称:</label> 
+	<input type="text" name="alias-name" id="alias-name" class="inputclass pageRequired" title="alias-name is required" maxlength="254" /><br />
+	<label for="siteSign" class="input required">企业标识:</label> 
+	<input type="text" name="siteSign" id="siteSign" class="inputclass pageRequired" title="company-identity is required" maxlength="254" /><br />
+	<label for="siteLogo" class="input required">Logo:</label> 
+	<input name="siteLogo" type="file" id="siteLogo" class="inputclass pageRequired" title="company-logo is required" maxlength="254" onkeypress="return false" onpaste="return false" onchange="PreviewImage(this, 'logo-preview', 'divPreview')"/><br />	
+	<label></label><div id="divPreview"><img src="../images/bg.gif" width=80 height=40 id="logo-preview"/></div><br/>
+	<label for="siteFlag" class="input required">站点类型:</label> 
+	<input name="siteFlag" type="radio" class="inputclass pageRequired" value="0"/>正式
+	<input name="siteFlag" type="radio" value="1"/>试用
+	<div class="buttonWrapper"><input name="formNext1" type="button" class="open1 nextbutton" value="Next" alt="Next"/></div>
+	</fieldset>
+	</div>
+	</li>
+	<!-- 第二步 -->
+	<li id="sf2" style="display: none;">
+	<a href='#' class="ui-accordion-link">
+	</a>
+	<div>
+	<fieldset><legend> Step 2 of 3 </legend>
+	<label for="license" class="input required">最大参会人数:</label> 
+	<input type="text" name="license" id="license" class="inputclass pageRequired" title="max-person is required" maxlength="254" /><br />
+	<label for="expireDate" class="input required">到期时间:</label> 
+	<input type="text" name="expireDate" id="expireDate" class="inputclass pageRequired" title="expire-date is required" maxlength="254" /><br />
+	<div class="buttonWrapper"><input name="formBack0" type="button" class="open0 prevbutton" value="Back" alt="Back" /> <input name="formNext2" type="button" class="open2 nextbutton" value="Next" alt="Next" /></div>
+	</fieldset>
+	</div>
+	</li>
+	<!-- 第三步 -->
+	<li id="sf3" style="display: none">
+	<a href='#' class="ui-accordion-link">
+	</a>
+	<div>
+	<fieldset><legend> Step 3 of 3 </legend>
+	<label for="trueName" class="input required">用户名:</label> 
+	<input type="text" name="trueName" id="trueName" class="inputclass pageRequired" title="username is required" maxlength="254" /><br />
+	<label for="loginName" class="input required">登录名:</label> 
+	<input type="text" name="loginName" id="loginName" class="inputclass pageRequired" title="loginname is required" maxlength="254" /><br />
+	<label for="loginPass" class="input required">密码:</label> 
+	<input type="password" name="loginPass" id="loginPass" class="inputclass pageRequired" title="password is required" maxlength="254" /><br />
+	<label for="userEmail" class="input required">邮箱:</label> 
+	<input type="text" name="userEmail" id="userEmail" class="inputclass pageRequired" title="email is required" maxlength="254" /><br />
+	<label for="mobile" class="input required">电话:</label> 
+	<input type="text" name="mobile" id="mobile" class="inputclass pageRequired" title="telphone is required" maxlength="254" /><br />
+	<label for="remark" class="input required">备注:</label> 
+	<input type="text" name="remark" id="remark" class="inputclass pageRequired" title="note is required" maxlength="254" /><br />
+	<div class="buttonWrapper"><input name="formBack1" type="button" class="open1 prevbutton" value="Back" alt="Back" /> <input name="submit" type="submit" id="submit" value="Submit" class="submitbutton" alt="Submit"></div>
+	</fieldset>
+	</div>
+	</li>
+</ul>
+</form>
+
+</div>
+</div>
+<script type="text/javascript">
+//js本地图片预览，兼容ie[6-8]、火狐、Chrome17+、Opera11+、Maxthon3
+function PreviewImage(fileObj,imgPreviewId,divPreviewId){
+    var allowExtention="jpg, bmp, gif, png"//document.getElementById("hfAllowPicSuffix").value;//.jpg,.bmp,.gif,.png,允许上传文件的后缀名
+    var extention=fileObj.value.substring(fileObj.value.lastIndexOf(".")+1).toLowerCase();            
+    var browserVersion= window.navigator.userAgent.toUpperCase();
+    if(allowExtention.indexOf(extention)>-1){               
+        if (browserVersion.indexOf("MSIE")>-1){
+            if(browserVersion.indexOf("MSIE 6.0")>-1){//ie6
+                document.getElementById(imgPreviewId).setAttribute("src",fileObj.value);
+            }else{//ie[7-8]、ie9未测试
+                fileObj.select();
+                var newPreview =document.getElementById(divPreviewId+"New");
+                if(newPreview==null){
+                    newPreview =document.createElement("div");
+                    newPreview.setAttribute("id",divPreviewId+"New");
+                    newPreview.style.width = document.getElementById(imgPreviewId).style.width;
+                    newPreview.style.height = document.getElementById(imgPreviewId).style.height;
+                    newPreview.style.border="solid 1px #d2e2e2";
+                }
+                newPreview.style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale',src='" + document.selection.createRange().text + "')";                            
+                var tempDivPreview=document.getElementById(divPreviewId);
+                tempDivPreview.parentNode.insertBefore(newPreview,tempDivPreview);
+                tempDivPreview.style.display="none";                    
+            }
+        }else if(browserVersion.indexOf("FIREFOX")>-1){//firefox
+            var firefoxVersion= parseFloat(browserVersion.toLowerCase().match(/firefox\/([\d.]+)/)[1]);
+            if(firefoxVersion<7){//firefox7以下版本
+                document.getElementById(imgPreviewId).setAttribute("src",fileObj.files[0].getAsDataURL());
+            }else{//firefox7.0+                    
+                document.getElementById(imgPreviewId).setAttribute("src",window.URL.createObjectURL(fileObj.files[0]));
+            }
+        }else if(fileObj.files){               
+            //兼容chrome、火狐等，HTML5获取路径                   
+            if(typeof FileReader !== "undefined"){
+                var reader = new FileReader(); 
+                reader.onload = function(e){
+                    document.getElementById(imgPreviewId).setAttribute("src",e.target.result);
+                }  
+                reader.readAsDataURL(fileObj.files[0]);
+            }else if(browserVersion.indexOf("SAFARI")>-1){
+                alert("暂时不支持Safari浏览器!");
+            }
+        }else{
+            document.getElementById(divPreviewId).setAttribute("src",fileObj.value);
+        }         
+    }else{
+        alert("仅支持"+allowExtention+"为后缀名的文件!");
+        fileObj.value="";//清空选中文件
+        if(browserVersion.indexOf("MSIE")>-1){                        
+            fileObj.select();
+            document.selection.clear();
+        }                
+        fileObj.outerHTML=fileObj.outerHTML;
+    }
+}
+</script>
+</body>
+</html>

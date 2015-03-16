@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+	<head>
+
+		<meta charset="utf-8" />
+
+		<title>会畅通讯 - 会议系统</title>
+
+		<style type="text/css">
+
+			*{margin: 0;padding: 0;font-family: 'Microsoft Yahei','微软雅黑','宋体';}
+
+			html, body{background: #FFFFFF;font-size: 12px;}
+
+			body{padding: 5px;}
+
+			a, a:link, a:visited{color: #0172FE;text-decoration: none;}
+
+			a:hover,.underline{text-decoration: underline!important;}
+
+			.common-table{border-collapse: collapse;border-spacing: 0;width: 100%;}
+
+			.common-table th,.common-table td{border: 1px solid #A5A19E;padding: 8px 15px;text-align: center;}
+
+			.common-table th.name ,.common-table td.name{width: 130px;background-color: #004d9e;color:#fff; font-weight: bold;text-align: left;}
+
+			.box{margin-top: 15px;}
+
+			.box .box-head{font-weight: bold;padding: 10px 20px;background: transparent url(http://meeting.confcloud.cn/assets/images/email/item.jpg) 5px center no-repeat;}
+
+			.box .support{line-height: 24px;margin-bottom: 20px;}
+
+			.box .support b{color: #003672;}
+
+			.language{text-align: right;padding: 10px 0;}
+
+			#header, #content, #footer{width: 670px;margin: 0 auto;}
+
+			#header{height: 110px;background: #003674 url(http://meeting.confcloud.cn/assets/images/email/logo.jpg) 0 center no-repeat;}
+
+			#footer {text-align: right;padding: 50px 0 10px;font-size: 22px;font-weight: bold;font-family: 'Microsoft Yahei';color: #003576;}
+
+			#title{text-align: center;}
+
+			#title h1{font-size: 16px;padding: 15px 0 10px;}
+
+			#title h3 a{color: #003672;font-size: 14px;}
+
+			#details{width: 610px;margin: 10px auto;padding-top: 25px;border-top: 1px solid #CCCCCC;}
+
+			#details .desc{margin-top: 10px;}
+
+			#details .instruct{margin-bottom: 10px;}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<div id="header"></div>
+
+		<div id="content">
+			<div class="wrapper">
+				<p class="language"><a name="chi"></a><a href="#eng" class="underline">English Version</a></p>
+				<div id="title">
+					<h1>欢迎使用会畅通讯商会云会议中心</h1>
+				</div>
+
+				<div id="details">
+					<p class="honorific"><b>尊敬的${user.userName}，您好！</b></p>
+					<p class="desc">您的会议"${conf.confName}" 已取消 。</p>
+					<div class="box">
+						<div class="box-head">会议信息：</div>
+
+						<div class="box-body">
+							<table class="common-table">
+								<tbody>
+									<tr>
+										<td class="name">会议主题：</td>
+										<td class="value">${conf.confName}</td>
+									</tr>
+
+									<tr>
+										<td class="name">安全会议号码：</td>
+										<td class="value">${securityCode}</td>
+									</tr>
+
+									<tr ${ispublicconf}>
+										<td class="name">会议密码：</td>
+										<td class="value">${conf.publicConfPass!'无'}</td>
+									</tr>
+
+									<tr>
+										<td class="name">会议主持人：</td>
+										<td class="value">${conf.compereName}</td>
+									</tr>
+									<tr>
+										<td class="name">会议开始时间：</td>
+										<td class="value">${conf.startTime?string("yyyy-MM-dd HH:mm")}(${timezone})</td>
+									</tr>
+									<tr>
+										<td class="name">会议结束时间：</td>
+										<td class="value">${conf.endTime?string("yyyy-MM-dd HH:mm")}(${timezone})</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="box" ${istelconf}>
+						<div class="box-head">快速接入号：</div>
+						<div class="box-body">
+							<table class="common-table">
+								<thead style="background-color: #004d9e;color: #fff;">
+									<th width="30%">国家</th>
+									<th width="30%">号码类型</th>
+									<th width="40%">号码</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="value">全球</td>
+										<td class="value">直拨号</td>
+										<td class="value">${accessNumber1!'8621 6026 4000'}</td>
+									</tr>
+									<tr>
+										<td class="value">中国</td>
+										<td class="value">国内免费</td>
+										<td class="value">${accessNumber2!'800 870 1088'}</td>
+									</tr>
+									<tr>
+										<td class="value">中国</td>
+										<td class="value">本地付费</td>
+										<td class="value">${accessNumber3!'400 874 1088'}</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+
+					</div>
+
+
+
+					<div class="box">
+
+						<div class="box-head">技术支持：</div>
+
+						<div class="box-body">
+
+							<div class="support">
+
+								<a href=""><b>会畅通信</b></a>提供全天候的客户服务，如果您在会议使用中有任何问题，可以参考<a href="">用户手册</a>！
+
+								如果无法接入会议，或者在会议过程中遇到任何问题，可通过以下方式联系我们的客服人员：
+
+							</div>
+
+							<div class="instruct">电话：<b>400 082 6161</b></div>
+
+							<div class="instruct">邮箱：<a class="underline" href="mailto:cs@confcloud.cn">cs@confcloud.cn</a></div>
+
+							<div class="welcome"><b>欢迎访问上海会畅通信股份有限公司官网 <a href="http://www.bizconf.cn/">www.bizconf.cn</a></b></div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<hr>
+			<div class="wrapper" style="font-family:arial;">
+				<p class="language"><a name="eng"></a><a href="#chi" class="underline">中文版</a></p>
+
+				<div id="title">
+					<h1>Welcome to BizConf ConfCloud Conferencing Center</h1>
+				</div>
+
+				<div id="details">
+					<p class="honorific"><b>Dear ${user.userName}!</b></p>
+					<p class="desc">Your meeting "${conf.confName}"  has been canceled.</p>
+					<div class="box">
+						<div class="box-head">Meeting Information:</div>
+						<div class="box-body">
+							<table class="common-table">
+								<tbody>
+									<tr>
+										<td class="name">Meeting Topic:</td>
+										<td class="value">${conf.confName}</td>
+									</tr>
+
+									<tr>
+										<td class="name">Security Code:</td>
+										<td class="value">${securityCode}</td>
+									</tr>
+
+									<tr ${ispublicconf}>
+										<td class="name">Meeting Password:</td>
+										<td class="value">${conf.publicConfPass!'none'}</td>
+									</tr>
+
+									<tr>
+										<td class="name">Meeting Moderator:</td>
+										<td class="value">${conf.compereName}</td>
+									</tr>
+									<tr>
+										<td class="name">Meeting Start Time:</td>
+										<td class="value">${conf.startTime?string("yyyy-MM-dd HH:mm")}(${timezone})</td>
+									</tr>
+									<tr>
+										<td class="name">Meeting End Time:</td>
+										<td class="value">${conf.endTime?string("yyyy-MM-dd HH:mm")}(${timezone})</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="box" ${istelconf}>
+						<div class="box-head"> Quick Start</div>
+						<div class="box-body">
+							<table class="common-table">
+								<thead style="background-color: #004d9e;color: #fff;font-size: 14px;">
+									<th width="30%">Country</th>
+									<th width="30%">Number Type</th>
+									<th width="40%">Number</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="value">International</td>
+										<td class="value">Direct dial in number</td>
+										<td class="value">${accessNumber1!'8621 6026 4000'}</td>
+									</tr>
+									<tr>
+										<td class="value">China</td>
+										<td class="value">Toll Free</td>
+										<td class="value">${accessNumber2!'800 870 1088'}</td>
+									</tr>
+									<tr>
+										<td class="value">China</td>
+										<td class="value">Toll</td>
+										<td class="value">${accessNumber3!'400 874 1088'}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="box">
+						<div class="box-head">Support</div>
+						<div class="box-body">
+							<div class="support">
+								<a href=""><b></b></a>Any questions, please refer to <a href="http://www.confcloud.cn/help">User Guide</a>
+								If you have trouble accessing or using your ConfCloud conference, 
+								BizConf Telecom Helpdesk is always available for you. Call or email Customer Support Team below:
+							</div>
+							<div class="instruct">Tel:<b>400 082 6161</b></div>
+							<div class="instruct">Email:<a class="underline" href="mailto:cs@confcloud.cn">cs@confcloud.cn</a></div>
+							<div class="welcome"><b>Welcome to visit BizConf Telecom Co., Ltd. company website<a href="http://www.bizconf.cn/">www.bizconf.cn</a></b></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">BizConf Telecom Co.,Ltd.</div>
+
+	</body>
+
+</html>

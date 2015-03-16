@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style></style>
+</head>
+  <body>
+  	<label style="font-size: 11px;">尊敬的${user.userName}：</label><br/>
+    <label style="font-size: 11px;">会议 "${conf.confName}" 将于 ${conf.startTime?string("yyyy-MM-dd HH:mm")}(${timezone})召开,你可以点击<a href="http://${siteaddress}/?joinUrl=${joinUrl}">"加入"</a>加入会议，或通过以下连接进入会议：</label><br/>
+    <label style="font-size: 11px;"><a href="http://${siteaddress}/?joinUrl=${joinUrl}">http://${siteaddress}/?joinUrl=${joinUrl}</a></label><br/>
+    会议相关信息：<br/>
+    <label style="font-size: 11px;">会议主题：${conf.confName}</label><br/>
+    <label style="font-size: 11px;">安全会议号码：${securityCode}</label><br/>
+    <#if conf.publicConfPass?? && conf.publicConfPass!=''>
+    <label style="font-size: 11px;">会议密码：${conf.publicConfPass!'无'}</label><br/>
+    </#if>
+    <label style="font-size: 11px;">主持人：${conf.compereName}</label><br/>
+    <#if conf.confType==1 || conf.confType==3>
+    	<label style="font-size: 11px;">此会议提供电话功能，您的安全会议号码为${securityCode}，您可以拨打如下电话号码，加入会议：</label><br/>
+    	<label style="font-size: 11px;">全球接入号码：${accessNumber1}</label><br/>
+    	<label style="font-size: 11px;">国内免费号码：${accessNumber2}</label><br/>
+    	<label style="font-size: 11px;">国内本地付费号码：${accessNumber3}</label><br/>
+    </#if>
+    <br/>
+    <label style="font-size: 10px;">您有任何问题，可以参考<a href="http://meeting.confcloud.cn/help">用户手册</a>或联系客服:400 082 6161。</label>
+	<p>------------------------------------------------------------------</p>
+   	<label style="font-size: 11px;">Dear ${user.userName}：</label><br/>
+    <label style="font-size: 11px;">The meeting "${conf.confName}" will be started at ${conf.startTime?string("yyyy-MM-dd HH:mm")}(${timezone}), please click <a href="http://${siteaddress}/?joinUrl=${joinUrl}">"join in"</a>to take part  in or join in by clicking below link</label><br/>
+    <label style="font-size: 11px;"><a href="http://${siteaddress}/?joinUrl=${joinUrl}">http://${siteaddress}/?joinUrl=${joinUrl}</a></label><br/>
+    <label style="font-size: 11px;">Meeting Detail Info：</label><br/>
+    <label style="font-size: 11px;">Meeting Topic:${conf.confName}</label><br/>
+    <label style="font-size: 11px;">Security Code:${securityCode}</label><br/>
+    <#if conf.publicConfPass?? && conf.publicConfPass!=''>
+    <label style="font-size: 11px;">Meeting Password:${conf.publicConfPass!'无'}</label><br/>
+    </#if>
+    <label style="font-size: 11px;">Meeting Moderator:${conf.compereName}</label><br/>
+    <#if conf.confType==1 || conf.confType==3>
+    	<label style="font-size: 11px;">This meeting support telphone function，Your Security Code is ${securityCode}， please dial below access number to join the meeting：</label><br/>
+    	<label style="font-size: 11px;">International Direct dial in number：${accessNumber1}</label><br/>
+    	<label style="font-size: 11px;"> China Toll Free：${accessNumber2}</label><br/>
+    	<label style="font-size: 11px;"> China Toll：${accessNumber3}</label><br/>
+    </#if>
+    <br/>
+    <label style="font-size: 10px;">Any questions, please refer to<a href="http://meeting.confcloud.cn/help">User Guide</a> or contact Customer Service:400 082 6161。</label>
+  </body>
+</html>

@@ -1,0 +1,254 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 公共样式表 */
+body {
+	font-family: "宋体";
+	font-family: "Arial, Helvetica, sans-serif";
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	background: #0D7ECB; 
+}
+
+div,form,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,span,p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ul,li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #333
+}
+/*
+.tipsy-inner {
+    border-radius: 3px 3px 3px 3px;
+}
+.tipsy-inner {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#EBEBEB,endColorStr=#DDDDDD);
+    background:-moz-linear-gradient(top,#EBEBEB,#DDDDDD);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#EBEBEB), to(#DDDDDD));
+    color: #000000;
+    max-width: 200px;
+    padding: 5px 8px 4px;
+    text-align: center;
+    font-size: 12px;
+}
+.tipsy-arrow-s {
+    border-top-color: #DDDDDD;
+}
+.tipsy-arrow-w {
+    border-right-color: #DDDDDD;
+}
+*/
+/*.main{ width:500px; height:300px; background:#00F; margin:0 auto; position:absolute; top:50%; left:50%; margin-left:-250px; margin-top:-150px;}*/
+.login_main {
+	width: 584px;
+	height: 330px;
+	background: url(../images/login_main.jpg) no-repeat; margin:0 auto; position:absolute; top:50%; left:50%; margin-left:-292px; margin-top:-165px;
+}
+
+.main_top {
+	height: 88px;
+}
+
+.logo {
+    display: block;
+    float: left;
+    left: 90px;
+    position: relative;
+    top: 28px;
+}
+
+.logo-label {
+	display: block;
+	float: left;
+    left: 100px;
+    position: relative;
+    top: 50px;
+	font-size: 20px;
+	color: #5459A5;
+	font-family: "微软雅黑";
+}
+/*.main_middle img{ margin-top:-3px;}*/
+.main_bottom {
+	height: 235px;
+}
+
+.m_left {
+	width: 258px;
+	float: left;
+	height: 235px;
+}
+
+.ico01 {
+	display: block;
+	float: left;
+    left: 90px;
+    position: relative;
+    top: 30px;
+}
+.ico02 {
+	display: block;
+	float: left;
+    left: 110px;
+    position: relative;
+    top: 45px;
+}
+
+.m_right {
+	float: left;
+	width: 325px;
+	height: 235px;
+	
+}
+
+.m_right01 {
+	float: left;
+	margin-top: 25px;
+	_margin-top: 15px;
+}
+
+.m_right02 {
+	float: left;
+	margin-top: 20px;
+}
+
+.m_right04 {
+	padding-top: 20px;
+	float: left;
+}
+
+.m_right02 span {
+	float: left;
+	display: block;
+	line-height: 22px;
+	width: 80px;
+	margin-right: 10px;
+	text-align: right;
+}
+
+.m_right01 span {
+	float: left;
+	display: block;
+	line-height: 22px;
+	width: 80px;
+	margin-right: 10px;
+	text-align: right;
+}
+
+.m_right03 span {
+	float: left;
+	display: block;
+	line-height: 22px;
+	width: 80px;
+	margin-right: 10px;
+	text-align: right;
+}
+
+
+.m_right03 {
+	float: left;
+	height: 20px;
+	margin-top: 20px;
+/* 	width: 230px; */
+}
+
+.m_right03 a:hover {
+	color: #039;
+	text-decoration: underline;
+	background: none;
+}
+
+.yanzheng {
+	float: left;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.code_link{
+	vertical-align: bottom;
+	margin-left: 5px;
+	display: block;
+	float: left;
+	padding-top: 8px;	
+}
+.code_link:hover {
+	color: #039;
+	text-decoration: underline;	
+}
+.change {
+	vertical-align: bottom;
+	margin-left: 5px;
+	display: block;
+	float: left;
+	padding-top: 8px;
+}
+
+.denglu {
+	width: 64px;
+	height: 28px;
+	background: url(../images/anniu.gif) no-repeat;
+	display: block;
+	line-height: 28px;
+	text-align: center;
+	float: left;
+	margin-left: 90px;
+	_margin-left: 45px;
+	border: 0px;
+	cursor: pointer;
+}
+
+.wangji {
+	display: block;
+	float: left;
+	margin-left: 18px;
+	margin-top: 10px;
+}
+
+.wangji:hover {
+	color: #039;
+	text-decoration: underline;
+}
+
+/*文本框的样式*/
+#loginName, #loginPass{
+	border: 0px;
+	width: 172px;
+	height: 22px;
+	background: url("../images/login_text.jpg") no-repeat center center;
+	text-indent: 5px; line-height:22px;
+}
+
+#loginName:hover, #loginPass:hover{
+	border: 0px;
+	width: 172px;
+	height: 22px;
+	background: url("../images/login_text_change.jpg") no-repeat center
+		center;
+}
+
+#loginName:focus, #loginName:focus{
+	border: 0px;
+}
+
+#authCode {
+	border: 0px;
+	width: 60px;
+	height: 22px;
+	background: url("../images/login_yanzbg.jpg") no-repeat center center;
+	float: left;
+	text-indent: 5px;
+	line-height:22px;
+}
+#authCode:hover {
+	border: 0px;
+	width: 60px;
+	height: 22px;
+	background: url("../images/login_yanzbg_change.jpg") no-repeat center center;
+	float: left;
+}

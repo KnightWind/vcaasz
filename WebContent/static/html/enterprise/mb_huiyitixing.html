@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="http://${siteaddress}/css/enterprise/kaishihuiyi.css"/>
+<title>无标题文档</title>
+</head>
+<body>
+<div class="main">
+	<div class="header">
+   	  <h3>${conf.name}－会议提醒通知</h3>
+        <div class="logo_bg">
+   	    <img src="http://${siteaddress}/images/logo_bg.gif" width="100" height="59" />
+        </div>
+    </div>
+    <div class="banner"><img src="http://${siteaddress}/images/banner_bg.jpg" width="598" height="189" /></div>
+  <div class="center">
+    <p class="c_01">尊敬的<span>${user.trueName}</span>，  您好！</p>
+    	<p class="c_02">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>${user.trueName}</span>邀您出席的<span>${conf.name}</span>的会议。请点击<a href="#">加入</a>，可以进入您的会议！<br />以下是您的会议详细信息：</p>
+    <ul class="message">
+    	<li class="zhuti"><a href="#">会议主题：</a></li>
+        <li>${conf.subject}</li>
+        <li class="zhuti"><a href="#">会议主持人：</a></li>
+        <li>${conf.host}</li>
+        <li class="zhuti"><a href="#">会议开始时间：</a></li>
+        <li>${conf.starttime} (北京时间)</li>
+        <li class="zhuti"><a href="#">会议结束时间：</a></li>
+        <li>${conf.endtime}  (北京时间)</li>
+        <li class="zhuti"><a href="#">会议安全号：</a></li>
+        <li>${conf.anquanhao}</li>
+        <li class="zhuti"><a href="#">电话会议接入号：</a></li>
+        <li>${conf.enterno}</li>
+    </ul>
+   
+    <div class="changebox">
+	<ul>
+	<li>如果您想加入该会议，请点击参加按钮！</li>
+    <li><input name="" type="button"  value="参加" class="canjia"/></li>
+    <li style=" margin-top:50px;">如果您不想加入该会议，请点击拒绝按钮！</li>
+    <li ><input name="" type="button"  value="拒绝" class="jujue"/></li>
+    </ul>
+    </div> 
+</div>
+    <div class="bottom">
+    <p>您有任何问题，可以参考用户手册或联系eCon客服，联系电话：400-658-8686</p>
+    <span><a href="#">robert_han@bizconf.cn</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">www.bizconf.cn</a></span>
+    </div>
+</div>
+</body>
+</html>

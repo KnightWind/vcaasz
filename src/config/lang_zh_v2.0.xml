@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!-- 公用资源 Begin -->
+
+	<resource>
+		<key>website.common.name</key>
+		<value>数据会议企业管理平台</value>
+	</resource>
+	
+	<resource>
+		<key>website.common.index.title.base.1</key>
+		<value>会议系统</value>
+	</resource>
+	
+	<resource>
+		<key>website.common.index.title.base.2</key>
+		<value>课堂系统</value>
+	</resource>
+	
+	<resource>
+		<key>website.common.option.modify</key>
+		<value>修改</value>
+	</resource>
+	
+	<resource>
+		<key>website.common.option.delete</key>
+		<value>删除</value>
+	</resource>
+	
+	<resource>
+		<key>website.common.option.confirm</key>
+		<value>确定</value>
+	</resource>
+
+	<resource>
+		<key>website.common.option.cancel</key>
+		<value>取消</value>
+	</resource>
+	
+	
+	<resource>
+		<key>website.common.pagination.first</key>
+		<value>首页</value>
+	</resource>
+	<resource>
+		<key>website.common.pagination.previous</key>
+		<value>上一页</value>
+	</resource>
+	
+	<resource>
+		<key>website.common.pagination.next</key>
+		<value>下一页</value>
+	</resource>
+	
+	<resource>
+		<key>website.common.pagination.end</key>
+		<value>尾页</value>
+	</resource>
+	
+	<resource>
+		<key>website.common.pagination.jump.tag</key>
+		<value>跳转</value>
+	</resource>
+	
+	<resource>
+		<key>website.common.pagination.jump.button</key>
+		<value>跳</value>
+	</resource>
+	<!-- 公用资源 End -->
+	
+	
+	
+	<!-- 企业用户资源  Begin -->
+	
+	
+	<!-- 企业用户资源  End -->
+
+
+
+
+	<!-- 企业管理员资源  Begin -->
+	
+	
+	<!-- 企业管理员资源  End -->
+	
+	
+	
+	
+	<!-- 系统管理员资源  Begin -->
+	
+	
+	<!-- 系统管理员资源  End -->
+
+</resources>

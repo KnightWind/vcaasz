@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="../js/jquery-ui-1.9.2.custom/css/smoothness/jquery-ui-1.9.2.custom.css" />
+<link rel="stylesheet" type="text/css" href="../js/jquery-validation-1.10.0/demo/css/screen.css" />
+<link rel="stylesheet" type="text/css" href="../js/tipsy-master/src/stylesheets/tipsy.css" />
+<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+<SCRIPT type="text/javascript" src="../js/jquery-1.8.3.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="../js/jquery-ui-1.9.2.custom.js"></SCRIPT>
+<script type="text/javascript" src="../js/jquery-validation-1.10.0/dist/jquery.validate.js"></script>
+<script type="text/javascript" src="../js/tipsy-master/src/javascripts/jquery.tipsy.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript">
+$(function() {
+	randomImg();
+	$('#sysLoginForm :input').tipsy({ trigger: 'focus', fade: false, gravity: 's', opacity: 1 });
+	
+	jQuery.validator.addMethod("userCheck", function(value, element) {       
+		return this.optional(element) || /^[A-Za-z0-9]+$/.test(value);       
+	}, "只能包括英文字母或数字");
+	
+    $('#sysLoginForm').validate({
+        rules: {
+            'loginName' : {required:true, userCheck:true, rangelength: [4, 16]},
+            'loginPass' : {required:true, rangelength: [6, 16]},
+            'authCode'  : {required:true, minlength:4, maxlength:4}
+        },
+
+        messages: {
+            'loginName' : {required:'用户名必须填', userCheck:'只允许数字或字母!', rangelength: '用户名的长度是4~16个字符!'},
+            'loginPass' : {required:'密码必须填', rangelength: '密码的长度是6~16个任意字符!'},
+            'authCode'  : {required:'验证码必须填', minlength: '验证码的长度是4个字符', maxlength: '验证码的长度是4个字符'}
+        },
+
+        success: function (label) {
+            $(label).each(function () {
+                $('#' + this.htmlFor).tipsy('hide').removeAttr('title');
+            });
+        },
+
+        errorPlacement: function (error, element) {
+    		var hasErrorClass = false;
+        	var preEl = element.closest("form");
+        	var errorEl = preEl.find("input.error");
+        	if (errorEl) {
+        		hasErrorClass = true;	
+        	}
+        	if(!hasErrorClass) {
+                element.attr('title', error.text());
+                element.tipsy('show');
+    		}
+        }
+    });
+});
+function randomImg() {
+	var random = new Date().getTime();
+	$("#authCodeImg").attr("src", "/valid/image?type=syslogin&random="+random);
+}
+
+function errorDialog(message) {
+	$("<div/>").errorDialog({message:message});
+}
+function successDialog(message) {
+	$("<div/>").successDialog({message:message});
+}
+</script>
+<style type="text/css">
+.name{ font-family:"微软雅黑"; font-size:24px; display:block; padding-top:30px;}
+
+</style>
+<title>登录</title>
+</head>
+
+<body>
+<form name="sysLoginForm" id="sysLoginForm" action="/system/login/check" method="post">
+<div class="main">
+	<div class="login_main" align="center">
+    	<div class="main_top">
+        
+        <span class="name">上海会畅confcloud系统管理平台</span>
+        </div>        
+    	<div class="main_bottom">
+       	    <div class="m_left"><img class="ico01" src="../images/ico13.gif" width="107" height="97" /></div>
+        	<div class="m_right">
+            	<div class="m_right01"><span>账户名</span><input name="loginName" id="loginName" type="text" original-title="请输入用户名"/></div>
+                <div class="m_right02"><span>密&nbsp;&nbsp;码</span><input name="loginPass" id="loginPass" type="password" original-title="请输入密码"/></div>
+                <div class="m_right03">
+                	<span>验证码</span>
+                    <input name="authCode" type="text" id="authCode" original-title="请输入验证码"/>
+                    <img id="authCodeImg" class="yanzheng" src="" width="66" height="22" onclick="randomImg()"/>
+                    </div>
+               
+             <div class="m_right04">
+             <input type="submit" class="denglu" name="loginBtn" value="登录"/>
+             <a class="wangji" href="#">忘记密码?</a>             
+             </div> 
+             </div>
+ 	    </div>
+       </div>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.help_content{ margin:0 20px !important; float:left;
+	overflow:hidden;}
+	.help_main{  width:100%;}
+	.help_main h5{ font-size:14px; margin:15px 0px;}
+	.tu01{ margin:10px 0px;}
+.nav_guide{ height:34px; width:auto;background:url(/static/images/hele_right_top.jpg) repeat-x left;overflow:hidden;}
+.nav_guide p{ line-height:34px; margin-left:15px; color:#666666;}
+.nav_guide p a{ line-height:34px; margin-left:15px; color:#666666;}
+
+.help_main_h2{ font-size:18px;  line-height:36px;}
+.p01{ color:#333; line-height:20px; font-weight:bold; clear:both; margin:15px 0px 10px; }
+.diaplay-none{ display:none;}
+.p02{ background:#E3FDC1; border:1px solid #C8D8A7; padding:10px; max-width:750px;line-height:20px; margin:20px 0px;}
+.p03{ line-height:26px; margin-left:30px;}
+
+.help_main table{ width:740px; margin:20px 0px;}
+.help_main table tr{ height:32px; border:1px solid #999;}
+.help_main table tr td{ height:32px; border-left:1px solid #999; padding:5px 12px;}
+.help_main p{ line-height:20px;}
+
+/*.help_main p img{ padding:10px 0px;}*/
+
+.p01 span{ display:block; float:left; width:auto;}
+.p05 span{ display:block; float:left; width:auto;}
+.p01 img{ float:left;}
+.p05 img{ float:left;}
+
+
+.hp_t01{ width:740px; margin:20px 0px;}
+ .hp_t01 tr{ height:32px; border:1px solid #999;}
+ .help_main table tr td{ height:32px; border-left:1px solid #999; padding:5px 12px;}
+
+ .clear{ clear:both;}
+ 
+ 
+ 

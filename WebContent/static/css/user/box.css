@@ -1,0 +1,1173 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*创建完成*/
+
+body {
+	/*  url(/static/images/bg.jpg);*/ 
+	margin:0;
+	padding:0;
+	border:0;
+}
+.add_main {
+	width:684px;
+	height:440px;
+	position:relative;
+}
+.add_top_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) left top no-repeat;
+	float:left;
+}
+.add_top_center {
+	width:660px;
+	height:12px;
+	background:url(/static/images/add_top_center.png) left top repeat-x;
+	float:left;
+}
+.add_top_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_right.png) left top no-repeat;
+	float:right;
+}
+/*中部*/
+.add_center_left {
+	width:12px;
+	height:440px;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+	float:left;
+}
+.add_center_center {
+	width:660px;
+	height:440px;
+	background:#fff;
+	float:left;
+}
+.add_center_right {
+	width:12px;
+	height:440px;
+	background:url(/static/images/add_center_right.png) left top repeat-y;
+	float:right;
+}
+/*下部*/
+.add_bottom_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+	float:left;
+}
+.add_bottom_center {
+	width:660px;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+	float:left;
+}
+.add_bottom_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) left top no-repeat;
+	float:right;
+}
+/*即时会议*/
+
+/*上部*/
+
+
+.add01_main {
+	width:684px;
+	height:244px;
+	position:relative;
+	position:relative;
+}
+.add01_top_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) left top no-repeat;
+	float:left;
+}
+.add01_top_center {
+	width:660px;
+	height:12px;
+	background:url(/static/images/add_top_center.png) left top repeat-x;
+	float:left;
+}
+.add01_top_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_right.png) left top no-repeat;
+	float:right;
+}
+/*中部*/
+.add01_center_left {
+	width:12px;
+	height:220px;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+	float:left;
+}
+.add01_center_center {
+	width:660px;
+	height:220px;
+	background:#fff;
+	float:left;
+}
+.add01_center_right {
+	width:12px;
+	height:220px;
+	background:url(/static/images/add_center_right.png) left top repeat-y;
+	float:right;
+}
+/*下部*/
+.add01_bottom_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+	float:left;
+}
+.add01_bottom_center {
+	width:660px;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+	float:left;
+}
+.add01_bottom_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) left top no-repeat;
+	float:right;
+}
+/*导入联系人*=============================================================================================/
+/*上部*/
+.add02_main {
+	width:804px;
+	height:600px;
+	margin:100px;
+	position:relative;
+}
+.add02_top_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) left top no-repeat;
+	float:left;
+}
+.add02_top_center {
+	width:780px;
+	height:12px;
+	background:url(/static/images/add_top_center.png) left top repeat-x;
+	float:left;
+}
+.add02_top_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_right.png) left top no-repeat;
+	float:right;
+}
+/*中部*/
+.add02_center_left {
+	width:12px;
+	height:600px;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+	float:left;
+}
+.add02_center_center {
+	width:780px;
+	height:600px;
+	background:#fff;
+	float:left;
+}
+.add02_center_right {
+	width:12px;
+	height:600px;
+	background:url(/static/images/add_center_right.png) left top repeat-y;
+	float:right;
+}
+/*下部*/
+.add02_bottom_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+	float:left;
+}
+.add02_bottom_center {
+	width:780px;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+	float:left;
+}
+.add02_bottom_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) left top no-repeat;
+	float:right;
+}
+/*预约会议第一步*/
+/*上部*/
+.add03_main {
+	width:684px;
+	height:464px;
+	position:relative;
+}
+.add03_top_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) left top no-repeat;
+	float:left;
+}
+.add03_top_center {
+	width:660px;
+	height:12px;
+	background:url(/static/images/add_top_center.png) left top repeat-x;
+	float:left;
+}
+.add03_top_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_right.png) left top no-repeat;
+	float:right;
+}
+/*中部*/
+.add03_center_left {
+	width:12px;
+	height:440px;
+	;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+	float:left;
+}
+.add03_center_center {
+	width:660px;
+	height:440px;
+	background:#fff;
+	float:left;
+}
+.add03_center_right {
+	width:12px;
+	height:440px;
+	background:url(/static/images/add_center_right.png) left top repeat-y;
+	float:right;
+}
+/*下部*/
+.add03_bottom_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+	float:left;
+}
+.add03_bottom_center {
+	width:660px;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+	float:left;
+}
+.add03_bottom_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) left top no-repeat;
+	float:right;
+}
+/*参数信息*/
+/*上部*/
+
+.add04_main {
+	width:684px;
+	height:600px;
+	position:relative;
+}
+.add04_top_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) left top no-repeat;
+	float:left;
+}
+.add04_top_center {
+	width:660px;
+	height:12px;
+	background:url(/static/images/add_top_center.png) left top repeat-x;
+	float:left;
+}
+.add04_top_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_right.png) left top no-repeat;
+	float:right;
+}
+/*中部*/
+.add04_center_left {
+	width:12px;
+	height:440px;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+	float:left;
+}
+.add04_center_center {
+	width:660px;
+	height:440px;
+	;
+	background:#fff;
+	float:left;
+}
+.add04_center_right {
+	width:12px;
+	height:440px;
+	background:url(/static/images/add_center_right.png) left top repeat-y;
+	float:right;
+}
+/*下部*/
+.add04_bottom_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+	float:left;
+}
+.add04_bottom_center {
+	width:660px;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+	float:left;
+}
+.add04_bottom_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) left top no-repeat;
+	float:right;
+}
+/*快速入会*/
+/*上部*/
+
+.add05_main {
+	width:684px;
+	height:244px;
+	position:relative;
+	position:relative;
+}
+.add05_top_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) left top no-repeat;
+	float:left;
+}
+.add05_top_center {
+	width:660px;
+	height:12px;
+	background:url(/static/images/add_top_center.png) left top repeat-x;
+	float:left;
+}
+.add05_top_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_right.png) left top no-repeat;
+	float:right;
+}
+/*中部*/
+.add05_center_left {
+	width:12px;
+	height:220px;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+	float:left;
+}
+.add05_center_center {
+	width:660px;
+	height:220px;
+	background:#fff;
+	float:left;
+}
+.add05_center_right {
+	width:12px;
+	height:220px;
+	background:url(/static/images/add_center_right.png) left top repeat-y;
+	float:right;
+}
+/*下部*/
+.add05_bottom_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+	float:left;
+}
+.add05_bottom_center {
+	width:660px;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+	float:left;
+}
+.add05_bottom_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) left top no-repeat;
+	float:right;
+}
+/*群组成员*/
+/*上部*/
+.add06_main {
+	width:804px;
+	height:584px;
+	position:relative;
+	position:relative;
+}
+.add06_top_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) left top no-repeat;
+	float:left;
+}
+.add06_top_center {
+	width:780px;
+	height:12px;
+	background:url(/static/images/add_top_center.png) left top repeat-x;
+	float:left;
+}
+.add06_top_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_right.png) left top no-repeat;
+	float:right;
+}
+/*中部*/
+.add06_center_left {
+	width:12px;
+	height:560px;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+	float:left;
+}
+.add06_center_center {
+	width:780px;
+	height:560px;
+	background:#fff;
+	float:left;
+}
+.add06_center_right {
+	width:12px;
+	height:560px;
+	background:url(/static/images/add_center_right.png) left top repeat-y;
+	float:right;
+}
+/*下部*/
+.add06_bottom_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+	float:left;
+}
+.add06_bottom_center {
+	width:780px;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+	float:left;
+}
+.add06_bottom_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) left top no-repeat;
+	float:right;
+}
+/*创建会议第二部*/
+/*上部*/
+.add07_main {
+	width:684px;
+	height:464px;
+	position:relative;
+}
+.add07_top_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) left top no-repeat;
+	float:left;
+}
+.add07_top_center {
+	width:660px;
+	height:12px;
+	background:url(/static/images/add_top_center.png) left top repeat-x;
+	float:left;
+}
+.add07_top_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_right.png) left top no-repeat;
+	float:right;
+}
+/*中部*/
+.add07_center_left {
+	width:12px;
+	height:440px;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+	float:left;
+}
+.add07_center_center {
+	width:660px;
+	height:440px;
+	background:#fff;
+	float:left;
+}
+.add07_center_right {
+	width:12px;
+	height:440px;
+	background:url(/static/images/add_center_right.png) left top repeat-y;
+	float:right;
+}
+/*下部*/
+.add07_bottom_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+	float:left;
+}
+.add07_bottom_center {
+	width:660px;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+	float:left;
+}
+.add07_bottom_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) left top no-repeat;
+	float:right;
+}
+/*邀请*/
+/*上部*/
+.add08_main {
+	width:804px;
+	height:625px;
+	position:relative
+}
+.add08_top_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) left top no-repeat;
+	float:left;
+}
+.add08_top_center {
+	width:780px;
+	height:12px;
+	background:url(/static/images/add_top_center.png) left top repeat-x;
+	float:left;
+}
+.add08_top_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_right.png) left top no-repeat;
+	float:right;
+}
+/*中部*/
+.add08_center_left {
+	width:12px;
+	height:600px;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+	float:left;
+}
+.add08_center_center {
+	width:780px;
+	height:600px;
+	background:#fff;
+	float:left;
+}
+.add08_center_right {
+	width:12px;
+	height:600px;
+	background:url(/static/images/add_center_right.png) left top repeat-y;
+	float:right;
+}
+/*下部*/
+.add08_bottom_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+	float:left;
+}
+.add08_bottom_center {
+	width:780px;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+	float:left;
+}
+.add08_bottom_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) left top no-repeat;
+	float:right;
+}
+/*邀请01*/
+/*上部*/
+.add09_main {
+	width:804px;
+	height:625px;
+	position:relative;
+}
+.add09_top_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) left top no-repeat;
+	float:left;
+}
+.add09_top_center {
+	width:780px;
+	height:12px;
+	background:url(/static/images/add_top_center.png) left top repeat-x;
+	float:left;
+}
+.add09_top_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_right.png) left top no-repeat;
+	float:right;
+}
+/*中部*/
+.add09_center_left {
+	width:12px;
+	height:600px;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+	float:left;
+}
+.add09_center_center {
+	width:780px;
+	height:600px;
+	background:#fff;
+	float:left;
+}
+.add09_center_right {
+	width:12px;
+	height:600px;
+	background:url(/static/images/add_center_right.png) left top repeat-y;
+	float:right;
+}
+/*下部*/
+.add09_bottom_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+	float:left;
+}
+.add09_bottom_center {
+	width:780px;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+	float:left;
+}
+.add09_bottom_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) left top no-repeat;
+	float:right;
+}
+/*光效*/
+
+/*添加群组*/
+/*上部*/
+.add12_main {
+	width:474px;
+	height:304px;
+	position:relative;
+}
+.add12_top_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) left top no-repeat;
+	float:left;
+}
+.add12_top_center {
+	width:450px;
+	height:12px;
+	background:url(/static/images/add_top_center.png) left top repeat-x;
+	float:left;
+}
+.add12_top_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_right.png) left top no-repeat;
+	float:right;
+}
+/*中部*/
+.add12_center_left {
+	width:12px;
+	height:280px;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+	float:left;
+}
+.add12_center_center {
+	width:450px;
+	height:280px;
+	background:#fff;
+	float:left;
+}
+.add12_center_right {
+	width:12px;
+	height:280px;
+	background:url(/static/images/add_center_right.png) left top repeat-y;
+	float:right;
+}
+/*下部*/
+.add12_bottom_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+	float:left;
+}
+.add12_bottom_center {
+	width:450px;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+	float:left;
+}
+.add12_bottom_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) left top no-repeat;
+	float:right;
+}
+/*选定日期/
+/*上部*/
+
+.add16_main {
+	width:474px;
+	height:434px;
+	position:relative;
+	position:relative;
+}
+.add16_top_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) left top no-repeat;
+	float:left;
+}
+.add16_top_center {
+	width:450px;
+	height:12px;
+	background:url(/static/images/add_top_center.png) left top repeat-x;
+	float:left;
+}
+.add16_top_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_right.png) left top no-repeat;
+	float:right;
+}
+/*中部*/
+.add16_center_left {
+	width:12px;
+	height:410px;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+	float:left;
+}
+.add16_center_center {
+	width:450px;
+	height:410px;
+	background:#fff;
+	float:left;
+}
+.add16_center_right {
+	width:12px;
+	height:410px;
+	background:url(/static/images/add_center_right.png) left top repeat-y;
+	float:right;
+}
+/*下部*/
+.add16_bottom_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+	float:left;
+}
+.add16_bottom_center {
+	width:450px;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+	float:left;
+}
+.add16_bottom_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) left top no-repeat;
+	float:right;
+}
+/*login*/
+/*上部*/
+.add19_main {
+	width:604px;
+	height:354px;
+	position:relative;
+}
+.add19_top_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) left top no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_top_left.png', sizingMethod='scale');
+	float:left;
+}
+.add19_top_center {
+	width:580px;
+	height:12px;
+
+	background:url(/static/images/add_top_center.png) left top repeat-x;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_top_center.png', sizingMethod='scale');
+	float:left;
+}
+.add19_top_right {
+	width:12px;
+	height:12px;
+
+	background:url(/static/images/add_top_right.png) left top no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_top_right.png', sizingMethod='scale');
+
+	float:right;
+}
+/*中部*/
+.add19_center_left {
+	width:12px;
+	height:330px;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_center_left.png', sizingMethod='scale');
+	float:left;
+}
+.add19_center_center {
+	width:580px;
+	height:330px;
+	background:#fff;
+	float:left;
+}
+.add19_center_right {
+	width:12px;
+	height:330px;
+	background:url(/static/images/add_center_right.png) left top repeat-y;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_center_right.png', sizingMethod='scale');
+	float:right;
+}
+/*下部*/
+.add19_bottom_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_bottom_left.png', sizingMethod='scale');
+	float:left;
+}
+.add19_bottom_center {
+	width:580px;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_bottom_center.png', sizingMethod='scale');
+	float:left;
+}
+.add19_bottom_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) left top no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_bottom_right.png', sizingMethod='scale');
+	float:right;
+}
+ *即时会议*/ 
+/*上部*/
+
+
+.add20_main {
+width:684px;
+height:244px;
+position:relative;
+position:relative;
+}
+.add20_top_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) left top no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_top_left.png', sizingMethod='scale');
+	float:left;
+}
+.add20_top_center {
+	width:660px;
+	height:12px;
+	background:url(/static/images/add_top_center.png) left top repeat-x;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_top_center.png', sizingMethod='scale');
+	float:left;
+}
+.add20_top_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_right.png) left top no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_top_right.png', sizingMethod='scale');
+	float:right;
+}
+/*中部*/
+.add20_center_left {
+	width:12px;
+	height:220px;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_center_left.png', sizingMethod='scale');
+	float:left;
+}
+.add20_center_center {
+	width:660px;
+	height:220px;
+	background:#fff;
+	float:left;
+}
+.add20_center_right {
+	width:12px;
+	height:220px;
+	background:url(/static/images/add_center_right.png) left top repeat-y;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_center_right.png', sizingMethod='scale');
+	float:right;
+}
+/*下部*/
+.add20_bottom_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_bottom_left.png', sizingMethod='scale');
+	float:left;
+}
+.add20_bottom_center {
+	width:660px;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_bottom_center.png', sizingMethod='scale');
+	float:left;
+}
+.add20_bottom_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) left top no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_bottom_right.png', sizingMethod='scale');
+	float:right;
+}
+/*邀请人列表*/
+/*上部*/
+.add21_main {
+	width:624px;
+	height:504px;
+	position:relative;
+}
+.add21_top_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) left top no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_top_left.png', sizingMethod='scale');	
+	float:left;
+}
+.add21_top_center {
+	width:600px;
+	height:12px;
+	background:url(/static/images/add_top_center.png) left top repeat-x;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_top_center.png', sizingMethod='scale');	
+	float:left;
+}
+.add21_top_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_right.png) left top no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_top_right.png', sizingMethod='scale');	
+	float:right;
+}
+/*中部*/
+.add21_center_left {
+	width:12px;
+	height:480px;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_center_left.png', sizingMethod='scale');	
+	float:left;
+}
+.add21_center_center {
+	width:600px;
+	height:480px;
+	background:#fff;
+	float:left;
+}
+.add21_center_right {
+	width:12px;
+	height:480px;
+	background:url(/static/images/add_center_right.png) left top repeat-y;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_center_right.png', sizingMethod='scale');	
+	float:right;
+}
+/*下部*/
+.add21_bottom_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_bottom_left.png', sizingMethod='scale');	
+	float:left;
+}
+.add21_bottom_center {
+	width:600px;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_bottom_center.png', sizingMethod='scale');	
+	float:left;
+}
+.add21_bottom_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) left top no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_bottom_right.png', sizingMethod='scale');	
+	float:right;
+}
+/*光效*/
+
+/*重置密码*/
+
+/*上部*/
+
+
+.add22_main {
+	width:684px;
+	height:244px;
+	position:relative;
+	position:relative;
+}
+.add22_top_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) left top no-repeat;
+	float:left;
+}
+.add22_top_center {
+	width:660px;
+	height:12px;
+	background:url(/static/images/add_top_center.png) left top repeat-x;
+	float:left;
+}
+.add22_top_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_right.png) left top no-repeat;
+	float:right;
+}
+/*中部*/
+.add22_center_left {
+	width:12px;
+	height:220px;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+	float:left;
+}
+.add22_center_center {
+	width:660px;
+	height:220px;
+	background:#fff;
+	float:left;
+}
+.add22_center_right {
+	width:12px;
+	height:220px;
+	background:url(/static/images/add_center_right.png) left top repeat-y;
+	float:right;
+}
+/*下部*/
+.add22_bottom_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+	float:left;
+}
+.add22_bottom_center {
+	width:660px;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+	float:left;
+}
+.add22_bottom_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) left top no-repeat;
+	float:right;
+}
+
+/*入会日志*/
+/*上部*/
+.add06_main {
+	width:804px;
+	height:584px;
+	position:relative;
+	position:relative;
+}
+.add06_top_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_left.png) left top no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_top_left.png', sizingMethod='scale');	
+	float:left;
+}
+.add06_top_center {
+	width:780px;
+	height:12px;
+	background:url(/static/images/add_top_center.png) left top repeat-x;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_top_center.png', sizingMethod='scale');	
+	float:left;
+}
+.add06_top_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_top_right.png) left top no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_top_right.png', sizingMethod='scale');	
+	float:right;
+}
+/*中部*/
+.add06_center_left {
+	width:12px;
+	height:560px;
+	background:url(/static/images/add_center_left.png) left top repeat-y;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_center_left.png', sizingMethod='scale');	
+	float:left;
+}
+.add06_center_center {
+	width:780px;
+	height:560px;
+	background:#fff;
+	float:left;
+}
+.add06_center_right {
+	width:12px;
+	height:560px;
+	background:url(/static/images/add_center_right.png) left top repeat-y;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_center_right.png', sizingMethod='scale');	
+	float:right;
+}
+/*下部*/
+.add06_bottom_left {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_left.png) left top no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_bottom_left.png', sizingMethod='scale');	
+	float:left;
+}
+.add06_bottom_center {
+	width:780px;
+	height:12px;
+	background:url(/static/images/add_bottom_center.png) left top repeat-x;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_bottom_center.png', sizingMethod='scale');	
+	float:left;
+}
+.add06_bottom_right {
+	width:12px;
+	height:12px;
+	background:url(/static/images/add_bottom_right.png) left top no-repeat;
+	_background: transparent;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/add_bottom_right.png', sizingMethod='scale');	
+	float:right;
+}

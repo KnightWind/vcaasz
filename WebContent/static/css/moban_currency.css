@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+/* 页面头部样式 */
+body{ font-family:"宋体"; font-family:"Arial, Helvetica, sans-serif"; margin:0; padding:0; font-size:12px;}
+div,form,img,ul,ol,li,dl,dt,dd,input,h1,h2,h3,h4,h5,h6,span,p,table{margin:0; padding:0; border:0; }
+ul,li{ list-style:none; }
+a{ color:;}
+
+.main{ width:675px; height:auto; background:#fff; margin:0px auto; margin-top:20px; position:relative;}
+.top{ width:675px; background:url(/static/images/main_top_bg.jpg) no-repeat; height:auto;}
+.header{ width:560px; height:100px; border-bottom:#D1D1D0 1px solid; margin-left:56px;}
+.header h1{ font-size:20px; font-family:"微软雅黑"; font-weight:normal; float:left; padding-top:63px;}
+.m_logo{ float:right; padding-top:26px;}
+.xinxi p{ margin-left:60px; line-height:20px; margin-top:20px;}
+.message{ margin-left:60px; margin-top:10px; line-height:20px; font-family:Arial, Helvetica, sans-serif;}
+.message li{ line-height:22px; clear:both;  }
+.xinxi_bottom01{  position:absolute; bottom:120px; left:60px;}
+.xinxi_bottom02{  position:absolute; bottom:90px; left:60px;}
+.center{ width:675px; height:15px; background:url(/static/images/main_bottom_bg.jpg) no-repeat; margin-top:100px;}
+.m_l{ text-align:right; width:100px; height:20px; display:block; float:left; }
+.m_r{ text-align:left;font-weight:bold;}
+
+.kefu{ display:block; text-align:center; margin-top:10px;font-family:Arial, Helvetica, sans-serif; color:#73736F;}
+.copy{ display:block; text-align:center; margin-top:2px;font-family:Arial, Helvetica, sans-serif;}
+
+.queren{ width:72px; height:24px; background:url(/static/images/emile_button01.jpg) no-repeat; text-align:center; line-height:24px; margin-left:130px; margin-top:30px;}
+.queren:hover{ background:url(/static/images/emile_button_change.jpg) no-repeat;}
+

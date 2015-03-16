@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+/* 页面头部样式 */
+body{ font-family:Arial; margin:0; padding:0; font-size:12px;}
+div,form,img,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,span,p,table{margin:0; padding:0; border:0; }
+ul,li{ list-style:none; }
+a{ text-decoration:none;}
+
+.main{ margin:0px auto; width:600px; height:768px;}
+.header{ height:100px; border-bottom:#CDCDCD 1px solid;}
+.header h3{ font-size:20px; font-family:"微软雅黑"; color:#3F3F3F; font-weight:normal; float:left; margin-top:60px;}
+.logo_bg{ float:right; margin-right:25px;vertical-align:bottom; margin-top:30px;}
+
+.center{ position:relative; width:600px; height:auto;}
+.message{ margin-left:50px; margin-top:10px;}
+.center ul li{ margin-top:10px; color:#8F76A6;}
+.center strong{ float:left;}
+.center p{ clear:left;}
+.zhuti{ font-weight:bold; margin-top:10px;}
+.zhuti a{ color:#09529E;}
+.c_01{ margin-top:15px; margin-bottom:5px;}
+.c_01 span{ color:#09529E; font-family:"Arial";}
+.c_02 span{ color:#09529E; font-family:"Arial";}
+.c_02{ line-height:20px;}
+.c_02 a{ text-decoration:underline; color:#09529E;}
+.bottom{ height:60px; border-top:#CDCDCD 1px solid; width:600px; margin-top:20px;}
+.bottom span{ padding-top:8px; display:block;color:#09529E; font-family:"Arial";}
+.bottom p{ padding-top:8px;color:#72726D;}
+
+.changebox{ width:254px; height:140px; border:#CCCCCC 1px solid; font-size:12px; position:absolute; right:0px; top:90px;}
+.changebox ul{ text-align:left; margin-left:20px;}
+.changebox ul li{ color:#333}
+
+.canjia{ width:72px; height:24px; background:url(/static/images/button01.jpg) no-repeat; border:none; position:absolute; left:50%; margin-left:-36px; margin-top:5px;}
+.jujue{ width:72px; height:24px; background:url(/static/images/button01.jpg) no-repeat; border:none; position:absolute; left:50%; margin-left:-36px; margin-top:5px;}

@@ -1,0 +1,183 @@
+/*=======================================*/
+/*	Alan Liu                             */
+/*	email:mingliu@bizconf.cn	         */
+/*	2013-07-23                           */
+/*=======================================*/
+.form-item {
+	clear: both;
+}
+.form-item .count {
+	color: #B0B0B0;
+}
+.form-item .input-text {
+	margin-right: 10px;
+}
+.form-item .form-required {
+    background: url("/assets/images/sprite/icons-png8.png") no-repeat scroll -14px -194px transparent;
+    height: 7px;
+    position: absolute;
+    width: 7px;	
+    top: 9px;
+}
+.form-item .form-tip {
+	background: none repeat scroll 0 0 #FFFFFF;
+    position: absolute;
+    top: 5px;
+    margin-left: 10px;
+}
+.input-text-show, .input-text-correct{
+	border: 1px solid #DADADA;
+	border-radius: 3px;
+	padding: 5px;
+	height: 16px;
+	box-shadow: 0 1px #f7f7f7 inset;
+}
+.input-text-focus{
+	border: 1px solid #8caac8;
+	border-radius: 3px;
+	padding: 5px;
+	height: 16px;
+	box-shadow: 0 0 5px #d6e2ed;
+}
+.input-text-error {
+	border: 1px solid #DADADA;
+	border-radius: 3px;
+	padding: 5px;
+	height: 16px;
+	box-shadow: 0 1px #f7f7f7 inset;	
+	border-color: #C56360;
+	background-color: #FAE2E2;
+	color: #C51500;
+}
+.join-secure-form .onCorrect{
+	display: none;
+}
+.form-tip {
+	position: absolute;
+	top: 5px;
+	background: #FFFFFF
+}
+
+.onCorrect {
+	margin-left: 0px;
+}
+.forget-box .form-item .error {
+	width: 100%;
+	display: block;
+}
+.forget-box .onError {
+	color: #C91600;
+	background: url("/assets/images/icons/icon_warn.png") no-repeat left center transparent;
+	line-height: normal;
+}
+.join-secure-form .error {
+	width: 390px;
+	color: #C51500;
+}
+.join-secure-form input[type=text] {
+	width:250px;
+}
+.join-secure-form input[type=password] {
+	width:250px;
+}
+.meeting-dialog .form-item .input-text {
+	margin-right: 6px;
+}
+.bydate .input-text-show,.bydate .input-text-focus,.bydate .input-text-error,.bydate .input-text-correct {
+	width: 35px;
+	height: 14px;
+}
+.endRepeat-tip {
+	position: relative;
+}
+.endRepeat-foreEver-tip {
+	position: relative;
+}
+.endRepeat-foreEver-tip .form-tip {
+	width: 300px;
+	left: 225px;
+	top: 8px;
+}
+.endRepeat-tip .form-tip {
+	width: 300px;
+	left: 210px;
+}
+.endRepeat-tip .input-text-show,.endRepeat-tip .input-text-focus,.endRepeat-tip .input-text-error,.endRepeat-tip .input-text-correct {
+	width: 35px;
+	height: 14px;
+}
+.weekday-tip {
+	position: relative;
+}
+.cycleDayFlag-tip {
+	position: relative;
+	width: 400px;
+}
+.weekday-tip .onCorrect {
+	display: none;
+}
+.cycleDayFlag-tip .onCorrect {
+	display: none;
+}
+.eachmonth-tip {
+	position: relative;
+}
+.eachmonth-tip .form-tip {
+	width: 350px;
+	margin-left: 10px;
+}
+.eachmonth-tip .onCorrect{
+	display: none;
+}
+.meeting-dialog .ontime li{
+	height: 22px;
+	line-height: 22px;
+}
+.endRepeat-tip .form-tip {
+	top: 8px;
+}
+
+.duration-widget .form-tip {
+	margin-left: 15px;
+}
+.aheadtime-widget .form-tip {
+	margin-left: 10px;
+}
+.starttime-widget .form-tip{
+	margin-left: 20px;	
+}
+.meeting-dialog .starttime-widget .required {
+	*top:12px; 
+}
+.endtime-widget .form-tip{
+	margin-left: 20px;	
+}
+.login-dialog .login-form .error .form-tip{
+	width: 385px;
+}
+.login-dialog .login-form .error .form-tip{
+	width: 385px;
+}
+#dangerAlert .onCorrect {
+	display: none;
+}
+.login-form #loginName {
+	background-image: url("/assets/images/sprite/vertical-icons.png");
+	background-repeat: no-repeat;
+	background-position: 12px 12px;
+    font-size: 14px;
+    padding: 10px 5px 10px 35px;
+    width: 358px;
+    height: 18px;
+}
+.login-form #loginPass {
+	background-image: url("/assets/images/sprite/vertical-icons.png");
+	background-repeat: no-repeat;
+	background-position: 12px -28px;
+    font-size: 14px;
+    padding: 10px 5px 10px 35px;
+    width: 358px;
+    height: 18px;
+}.aheadtime-widget .form-tip {
+	margin-left: 15px;
+}

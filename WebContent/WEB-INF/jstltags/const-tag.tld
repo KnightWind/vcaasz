@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd"
+  version="2.0">
+    
+     <description>BizConf Constants Tag</description>
+    <display-name>constant tag</display-name>
+    <tlib-version>1.0</tlib-version>
+    <short-name>constag</short-name>
+    <uri>/const-tag</uri>
+    <tag>
+        <description>SortConstant常量</description>
+        <name>sort</name>
+        <tag-class>com.bizconf.vcaasz.constant.tag.SortConstantTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>Constant中某个变量名</description>
+            <name>var</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+         </attribute>
+       
+    </tag> 
+    <tag>
+        <description>EventLogConstant常量</description>
+        <name>logs</name>
+        <tag-class>com.bizconf.vcaasz.constant.tag.EventLogConstantsTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>Constant中某个变量名</description>
+            <name>var</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+         </attribute>
+       
+    </tag> 
+    <tag>
+        <description>ConfList常量</description>
+        <name>confList</name>
+        <tag-class>com.bizconf.vcaasz.constant.tag.ConfListConstantsTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>Constant中某个变量名</description>
+            <name>var</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+         </attribute>
+       
+    </tag> 
+    <tag>
+        <description>SiteList常量</description>
+        <name>siteList</name>
+        <tag-class>com.bizconf.vcaasz.constant.tag.SiteListConstantsTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>Constant中某个变量名</description>
+            <name>var</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+         </attribute>
+       
+    </tag> 
+    
+    <tag>
+        <description>ConstantUtil常量</description>
+        <name>base</name>
+        <tag-class>com.bizconf.vcaasz.constant.tag.ConstantUtilTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>Constant中某个变量名</description>
+            <name>var</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+         </attribute>
+       
+    </tag> 
+    
+    <tag>
+        <description>LoginLogConstant常量</description>
+        <name>loginLog</name>
+        <tag-class>com.bizconf.vcaasz.constant.tag.LoginLogConstantTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>Constant中某个变量名</description>
+            <name>var</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+         </attribute>
+    </tag> 
+</taglib>

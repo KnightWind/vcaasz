@@ -1,0 +1,90 @@
+#content .wrapper {
+
+	background: #FFFFFF;
+
+	min-height: auto;
+
+	min-height: initial;
+
+}
+
+
+#content .accept {
+
+	width: 520px;
+
+	height: 320px;
+
+	margin: 40px auto 0;
+
+	padding: 55px 30px 0;
+
+	background: transparent url(/assets/images/bg/reject.png) 0 0 no-repeat;
+
+}
+
+
+
+#content .accept h3 {
+
+	width: 230px;
+
+	height: 80px;
+
+	line-height: 80px;
+
+	padding-left: 80px;
+
+	margin: 0 auto;
+
+	font-size: 20px;
+
+	color: #509B00;
+
+	font-weight: normal;
+
+	background: transparent url(/assets/images/bg/success.png) 0 center no-repeat;
+
+}
+
+
+
+#content .accept .infomation {
+
+	line-height: 32px;
+
+	padding-top: 20px;
+
+}
+
+
+
+#content .accept .infomation .item {
+
+	border-bottom: 1px solid #CCCCCC;
+
+}
+
+
+
+#content .accept .infomation .title {
+
+	width: 155px;
+
+	float: left;
+
+	text-align: right;
+
+}
+
+
+
+#content .accept .infomation .content {
+
+	margin-left: 165px;
+
+	font-size: 15px;
+
+}
+
+
